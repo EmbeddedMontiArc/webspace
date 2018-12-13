@@ -1,0 +1,269 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: pacManWrapper -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="75"
+        width="143"
+        height="387"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">pacManWrapper</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: controller -->
+<g transform="translate(46 52)">
+    <rect
+        id="de_rwth_pacman_controller"
+        data-name="de.rwth.pacman.pacManWrapper.controller"
+        width="35"
+        height="335"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.pacman.pacManWrapper.controller_no_port_names.html','_parent',false);parent.openFileInEditor('/rwth/pacman/pacManWrapper/controller.ema');"
+    />
+
+    <text
+        id="de_rwth_pacman_controller_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">controller</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id=""
+    stroke-linecap="square"
+    x1="89"
+    y1="327"
+    x2="151"
+    y2="327"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="327"
+    x2="38"
+    y2="327"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="367"
+    x2="38"
+    y2="367"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="38"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="127"
+    x2="38"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="167"
+    x2="38"
+    y2="167"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="207"
+    x2="38"
+    y2="207"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="247"
+    x2="38"
+    y2="247"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="287"
+    x2="38"
+    y2="287"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_newPacManDirection" x="73" y="319" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_newPacManDirection" />
+<text id="de_rwth_pacman_controller_newPacManDirection_text1" text-anchor="end" alignment-baseline="middle" x="70" y="329" transform="rotate(0,70,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_newPacManDirection" x="151" y="319" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_newPacManDirection" />
+<text id="de_rwth_pacman_pacManWrapper_newPacManDirection_text1" text-anchor="start" alignment-baseline="middle" x="171" y="329" transform="rotate(0,171,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_ghostX" x="8" y="319" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_ghostX" />
+<text id="de_rwth_pacman_pacManWrapper_ghostX_text1" text-anchor="end" alignment-baseline="middle" x="4" y="329" transform="rotate(0,4,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_ghostX" x="38" y="319" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_ghostX" />
+<text id="de_rwth_pacman_controller_ghostX_text1" text-anchor="start" alignment-baseline="middle" x="57" y="329" transform="rotate(0,57,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_ghostY" x="8" y="359" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_ghostY" />
+<text id="de_rwth_pacman_pacManWrapper_ghostY_text1" text-anchor="end" alignment-baseline="middle" x="4" y="369" transform="rotate(0,4,369)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_ghostY" x="38" y="359" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_ghostY" />
+<text id="de_rwth_pacman_controller_ghostY_text1" text-anchor="start" alignment-baseline="middle" x="57" y="369" transform="rotate(0,57,369)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_ghostDirection" x="8" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_ghostDirection" />
+<text id="de_rwth_pacman_pacManWrapper_ghostDirection_text1" text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_ghostDirection" x="38" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_ghostDirection" />
+<text id="de_rwth_pacman_controller_ghostDirection_text1" text-anchor="start" alignment-baseline="middle" x="57" y="89" transform="rotate(0,57,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_ghostEatable" x="8" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_ghostEatable" />
+<text id="de_rwth_pacman_pacManWrapper_ghostEatable_text1" text-anchor="end" alignment-baseline="middle" x="4" y="129" transform="rotate(0,4,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_ghostEatable" x="38" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_ghostEatable" />
+<text id="de_rwth_pacman_controller_ghostEatable_text1" text-anchor="start" alignment-baseline="middle" x="57" y="129" transform="rotate(0,57,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_ghostEaten" x="8" y="159" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_ghostEaten" />
+<text id="de_rwth_pacman_pacManWrapper_ghostEaten_text1" text-anchor="end" alignment-baseline="middle" x="4" y="169" transform="rotate(0,4,169)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_ghostEaten" x="38" y="159" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_ghostEaten" />
+<text id="de_rwth_pacman_controller_ghostEaten_text1" text-anchor="start" alignment-baseline="middle" x="57" y="169" transform="rotate(0,57,169)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_pacManX" x="8" y="199" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_pacManX" />
+<text id="de_rwth_pacman_pacManWrapper_pacManX_text1" text-anchor="end" alignment-baseline="middle" x="4" y="209" transform="rotate(0,4,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_pacManX" x="38" y="199" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_pacManX" />
+<text id="de_rwth_pacman_controller_pacManX_text1" text-anchor="start" alignment-baseline="middle" x="57" y="209" transform="rotate(0,57,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_pacManY" x="8" y="239" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_pacManY" />
+<text id="de_rwth_pacman_pacManWrapper_pacManY_text1" text-anchor="end" alignment-baseline="middle" x="4" y="249" transform="rotate(0,4,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_pacManY" x="38" y="239" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_pacManY" />
+<text id="de_rwth_pacman_controller_pacManY_text1" text-anchor="start" alignment-baseline="middle" x="57" y="249" transform="rotate(0,57,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_pacManWrapper_map" x="8" y="279" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_pacManWrapper_map" />
+<text id="de_rwth_pacman_pacManWrapper_map_text1" text-anchor="end" alignment-baseline="middle" x="4" y="289" transform="rotate(0,4,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_pacman_controller_map" x="38" y="279" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_pacman_controller_map" />
+<text id="de_rwth_pacman_controller_map_text1" text-anchor="start" alignment-baseline="middle" x="57" y="289" transform="rotate(0,57,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+
+</svg>

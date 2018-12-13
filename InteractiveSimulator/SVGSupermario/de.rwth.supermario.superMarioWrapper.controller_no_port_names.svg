@@ -1,0 +1,885 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: controller -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="290"
+        width="320"
+        height="583"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">controller</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: enemyController -->
+<g transform="translate(46 107)">
+    <rect
+        id="de_rwth_supermario_enemyController"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController"
+        width="35"
+        height="126"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController_no_port_names.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController.ema');"
+    />
+
+    <text
+        id="de_rwth_supermario_enemyController_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">enemyController</tspan>
+    </text>
+
+</g><!-- Component: obstController -->
+<g transform="translate(141 233)">
+    <rect
+        id="de_rwth_supermario_obstController"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController"
+        width="35"
+        height="151"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController_no_port_names.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController.ema');"
+    />
+
+    <text
+        id="de_rwth_supermario_obstController_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">obstController</tspan>
+    </text>
+
+</g><!-- Component: genStrategy -->
+<g transform="translate(141 404)">
+    <rect
+        id="de_rwth_supermario_genStrategy"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.genStrategy"
+        width="35"
+        height="179"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="de_rwth_supermario_genStrategy_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">genStrategy</tspan>
+    </text>
+
+</g><!-- Component: orR -->
+<g transform="translate(206 107)">
+    <rect
+        id="de_rwth_supermario_orR"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.orR"
+        width="35"
+        height="396"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="de_rwth_supermario_orR_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">orR</tspan>
+    </text>
+
+</g><!-- Component: jumpDecider -->
+<g transform="translate(271 52)">
+    <rect
+        id="de_rwth_supermario_jumpDecider"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.jumpDecider"
+        width="35"
+        height="451"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="de_rwth_supermario_jumpDecider_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">jumpDecider</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id=""
+    stroke-linecap="square"
+    x1="184"
+    y1="523"
+    x2="206"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="516"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="206"
+    y1="523"
+    x2="206"
+    y2="543"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="206" cy="523" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="206"
+    y1="543"
+    x2="306"
+    y2="543"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="206" cy="543" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="306"
+    y1="543"
+    x2="306"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="306"
+    y1="523"
+    x2="328"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="317"
+        y="512"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle cx="306" cy="523" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="314"
+    y1="483"
+    x2="328"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="184"
+    y1="563"
+    x2="206"
+    y2="563"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="556"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="206"
+    y1="563"
+    x2="206"
+    y2="543"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="206" cy="563" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="206"
+    y1="543"
+    x2="306"
+    y2="543"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="206" cy="543" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="306"
+    y1="543"
+    x2="306"
+    y2="563"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="306"
+    y1="563"
+    x2="328"
+    y2="563"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="317"
+        y="552"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle cx="306" cy="563" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="213"
+    x2="38"
+    y2="213"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="324"
+    x2="46"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="317"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="324"
+    x2="46"
+    y2="344"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="324" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="344"
+    x2="116"
+    y2="344"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="344" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="344"
+    x2="116"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="324"
+    x2="133"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="122"
+        y="313"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle cx="116" cy="324" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="364"
+    x2="46"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="357"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="364"
+    x2="46"
+    y2="344"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="364" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="344"
+    x2="116"
+    y2="344"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="344" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="344"
+    x2="116"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="364"
+    x2="133"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="122"
+        y="353"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle cx="116" cy="364" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="483"
+    x2="46"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="476"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="483"
+    x2="46"
+    y2="503"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="483" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="503"
+    x2="116"
+    y2="503"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="503" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="503"
+    x2="116"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="483"
+    x2="133"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="122"
+        y="472"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle cx="116" cy="483" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="523"
+    x2="46"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="516"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="523"
+    x2="46"
+    y2="503"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="523" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="46"
+    y1="503"
+    x2="116"
+    y2="503"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="46" cy="503" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="503"
+    x2="116"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="116"
+    y1="523"
+    x2="133"
+    y2="523"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="122"
+        y="512"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle cx="116" cy="523" r="4" fill="black" />
+<line
+    id=""
+    stroke-linecap="square"
+    x1="184"
+    y1="324"
+    x2="198"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="89"
+    y1="213"
+    x2="198"
+    y2="213"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="184"
+    y1="483"
+    x2="198"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="249"
+    y1="483"
+    x2="263"
+    y2="483"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="263"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_genStrategy_directionAdvice" x="168" y="515" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_genStrategy_directionAdvice" />
+<text id="de_rwth_supermario_genStrategy_directionAdvice_text1" text-anchor="end" alignment-baseline="middle" x="165" y="525" transform="rotate(0,165,525)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_marioDirection" x="328" y="515" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_marioDirection" />
+<text id="de_rwth_supermario_controller_marioDirection_text1" text-anchor="start" alignment-baseline="middle" x="348" y="525" transform="rotate(0,348,525)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_jumpDecider_marioJump" x="298" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_jumpDecider_marioJump" />
+<text id="de_rwth_supermario_jumpDecider_marioJump_text1" text-anchor="end" alignment-baseline="middle" x="295" y="485" transform="rotate(0,295,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_marioJump" x="328" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_marioJump" />
+<text id="de_rwth_supermario_controller_marioJump_text1" text-anchor="start" alignment-baseline="middle" x="348" y="485" transform="rotate(0,348,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_genStrategy_crouchAdvice" x="168" y="555" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_genStrategy_crouchAdvice" />
+<text id="de_rwth_supermario_genStrategy_crouchAdvice_text1" text-anchor="end" alignment-baseline="middle" x="165" y="565" transform="rotate(0,165,565)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_marioDown" x="328" y="555" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_marioDown" />
+<text id="de_rwth_supermario_controller_marioDown_text1" text-anchor="start" alignment-baseline="middle" x="348" y="565" transform="rotate(0,348,565)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_nextEnemyPositions" x="8" y="205" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_nextEnemyPositions" />
+<text id="de_rwth_supermario_controller_nextEnemyPositions_text1" text-anchor="end" alignment-baseline="middle" x="4" y="215" transform="rotate(0,4,215)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemyController_nextEnemyPositions" x="38" y="205" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemyController_nextEnemyPositions" />
+<text id="de_rwth_supermario_enemyController_nextEnemyPositions_text1" text-anchor="start" alignment-baseline="middle" x="57" y="215" transform="rotate(0,57,215)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_nextObstaclePositions" x="8" y="316" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_nextObstaclePositions" />
+<text id="de_rwth_supermario_controller_nextObstaclePositions_text1" text-anchor="end" alignment-baseline="middle" x="4" y="326" transform="rotate(0,4,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_obstController_nextObstaclePositions" x="133" y="316" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_obstController_nextObstaclePositions" />
+<text id="de_rwth_supermario_obstController_nextObstaclePositions_text1" text-anchor="start" alignment-baseline="middle" x="152" y="326" transform="rotate(0,152,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_nextHole" x="8" y="356" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_nextHole" />
+<text id="de_rwth_supermario_controller_nextHole_text1" text-anchor="end" alignment-baseline="middle" x="4" y="366" transform="rotate(0,4,366)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_obstController_holeDistance" x="133" y="356" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_obstController_holeDistance" />
+<text id="de_rwth_supermario_obstController_holeDistance_text1" text-anchor="start" alignment-baseline="middle" x="152" y="366" transform="rotate(0,152,366)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_tickSize" x="8" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_tickSize" />
+<text id="de_rwth_supermario_controller_tickSize_text1" text-anchor="end" alignment-baseline="middle" x="4" y="485" transform="rotate(0,4,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_genStrategy_tickSize" x="133" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_genStrategy_tickSize" />
+<text id="de_rwth_supermario_genStrategy_tickSize_text1" text-anchor="start" alignment-baseline="middle" x="152" y="485" transform="rotate(0,152,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_marioPosition" x="8" y="515" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_marioPosition" />
+<text id="de_rwth_supermario_controller_marioPosition_text1" text-anchor="end" alignment-baseline="middle" x="4" y="525" transform="rotate(0,4,525)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_genStrategy_marioPosition" x="133" y="515" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_genStrategy_marioPosition" />
+<text id="de_rwth_supermario_genStrategy_marioPosition_text1" text-anchor="start" alignment-baseline="middle" x="152" y="525" transform="rotate(0,152,525)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_obstController_jumpAdvice" x="168" y="316" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_obstController_jumpAdvice" />
+<text id="de_rwth_supermario_obstController_jumpAdvice_text1" text-anchor="end" alignment-baseline="middle" x="165" y="326" transform="rotate(0,165,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_orR_input[1]" x="198" y="316" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_orR_input[1]" />
+<text id="de_rwth_supermario_orR_input[1]_text1" text-anchor="start" alignment-baseline="middle" x="217" y="326" transform="rotate(0,217,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemyController_jumpAdvice" x="73" y="205" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemyController_jumpAdvice" />
+<text id="de_rwth_supermario_enemyController_jumpAdvice_text1" text-anchor="end" alignment-baseline="middle" x="70" y="215" transform="rotate(0,70,215)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_orR_input[2]" x="198" y="205" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_orR_input[2]" />
+<text id="de_rwth_supermario_orR_input[2]_text1" text-anchor="start" alignment-baseline="middle" x="217" y="215" transform="rotate(0,217,215)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_genStrategy_jumpAdvice" x="168" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_genStrategy_jumpAdvice" />
+<text id="de_rwth_supermario_genStrategy_jumpAdvice_text1" text-anchor="end" alignment-baseline="middle" x="165" y="485" transform="rotate(0,165,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_orR_input[3]" x="198" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_orR_input[3]" />
+<text id="de_rwth_supermario_orR_input[3]_text1" text-anchor="start" alignment-baseline="middle" x="217" y="485" transform="rotate(0,217,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_orR_output" x="233" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_orR_output" />
+<text id="de_rwth_supermario_orR_output_text1" text-anchor="end" alignment-baseline="middle" x="230" y="485" transform="rotate(0,230,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_jumpDecider_jumpAdvice" x="263" y="475" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_jumpDecider_jumpAdvice" />
+<text id="de_rwth_supermario_jumpDecider_jumpAdvice_text1" text-anchor="start" alignment-baseline="middle" x="282" y="485" transform="rotate(0,282,485)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_controller_marioResting" x="8" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_controller_marioResting" />
+<text id="de_rwth_supermario_controller_marioResting_text1" text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_jumpDecider_marioResting" x="263" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_jumpDecider_marioResting" />
+<text id="de_rwth_supermario_jumpDecider_marioResting_text1" text-anchor="start" alignment-baseline="middle" x="282" y="89" transform="rotate(0,282,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+
+</svg>

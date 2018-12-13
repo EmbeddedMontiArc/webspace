@@ -1,0 +1,57 @@
+#enterIteration{
+  max-width: 500px;
+  padding: 20px 12px 10px 20px;
+  font: 13px Arial, Helvetica, sans-serif;
+}
+#enterIteration label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+}
+#enterIteration input.input-field, #enterIteration .select-field{
+    width: 70px;
+}
+#enterIteration input.input-field,
+#enterIteration .tel-number-field,
+#enterIteration .textarea-field,
+#enterIteration .select-field{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    padding: 7px;
+    outline: none;
+}
+#enterIteration .input-field:focus,
+#enterIteration .tel-number-field:focus,
+#enterIteration .textarea-field:focus,
+#enterIteration .select-field:focus{
+    border: 1px solid #0C0;
+}
+#enterIteration .textarea-field{
+    height:100px;
+    width: 55%;
+}
+#enterIteration input[type=submit],
+#enterIteration input[type=button]{
+    border: none;
+    padding: 8px 15px 8px 15px;
+    background: #FF8500;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+    -moz-box-shadow: 1px 1px 4px #DADADA;
+    -webkit-box-shadow: 1px 1px 4px #DADADA;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+#enterIteration input[type=submit]:hover,
+#enterIteration input[type=button]:hover{
+    background: #EA7B00;
+    color: #fff;
+}

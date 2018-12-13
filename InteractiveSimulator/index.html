@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Simulator</title>
+    <link href="images/favicon.ico" type="image/x-icon" rel="icon"/>
+    <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/selection.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div id="my-title"><div>Interactive Simulator</div></div>
+<div id="button-pm-container" class="custom-button-container">
+    <a id="button-pm" class="custom-button ui-button ui-widget ui-corner-all" href="indexPacman.html">Pacman</a>
+    <!--<p class="text-to-button">Shows all Grammars from <b>EmbeddedMontiArc</b>, <b>MontiSim</b> and <b>MontiCore</b>.-->
+    <!--<b>MontiCore</b> is seperated in  <b>MontiCore - MainGrammars</b> and <b>MontiCore - Test</b></p>-->
+</div>
+<div id="button-sm-container" class="custom-button-container">
+    <a id="button-sm" class="custom-button ui-button ui-widget ui-corner-all" href="indexSupermario.html">Supermario</a><br>
+    <!--<p class="text-to-button">Shows all Grammars</p>-->
+</div>
+
+<script>
+    $(document).ready( function() {
+        $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    } );
+</script>
+</body>
+</html>

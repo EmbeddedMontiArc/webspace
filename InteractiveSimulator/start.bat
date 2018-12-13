@@ -1,0 +1,1 @@
+start FirefoxPortable\FirefoxPortable.exe file:///%CD%/index.html

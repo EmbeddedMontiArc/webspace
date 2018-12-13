@@ -1,0 +1,152 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: enemies[2] -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="1336"
+        width="109"
+        height="147"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">enemies[2]</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: velocity -->
+<g transform="translate(46 52)">
+    <rect
+        id="de_rwth_supermario_velocity"
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[2].velocity"
+        width="35"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="de_rwth_supermario_velocity_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">velocity</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id=""
+    stroke-linecap="square"
+    x1="89"
+    y1="87"
+    x2="117"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="89"
+    y1="127"
+    x2="117"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="38"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id=""
+    stroke-linecap="square"
+    x1="24"
+    y1="127"
+    x2="38"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_velocity_velX" x="73" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_velocity_velX" />
+<text id="de_rwth_supermario_velocity_velX_text1" text-anchor="end" alignment-baseline="middle" x="70" y="89" transform="rotate(0,70,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemies[2]_velX" x="117" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemies[2]_velX" />
+<text id="de_rwth_supermario_enemies[2]_velX_text1" text-anchor="start" alignment-baseline="middle" x="137" y="89" transform="rotate(0,137,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_velocity_velY" x="73" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_velocity_velY" />
+<text id="de_rwth_supermario_velocity_velY_text1" text-anchor="end" alignment-baseline="middle" x="70" y="129" transform="rotate(0,70,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemies[2]_velY" x="117" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemies[2]_velY" />
+<text id="de_rwth_supermario_enemies[2]_velY_text1" text-anchor="start" alignment-baseline="middle" x="137" y="129" transform="rotate(0,137,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemies[2]_distX" x="8" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemies[2]_distX" />
+<text id="de_rwth_supermario_enemies[2]_distX_text1" text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_velocity_distX" x="38" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_velocity_distX" />
+<text id="de_rwth_supermario_velocity_distX_text1" text-anchor="start" alignment-baseline="middle" x="57" y="89" transform="rotate(0,57,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_enemies[2]_distY" x="8" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_enemies[2]_distY" />
+<text id="de_rwth_supermario_enemies[2]_distY_text1" text-anchor="end" alignment-baseline="middle" x="4" y="129" transform="rotate(0,4,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<defs> <!-- Small box indicating a port --><rect id="de_rwth_supermario_velocity_distY" x="38" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/></defs><use x="0" y="0" xlink:href="#de_rwth_supermario_velocity_distY" />
+<text id="de_rwth_supermario_velocity_distY_text1" text-anchor="start" alignment-baseline="middle" x="57" y="129" transform="rotate(0,57,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+
+</svg>

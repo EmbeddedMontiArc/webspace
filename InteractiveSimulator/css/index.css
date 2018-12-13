@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.myFrame {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    height: 80vh;
+    float: left;
+}
+
+#gameFrame {
+    top: 0;
+    left: 0;
+    width: 30vw;
+}
+
+#visualisationFrame {
+    top: 0;
+    left: 30.7vw;
+    width: 69.3vw;
+}
+
+#bar {
+    background-color: #2b2b2b;
+    cursor: col-resize;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 0.7vw;
+    height: 80vh;
+}
+
+.gameControls {
+    position: absolute;
+    width: 30vw;
+    display: table-cell;
+    left: 0;
+    top: 80vh;
+}
+
+.debugControls {
+    position: absolute;
+    width: 70vw;
+    display: table-cell;
+    top: 80vh;
+    left: 30.7vw;
+}
+
+.controlsContainer {
+    font-weight: bold;
+    color: #eaf1fa;
+}
+
+#background {
+    position: absolute;
+    left: 0px;
+    top: 80vh;
+    height: 20vh;
+    width: 100vw;
+    background-color:#779ec9;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
