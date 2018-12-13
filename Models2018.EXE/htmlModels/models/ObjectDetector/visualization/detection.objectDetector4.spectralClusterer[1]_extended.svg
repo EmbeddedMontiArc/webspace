@@ -1,0 +1,431 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: spectralClusterer[1] -->
+<g transform="translate(33 20)">
+
+    <rect
+        id="287"
+        width="982"
+        height="344"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">SpectralClusterer</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="#cecece">
+            spectralClusterer[1]
+    </text>
+
+</g>
+
+</svg><!-- Component: similarity -->
+<g transform="translate(63 84)">
+    <rect
+        data-name="detection.objectDetector4.spectralClusterer[1].similarity"
+        id="289"
+        width="196"
+        height="260"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('detection.Similarity', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">Similarity</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+    <tspan font-size="10">similarity</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: normalizedLaplacian -->
+<g transform="translate(289 194)">
+    <rect
+        data-name="detection.objectDetector4.spectralClusterer[1].normalizedLaplacian"
+        id="290"
+        width="212"
+        height="150"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('detection.NormalizedLaplacian', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">NormalizedLaplacian</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+    <tspan font-size="10">normalizedLaplacian</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: eigenSolver -->
+<g transform="translate(531 194)">
+    <rect
+        data-name="detection.objectDetector4.spectralClusterer[1].eigenSolver"
+        id="291"
+        width="212"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('detection.EigenSolver', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">EigenSolver</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+    <tspan font-size="10">eigenSolver</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: kMeansClustering -->
+<g transform="translate(773 194)">
+    <rect
+        data-name="detection.objectDetector4.spectralClusterer[1].kMeansClustering"
+        id="292"
+        width="212"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('detection.KMeansClustering', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">KMeansClustering</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+    <tspan font-size="10">kMeansClustering</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="993"
+    y1="284"
+    x2="1007"
+    y2="284"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="284"
+    x2="55"
+    y2="284"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="324"
+    x2="55"
+    y2="324"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="174"
+    x2="55"
+    y2="174"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="267"
+    y1="284"
+    x2="281"
+    y2="284"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="267"
+    y1="324"
+    x2="281"
+    y2="324"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="509"
+    y1="284"
+    x2="523"
+    y2="284"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="751"
+    y1="284"
+    x2="765"
+    y2="284"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:#252525;stroke:#cecece;stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="977" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="974" y="286" transform="rotate(0,974,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+cluster
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="974" y="296" transform="rotate(0,974,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="1007" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="1027" y="286" transform="rotate(0,1027,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+cluster
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="1027" y="296" transform="rotate(0,1027,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="25" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="21" y="286" transform="rotate(0,21,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+img[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="21" y="296" transform="rotate(0,21,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="55" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="74" y="286" transform="rotate(0,74,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+red
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="74" y="296" transform="rotate(0,74,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="25" y="316" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="21" y="326" transform="rotate(0,21,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+img[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="21" y="336" transform="rotate(0,21,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="55" y="316" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="74" y="326" transform="rotate(0,74,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+green
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="74" y="336" transform="rotate(0,74,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="25" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="21" y="176" transform="rotate(0,21,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+img[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="21" y="186" transform="rotate(0,21,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="55" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="74" y="176" transform="rotate(0,74,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+blue
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="74" y="186" transform="rotate(0,74,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="251" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="248" y="286" transform="rotate(0,248,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+degree
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="248" y="296" transform="rotate(0,248,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+AssignmentType
+</text>
+
+<use x="281" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="300" y="286" transform="rotate(0,300,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+degree
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="300" y="296" transform="rotate(0,300,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+AssignmentType
+</text>
+
+<use x="251" y="316" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="248" y="326" transform="rotate(0,248,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+similarity
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="248" y="336" transform="rotate(0,248,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+AssignmentType
+</text>
+
+<use x="281" y="316" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="300" y="326" transform="rotate(0,300,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+similarity
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="300" y="336" transform="rotate(0,300,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="493" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="490" y="286" transform="rotate(0,490,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+nLaplacian
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="490" y="296" transform="rotate(0,490,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="523" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="542" y="286" transform="rotate(0,542,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+matrix
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="542" y="296" transform="rotate(0,542,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="735" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="732" y="286" transform="rotate(0,732,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+eigenvectors
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="732" y="296" transform="rotate(0,732,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="765" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="784" y="286" transform="rotate(0,784,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+vectors
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="784" y="296" transform="rotate(0,784,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+
+</svg>

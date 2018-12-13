@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>EmbeddedMontiArcMath: Visualization</title>
+	<style>
+	<!--
+		@import url("https://fonts.googleapis.com/css?family=Roboto");
+	
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+		}
+		
+		body {
+			background-color:#252525;
+			color:#cecece;
+		}
+		
+		#image-strip {
+			height:30%;
+			transform:translate(0, -50%);
+			top:50%;
+			width:100%;
+			position:fixed;
+			overflow:hidden;
+		}
+		
+		.model-container {
+			width:calc(100% / 4);
+			height:100%;
+			float:left;
+			background-color:#000;
+			cursor:pointer;
+		}
+		
+		.model-container:hover {
+			opacity:0.7;
+		}
+		
+		.model-thumbnail {
+			width:calc(100% / 4);
+			top:50%;
+			position:absolute;
+			transform:translate(0, -50%);
+		}
+		
+		.model-name {
+			font-family:"Roboto", sans-serif;
+			position:absolute;
+			top:50%;
+			transform:translate(0, -50%);
+			text-align:center;
+			display:block;
+			width:calc(100% / 4);
+			font-size:20px;
+			background-color:rgba(255,255,255,0.7);
+			color:#000;
+			font-weight:bold;
+			text-shadow:4px 4px 2px rgba(150, 150, 150, 1);
+			height:40px;
+			line-height:40px
+		}
+	-->
+	</style>
+</head>
+<body>
+	<div id="image-strip">
+		<a href="models/AutoPilot/index.html">
+			<div class="model-container">
+				<img class="model-thumbnail" src="images/AutoPilot.png"/>
+				<span class="model-name">AutoPilot</span>
+			</div>
+		</a>
+		<a href="models/PacMan/index.html">
+			<div class="model-container">
+				<img class="model-thumbnail" src="images/PacMan.png"/>
+				<span class="model-name">PacMan</span>
+			</div>
+		<a href="models/SuperMario/index.html">
+			<div class="model-container">
+				<img class="model-thumbnail" src="images/SuperMario.png"/>
+				<span class="model-name">SuperMario</span>
+			</div>
+		</a>
+		<a href="models/ObjectDetector/index.html">
+			<div class="model-container">
+				<img class="model-thumbnail" src="images/ObjectDetector.png"/>
+				<span class="model-name">ObjectDetector</span>
+			</div>
+		</a>
+	</div>
+</body>
+</html>

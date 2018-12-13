@@ -1,0 +1,148 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: obstacles[1] -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="1954"
+        width="131"
+        height="147"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">obstacles[1]</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: velocity -->
+<g transform="translate(46 52)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[1].velocity"
+        id="1956"
+        width="71"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.tools.GetVelocity', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">velocity</tspan>
+    </text>
+
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="125"
+    y1="87"
+    x2="139"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="125"
+    y1="127"
+    x2="139"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="38"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="127"
+    x2="38"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:#252525;stroke:#cecece;stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="109" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="106" y="89" transform="rotate(0,106,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="139" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="159" y="89" transform="rotate(0,159,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="109" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="106" y="129" transform="rotate(0,106,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="139" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="159" y="129" transform="rotate(0,159,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="38" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="57" y="89" transform="rotate(0,57,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="129" transform="rotate(0,4,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="38" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="57" y="129" transform="rotate(0,57,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+
+</svg>

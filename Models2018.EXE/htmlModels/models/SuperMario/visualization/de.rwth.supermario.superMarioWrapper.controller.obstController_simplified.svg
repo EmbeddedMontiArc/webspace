@@ -1,0 +1,1498 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: obstController -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="838"
+        width="713"
+        height="852"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">obstController</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: obstIndexes -->
+<g transform="translate(46 217)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstIndexes"
+        id="839"
+        width="100"
+        height="635"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.tools.GetIndexes', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstIndexes</tspan>
+    </text>
+
+</g><!-- Component: obstacleSelectors[1] -->
+<g transform="translate(241 162)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacleSelectors[1]"
+        id="840"
+        width="152"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.ObstacleSelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacleSelectors[1]</tspan>
+    </text>
+
+</g><!-- Component: obstacleSelectors[2] -->
+<g transform="translate(241 592)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacleSelectors[2]"
+        id="843"
+        width="152"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.ObstacleSelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacleSelectors[2]</tspan>
+    </text>
+
+</g><!-- Component: obstacleSelectors[3] -->
+<g transform="translate(241 742)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacleSelectors[3]"
+        id="844"
+        width="152"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.ObstacleSelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacleSelectors[3]</tspan>
+    </text>
+
+</g><!-- Component: obstacleSelectors[4] -->
+<g transform="translate(241 442)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacleSelectors[4]"
+        id="842"
+        width="152"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.ObstacleSelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacleSelectors[4]</tspan>
+    </text>
+
+</g><!-- Component: obstacleSelectors[5] -->
+<g transform="translate(241 327)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacleSelectors[5]"
+        id="841"
+        width="152"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.ObstacleSelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacleSelectors[5]</tspan>
+    </text>
+
+</g><!-- Component: obstacles[1] -->
+<g transform="translate(488 52)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[1]"
+        id="845"
+        width="101"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[1]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstacles[1].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacles[1]</tspan>
+    </text>
+
+</g><!-- Component: obstacles[2] -->
+<g transform="translate(488 687)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[2]"
+        id="848"
+        width="101"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[2]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstacles[2].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacles[2]</tspan>
+    </text>
+
+</g><!-- Component: obstacles[3] -->
+<g transform="translate(488 797)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[3]"
+        id="849"
+        width="101"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[3]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstacles[3].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacles[3]</tspan>
+    </text>
+
+</g><!-- Component: obstacles[4] -->
+<g transform="translate(488 537)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[4]"
+        id="847"
+        width="101"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[4]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstacles[4].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacles[4]</tspan>
+    </text>
+
+</g><!-- Component: obstacles[5] -->
+<g transform="translate(488 272)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[5]"
+        id="846"
+        width="101"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstacles[5]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstacles[5].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstacles[5]</tspan>
+    </text>
+
+</g><!-- Component: obstStrat -->
+<g transform="translate(619 107)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.obstController.obstStrat"
+        id="850"
+        width="80"
+        height="690"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.obstController.obstStrat_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/obstController/obstStrat.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">obstStrat</tspan>
+    </text>
+
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="699"
+    y1="197"
+    x2="729"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="252"
+    x2="241"
+    y2="252"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="627"
+    x2="241"
+    y2="627"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="832"
+    x2="241"
+    y2="832"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="477"
+    x2="241"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="402"
+    x2="241"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="216"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="197"
+    x2="216"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="197"
+    x2="241"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="181"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="197"
+    x2="181"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="667"
+    x2="216"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="667" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="667"
+    x2="216"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="667"
+    x2="241"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="181"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="197"
+    x2="181"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="777"
+    x2="216"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="777" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="777"
+    x2="216"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="777"
+    x2="241"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="181"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="197"
+    x2="181"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="517"
+    x2="216"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="517" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="517"
+    x2="216"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="517"
+    x2="241"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="171"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="171"
+    y1="197"
+    x2="181"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="197"
+    x2="181"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="181"
+    y1="362"
+    x2="216"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="181" cy="362" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="362"
+    x2="216"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="216"
+    y1="362"
+    x2="241"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="197"
+    x2="418"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="197"
+    x2="418"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="197"
+    x2="428"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="197"
+    x2="428"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="87"
+    x2="463"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="87"
+    x2="463"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="87"
+    x2="488"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="667"
+    x2="418"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="667"
+    x2="418"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="667"
+    x2="428"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="667"
+    x2="428"
+    y2="722"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="667" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="722"
+    x2="463"
+    y2="722"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="722" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="722"
+    x2="463"
+    y2="722"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="722"
+    x2="488"
+    y2="722"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="777"
+    x2="418"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="777"
+    x2="418"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="777"
+    x2="428"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="777"
+    x2="428"
+    y2="832"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="777" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="832"
+    x2="463"
+    y2="832"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="832" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="832"
+    x2="463"
+    y2="832"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="832"
+    x2="488"
+    y2="832"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="517"
+    x2="418"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="517"
+    x2="418"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="517"
+    x2="428"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="517"
+    x2="428"
+    y2="572"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="517" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="572"
+    x2="463"
+    y2="572"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="572" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="572"
+    x2="463"
+    y2="572"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="572"
+    x2="488"
+    y2="572"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="362"
+    x2="418"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="362"
+    x2="418"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="362"
+    x2="428"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="362"
+    x2="428"
+    y2="307"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="362" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="428"
+    y1="307"
+    x2="463"
+    y2="307"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="428" cy="307" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="307"
+    x2="463"
+    y2="307"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="463"
+    y1="307"
+    x2="488"
+    y2="307"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="197"
+    x2="418"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="197"
+    x2="418"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="197"
+    x2="589"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="418" cy="197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="197"
+    x2="589"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="197"
+    x2="619"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="667"
+    x2="418"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="667"
+    x2="418"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="667"
+    x2="589"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="418" cy="667" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="667"
+    x2="589"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="667"
+    x2="619"
+    y2="667"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="777"
+    x2="418"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="777"
+    x2="418"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="777"
+    x2="589"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="418" cy="777" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="777"
+    x2="589"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="777"
+    x2="619"
+    y2="777"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="517"
+    x2="418"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="517"
+    x2="418"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="517"
+    x2="589"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="418" cy="517" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="517"
+    x2="589"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="517"
+    x2="619"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="393"
+    y1="362"
+    x2="418"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="362"
+    x2="418"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="418"
+    y1="362"
+    x2="589"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="418" cy="362" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="362"
+    x2="589"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="589"
+    y1="362"
+    x2="619"
+    y2="362"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="619"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+
+</svg>

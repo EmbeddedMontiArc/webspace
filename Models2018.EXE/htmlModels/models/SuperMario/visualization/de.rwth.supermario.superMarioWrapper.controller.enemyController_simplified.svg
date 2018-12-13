@@ -1,0 +1,1546 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: enemyController -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="356"
+        width="724"
+        height="787"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">enemyController</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: enemyIndexes -->
+<g transform="translate(46 162)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemyIndexes"
+        id="357"
+        width="114"
+        height="625"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.tools.GetIndexes', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemyIndexes</tspan>
+    </text>
+
+</g><!-- Component: enemySelectors[1] -->
+<g transform="translate(255 107)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemySelectors[1]"
+        id="358"
+        width="141"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.EnemySelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemySelectors[1]</tspan>
+    </text>
+
+</g><!-- Component: enemySelectors[2] -->
+<g transform="translate(255 387)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemySelectors[2]"
+        id="360"
+        width="141"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.EnemySelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemySelectors[2]</tspan>
+    </text>
+
+</g><!-- Component: enemySelectors[3] -->
+<g transform="translate(255 237)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemySelectors[3]"
+        id="359"
+        width="141"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.EnemySelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemySelectors[3]</tspan>
+    </text>
+
+</g><!-- Component: enemySelectors[4] -->
+<g transform="translate(255 577)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemySelectors[4]"
+        id="361"
+        width="141"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.EnemySelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemySelectors[4]</tspan>
+    </text>
+
+</g><!-- Component: enemySelectors[5] -->
+<g transform="translate(255 692)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemySelectors[5]"
+        id="362"
+        width="141"
+        height="95"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.supermario.haller.environment.EnemySelector', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemySelectors[5]</tspan>
+    </text>
+
+</g><!-- Component: enemies[1] -->
+<g transform="translate(491 107)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[1]"
+        id="363"
+        width="94"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[1]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemies[1].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemies[1]</tspan>
+    </text>
+
+</g><!-- Component: enemies[2] -->
+<g transform="translate(491 442)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[2]"
+        id="365"
+        width="94"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[2]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemies[2].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemies[2]</tspan>
+    </text>
+
+</g><!-- Component: enemies[3] -->
+<g transform="translate(491 292)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[3]"
+        id="364"
+        width="94"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[3]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemies[3].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemies[3]</tspan>
+    </text>
+
+</g><!-- Component: enemies[4] -->
+<g transform="translate(491 577)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[4]"
+        id="366"
+        width="94"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[4]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemies[4].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemies[4]</tspan>
+    </text>
+
+</g><!-- Component: enemies[5] -->
+<g transform="translate(491 692)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[5]"
+        id="367"
+        width="94"
+        height="55"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemies[5]_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemies[5].ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemies[5]</tspan>
+    </text>
+
+</g><!-- Component: enemyStrat -->
+<g transform="translate(615 52)">
+    <rect
+        data-name="de.rwth.supermario.superMarioWrapper.controller.enemyController.enemyStrat"
+        id="368"
+        width="95"
+        height="735"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.supermario.superMarioWrapper.controller.enemyController.enemyStrat_simplified.html','_parent',false);parent.openFileInEditor('/rwth/supermario/superMarioWrapper/controller/enemyController/enemyStrat.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemyStrat</tspan>
+    </text>
+
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="710"
+    y1="142"
+    x2="740"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="160"
+    y1="197"
+    x2="255"
+    y2="197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="160"
+    y1="422"
+    x2="255"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="160"
+    y1="272"
+    x2="255"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="160"
+    y1="652"
+    x2="255"
+    y2="652"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="160"
+    y1="767"
+    x2="255"
+    y2="767"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="230"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="142"
+    x2="230"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="142"
+    x2="255"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="195"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="142"
+    x2="195"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="477"
+    x2="230"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="477" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="477"
+    x2="230"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="477"
+    x2="255"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="195"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="142"
+    x2="195"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="327"
+    x2="230"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="327" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="327"
+    x2="230"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="327"
+    x2="255"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="195"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="142"
+    x2="195"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="612"
+    x2="230"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="612" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="612"
+    x2="230"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="612"
+    x2="255"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="185"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="185"
+    y1="142"
+    x2="195"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="142"
+    x2="195"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="195"
+    y1="727"
+    x2="230"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="195" cy="727" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="727"
+    x2="230"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="727"
+    x2="255"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="142"
+    x2="421"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="142"
+    x2="421"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="142"
+    x2="466"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="421" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="142"
+    x2="466"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="142"
+    x2="491"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="477"
+    x2="421"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="477"
+    x2="421"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="477"
+    x2="466"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="421" cy="477" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="477"
+    x2="466"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="477"
+    x2="491"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="327"
+    x2="421"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="327"
+    x2="421"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="327"
+    x2="466"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="421" cy="327" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="327"
+    x2="466"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="327"
+    x2="491"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="612"
+    x2="421"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="612"
+    x2="421"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="612"
+    x2="466"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="421" cy="612" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="612"
+    x2="466"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="612"
+    x2="491"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="727"
+    x2="421"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="727"
+    x2="421"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="727"
+    x2="466"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="421" cy="727" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="727"
+    x2="466"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="727"
+    x2="491"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="142"
+    x2="421"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="142"
+    x2="421"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="142"
+    x2="431"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="142"
+    x2="431"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="87"
+    x2="585"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="87"
+    x2="585"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="87"
+    x2="615"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="477"
+    x2="421"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="477"
+    x2="421"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="477"
+    x2="431"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="477"
+    x2="431"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="477" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="517"
+    x2="585"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="517" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="517"
+    x2="585"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="517"
+    x2="615"
+    y2="517"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="327"
+    x2="421"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="327"
+    x2="421"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="327"
+    x2="431"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="327"
+    x2="431"
+    y2="367"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="327" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="367"
+    x2="585"
+    y2="367"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="367" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="367"
+    x2="585"
+    y2="367"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="367"
+    x2="615"
+    y2="367"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="612"
+    x2="421"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="612"
+    x2="421"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="612"
+    x2="431"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="612"
+    x2="431"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="612" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="557"
+    x2="585"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="557" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="557"
+    x2="585"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="557"
+    x2="615"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="396"
+    y1="727"
+    x2="421"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="727"
+    x2="421"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="421"
+    y1="727"
+    x2="431"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="727"
+    x2="431"
+    y2="767"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="727" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="431"
+    y1="767"
+    x2="585"
+    y2="767"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="431" cy="767" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="767"
+    x2="585"
+    y2="767"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="767"
+    x2="615"
+    y2="767"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="142"
+    x2="615"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="477"
+    x2="615"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="327"
+    x2="615"
+    y2="327"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="612"
+    x2="615"
+    y2="612"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="585"
+    y1="727"
+    x2="615"
+    y2="727"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+
+</svg>

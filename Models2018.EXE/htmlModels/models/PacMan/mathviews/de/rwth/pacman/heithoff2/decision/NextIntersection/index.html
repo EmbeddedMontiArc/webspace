@@ -1,0 +1,440 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>NextIntersection</title>
+        <style type="text/css">
+        <!--
+            @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            body {
+                background-color:#252525;
+                color:#cecece;
+            }
+
+            div {
+                font-family:"Roboto", sans-serif;
+            }
+
+            @media screen {
+                div {
+                    font-size:14px;
+                }
+            }
+
+            @media handheld {
+                div {
+                    font-size:1.8vw;
+                }
+            }
+
+            .keyword {
+                color:#569cd6;
+            }
+
+            .comment {
+                color:#608b4e !important;
+            }
+
+            pre {
+                margin:0;
+                white-space:pre-wrap;
+            }
+
+            td.line-number {
+                user-select:none;
+                text-align:right;
+                padding-right:10px;
+                -moz-user-select:none;
+                -webkit-user-select:none;
+                color:#5a5a5a;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            .scene {
+                width:100%;
+            }
+
+            .card {
+                width:100%;
+                height:100%;
+                position:relative;
+                transition:transform 1s;
+                transform-style:preserve-3d;
+            }
+
+            .card-face {
+                position:absolute;
+                height:100%;
+                width:100%;
+                backface-visibility:hidden;
+                -webkit-backface-visibility:hidden;
+                margin-top:35px;
+            }
+
+            .card-face-front {
+                transform:rotateY(0deg);
+            }
+
+            .card-face-back {
+                transform:rotateY(180deg);
+            }
+
+            .card.flipped {
+                transform:rotateY(180deg);
+            }
+
+            .buttons {
+                position:fixed;
+                top:0;
+                right:0;
+                z-index:2;
+            }
+
+            input {
+                -webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;
+                width:35px;
+                height:35px;
+                background-color:#cecece;
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-position:center;
+                cursor:pointer;
+            }
+
+            input:checked {
+                background-color:#569cd6 !important;
+            }
+
+            input.code {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' standalone='no'?%3e%3c!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3e%3csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='1280.000000pt' height='791.000000pt' viewBox='0 0 1280.000000 791.000000' preserveAspectRatio='xMidYMid meet'%3e%3cmetadata%3e Created by potrace 1.15, written by Peter Selinger 2001-2017 %3c/metadata%3e%3cg transform='translate(0.000000,791.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3e%3cpath d='M6881 7884 c-83 -22 -150 -62 -222 -134 -105 -104 -113 -127 -218 -635 -49 -242 -155 -757 -235 -1145 -80 -388 -210 -1022 -290 -1410 -80 -388 -179 -869 -220 -1070 -69 -336 -190 -924 -476 -2315 -60 -291 -114 -560 -120 -597 -25 -160 46 -347 172 -450 227 -186 554 -150 729 82 77 101 57 23 279 1103 60 295 160 778 220 1072 61 294 160 776 220 1070 61 294 160 776 220 1070 61 294 160 776 220 1070 148 717 327 1593 345 1682 39 189 -6 345 -134 474 -71 72 -138 111 -228 134 -71 19 -191 18 -262 -1z'/%3e%3cpath d='M3050 7100 c-64 -11 -139 -42 -191 -77 -24 -17 -657 -642 -1405 -1389 -1482 -1479 -1403 -1394 -1439 -1545 -19 -82 -19 -159 0 -234 38 -146 -41 -61 1429 -1534 894 -896 1381 -1377 1421 -1402 92 -61 176 -83 298 -76 118 6 184 29 276 95 161 118 240 345 185 533 -42 142 6 90 -1241 1339 l-1163 1165 1155 1155 c636 635 1169 1175 1185 1199 67 100 97 260 71 380 -56 261 -317 436 -581 391z'/%3e%3cpath d='M9554 7096 c-189 -43 -345 -200 -385 -387 -26 -120 4 -280 71 -380 16 -24 549 -564 1185 -1199 l1155 -1155 -1163 -1165 c-1247 -1249 -1199 -1197 -1241 -1339 -55 -188 24 -415 185 -533 92 -66 158 -89 276 -95 122 -7 206 15 298 76 40 25 527 506 1421 1402 1470 1473 1391 1388 1429 1534 19 75 19 152 0 234 -36 151 43 66 -1439 1545 -748 747 -1383 1374 -1411 1392 -104 69 -259 98 -381 70z'/%3e%3c/g%3e%3c/svg%3e ");
+            }
+
+            input.latex {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='568.88px' width='588.42px'%3e%3cpath style='fill:black; stroke:none' d='M 10.499686,177.03840 L 31.174931,178.56990 C 52.615925,154.32116 61.039171,82.595924 187.38789,96.634671 C 182.79339,403.95560 48.021426,436.37234 56.444675,499.41907 C 59.507674,535.15406 87.840417,557.10556 118.47041,558.38181 C 215.21014,555.06356 210.87089,424.63084 240.99038,95.868921 L 365.80760,95.868921 C 359.17110,211.75239 341.04836,327.63586 339.00636,441.22208 C 340.53786,516.77606 386.48285,557.10556 446.97708,557.61606 C 546.52456,560.93431 577.92030,444.79558 577.92030,395.27709 L 556.47931,395.27710 C 554.43731,436.11709 534.78306,465.47083 492.92207,467.25758 C 378.82535,468.78908 441.61683,266.63113 442.38258,97.400421 L 577.92030,98.166171 L 577.15455,11.636437 C 13.807491,8.9075799 85.312284,-2.1366151 10.499686,177.03840 z' /%3e%3c/svg%3e ");
+            }
+
+            tr.marked {
+                transition-duration:2s;
+                background-color:#FFA500;
+                color:#000;
+            }
+        -->
+        </style>
+        <noscript>
+            <style>
+            <!--
+                .card-face {
+                    backface-visibility:initial;
+                    position:initial;
+                    margin-top:30px;
+                }
+
+                .card-face-back {
+                    transform:initial;
+                }
+
+                .buttons {
+                    display:none;
+                }
+            -->
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <div class="buttons">
+            <form autocomplete="off">
+                <input type="radio" name="View" class="code" title="Code" checked/>
+                <input type="radio" name="View" class="latex" title="LaTeX"/>
+            </form>
+        </div>
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-face-front">
+                    <table>
+                        <tr>
+                            <td class="line-number">1</td>
+                            <td><pre>Z pacX = round(pacManX);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">2</td>
+                            <td><pre>Z pacY = round(pacManY);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">3</td>
+                            <td><pre>interSectionReached = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">4</td>
+                            <td><pre><span class="keyword">if</span> (abs(pacManX - pacX) < 0.01) && (abs(pacManY - pacY) < 0.01)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">5</td>
+                            <td><pre>    pacX = pacX + 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">6</td>
+                            <td><pre>    pacY = pacY + 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">7</td>
+                            <td><pre>    Z^{1, 4} xOffSet = [0, 0, -1, 1];</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">8</td>
+                            <td><pre>    Z^{1, 4} yOffSet = [1, -1, 0, 0];</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">9</td>
+                            <td><pre>    Z newPathsFound = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">10</td>
+                            <td><pre>    <span class="keyword">for</span> i = 0:3</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">11</td>
+                            <td><pre>        Z indexY = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">12</td>
+                            <td><pre>        Z indexX = i;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">13</td>
+                            <td><pre>        Z xOff = xOffSet(indexY, indexX);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">14</td>
+                            <td><pre>        Z yOff = yOffSet(indexY, indexX);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">15</td>
+                            <td><pre>        Q xT = pacX + xOff;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">16</td>
+                            <td><pre>        Q yT = pacY + yOff;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">17</td>
+                            <td><pre>        Z nextTile = map(yT, xT);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">18</td>
+                            <td><pre>        <span class="keyword">if</span> (nextTile == 0) || (nextTile == 3)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">19</td>
+                            <td><pre>            newPathsFound = newPathsFound;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">20</td>
+                            <td><pre>        <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">21</td>
+                            <td><pre>            newPathsFound = newPathsFound + 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">22</td>
+                            <td><pre>            <span class="keyword">if</span> newPathsFound > 2</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">23</td>
+                            <td><pre>                interSectionReached = 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">24</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">25</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">26</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">27</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-face card-face-back">
+                    <table>
+                        <tr>
+                            <td class="line-number">1</td>
+                            <td><pre><img src="654058728.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">2</td>
+                            <td><pre><img src="400245704.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">3</td>
+                            <td><pre><img src="1623826530.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">4</td>
+                            <td><pre><span class="keyword">if</span> <img src="555648283.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">5</td>
+                            <td><pre>    <img src="-1291558702.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">6</td>
+                            <td><pre>    <img src="-1586804656.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">7</td>
+                            <td><pre>    <img src="-101610252.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">8</td>
+                            <td><pre>    <img src="2032138475.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">9</td>
+                            <td><pre>    <img src="-72329520.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">10</td>
+                            <td><pre>    <span class="keyword">for</span> <img src="-1919690917.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">11</td>
+                            <td><pre>        <img src="2036428711.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">12</td>
+                            <td><pre>        <img src="-105350932.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">13</td>
+                            <td><pre>        <img src="-2091692632.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">14</td>
+                            <td><pre>        <img src="339468390.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">15</td>
+                            <td><pre>        <img src="1163722301.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">16</td>
+                            <td><pre>        <img src="-1129523298.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">17</td>
+                            <td><pre>        <img src="-2030205013.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">18</td>
+                            <td><pre>        <span class="keyword">if</span> <img src="560284794.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">19</td>
+                            <td><pre>            <img src="-209869774.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">20</td>
+                            <td><pre>        <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">21</td>
+                            <td><pre>            <img src="-895896306.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">22</td>
+                            <td><pre>            <span class="keyword">if</span> <img src="-453407329.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">23</td>
+                            <td><pre>                <img src="2039786531.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">24</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">25</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">26</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">27</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var radios = document.querySelectorAll("input[name='View']");
+        var card = document.querySelector(".card");
+        var front = document.querySelectorAll(".card-face-front tr");
+        var back = document.querySelectorAll(".card-face-back tr");
+
+        function clickButton(index) {
+            radios[index].click();
+        }
+
+        function selectRange(start, end) {
+            for(var i = start - 1; i < (end || start); i++) {
+                front[i].classList.add("marked");
+                back[i].classList.add("marked");
+            }
+        }
+
+        function scroll(index, start) {
+            start = start - 1;
+
+            window.scrollTo(0, index === 0 ? front[start].offsetTop : back[start].offsetTop);
+        }
+
+        function onChange(event) {
+            card.classList.toggle("flipped");
+        }
+
+        function onHashChange() {
+            window.setTimeout(function() {
+                var hash = window.location.hash;
+                var parts = hash.substring(1).split(':');
+
+                var index = parts[0];
+                var start = parts[1];
+                var end = parts[2];
+
+                if(index) {
+                    clickButton(index);
+
+                    if(start) {
+                        scroll(index, start);
+                        selectRange(start, end);
+                    }
+                }
+            }, 0);
+        }
+
+        radios.forEach(function(element) { element.addEventListener("change", onChange) });
+        onHashChange();
+        window.addEventListener("hashchange", onHashChange);
+    </script>
+</html>

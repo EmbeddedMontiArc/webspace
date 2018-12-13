@@ -1,0 +1,1056 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>FollowTrajectory</title>
+        <style type="text/css">
+        <!--
+            @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+            html, body {
+                margin:0;
+                padding:0;
+            }
+
+            body {
+                background-color:#252525;
+                color:#cecece;
+            }
+
+            div {
+                font-family:"Roboto", sans-serif;
+            }
+
+            @media screen {
+                div {
+                    font-size:14px;
+                }
+            }
+
+            @media handheld {
+                div {
+                    font-size:1.8vw;
+                }
+            }
+
+            .keyword {
+                color:#569cd6;
+            }
+
+            .comment {
+                color:#608b4e !important;
+            }
+
+            pre {
+                margin:0;
+                white-space:pre-wrap;
+            }
+
+            td.line-number {
+                user-select:none;
+                text-align:right;
+                padding-right:10px;
+                -moz-user-select:none;
+                -webkit-user-select:none;
+                color:#5a5a5a;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            .scene {
+                width:100%;
+            }
+
+            .card {
+                width:100%;
+                height:100%;
+                position:relative;
+                transition:transform 1s;
+                transform-style:preserve-3d;
+            }
+
+            .card-face {
+                position:absolute;
+                height:100%;
+                width:100%;
+                backface-visibility:hidden;
+                -webkit-backface-visibility:hidden;
+                margin-top:35px;
+            }
+
+            .card-face-front {
+                transform:rotateY(0deg);
+            }
+
+            .card-face-back {
+                transform:rotateY(180deg);
+            }
+
+            .card.flipped {
+                transform:rotateY(180deg);
+            }
+
+            .buttons {
+                position:fixed;
+                top:0;
+                right:0;
+                z-index:2;
+            }
+
+            input {
+                -webkit-appearance:none;
+                -moz-appearance:none;
+                appearance:none;
+                width:35px;
+                height:35px;
+                background-color:#cecece;
+                background-size:contain;
+                background-repeat:no-repeat;
+                background-position:center;
+                cursor:pointer;
+            }
+
+            input:checked {
+                background-color:#569cd6 !important;
+            }
+
+            input.code {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' standalone='no'?%3e%3c!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3e%3csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='1280.000000pt' height='791.000000pt' viewBox='0 0 1280.000000 791.000000' preserveAspectRatio='xMidYMid meet'%3e%3cmetadata%3e Created by potrace 1.15, written by Peter Selinger 2001-2017 %3c/metadata%3e%3cg transform='translate(0.000000,791.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3e%3cpath d='M6881 7884 c-83 -22 -150 -62 -222 -134 -105 -104 -113 -127 -218 -635 -49 -242 -155 -757 -235 -1145 -80 -388 -210 -1022 -290 -1410 -80 -388 -179 -869 -220 -1070 -69 -336 -190 -924 -476 -2315 -60 -291 -114 -560 -120 -597 -25 -160 46 -347 172 -450 227 -186 554 -150 729 82 77 101 57 23 279 1103 60 295 160 778 220 1072 61 294 160 776 220 1070 61 294 160 776 220 1070 61 294 160 776 220 1070 148 717 327 1593 345 1682 39 189 -6 345 -134 474 -71 72 -138 111 -228 134 -71 19 -191 18 -262 -1z'/%3e%3cpath d='M3050 7100 c-64 -11 -139 -42 -191 -77 -24 -17 -657 -642 -1405 -1389 -1482 -1479 -1403 -1394 -1439 -1545 -19 -82 -19 -159 0 -234 38 -146 -41 -61 1429 -1534 894 -896 1381 -1377 1421 -1402 92 -61 176 -83 298 -76 118 6 184 29 276 95 161 118 240 345 185 533 -42 142 6 90 -1241 1339 l-1163 1165 1155 1155 c636 635 1169 1175 1185 1199 67 100 97 260 71 380 -56 261 -317 436 -581 391z'/%3e%3cpath d='M9554 7096 c-189 -43 -345 -200 -385 -387 -26 -120 4 -280 71 -380 16 -24 549 -564 1185 -1199 l1155 -1155 -1163 -1165 c-1247 -1249 -1199 -1197 -1241 -1339 -55 -188 24 -415 185 -533 92 -66 158 -89 276 -95 122 -7 206 15 298 76 40 25 527 506 1421 1402 1470 1473 1391 1388 1429 1534 19 75 19 152 0 234 -36 151 43 66 -1439 1545 -748 747 -1383 1374 -1411 1392 -104 69 -259 98 -381 70z'/%3e%3c/g%3e%3c/svg%3e ");
+            }
+
+            input.latex {
+                background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='UTF-8' standalone='no'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' height='568.88px' width='588.42px'%3e%3cpath style='fill:black; stroke:none' d='M 10.499686,177.03840 L 31.174931,178.56990 C 52.615925,154.32116 61.039171,82.595924 187.38789,96.634671 C 182.79339,403.95560 48.021426,436.37234 56.444675,499.41907 C 59.507674,535.15406 87.840417,557.10556 118.47041,558.38181 C 215.21014,555.06356 210.87089,424.63084 240.99038,95.868921 L 365.80760,95.868921 C 359.17110,211.75239 341.04836,327.63586 339.00636,441.22208 C 340.53786,516.77606 386.48285,557.10556 446.97708,557.61606 C 546.52456,560.93431 577.92030,444.79558 577.92030,395.27709 L 556.47931,395.27710 C 554.43731,436.11709 534.78306,465.47083 492.92207,467.25758 C 378.82535,468.78908 441.61683,266.63113 442.38258,97.400421 L 577.92030,98.166171 L 577.15455,11.636437 C 13.807491,8.9075799 85.312284,-2.1366151 10.499686,177.03840 z' /%3e%3c/svg%3e ");
+            }
+
+            tr.marked {
+                transition-duration:2s;
+                background-color:#FFA500;
+                color:#000;
+            }
+        -->
+        </style>
+        <noscript>
+            <style>
+            <!--
+                .card-face {
+                    backface-visibility:initial;
+                    position:initial;
+                    margin-top:30px;
+                }
+
+                .card-face-back {
+                    transform:initial;
+                }
+
+                .buttons {
+                    display:none;
+                }
+            -->
+            </style>
+        </noscript>
+    </head>
+    <body>
+        <div class="buttons">
+            <form autocomplete="off">
+                <input type="radio" name="View" class="code" title="Code" checked/>
+                <input type="radio" name="View" class="latex" title="LaTeX"/>
+            </form>
+        </div>
+        <div class="scene">
+            <div class="card">
+                <div class="card-face card-face-front">
+                    <table>
+                        <tr>
+                            <td class="line-number">1</td>
+                            <td><pre>Q BEZIER_COEF = 0.1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">2</td>
+                            <td><pre>Q TURN_ANGLE_THRESHOLD = 10.0 * M_PI / 180.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">3</td>
+                            <td><pre>Q EPSILON = 1.0E-5;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">4</td>
+                            <td><pre>Q REACHED_POSITION_THRESHOLD = 5.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">5</td>
+                            <td><pre>desiredDirectionX = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">6</td>
+                            <td><pre>desiredDirectionY = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">7</td>
+                            <td><pre>signedDistanceToTrajectory = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">8</td>
+                            <td><pre>minVelocity = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">9</td>
+                            <td><pre>maxVelocity = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">10</td>
+                            <td><pre>distance = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">11</td>
+                            <td><pre><span class="keyword">if</span> (isDriveToFirstPosition)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">12</td>
+                            <td><pre>    Q doNothing;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">13</td>
+                            <td><pre><span class="keyword">elseif</span> (trimmedTrajectoryLength >= 2)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">14</td>
+                            <td><pre>    maxVelocity = 17.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">15</td>
+                            <td><pre>    Q p1x = trimmedTrajectoryX(1, 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">16</td>
+                            <td><pre>    Q p1y = trimmedTrajectoryY(1, 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">17</td>
+                            <td><pre>    Q p2x = trimmedTrajectoryX(1, 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">18</td>
+                            <td><pre>    Q p2y = trimmedTrajectoryY(1, 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">19</td>
+                            <td><pre>    Q v12x = p2x - p1x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">20</td>
+                            <td><pre>    Q v12y = p2y - p1y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">21</td>
+                            <td><pre>    Q v12_sqr_norm = v12x * v12x + v12y * v12y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">22</td>
+                            <td><pre>    Q v12_norm = sqrt(v12_sqr_norm);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">23</td>
+                            <td><pre>    <span class="keyword">if</span> (v12_norm > EPSILON)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">24</td>
+                            <td><pre>        signedDistanceToTrajectory = -(v12y * currentPositionX - v12x * currentPositionY + p2x * p1y - p1x * p2y) / v12_norm;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">25</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">26</td>
+                            <td><pre>    Q nextX = currentPositionX;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">27</td>
+                            <td><pre>    Q nextY = currentPositionY;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">28</td>
+                            <td><pre>    <span class="keyword">if</span> (trimmedTrajectoryLength >= 3)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">29</td>
+                            <td><pre>        Q interp_p1x = trimmedTrajectoryX(1, 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">30</td>
+                            <td><pre>        Q interp_p1y = trimmedTrajectoryY(1, 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">31</td>
+                            <td><pre>        Q interp_p2x = trimmedTrajectoryX(1, 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">32</td>
+                            <td><pre>        Q interp_p2y = trimmedTrajectoryY(1, 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">33</td>
+                            <td><pre>        Q interp_p3x = trimmedTrajectoryX(1, 3);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">34</td>
+                            <td><pre>        Q interp_p3y = trimmedTrajectoryY(1, 3);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">35</td>
+                            <td><pre>        Q t = BEZIER_COEF;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">36</td>
+                            <td><pre>        Q a = 1.0 - t;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">37</td>
+                            <td><pre>        Q b = t;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">38</td>
+                            <td><pre>        Q k1 = a * a;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">39</td>
+                            <td><pre>        Q k2 = 2 * a * b;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">40</td>
+                            <td><pre>        Q k3 = b * b;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">41</td>
+                            <td><pre>        nextX = k1 * interp_p1x + k2 * interp_p2x + k3 * interp_p3x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">42</td>
+                            <td><pre>        nextY = k1 * interp_p1y + k2 * interp_p2y + k3 * interp_p3y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">43</td>
+                            <td><pre>        Q dist_to_next_sqr = (nextX - currentPositionX) * (nextX - currentPositionX) + (nextY - currentPositionY) * (nextY - currentPositionY);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">44</td>
+                            <td><pre>        Q dist_to_next = sqrt(dist_to_next_sqr);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">45</td>
+                            <td><pre>        <span class="keyword">if</span> (dist_to_next <= REACHED_POSITION_THRESHOLD)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">46</td>
+                            <td><pre>            Q is_go_on_1 = 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">47</td>
+                            <td><pre>            <span class="keyword">for</span> j = 2:trimmedTrajectoryLength</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">48</td>
+                            <td><pre>                <span class="keyword">if</span> (is_go_on_1)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">49</td>
+                            <td><pre>                    Q point_x = trimmedTrajectoryX(1, j);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">50</td>
+                            <td><pre>                    Q point_y = trimmedTrajectoryY(1, j);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">51</td>
+                            <td><pre>                    Q dist_to_point_sqr = (point_x - currentPositionX) * (point_x - currentPositionX) + (point_y - currentPositionY) * (point_y - currentPositionY);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">52</td>
+                            <td><pre>                    Q dist_to_point = sqrt(dist_to_point_sqr);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">53</td>
+                            <td><pre>                    <span class="keyword">if</span> (dist_to_point > REACHED_POSITION_THRESHOLD)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">54</td>
+                            <td><pre>                        nextX = point_x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">55</td>
+                            <td><pre>                        nextY = point_y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">56</td>
+                            <td><pre>                        is_go_on_1 = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">57</td>
+                            <td><pre>                    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">58</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">59</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">60</td>
+                            <td><pre>            <span class="keyword">if</span> (is_go_on_1)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">61</td>
+                            <td><pre>                nextX = trimmedTrajectoryX(1, trimmedTrajectoryLength);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">62</td>
+                            <td><pre>                nextY = trimmedTrajectoryY(1, trimmedTrajectoryLength);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">63</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">64</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">65</td>
+                            <td><pre>    <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">66</td>
+                            <td><pre>        nextX = p2x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">67</td>
+                            <td><pre>        nextY = p2y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">68</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">69</td>
+                            <td><pre>    desiredDirectionX = nextX - currentPositionX;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">70</td>
+                            <td><pre>    desiredDirectionY = nextY - currentPositionY;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">71</td>
+                            <td><pre>    Q dist = sqrt((p2x - p1x) * (p2x - p1x) + (p2y - p1y) * (p2y - p1y));</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">72</td>
+                            <td><pre>    <span class="keyword">if</span> (trimmedTrajectoryLength >= 3)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">73</td>
+                            <td><pre>        minVelocity = 3.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">74</td>
+                            <td><pre>        Q is_go_on_2 = 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">75</td>
+                            <td><pre>        Q lastIndex = trimmedTrajectoryLength - 2;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">76</td>
+                            <td><pre>        <span class="keyword">for</span> i = 1:lastIndex</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">77</td>
+                            <td><pre>            <span class="keyword">if</span> (is_go_on_2)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">78</td>
+                            <td><pre>                Q pt1x = trimmedTrajectoryX(1, i);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">79</td>
+                            <td><pre>                Q pt1y = trimmedTrajectoryY(1, i);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">80</td>
+                            <td><pre>                Q pt2x = trimmedTrajectoryX(1, i + 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">81</td>
+                            <td><pre>                Q pt2y = trimmedTrajectoryY(1, i + 1);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">82</td>
+                            <td><pre>                Q pt3x = trimmedTrajectoryX(1, i + 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">83</td>
+                            <td><pre>                Q pt3y = trimmedTrajectoryY(1, i + 2);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">84</td>
+                            <td><pre>                Q vect1x = pt2x - pt1x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">85</td>
+                            <td><pre>                Q vect1y = pt2y - pt1y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">86</td>
+                            <td><pre>                Q vect2x = pt3x - pt2x;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">87</td>
+                            <td><pre>                Q vect2y = pt3y - pt2y;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">88</td>
+                            <td><pre>                Q alpha = 0.0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">89</td>
+                            <td><pre>                Q vect1_norm = sqrt(vect1x * vect1x + vect1y * vect1y);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">90</td>
+                            <td><pre>                Q vect2_norm = sqrt(vect2x * vect2x + vect2y * vect2y);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">91</td>
+                            <td><pre>                <span class="keyword">if</span> ((vect1_norm > EPSILON) && (vect2_norm > EPSILON))</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">92</td>
+                            <td><pre>                    Q cos_alpha = (vect1x * vect2x + vect1y * vect2y) / vect1_norm / vect2_norm;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">93</td>
+                            <td><pre>                    alpha = acos(cos_alpha);</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">94</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">95</td>
+                            <td><pre>                <span class="keyword">if</span> (alpha > TURN_ANGLE_THRESHOLD)</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">96</td>
+                            <td><pre>                    is_go_on_2 = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">97</td>
+                            <td><pre>                <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">98</td>
+                            <td><pre>                    dist += vect2_norm;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">99</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">100</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">101</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">102</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">103</td>
+                            <td><pre>    distance = dist;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">104</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-face card-face-back">
+                    <table>
+                        <tr>
+                            <td class="line-number">1</td>
+                            <td><pre><img src="-487922845.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">2</td>
+                            <td><pre><img src="355427632.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">3</td>
+                            <td><pre><img src="-676960635.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">4</td>
+                            <td><pre><img src="107680938.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">5</td>
+                            <td><pre><img src="-2131080102.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">6</td>
+                            <td><pre><img src="1967373689.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">7</td>
+                            <td><pre><img src="1965711414.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">8</td>
+                            <td><pre><img src="-1138794754.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">9</td>
+                            <td><pre><img src="-58776020.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">10</td>
+                            <td><pre><img src="1309274676.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">11</td>
+                            <td><pre><span class="keyword">if</span> <img src="-157999223.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">12</td>
+                            <td><pre>    <img src="-702405969.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">13</td>
+                            <td><pre><span class="keyword">elseif</span> <img src="-179635257.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">14</td>
+                            <td><pre>    <img src="-1785184404.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">15</td>
+                            <td><pre>    <img src="469600834.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">16</td>
+                            <td><pre>    <img src="-1737016512.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">17</td>
+                            <td><pre>    <img src="-1714046302.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">18</td>
+                            <td><pre>    <img src="374303648.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">19</td>
+                            <td><pre>    <img src="-779815418.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">20</td>
+                            <td><pre>    <img src="584840197.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">21</td>
+                            <td><pre>    <img src="-1924679333.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">22</td>
+                            <td><pre>    <img src="1945718214.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">23</td>
+                            <td><pre>    <span class="keyword">if</span> <img src="-1440549434.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">24</td>
+                            <td><pre>        <img src="1884576719.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">25</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">26</td>
+                            <td><pre>    <img src="-1705269075.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">27</td>
+                            <td><pre>    <img src="-1693923157.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">28</td>
+                            <td><pre>    <span class="keyword">if</span> <img src="-1987089720.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">29</td>
+                            <td><pre>        <img src="-1716437339.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">30</td>
+                            <td><pre>        <img src="371912611.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">31</td>
+                            <td><pre>        <img src="394882821.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">32</td>
+                            <td><pre>        <img src="-1811734525.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">33</td>
+                            <td><pre>        <img src="-1788764315.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">34</td>
+                            <td><pre>        <img src="299585635.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">35</td>
+                            <td><pre>        <img src="774298199.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">36</td>
+                            <td><pre>        <img src="-1725204483.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">37</td>
+                            <td><pre>        <img src="-2010856098.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">38</td>
+                            <td><pre>        <img src="-1736178995.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">39</td>
+                            <td><pre>        <img src="-961622625.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">40</td>
+                            <td><pre>        <img src="1736978475.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">41</td>
+                            <td><pre>        <img src="131602238.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">42</td>
+                            <td><pre>        <img src="-1357261894.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">43</td>
+                            <td><pre>        <img src="205255509.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">44</td>
+                            <td><pre>        <img src="621994000.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">45</td>
+                            <td><pre>        <span class="keyword">if</span> <img src="-787897916.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">46</td>
+                            <td><pre>            <img src="776287667.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">47</td>
+                            <td><pre>            <span class="keyword">for</span> <img src="-213981615.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">48</td>
+                            <td><pre>                <span class="keyword">if</span> <img src="686199444.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">49</td>
+                            <td><pre>                    <img src="724003818.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">50</td>
+                            <td><pre>                    <img src="1154629932.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">51</td>
+                            <td><pre>                    <img src="-1627187834.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">52</td>
+                            <td><pre>                    <img src="-468827470.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">53</td>
+                            <td><pre>                    <span class="keyword">if</span> <img src="377243095.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">54</td>
+                            <td><pre>                        <img src="-633303730.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">55</td>
+                            <td><pre>                        <img src="-421923026.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">56</td>
+                            <td><pre>                        <img src="695993268.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">57</td>
+                            <td><pre>                    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">58</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">59</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">60</td>
+                            <td><pre>            <span class="keyword">if</span> <img src="686199444.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">61</td>
+                            <td><pre>                <img src="-380303851.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">62</td>
+                            <td><pre>                <img src="1825283543.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">63</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">64</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">65</td>
+                            <td><pre>    <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">66</td>
+                            <td><pre>        <img src="1893190209.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">67</td>
+                            <td><pre>        <img src="-1048437599.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">68</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">69</td>
+                            <td><pre>    <img src="1903506626.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">70</td>
+                            <td><pre>    <img src="214112065.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">71</td>
+                            <td><pre>    <img src="-424706983.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">72</td>
+                            <td><pre>    <span class="keyword">if</span> <img src="1909879496.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">73</td>
+                            <td><pre>        <img src="1158589825.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">74</td>
+                            <td><pre>        <img src="1720343186.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">75</td>
+                            <td><pre>        <img src="1378118964.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">76</td>
+                            <td><pre>        <span class="keyword">for</span> <img src="1094567636.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">77</td>
+                            <td><pre>            <span class="keyword">if</span> <img src="-309068877.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">78</td>
+                            <td><pre>                <img src="-92709005.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">79</td>
+                            <td><pre>                <img src="337917109.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">80</td>
+                            <td><pre>                <img src="601498742.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">81</td>
+                            <td><pre>                <img src="364153016.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">82</td>
+                            <td><pre>                <img src="-423165388.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">83</td>
+                            <td><pre>                <img src="-660511114.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">84</td>
+                            <td><pre>                <img src="-1288556196.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">85</td>
+                            <td><pre>                <img src="-735303.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">86</td>
+                            <td><pre>                <img src="-20814177.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">87</td>
+                            <td><pre>                <img src="1267006716.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">88</td>
+                            <td><pre>                <img src="-265741359.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">89</td>
+                            <td><pre>                <img src="-1038422081.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">90</td>
+                            <td><pre>                <img src="-808201860.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">91</td>
+                            <td><pre>                <span class="keyword">if</span> <img src="688729984.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">92</td>
+                            <td><pre>                    <img src="-1682133047.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">93</td>
+                            <td><pre>                    <img src="1809705535.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">94</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">95</td>
+                            <td><pre>                <span class="keyword">if</span> <img src="1767537187.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">96</td>
+                            <td><pre>                    <img src="557394067.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">97</td>
+                            <td><pre>                <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">98</td>
+                            <td><pre>                    <img src="-1166970370.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">99</td>
+                            <td><pre>                <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">100</td>
+                            <td><pre>            <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">101</td>
+                            <td><pre>        <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">102</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">103</td>
+                            <td><pre>    <img src="2021745991.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">104</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        var radios = document.querySelectorAll("input[name='View']");
+        var card = document.querySelector(".card");
+        var front = document.querySelectorAll(".card-face-front tr");
+        var back = document.querySelectorAll(".card-face-back tr");
+
+        function clickButton(index) {
+            radios[index].click();
+        }
+
+        function selectRange(start, end) {
+            for(var i = start - 1; i < (end || start); i++) {
+                front[i].classList.add("marked");
+                back[i].classList.add("marked");
+            }
+        }
+
+        function scroll(index, start) {
+            start = start - 1;
+
+            window.scrollTo(0, index === 0 ? front[start].offsetTop : back[start].offsetTop);
+        }
+
+        function onChange(event) {
+            card.classList.toggle("flipped");
+        }
+
+        function onHashChange() {
+            window.setTimeout(function() {
+                var hash = window.location.hash;
+                var parts = hash.substring(1).split(':');
+
+                var index = parts[0];
+                var start = parts[1];
+                var end = parts[2];
+
+                if(index) {
+                    clickButton(index);
+
+                    if(start) {
+                        scroll(index, start);
+                        selectRange(start, end);
+                    }
+                }
+            }, 0);
+        }
+
+        radios.forEach(function(element) { element.addEventListener("change", onChange) });
+        onHashChange();
+        window.addEventListener("hashchange", onHashChange);
+    </script>
+</html>

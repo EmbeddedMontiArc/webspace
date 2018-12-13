@@ -1,0 +1,1091 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: coneSearch -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="1793"
+        width="553"
+        height="552"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">coneSearch</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: coinsTop -->
+<g transform="translate(326 367)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.coinsTop"
+        id="1800"
+        width="78"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsTop', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">coinsTop</tspan>
+    </text>
+
+</g><!-- Component: coinsBottom -->
+<g transform="translate(326 237)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.coinsBottom"
+        id="1799"
+        width="100"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsBottom', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">coinsBottom</tspan>
+    </text>
+
+</g><!-- Component: coinsLeft -->
+<g transform="translate(326 107)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.coinsLeft"
+        id="1798"
+        width="79"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsLeft', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">coinsLeft</tspan>
+    </text>
+
+</g><!-- Component: coinsRight -->
+<g transform="translate(326 442)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.coinsRight"
+        id="1801"
+        width="88"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsRight', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">coinsRight</tspan>
+    </text>
+
+</g><!-- Component: enemiesTop -->
+<g transform="translate(111 312)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.enemiesTop"
+        id="1796"
+        width="97"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesTop', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemiesTop</tspan>
+    </text>
+
+</g><!-- Component: enemiesBottom -->
+<g transform="translate(111 182)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.enemiesBottom"
+        id="1795"
+        width="120"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesBottom', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemiesBottom</tspan>
+    </text>
+
+</g><!-- Component: enemiesLeft -->
+<g transform="translate(111 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.enemiesLeft"
+        id="1794"
+        width="99"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesLeft', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemiesLeft</tspan>
+    </text>
+
+</g><!-- Component: enemiesRight -->
+<g transform="translate(111 497)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.enemiesRight"
+        id="1797"
+        width="108"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesRight', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">enemiesRight</tspan>
+    </text>
+
+</g><!-- Component: combine1 -->
+<g transform="translate(456 312)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.combine1"
+        id="1804"
+        width="83"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">combine1</tspan>
+    </text>
+
+</g><!-- Component: combine2 -->
+<g transform="translate(456 182)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.combine2"
+        id="1803"
+        width="83"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">combine2</tspan>
+    </text>
+
+</g><!-- Component: combine3 -->
+<g transform="translate(456 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.combine3"
+        id="1802"
+        width="83"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">combine3</tspan>
+    </text>
+
+</g><!-- Component: combine4 -->
+<g transform="translate(456 442)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch.combine4"
+        id="1805"
+        width="83"
+        height="110"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">combine4</tspan>
+    </text>
+
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="539"
+    y1="402"
+    x2="569"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="539"
+    y1="272"
+    x2="569"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="539"
+    y1="142"
+    x2="569"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="539"
+    y1="477"
+    x2="569"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="301"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="256" cy="402" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="402"
+    x2="301"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="402"
+    x2="326"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="266"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="402"
+    x2="266"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="402" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="272"
+    x2="301"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="272" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="272"
+    x2="301"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="272"
+    x2="326"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="266"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="402"
+    x2="266"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="402" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="142"
+    x2="301"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="142" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="142"
+    x2="301"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="142"
+    x2="326"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="256"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="256"
+    y1="402"
+    x2="266"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="402"
+    x2="266"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="402" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="266"
+    y1="477"
+    x2="301"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="266" cy="477" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="477"
+    x2="301"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="301"
+    y1="477"
+    x2="326"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="86"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="41" cy="347" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="347"
+    x2="86"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="347"
+    x2="111"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="51"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="347"
+    x2="51"
+    y2="217"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="347" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="217"
+    x2="86"
+    y2="217"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="217" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="217"
+    x2="86"
+    y2="217"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="217"
+    x2="111"
+    y2="217"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="51"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="347"
+    x2="51"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="347" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="86"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="87"
+    x2="86"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="87"
+    x2="111"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="41"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="347"
+    x2="51"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="347"
+    x2="51"
+    y2="532"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="347" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="532"
+    x2="86"
+    y2="532"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="51" cy="532" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="532"
+    x2="86"
+    y2="532"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="532"
+    x2="111"
+    y2="532"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="404"
+    y1="402"
+    x2="456"
+    y2="402"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="208"
+    y1="347"
+    x2="456"
+    y2="347"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="426"
+    y1="272"
+    x2="456"
+    y2="272"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="231"
+    y1="217"
+    x2="456"
+    y2="217"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="405"
+    y1="142"
+    x2="456"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="210"
+    y1="87"
+    x2="456"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="414"
+    y1="477"
+    x2="456"
+    y2="477"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="219"
+    y1="532"
+    x2="456"
+    y2="532"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+
+</svg>

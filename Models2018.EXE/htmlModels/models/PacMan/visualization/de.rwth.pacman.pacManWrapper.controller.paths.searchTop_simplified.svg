@@ -1,0 +1,353 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: searchTop -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="6015"
+        width="1893"
+        height="702"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">searchTop</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: start -->
+<g transform="translate(66 217)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.start"
+        id="6016"
+        width="16"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.StartValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">start</tspan>
+    </text>
+
+</g><!-- Component: endSafe -->
+<g transform="translate(1835 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.endSafe"
+        id="6027"
+        width="24"
+        height="375"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.EndSafe', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">endSafe</tspan>
+    </text>
+
+</g><!-- Component: bfssingle1 -->
+<g transform="translate(232 217)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle1"
+        id="6017"
+        width="30"
+        height="165"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle1</tspan>
+    </text>
+
+</g><!-- Component: bfssingle2 -->
+<g transform="translate(412 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle2"
+        id="6018"
+        width="30"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle2</tspan>
+    </text>
+
+</g><!-- Component: bfssingle3 -->
+<g transform="translate(592 162)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle3"
+        id="6019"
+        width="30"
+        height="220"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle3</tspan>
+    </text>
+
+</g><!-- Component: bfssingle4 -->
+<g transform="translate(772 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle4"
+        id="6020"
+        width="30"
+        height="135"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle4</tspan>
+    </text>
+
+</g><!-- Component: bfssingle5 -->
+<g transform="translate(952 107)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle5"
+        id="6021"
+        width="30"
+        height="275"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle5</tspan>
+    </text>
+
+</g><!-- Component: bfssingle6 -->
+<g transform="translate(1132 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle6"
+        id="6022"
+        width="30"
+        height="175"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle6</tspan>
+    </text>
+
+</g><!-- Component: bfssingle7 -->
+<g transform="translate(1312 272)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle7"
+        id="6023"
+        width="30"
+        height="270"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle7</tspan>
+    </text>
+
+</g><!-- Component: bfssingle8 -->
+<g transform="translate(1492 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle8"
+        id="6024"
+        width="30"
+        height="295"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle8</tspan>
+    </text>
+
+</g><!-- Component: bfssingle9 -->
+<g transform="translate(1672 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle9"
+        id="6025"
+        width="30"
+        height="330"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle9</tspan>
+    </text>
+
+</g><!-- Component: bfssingle10 -->
+<g transform="translate(1752 327)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.paths.searchTop.bfssingle10"
+        id="6026"
+        width="33"
+        height="335"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.BFSSingle', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">bfssingle10</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs>
+</svg>

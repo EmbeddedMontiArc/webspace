@@ -1,0 +1,890 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: pacManWrapper -->
+<g transform="translate(60 20)">
+
+    <rect
+        id="241"
+        width="275"
+        height="1194"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">PacManWrapper</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="#cecece">
+            pacManWrapper
+    </text>
+
+</g>
+
+</svg><!-- Component: controller -->
+<g transform="translate(90 84)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller"
+        id="243"
+        width="215"
+        height="1110"
+        style="
+                fill:#3c3c3c;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.pacman.pacManWrapper.controller_extended.html','_parent',false);parent.openFileInEditor('/rwth/pacman/pacManWrapper/controller.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">Controller</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+    <tspan font-size="10">controller</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="313"
+    y1="1134"
+    x2="327"
+    y2="1134"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="1134"
+    x2="82"
+    y2="1134"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="1174"
+    x2="82"
+    y2="1174"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="174"
+    x2="82"
+    y2="174"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="214"
+    x2="82"
+    y2="214"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="254"
+    x2="82"
+    y2="254"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="294"
+    x2="82"
+    y2="294"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="334"
+    x2="82"
+    y2="334"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="374"
+    x2="82"
+    y2="374"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="414"
+    x2="82"
+    y2="414"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="454"
+    x2="82"
+    y2="454"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="494"
+    x2="82"
+    y2="494"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="534"
+    x2="82"
+    y2="534"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="574"
+    x2="82"
+    y2="574"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="614"
+    x2="82"
+    y2="614"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="654"
+    x2="82"
+    y2="654"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="694"
+    x2="82"
+    y2="694"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="734"
+    x2="82"
+    y2="734"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="774"
+    x2="82"
+    y2="774"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="814"
+    x2="82"
+    y2="814"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="854"
+    x2="82"
+    y2="854"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="894"
+    x2="82"
+    y2="894"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="934"
+    x2="82"
+    y2="934"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="974"
+    x2="82"
+    y2="974"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="1014"
+    x2="82"
+    y2="1014"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="1054"
+    x2="82"
+    y2="1054"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="68"
+    y1="1094"
+    x2="82"
+    y2="1094"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:#252525;stroke:#cecece;stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="297" y="1126" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="294" y="1136" transform="rotate(0,294,1136)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+newPacManDirection
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="294" y="1146" transform="rotate(0,294,1146)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="327" y="1126" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="347" y="1136" transform="rotate(0,347,1136)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+newPacManDirection
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="347" y="1146" transform="rotate(0,347,1146)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="1126" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1136" transform="rotate(0,48,1136)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1146" transform="rotate(0,48,1146)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="1126" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1136" transform="rotate(0,101,1136)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[1]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1146" transform="rotate(0,101,1146)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="1166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1176" transform="rotate(0,48,1176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1186" transform="rotate(0,48,1186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="1166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1176" transform="rotate(0,101,1176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[2]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1186" transform="rotate(0,101,1186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="176" transform="rotate(0,48,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="186" transform="rotate(0,48,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="176" transform="rotate(0,101,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[3]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="186" transform="rotate(0,101,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="206" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="216" transform="rotate(0,48,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[4]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="226" transform="rotate(0,48,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="206" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="216" transform="rotate(0,101,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostX[4]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="226" transform="rotate(0,101,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="246" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="256" transform="rotate(0,48,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="266" transform="rotate(0,48,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="246" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="256" transform="rotate(0,101,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[1]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="266" transform="rotate(0,101,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="286" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="296" transform="rotate(0,48,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="306" transform="rotate(0,48,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="286" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="296" transform="rotate(0,101,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[2]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="306" transform="rotate(0,101,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="326" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="336" transform="rotate(0,48,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="346" transform="rotate(0,48,346)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="326" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="336" transform="rotate(0,101,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[3]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="346" transform="rotate(0,101,346)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="366" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="376" transform="rotate(0,48,376)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[4]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="386" transform="rotate(0,48,386)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="366" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="376" transform="rotate(0,101,376)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostY[4]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="386" transform="rotate(0,101,386)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="406" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="416" transform="rotate(0,48,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="426" transform="rotate(0,48,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="406" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="416" transform="rotate(0,101,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[1]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="426" transform="rotate(0,101,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="446" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="456" transform="rotate(0,48,456)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="466" transform="rotate(0,48,466)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="446" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="456" transform="rotate(0,101,456)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[2]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="466" transform="rotate(0,101,466)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="486" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="496" transform="rotate(0,48,496)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="506" transform="rotate(0,48,506)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="486" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="496" transform="rotate(0,101,496)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[3]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="506" transform="rotate(0,101,506)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="526" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="536" transform="rotate(0,48,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[4]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="546" transform="rotate(0,48,546)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="526" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="536" transform="rotate(0,101,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostDirection[4]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="546" transform="rotate(0,101,546)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="566" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="576" transform="rotate(0,48,576)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="586" transform="rotate(0,48,586)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="566" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="576" transform="rotate(0,101,576)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[1]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="586" transform="rotate(0,101,586)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="606" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="616" transform="rotate(0,48,616)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="626" transform="rotate(0,48,626)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="606" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="616" transform="rotate(0,101,616)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[2]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="626" transform="rotate(0,101,626)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="646" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="656" transform="rotate(0,48,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="666" transform="rotate(0,48,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="646" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="656" transform="rotate(0,101,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[3]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="666" transform="rotate(0,101,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="686" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="696" transform="rotate(0,48,696)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[4]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="706" transform="rotate(0,48,706)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="686" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="696" transform="rotate(0,101,696)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEatable[4]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="706" transform="rotate(0,101,706)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="726" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="736" transform="rotate(0,48,736)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[1]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="746" transform="rotate(0,48,746)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="726" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="736" transform="rotate(0,101,736)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[1]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="746" transform="rotate(0,101,746)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="766" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="776" transform="rotate(0,48,776)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[2]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="786" transform="rotate(0,48,786)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="766" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="776" transform="rotate(0,101,776)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[2]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="786" transform="rotate(0,101,786)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="806" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="816" transform="rotate(0,48,816)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[3]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="826" transform="rotate(0,48,826)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="806" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="816" transform="rotate(0,101,816)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[3]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="826" transform="rotate(0,101,826)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="846" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="856" transform="rotate(0,48,856)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[4]
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="866" transform="rotate(0,48,866)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="846" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="856" transform="rotate(0,101,856)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+ghostEaten[4]
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="866" transform="rotate(0,101,866)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="886" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="896" transform="rotate(0,48,896)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManX
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="906" transform="rotate(0,48,906)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="886" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="896" transform="rotate(0,101,896)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManX
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="906" transform="rotate(0,101,906)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="926" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="936" transform="rotate(0,48,936)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManY
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="946" transform="rotate(0,48,946)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="926" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="936" transform="rotate(0,101,936)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManY
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="946" transform="rotate(0,101,946)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="966" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="976" transform="rotate(0,48,976)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManEaten
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="986" transform="rotate(0,48,986)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="82" y="966" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="976" transform="rotate(0,101,976)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManEaten
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="986" transform="rotate(0,101,986)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+B
+</text>
+
+<use x="52" y="1006" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1016" transform="rotate(0,48,1016)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManLives
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1026" transform="rotate(0,48,1026)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="1006" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1016" transform="rotate(0,101,1016)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManLives
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1026" transform="rotate(0,101,1026)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="1046" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1056" transform="rotate(0,48,1056)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManScore
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1066" transform="rotate(0,48,1066)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="82" y="1046" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1056" transform="rotate(0,101,1056)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+pacManScore
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1066" transform="rotate(0,101,1066)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+Z
+</text>
+
+<use x="52" y="1086" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1096" transform="rotate(0,48,1096)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+map
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="48" y="1106" transform="rotate(0,48,1106)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+<use x="82" y="1086" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1096" transform="rotate(0,101,1096)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+map
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="101" y="1106" transform="rotate(0,101,1106)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+CommonMatrixType
+</text>
+
+
+</svg>

@@ -1,0 +1,353 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: cones -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="1776"
+        width="448"
+        height="552"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">cones</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: cT -->
+<g transform="translate(326 107)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.cT"
+        id="1781"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsTop', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">cT</tspan>
+    </text>
+
+</g><!-- Component: cB -->
+<g transform="translate(326 237)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.cB"
+        id="1782"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsBottom', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">cB</tspan>
+    </text>
+
+</g><!-- Component: cL -->
+<g transform="translate(326 312)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.cL"
+        id="1783"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsLeft', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">cL</tspan>
+    </text>
+
+</g><!-- Component: cR -->
+<g transform="translate(326 442)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.cR"
+        id="1784"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.coinSearch.SearchCoinsRight', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">cR</tspan>
+    </text>
+
+</g><!-- Component: eT -->
+<g transform="translate(166 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.eT"
+        id="1777"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesTop', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">eT</tspan>
+    </text>
+
+</g><!-- Component: eB -->
+<g transform="translate(166 182)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.eB"
+        id="1778"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesBottom', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">eB</tspan>
+    </text>
+
+</g><!-- Component: eL -->
+<g transform="translate(166 367)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.eL"
+        id="1779"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesLeft', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">eL</tspan>
+    </text>
+
+</g><!-- Component: eR -->
+<g transform="translate(166 497)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.eR"
+        id="1780"
+        width="10"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.enemySearch.SearchEnemiesRight', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">eR</tspan>
+    </text>
+
+</g><!-- Component: combine1 -->
+<g transform="translate(386 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.combine1"
+        id="1785"
+        width="28"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">combine1</tspan>
+    </text>
+
+</g><!-- Component: combine2 -->
+<g transform="translate(386 182)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.combine2"
+        id="1786"
+        width="28"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">combine2</tspan>
+    </text>
+
+</g><!-- Component: combine3 -->
+<g transform="translate(386 312)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.combine3"
+        id="1787"
+        width="28"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">combine3</tspan>
+    </text>
+
+</g><!-- Component: combine4 -->
+<g transform="translate(386 442)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.cones.combine4"
+        id="1788"
+        width="28"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.coneSearch.CombineValues', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">combine4</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs>
+</svg>
