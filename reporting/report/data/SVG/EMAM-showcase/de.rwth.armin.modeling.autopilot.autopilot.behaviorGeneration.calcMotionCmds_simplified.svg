@@ -1,0 +1,704 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: calcMotionCmds -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="289"
+        width="918"
+        height="392"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="13"
+        fill="black">
+            calcMotionCmds
+    </text>
+
+</g>
+
+</svg><!-- Component: isDriveToFirstPosition -->
+<g transform="translate(166 147)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.isDriveToFirstPosition"
+        id="290"
+        width="180"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    isDriveToFirstPosition
+    </text>
+</g><!-- Component: driveToFirstPosition -->
+<g transform="translate(496 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.driveToFirstPosition"
+        id="291"
+        width="165"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    driveToFirstPosition
+    </text>
+</g><!-- Component: d2v1 -->
+<g transform="translate(711 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.d2v1"
+        id="293"
+        width="48"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    d2v1
+    </text>
+</g><!-- Component: followTrajectory -->
+<g transform="translate(496 242)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.followTrajectory"
+        id="292"
+        width="165"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    followTrajectory
+    </text>
+</g><!-- Component: d2v2 -->
+<g transform="translate(711 337)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.d2v2"
+        id="294"
+        width="48"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    d2v2
+    </text>
+</g><!-- Component: selector -->
+<g transform="translate(809 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration.calcMotionCmds.selector"
+        id="295"
+        width="75"
+        height="340"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    selector
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="884"
+    y1="127"
+    x2="934"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="76"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="127"
+    x2="76"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="127" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="182"
+    x2="136"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="182" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="182"
+    x2="136"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="182"
+    x2="166"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="346"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="466"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="182"
+    x2="466"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="182"
+    x2="496"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="466"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="46" cy="127" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="127"
+    x2="466"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="127"
+    x2="496"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="87"
+    x2="711"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="346"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="406"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="406"
+    y1="182"
+    x2="406"
+    y2="277"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="406" cy="182" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="406"
+    y1="277"
+    x2="466"
+    y2="277"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="406" cy="277" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="277"
+    x2="466"
+    y2="277"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="277"
+    x2="496"
+    y2="277"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="46"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="127"
+    x2="76"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="127"
+    x2="76"
+    y2="317"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="127" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="317"
+    x2="466"
+    y2="317"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="317" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="317"
+    x2="466"
+    y2="317"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="466"
+    y1="317"
+    x2="496"
+    y2="317"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="372"
+    x2="711"
+    y2="372"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="346"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="376"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="376"
+    y1="182"
+    x2="406"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="406"
+    y1="182"
+    x2="406"
+    y2="222"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="406" cy="182" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="406"
+    y1="222"
+    x2="759"
+    y2="222"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="406" cy="222" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="759"
+    y1="222"
+    x2="759"
+    y2="222"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="759"
+    y1="222"
+    x2="809"
+    y2="222"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="127"
+    x2="809"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="759"
+    y1="87"
+    x2="809"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="317"
+    x2="809"
+    y2="317"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="759"
+    y1="372"
+    x2="809"
+    y2="372"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+
+</svg>

@@ -1,0 +1,245 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: t1 -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="18"
+        width="765"
+        height="107"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="13"
+        fill="black">
+            t1
+    </text>
+
+</g>
+
+</svg><!-- Component: abs -->
+<g transform="translate(692 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.abs"
+        id="27"
+        width="39"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    abs
+    </text>
+</g><!-- Component: eb1 -->
+<g transform="translate(514 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.eb1"
+        id="25"
+        width="39"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    eb1
+    </text>
+</g><!-- Component: eb2 -->
+<g transform="translate(603 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.eb2"
+        id="26"
+        width="39"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.armin.modeling.autopilot.tests.t1.eb2_simplified.html','_parent',false);parent.openFileInEditor('/rwth/armin/modeling/autopilot/tests/t1/eb2.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    eb2
+    </text>
+</g><!-- Component: eb3 -->
+<g transform="translate(247 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.eb3"
+        id="22"
+        width="39"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.armin.modeling.autopilot.tests.t1.eb3_simplified.html','_parent',false);parent.openFileInEditor('/rwth/armin/modeling/autopilot/tests/t1/eb3.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    eb3
+    </text>
+</g><!-- Component: eb4 -->
+<g transform="translate(336 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.eb4"
+        id="23"
+        width="39"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('de.rwth.armin.modeling.autopilot.tests.t1.eb4_simplified.html','_parent',false);parent.openFileInEditor('/rwth/armin/modeling/autopilot/tests/t1/eb4.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    eb4
+    </text>
+</g><!-- Component: pid -->
+<g transform="translate(161 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.pid"
+        id="21"
+        width="36"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    pid
+    </text>
+</g><!-- Component: sab -->
+<g transform="translate(425 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.sab"
+        id="24"
+        width="39"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    sab
+    </text>
+</g><!-- Component: sum -->
+<g transform="translate(66 52)">
+    <rect
+        data-name="de.rwth.armin.modeling.autopilot.tests.t1.sum"
+        id="20"
+        width="45"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    sum
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs>
+</svg>
