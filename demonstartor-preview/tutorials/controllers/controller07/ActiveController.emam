@@ -1,0 +1,23 @@
+package controller07;
+
+component ActiveController {
+	port                                    
+		in Q xPosition,
+		out B active,
+		out B status;
+
+	implementation Math{                    
+
+    	if (xPosition > -70)
+            active = 1;
+        else
+            active = 0; 
+        end
+        
+        if (xPosition > 50)
+            status = 1;
+        else
+            status = 0;
+        end
+	}
+}

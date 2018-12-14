@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trajectories comparator</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="686" height="300"></canvas>
+    <script>
+
+        var jsonSimulationData1;
+        var distBetweenPoints1;
+        var distBetweenPointsSum1;
+        var jsonSimulationDataCurrent;
+
+        // Read all telemetry records from the file
+        function readDataFromFile(trajectory) {
+
+            jsonSimulationData1 = trajectory;
+            distBetweenPointsSum1 = 0;
+            var distBetweenPoints1 = [];
+
+            if (jsonSimulationData1 != undefined) {
+                for (var i = 0; i < jsonSimulationData1.telemetry.length - 1; i++) {
+                    // Add in the array changing position related to x and y
+                    var diffX = jsonSimulationData1.telemetry[i].Position[0] -
+                        jsonSimulationData1.telemetry[i + 1].Position[0];
+                    var diffY = jsonSimulationData1.telemetry[i].Position[1] -
+                        jsonSimulationData1.telemetry[i + 1].Position[1];
+                    distBetweenPoints1.push({
+                        "x": diffX,
+                        "y": diffY,
+                        "v": {
+                            // Add begin and end points of vector
+                            "x0": jsonSimulationData1.telemetry[i].Position[0],
+                            "y0": jsonSimulationData1.telemetry[i].Position[1],
+                            "x1": jsonSimulationData1.telemetry[i].Position[0] - diffX * 6, // The constant size influences on arrow length 
+                            "y1": jsonSimulationData1.telemetry[i].Position[1] - diffY * 6
+                        }
+                    });
+                    distBetweenPointsSum1 += Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
+                }
+
+                setTimeout(function () {
+                    if (jsonSimulationData1 != undefined) loadSampleTrajectory();
+                }, 1000);
+
+                console.log(distBetweenPoints1.length);
+                console.log("Length of TSC controller : ", distBetweenPointsSum1);
+            }
+            else {
+                console.error("JSON trajectory's data undefined!");
+            }
+        }
+
+        // Load background image
+        var img = new Image();
+        img.src = "test_track_cuted_numbers.jpg";
+
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0, 686, 300);
+            img.style.display = 'none';
+        };
+
+        var tempX;
+        var tempY;
+        var tempXEnd;
+        var tempYEnd;
+        var multiplayer = 1.85;
+        ctx.lineWidth = 2;
+
+        // fill the sample solution trajectory
+        function loadSampleTrajectory() {
+
+            for (var i = 0; i < jsonSimulationData1.telemetry.length - 1; i++) {
+
+                tempX = 340 - jsonSimulationData1.telemetry[i].Position[0] * multiplayer;
+                tempY = 88 + jsonSimulationData1.telemetry[i].Position[1] * multiplayer;
+                tempXEnd = 340 - jsonSimulationData1.telemetry[i + 1].Position[0] * multiplayer;
+                tempYEnd = 88 + jsonSimulationData1.telemetry[i + 1].Position[1] * multiplayer;
+
+                drawTrajectory(tempX, tempY, tempXEnd, tempYEnd, 'white');
+            }
+        }
+
+        function fillSimulationData(jsonSimulationData) {
+
+            jsonSimulationDataCurrent = jsonSimulationData;
+
+            for (var i = 0; i < jsonSimulationData.telemetry.length - 1; i++) {
+
+                tempX = 340 - jsonSimulationData.telemetry[i].Position[0] * multiplayer;
+                tempY = 88 + jsonSimulationData.telemetry[i].Position[1] * multiplayer;
+                tempXEnd = 340 - jsonSimulationData.telemetry[i + 1].Position[0] * multiplayer;
+                tempYEnd = 88 + jsonSimulationData.telemetry[i + 1].Position[1] * multiplayer;
+
+                drawTrajectory(tempX, tempY, tempXEnd, tempYEnd, 'red');
+            }
+        }
+
+        // document.addEventListener("DOMContentLoaded",function(){
+        //     setTimeout(function(){
+        //         if(jsonSimulationData1 != undefined) loadSampleTrajectory();
+        //     },1000);
+        // });
+
+        function drawTrajectory(x0, y0, x1, y1, color) {
+            ctx.fillStyle = color;
+            ctx.strokeStyle = color;
+            ctx.fillRect(x0, y0, 1, 1);
+            ctx.beginPath();
+            ctx.moveTo(x0, y0);
+            ctx.lineTo(x1, y1);
+            ctx.stroke();
+        }
+
+        function deviation(value) {
+
+            var arrayAreas = [];
+            var areasSum = 0;
+
+            if (jsonSimulationDataCurrent != undefined) {
+
+                var minLength = 0;
+                if (jsonSimulationData1.telemetry.length < jsonSimulationDataCurrent.telemetry.length)
+                    minLength = jsonSimulationData1.telemetry.length;
+                else
+                    minLength = jsonSimulationDataCurrent.telemetry.length;
+
+                var tscX = 0, tscY = 0, tscXN = 0, tscYN = 0, enaX = 0, enaY = 0, enaXN = 0, enaYN = 0;
+
+                for (var i = 0; i < minLength - 1; i++) {
+                    // TSC controller data, Position[0] = x, Position[1] = y
+                    tscX = jsonSimulationData1.telemetry[i].Position[0];
+                    tscY = jsonSimulationData1.telemetry[i].Position[1];
+                    tscXN = jsonSimulationData1.telemetry[i + 1].Position[0];
+                    tscYN = jsonSimulationData1.telemetry[i + 1].Position[1];
+
+                    // EMA controller data, Position[0] = x, Position[1] = y
+                    enaX = jsonSimulationDataCurrent.telemetry[i].Position[0];
+                    enaY = jsonSimulationDataCurrent.telemetry[i].Position[1];;
+                    enaXN = jsonSimulationDataCurrent.telemetry[i + 1].Position[0];
+                    enaYN = jsonSimulationDataCurrent.telemetry[i + 1].Position[1];
+
+                    arrayAreas.push(Math.sqrt(Math.pow((tscXN - tscX), 2) + Math.pow((tscYN - tscY), 2)) * 0.5 *
+                        (
+                            Math.sqrt(
+                                Math.pow((enaX - tscX), 2) + Math.pow((enaY - tscY), 2)
+                            ) +
+                            Math.sqrt(
+                                Math.pow((enaXN - tscXN), 2) + Math.pow((enaYN - tscYN), 2)
+                            )
+                        ));
+                    areasSum += arrayAreas[i];
+                    //console.log("Area between points[",i,"] : ",arrayAreas[i]);
+                }
+
+                if ((areasSum / distBetweenPointsSum1) < value) {
+                    return true;
+                }
+            } else
+                console.error("jsonSimulationDataCurrent is undefined!");
+            return false;
+        }
+
+        function compareTrajectories() {
+
+            var distBetweenPointsSum = 0;
+
+            if (jsonSimulationDataCurrent != undefined) {
+                for (var i = 0; i < jsonSimulationDataCurrent.telemetry.length - 1; i++) {
+                    // Add in the array changing position related to x and y
+                    var diffX = jsonSimulationDataCurrent.telemetry[i].Position[0] -
+                        jsonSimulationDataCurrent.telemetry[i + 1].Position[0];
+                    var diffY = jsonSimulationDataCurrent.telemetry[i].Position[1] -
+                        jsonSimulationDataCurrent.telemetry[i + 1].Position[1];
+
+                    distBetweenPointsSum += Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
+                }
+            }
+
+            var deviationVar = deviation(5); // 5%
+            
+            if ((distBetweenPointsSum <= distBetweenPointsSum1 * 1.05) && (distBetweenPointsSum >= distBetweenPointsSum1 * 0.95) && deviationVar) {
+                showResultComp(true);
+                return true;
+            }
+            else {
+                showResultComp(false);
+                return false;
+            }
+        }
+
+        function showResultComp(res) {
+            if (res) {
+
+                ctx.fillStyle = "green";
+                ctx.font = "30px Arial";
+                ctx.fillText("Passed!", 30, 280);
+            }
+            else {
+                ctx.fillStyle = "red";
+                ctx.font = "30px Arial";
+                ctx.fillText("Failed!", 30, 280);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+package controller11.runTrack;
+
+import RunTrackController;
+import RunTrackVelocityController;
+
+component RunTrack {
+    port
+        in  Q frontLeft,
+        in  Q frontRight,
+        in  Q frontLeftSide,
+        in  Q frontRightSide,
+        in  Q backLeftSide,
+        in  Q backRightSide,
+        in  Q velocity,
+        out Q steering,
+		out Q acceleration;
+
+    instance RunTrackController rtc;
+    connect frontLeft -> rtc.frontLeft;
+    connect frontRight -> rtc.frontRight;
+    connect frontLeftSide -> rtc.frontLeftSide;
+    connect frontRightSide -> rtc.frontRightSide;
+    connect backLeftSide -> rtc.backLeftSide;
+    connect backRightSide -> rtc.backRightSide;
+    connect rtc.steering -> steering;
+    
+    instance RunTrackVelocityController rtvc;
+    connect velocity -> rtvc.velocity;
+    connect rtvc.acceleration -> acceleration;
+}

@@ -1,0 +1,16 @@
+package controller11;
+
+component OvertakeVelocityController {
+	port                                    
+		in Q(0km/h : 250km/h) velocity,
+		out Q(-2m/s^2:2m/s^2) acceleration; 
+
+	implementation Math{                    
+		// Maybe create some general component for velocity controlling
+    	if (velocity < 3 m/s)
+			acceleration = 0.2 m/s^2;
+        else
+        	acceleration = 0 m/s^2;
+        end
+	}
+}

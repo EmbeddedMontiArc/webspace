@@ -1,0 +1,31 @@
+package controller11;
+
+component FollowController<Q distance = 10m> {
+	port                                    
+		in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        out B follow,
+		out B run; 
+
+	implementation Math{
+		
+		static Q previousFL = 0m;
+		static Q previousFR = 0m;
+
+		// Maybe divide into 2 condition controllers: follow, run
+    	if ((frontLeftSensor < distance) || (frontRightSensor < distance))
+    	    run = false;
+    	else
+    		run = true;
+        end
+        
+        if (!run && ((previousFL < frontLeftSensor) || (previousFR < frontRightSensor)))
+        	follow = true;
+        else
+        	follow = false;
+        end
+        
+        previousFL = frontLeftSensor;
+        previousFR = frontRightSensor;
+	}
+}

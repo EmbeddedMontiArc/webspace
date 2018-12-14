@@ -1,0 +1,33 @@
+package controller11.overtake;
+
+import controller11.atomic.*;
+
+component OvertakeVelocityController {
+	port                                    
+		in Q velocity,
+		out Q acceleration; 
+
+	instance SmallerQ smaller;
+	instance ConstantQ(3) maxSpeed;
+	instance ConstantQ(0) acc0;
+	instance ConstantQ(0.2) acc1;
+	instance SwitchQ sw1;
+
+	connect velocity -> smaller.in1;
+	connect maxSpeed.out1 -> smaller.in2;
+	connect smaller.out1 -> sw1.cond;
+	connect acc1.out1 -> sw1.in1;
+	connect acc0.out1 -> sw1.in2;
+	connect sw1.out1 -> acceleration;
+
+	/*
+	implementation Math{                    
+
+    	if (velocity < 3 m/s)
+			acceleration = 0.2 m/s^2;
+        else
+        	acceleration = 0 m/s^2;
+        end
+	}
+	*/
+}

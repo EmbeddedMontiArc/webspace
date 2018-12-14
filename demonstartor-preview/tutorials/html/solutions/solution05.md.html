@@ -1,0 +1,435 @@
+<!doctyle html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body {
+      counter-reset: section1 section2 section3 section4;
+      background-color: white;
+    }
+
+    body, p, div, th, td {
+      font-family: verdana, helvetica, arial, sans-serif;
+      font-size: 10pt;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .author {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .revision {
+      text-align: center;
+      font-style: italic;
+    }
+
+    h2::before {
+      counter-reset: section2 section3 section4;
+      counter-increment: section1;
+      content: counter(section1) " ";
+    }
+
+    h3::before {
+      counter-reset: section3 section4;
+      counter-increment: section2;
+      content: counter(section1) "." counter(section2) " ";
+    }
+
+    h4::before {
+      counter-reset: section4;
+      counter-increment: section3;
+      content: counter(section1) "." counter(section2) "." counter(section3) " ";
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px 0px;
+      margin: 0 auto;
+      page-break-inside: avoid;
+    }
+
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+
+    th, td {
+      padding: 0.2mm 2mm;
+    }
+
+    th:not(:last-child),
+    td:not(:last-child) {
+      border-right: 1px black solid;
+    }
+
+    thead > tr {
+      border-bottom: 1px black solid;
+    }
+
+    tbody > tr:not(:last-of-type) {
+      border-bottom: 1px black solid;
+    }
+
+    @media print {
+      @page {
+        padding: 2cm 4cm;
+      }
+
+      .beginning-of-doc {
+        padding-top: 4cm;
+      }
+
+      hr {
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+
+
+      h2 {
+        margin-top: 1.5cm;
+        padding-left: 1cm;
+        border-bottom: 2px solid black;
+        page-break-after: avoid;
+      }
+
+      h3 {
+        margin-top: 1cm;
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+
+      h4 {
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="beginning-of-doc"></div>
+    <h1 id="solution05">Solution(05)</h1>
+
+<h3 id="freeridepassingconescombiningwithparallelparkingattheend">Free ride passing cones combining with parallel parking at the end.</h3>
+
+<p>To solve that tutorial you have to use the MainController, like you did in the other tutorials. The difference here in other connections between the components:</p>
+
+<pre><code>package controller05;
+
+import VelocityController;
+import PassObjectsController;
+import ActiveController;
+import SearchParkingPlaceController;
+import ParkingController;
+import SteeringProxyController;
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q time,
+        in Q(0km/h:250km/h) velocity,
+
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,
+        out B status;
+
+
+    instance VelocityController velocityController;
+    connect velocity-&gt;velocityController.velocity;
+    connect velocityController.acceleration-&gt;acceleration;
+
+    instance SearchParkingPlaceController searchParkingPlaceController;
+    connect frontLeftSideSensor -&gt; searchParkingPlaceController.frontLeftSideSensor;
+    connect backLeftSideSensor -&gt; searchParkingPlaceController.backLeftSideSensor;
+    connect searchParkingPlaceController.foundPlace -&gt; velocityController.reverseMove;
+    connect searchParkingPlaceController.foundPlace -&gt; parkingController.reverseMove;
+
+    instance ActiveController activeController;
+    connect xPosition -&gt; activeController.xPosition;
+    connect activeController.activeSearchParkingPlace -&gt; searchParkingPlaceController.active;
+    connect activeController.activePassObject -&gt; passObjectsController.active;
+    connect activeController.activePassObject -&gt; steeringProxyController.mode;
+
+    instance ParkingController parkingController;
+    connect frontLeftSensor -&gt; parkingController.frontLeftSensor;
+    connect frontRightSensor -&gt; parkingController.frontRightSensor;
+    connect frontLeftSideSensor -&gt; parkingController.frontLeftSideSensor;
+    connect backLeftSideSensor -&gt; parkingController.backLeftSideSensor;
+    connect backLeftSensor -&gt; parkingController.backLeftSensor;
+    connect backRightSensor -&gt; parkingController.backRightSensor;
+    connect parkingController.status -&gt; status;
+    connect parkingController.moveForward -&gt; velocityController.moveForward;
+    connect parkingController.steeringAngle -&gt; steeringProxyController.steeringParking;
+
+    instance PassObjectsController passObjectsController;
+    connect frontLeftSensor -&gt; passObjectsController.frontLeftSensor;
+    connect frontRightSensor -&gt; passObjectsController.frontRightSensor;
+    connect frontLeftSideSensor -&gt; passObjectsController.frontLeftSideSensor;
+    connect frontRightSideSensor -&gt; passObjectsController.frontRightSideSensor;
+    connect backLeftSideSensor -&gt;passObjectsController.backLeftSideSensor;
+    connect backRightSideSensor -&gt; passObjectsController.backRightSideSensor;
+    connect passObjectsController.steering -&gt; steeringProxyController.steeringPassObjects;
+
+    instance SteeringProxyController steeringProxyController;
+    connect steeringProxyController.steering -&gt; steering;
+}
+</code></pre>
+
+<p>It is pretty hard to imagine all given connections between the components. To simplify that, the following picture is given. It gives better understanding the structure of the whole controller. <br />
+<img src="../../img/controller05.mainController_simplified.svg" alt="drawing" width="1200px" height="600px"/></p>
+
+<p>We can borrow all components related to the parking process from the third tutorial. There are three controllers:</p>
+
+<p>Parking controller :  </p>
+
+<pre><code>package controller05;
+
+component ParkingController {
+    port
+        in Q backLeftSensor,
+        in Q backRightSensor,
+        in Q frontLeftSensor,
+        in Q frontRightSensor,
+        in Q frontLeftSideSensor,
+        in Q backLeftSideSensor,
+        in B reverseMove,
+        out Q steeringAngle,
+        out B moveForward,
+        out B status;
+
+    implementation Math{
+
+    if(reverseMove)
+        // fix the state of moving direction
+        static Q forwardState = 0;
+
+        moveForward = 0;
+        steeringAngle = 0;
+
+        if reverseMove
+            steeringAngle = 1;
+        end
+
+        if (reverseMove &amp;&amp; (backLeftSensor &lt; 2))
+            steeringAngle = -1;
+        end
+
+        // Car has to be parallel to the road edge
+        // Go forward when the back closer then 3m
+        if (reverseMove &amp;&amp; ((backRightSensor == backLeftSensor) || ((backRightSensor &lt; 3) &amp;&amp; (backLeftSensor &lt; 3))))
+            forwardState = 1;
+        end
+
+        // Stop when the car closer then 3m to front car
+        if (((frontRightSensor &lt; 3) || (frontLeftSensor &lt; 3)) &amp;&amp; forwardState)
+            status = 1;
+        else
+            status = 0;
+        end
+
+        // if car moving forward, does not change the car angle
+        if forwardState
+            steeringAngle = 0;
+        end
+
+        // align the car
+        if (forwardState &amp;&amp; (frontLeftSideSensor &gt; backLeftSideSensor))
+            steeringAngle = -0.5;
+        end
+
+        if (forwardState &amp;&amp; (frontLeftSideSensor &lt; backLeftSideSensor))
+            steeringAngle = 0.5;
+        end
+
+        moveForward = forwardState;
+    end
+    }
+}
+</code></pre>
+
+<p>Search parking place controller:  </p>
+
+<pre><code>package controller05;
+
+component SearchParkingPlaceController {
+    port
+        in Q frontLeftSideSensor,
+        in Q backLeftSideSensor,
+        in B active,
+        out B foundPlace;
+
+    implementation Math{
+
+        static Q first = 0;
+        static Q second = 0;
+        static Q third = 0;
+        static Q found = 0;
+
+    if(active)
+
+        if ((frontLeftSideSensor - backLeftSideSensor) &lt; -3)
+            first = 1;
+        end
+
+        if (((backLeftSideSensor - frontLeftSideSensor) &lt; -3) &amp;&amp; first )
+            second = 1;
+        end
+
+        if (((frontLeftSideSensor - backLeftSideSensor) &lt; -3) &amp;&amp; first &amp;&amp; second)
+            third = 1;
+        end
+
+        if (((backLeftSideSensor - frontLeftSideSensor) &lt; -3) &amp;&amp; first &amp;&amp; second &amp;&amp; third)
+            found = 1;
+        end
+    end
+
+    foundPlace = found &gt; 0;
+    }
+}
+</code></pre>
+
+<p>And VelocityController :  </p>
+
+<pre><code>package controller05;
+
+component VelocityController {
+    port                                    
+        in Q(0km/h : 250km/h) velocity,
+        in B reverseMove,
+        in B moveForward,
+        out Q(-2m/s^2:2m/s^2) acceleration; 
+
+    implementation Math{                    
+
+        if (velocity &gt; 1 m/s)
+            acceleration = 0m/s^2;
+        else
+            acceleration = 1m/s^2;
+        end
+
+        if reverseMove
+            acceleration = -0.5 m/s^2;
+        end
+
+        if (velocity &lt; -0.5 m/s)
+            acceleration = 0m/s^2;
+        end
+
+        if (reverseMove &amp;&amp; moveForward)
+            acceleration = 0.5 m/s^2;
+        end
+
+        if (reverseMove &amp;&amp; moveForward &amp;&amp; (velocity &gt; 0.5 m/s))
+            acceleration = 0m/s^2;
+        end
+    }
+}
+</code></pre>
+
+<p>Then we should implement the remaining controllers. Let us start with the active controller. This module decides which controller should be active, depends on some condition. In the given example, the condition is a place, where the car starts to search a place for parking. We have two possible active modes: passing cones or searching for a parking place.</p>
+
+<pre><code>package controller05;
+
+component ActiveController {
+    port                                    
+        in Q xPosition,
+        out B activePassObject,
+        out B activeSearchParkingPlace;
+
+    implementation Math{                    
+
+        if (xPosition &gt; 15)
+            activePassObject = 0;
+            activeSearchParkingPlace = 1;
+        else
+            activePassObject = 1;
+            activeSearchParkingPlace = 0;
+        end
+
+    }
+}
+</code></pre>
+
+<p>The next controller will be the passing objects controller. This controller works pretty strait forward, if there is an object, which is closer to a right side of the car, it passes the object from the left hand side and wise versa. If these is no obstacles in 10 meters, it tries to align the car to drive straight. If the controller is not active, then it return 0 to the steering output.</p>
+
+<pre><code>package controller05;
+
+component PassObjectsController {
+    port
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in B active,
+        out Q steering;
+
+    implementation Math{
+
+    if(active)
+        if((frontLeftSensor &lt; 10) &amp;&amp; (backRightSideSensor &gt; 5))
+            steering = 1;
+        else
+            if((frontRightSensor &lt; 10) &amp;&amp; (backLeftSideSensor &gt; 5))
+                steering = -1;
+            else
+                steering = 0; 
+
+                if (frontLeftSideSensor &gt; backLeftSideSensor)
+                    steering = -0.3;
+                end
+                if (frontLeftSideSensor &lt; backLeftSideSensor)
+                    steering = 0.3;
+                end
+            end
+        end
+    else
+        steering = 0;
+    end
+    }
+}
+</code></pre>
+
+<p>And the last one is the steering proxy controller. This controller defines, which signal from one of these controllers, will be passed to the MainController. As were said before, we have two modes: passing objects or parking. Depends on what mode is active, the active controller data is passed to the MainController.</p>
+
+<p>package controller05;</p>
+
+<p>component SteeringProxyController {
+    port
+        in Q steeringParking,
+        in Q steeringPassObjects,
+        in B mode,
+        out Q steering;</p>
+
+<pre><code>implementation Math{
+
+    if mode
+        steering = steeringPassObjects;
+    else
+        steering = steeringParking;
+    end
+
+}
+</code></pre>
+
+<p>}
+```</p>
+  </body>
+</html>

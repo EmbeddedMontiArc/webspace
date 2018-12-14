@@ -1,0 +1,60 @@
+package controller11;
+
+component OvertakeController<Q distance = 80m> {
+	port                                    
+		in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in B active,
+        in B passed,
+        out B activatePassChecker,
+		out Q(-35°:35°) steering;
+
+	implementation Math{
+    
+    static B overtake0 = true;
+    static B overtake1 = true;
+    steering = 0°;
+    activatePassChecker = false;
+
+    if active
+        // Maybe divide the controller to have clearer steps?
+        if ((frontLeftSideSensor > 5m) && (frontRightSensor < 20m))
+            steering = -0.5°;
+        end
+        
+        if (frontRightSensor > 20m) 
+            overtake0 = true;
+        end
+        
+        if (overtake0 && (frontLeftSideSensor < backLeftSideSensor))
+            steering = 0.5°;
+            overtake1 = true;
+        end
+        
+        if overtake1
+            activatePassChecker = true;
+        end
+        
+        if passed
+            if (frontRightSideSensor > 9m)
+                steering = true;
+            else
+                if (frontLeftSideSensor < backLeftSideSensor)
+                    steering = 0.5°;
+                end
+            
+                if (frontLeftSideSensor > backLeftSideSensor)
+                    steering = -0.5°;
+                end
+            end
+            
+        end
+        
+    end
+
+	}
+}

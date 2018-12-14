@@ -1,0 +1,21 @@
+package controller10;
+
+component VelocityController<Q maxVel = 5 m/s> {
+	port
+		in Q(0m/s : 10m/s) velocity,
+		in B brake,
+		out Q(-2m/s^2:2m/s^2) acceleration;
+
+	implementation Math{
+        
+        if (brake && (velocity > 0))
+        	acceleration = -0.5 m/s^2;
+        else
+        	if (velocity > maxVel)
+    	    	acceleration = 0 m/s^2;
+    		else
+    	    	acceleration = 0.5 m/s^2;
+        	end
+        end
+	}
+}

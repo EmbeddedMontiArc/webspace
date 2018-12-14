@@ -1,0 +1,126 @@
+package controller11;
+
+import VelocitySwitchController;
+import SteeringSwitchController;
+
+import controller11.follow.Follow;
+import controller11.overtake.Overtake;
+import controller11.runTrack.RunTrack;
+import controller11.obstacle.Obstacle;
+import controller11.parking.Parking;
+import controller11.passCones.PassCones;
+import controller11.alignCar.AlignCar;
+import controller11.active.ActiveController;
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q time,
+        in Q(0km/h:250km/h) velocity,
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,
+        out B status;
+
+    instance ActiveController activeController;
+    connect xPosition -> activeController.xPosition;
+    connect yPosition -> activeController.yPosition;
+    connect activeController.activeSearchParkingPlace -> parking.active;
+    connect activeController.activeSearchParkingPlace -> velocitySwitch.activeParking;
+    connect activeController.activeSearchParkingPlace -> steeringSwitch.activeParking;
+    connect activeController.activePassObject -> passCones.active;
+    connect activeController.activePassObject -> velocitySwitch.activePassObject;
+    connect activeController.activePassObject -> steeringSwitch.activePassObject;
+    connect activeController.activeTrack -> velocitySwitch.activeRunTrack;
+    connect activeController.activeTrack -> steeringSwitch.activeTrack;
+    connect activeController.activeAlign -> velocitySwitch.activeAlign;
+    connect activeController.activeAlign -> steeringSwitch.activeAlign;
+    connect activeController.followCar -> velocitySwitch.activeFollow;
+    connect activeController.followCar -> steeringSwitch.activeFollow;
+    connect activeController.overtakeCar -> overtake.active;
+    connect activeController.overtakeCar -> steeringSwitch.activeOvertake;
+    connect activeController.obstacleWait -> velocitySwitch.activeObstacle;
+    connect activeController.obstacleWait -> steeringSwitch.activeObstacle;
+
+    instance Parking parking;
+    connect frontLeftSensor -> parking.frontLeftSensor;
+    connect frontRightSensor -> parking.frontRightSensor;
+    connect frontLeftSideSensor -> parking.frontLeftSideSensor;
+    connect backLeftSideSensor -> parking.backLeftSideSensor;
+    connect backLeftSensor -> parking.backLeftSensor;
+    connect backRightSensor -> parking.backRightSensor;
+    connect velocity -> parking.velocity;
+    connect parking.status -> status;
+    connect parking.steering -> steeringSwitch.steeringParking;
+    connect parking.acceleration -> velocitySwitch.accParking;
+    
+    instance PassCones passCones;
+    connect frontLeftSensor -> passCones.frontLeftSensor;
+    connect frontRightSensor -> passCones.frontRightSensor;
+    connect frontLeftSideSensor -> passCones.frontLeftSideSensor;
+    connect frontRightSideSensor -> passCones.frontRightSideSensor;
+    connect backLeftSideSensor ->passCones.backLeftSideSensor;
+    connect backRightSideSensor -> passCones.backRightSideSensor;
+    connect velocity -> passCones.velocity;
+    connect passCones.steering -> steeringSwitch.steeringPassObjects;
+    connect passCones.acceleration -> velocitySwitch.accPassCones;
+
+    instance RunTrack runTrack;
+    connect frontLeftSensor -> runTrack.frontLeft;
+    connect frontRightSensor ->  runTrack.frontRight;
+    connect frontLeftSideSensor -> runTrack.frontLeftSide;
+    connect frontRightSideSensor -> runTrack.frontRightSide;
+    connect backLeftSideSensor -> runTrack.backLeftSide;
+    connect backRightSideSensor -> runTrack.backRightSide;
+    connect runTrack.steering -> steeringSwitch.steeringTrack;
+    connect velocity -> runTrack.velocity;
+    connect runTrack.acceleration -> velocitySwitch.accRunTrack;
+
+    instance AlignCar alignCar;
+    connect frontLeftSideSensor -> alignCar.frontLeftSide;
+    connect frontRightSideSensor -> alignCar.frontRightSide;
+    connect backLeftSideSensor -> alignCar.backLeftSide;
+    connect backRightSideSensor -> alignCar.backRightSide;
+    connect alignCar.steering -> steeringSwitch.steeringAlign;
+    connect alignCar.acceleration -> velocitySwitch.accAlignCar;
+
+    instance Follow follow;
+    connect frontLeftSensor -> follow.frontLeftSensor;
+    connect frontRightSensor -> follow.frontRightSensor;
+    connect velocity -> follow.velocity;
+    connect follow.acceleration -> velocitySwitch.accFollow;
+
+    instance Overtake overtake;
+    connect frontLeftSensor -> overtake.frontLeftSensor;
+    connect frontRightSensor -> overtake.frontRightSensor;
+    connect frontRightSideSensor -> overtake.frontRightSideSensor;
+    connect frontLeftSideSensor -> overtake.frontLeftSideSensor;
+    connect backLeftSideSensor -> overtake.backLeftSideSensor;
+    connect backRightSideSensor -> overtake.backRightSideSensor;
+    connect velocity -> overtake.velocity;
+    connect overtake.steering -> steeringSwitch.steeringOvertake;
+    connect overtake.activatePassChecker -> velocitySwitch.activeOvertake;
+    connect overtake.acceleration -> velocitySwitch.accOvertake;
+
+    instance Obstacle obstacle;
+    connect frontLeftSensor -> obstacle.frontLeftSensor;
+    connect frontRightSensor -> obstacle.frontRightSensor;
+    connect velocity -> obstacle.velocity;
+    connect obstacle.acceleration -> velocitySwitch.accObstacle;
+    
+    instance SteeringSwitchController steeringSwitch;
+    connect steeringSwitch.steering -> steering;
+
+    instance VelocitySwitchController velocitySwitch;
+    connect velocitySwitch.acceleration -> acceleration; 
+}

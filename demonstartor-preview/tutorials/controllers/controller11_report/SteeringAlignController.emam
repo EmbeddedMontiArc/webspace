@@ -1,0 +1,38 @@
+package controller11;
+
+component SteeringAlignController {
+    port
+        in Q(-200m:200m) frontLeftSide,
+        in Q(-200m:200m) frontRightSide,
+        in Q(-200m:200m) backLeftSide,
+        in Q(-200m:200m) backRightSide,
+        out Q(-35°:35°) steering;
+
+    implementation Math{
+
+        Q(0m:1m) thresholdM = 0.5m;
+        Q(0m:1m) thresholdS = 0.1m;
+        steering = 0°;
+
+        B comp1 = ((frontLeftSide - backLeftSide) > thresholdM);
+        B comp2 = ((frontLeftSide - backLeftSide) < -thresholdM);
+        B comp3 = ((frontLeftSide - backLeftSide) > thresholdS);
+        B comp4 = ((frontLeftSide - backLeftSide) < -thresholdS);
+        
+        if comp3
+            steering = -1°;
+        end
+        
+        if comp4
+            steering = 1°;
+        end
+
+        if comp1
+            steering = -3°;
+        end
+        
+        if comp2
+            steering = 3°;
+        end 
+    }
+}

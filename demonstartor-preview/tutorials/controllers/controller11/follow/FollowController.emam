@@ -1,0 +1,62 @@
+package controller11.follow;
+
+import controller11.atomic.*;
+
+component FollowController {
+	port                                    
+		in Q frontLeftSensor,
+        in Q frontRightSensor,
+        out B follow,
+		out B run; 
+
+		instance SmallerQ smaller_r1;
+		instance SmallerQ smaller_r2;
+		instance Or or_r;
+		instance ConstantQ(15) distance;
+		instance Not not_r;
+
+		instance DelayQ delay_f1;
+		instance DelayQ delay_f2;
+		instance SmallerQ smaller_f1;
+		instance SmallerQ smaller_f2;
+		instance Or or_f;
+		instance Not not_f;
+		instance And and_f;
+
+		connect frontLeftSensor -> smaller_r1.in1, delay_f1.in1, smaller_f1.in2;
+		connect frontRightSensor -> smaller_r2.in1, delay_f2.in1, smaller_f2.in2;
+		connect distance.out1 -> smaller_r1.in2, smaller_r2.in2;
+		connect smaller_r1.out1 -> or_r.in1;
+		connect smaller_r2.out1 -> or_r.in2;
+		connect or_r.out1 -> not_r.in1, and_f.in1;
+		connect not_r.out1 -> run;
+		connect delay_f1.out1 -> smaller_f1.in1;
+		connect delay_f2.out1 -> smaller_f2.in1;
+		connect smaller_f1.out1 -> or_f.in1;
+		connect smaller_f2.out1 -> or_f.in2;
+		connect or_f.out1 -> and_f.in2;
+		connect and_f.out1 -> follow;	
+
+	/*
+	implementation Math{
+		
+		static Q previousFL = 0;
+		static Q previousFR = 0;
+
+    	if ((frontLeftSensor < distance) || (frontRightSensor < distance))
+    	    run = 0;
+    	else
+    		run = 1;
+        end
+        
+        if ((run < 1) && ((previousFL < frontLeftSensor) || (previousFR < frontRightSensor)))
+        	follow = 1;
+        else
+        	follow = 0;
+        end
+        
+        previousFL = frontLeftSensor;
+        previousFR = frontRightSensor;
+	}
+	*/
+}

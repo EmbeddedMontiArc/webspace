@@ -1,0 +1,19 @@
+package controller11.alignCar;
+
+import controller11.atomic.*;
+
+component VelocityAlignController {
+	port
+		out Q acceleration;
+
+		instance ConstantQ(-0.7) brake;
+
+		connect brake.out1 -> acceleration;
+	
+	/*
+	implementation Math{
+
+    	acceleration = -0.7 m/s^2;
+	}
+	*/
+}

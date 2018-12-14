@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Autopilot builder</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0px;
+            overflow: scroll;
+            width: 1600px; 
+            height: 900px;
+        }
+    </style>
+    <script src="js-libs/jszip.min.js"></script>
+</head>
+
+<body>
+    <div>
+    <div>
+        <div class="column">
+            <!-- <iframe onload="cleanOnLoad()" id="ide" src="onlineIDE/api/load.html?mountPoint=[EmbeddedMontiArc]/demonstrator/IDE"
+                height="900" scrolling="no" width="900" align="left"></iframe> -->
+            <iframe id="ide-frame" src="ide/index.html?root=/controllers&mode=load" height="900" width="900" align="left"></iframe>
+        </div>
+        <div id="rightSide1" class="column">
+            <div class="row">
+                <iframe id="indexSimulator" src="simulator.html" height="600" width="686" frameborder="0"></iframe>
+            </div>
+            <div class="row">
+                <iframe id="trajectoryComparator" src="trajectoryComparatorMain.html" height="300" frameborder="0"
+                    width="686"></iframe>
+            </div>
+        </div>
+        <div id="rightSide2" class="column" style="display: none">
+            <!-- Change the way of defining the current tutorial link -->
+            <iframe id="tutorialFrame" src="tutorials/html/tutorial00.md.html" height="900" width="686" frameborder="0"></iframe>
+        </div>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <!-- <th><button onclick="appendTestTutorial3()"><b>1a Step</b> : Parking tutorial</button></th> -->
+                <th>Step 1:
+                    <select id="tutorialSelect" onchange="selectTutorial()">
+                        <option value="-1">Select Tutorial</option>
+                        <option value="0">Tutorial0</option>
+                        <option value="1">Tutorial1</option>
+                        <option value="2">Tutorial2</option>
+                        <option value="3">Tutorial3</option>
+                        <option value="4">Tutorial4</option>
+                        <option value="5">Tutorial5</option>
+                        <option value="6">Tutorial6</option>
+                        <option value="7">Tutorial7</option>
+                        <option value="8">Tutorial8</option>
+                        <option value="9">Tutorial9</option>
+                        <option value="10">Tutorial10</option>
+                        <option value="11">Tutorial11</option>
+                    </select>
+                </th>
+                <th><button onclick="showTutorial()"><b>Step 2:</b> Show tutorial/simulator</button></th>
+                <th><button id="start" onclick="readAllFiles()"><b>Step 3:</b> Compile model</button></th>
+                <th><button onclick="compare()"><b>Step 4:</b> Compare Trajectories</button></th>
+                <!-- <th><button onclick="showTraceDrawer()">Draw trace</button></th> -->
+            </tr>
+        </table>
+    </div>
+</div>
+    <script>
+
+        function showTraceDrawer() {
+            window.open("traceDrawer.html");
+        }
+
+        async function getAPI(id) {
+            return new Promise(resolve => {
+                const iframe = document.getElementById(id);
+                let loaded = false;
+                function onLoad() {
+                    if (loaded) {
+                        const timer = window.setInterval(() => {
+                            const ide = iframe.contentWindow;
+                            if (ide.hasOwnProperty("api")) {
+                                window.clearInterval(timer);
+                                resolve(ide.api);
+                                iframe.removeEventListener("load", onLoad);
+                            }
+                        }, 500);
+                    } else {
+                        loaded = true;
+                    }
+                }
+                iframe.addEventListener("load", onLoad);
+            });
+        }
+
+        async function testIDE(){
+            ide = await getAPI("ide-frame");
+            console.log(ide); //IDE is ready for operations.
+            deleteAll();
+        }
+        
+        // means the filesystem of ide is ready to operate
+        var ide;
+        testIDE().catch(error => console.error(error.message));
+
+
+        // functions for the new ide
+        function addFileToIDE(path){
+
+            var fileContent = readFileFromDisk("tutorials/controllers/" + path);
+            ide.filesystem.createFile("/controllers/" + path, 
+                {content:fileContent}).then(res => {
+                            hashesFromDisk[res.uri] = fileContent.hashCode();
+                            console.log("Added file : ", res.uri, ", hash : ", hashesFromDisk[res.uri]);
+                        });
+        }
+
+        function readFileFromIDE(path){
+            if ((path != undefined) && (path !=""))
+                ide.filesystem.resolveContent(path).then(result => addContent(path, result.content));
+            else
+                console.error(arguments.callee.name, ": path error!");
+        }
+
+            function addContent(path, content){
+                fileNames.push(path);
+                filesData.push(content);
+                hashesFromIDE[path] = content.hashCode();
+            }
+
+        function deleteFolderFromIDE(path){
+            if ((path != undefined) && (path !=""))
+                ide.filesystem.delete(path).then(res => console.log("Folder has been removed!"));
+            else 
+                console.error(arguments.callee.name, ": path error!");
+        }
+        
+        // TODO: delete all folders in the root folder
+        function deleteAll(){
+            ide.filesystem.doGetChildren("/controllers/").then(res => {
+                    if (res[0] != undefined)
+                        deleteFolderFromIDE(res[0].uri)
+                });
+        }
+        // end
+
+        function selectTutorial(){
+
+            var tutorialList = document.getElementById("tutorialSelect");
+            var selectedTutorial = tutorialList.options[tutorialList.selectedIndex].value;
+            if (selectedTutorial != -1)
+                showSelectedTutorial(+selectedTutorial);
+        }
+
+        // Add the timer for waiting the compilation
+        const waitingPeriod = 15; // sec
+        var messageInterval = 0;
+
+        function runCountDownTimer() {
+
+            var count = waitingPeriod;
+            var doc = document.getElementById("indexSimulator").contentWindow.document;
+
+            messageInterval = setInterval(function () {
+
+                doc.getElementById("notready").innerHTML = "Compiling " + count + "s";
+                count--;
+
+                // If the count down is finished, write some text 
+                if (count <= 0) {
+                    clearInterval(messageInterval);
+                    doc.getElementById("notready").innerHTML = "Almost done...";
+                }
+            }, 1000);
+        }
+
+        String.prototype.hashCode = function () {
+            var hash = 0, i, chr;
+            if (this.length === 0) return hash;
+            for (i = 0; i < this.length; i++) {
+                chr = this.charCodeAt(i);
+                hash = ((hash << 5) - hash) + chr;
+                hash |= 0; // Convert to 32bit integer
+            }
+            return hash;
+        };
+
+
+        // reading the trajectories data
+        var jsonSimulationData;
+        function readJSONFile(file) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.open("GET", file, false);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4) {
+                    if (rawFile.status === 200 || rawFile.status == 0) {
+                        var allText = rawFile.responseText;
+                        jsonSimulationData = JSON.parse(allText);
+                    }
+                }
+            }
+            rawFile.send(null);
+        }
+
+        function showSelectedTutorial(selectedTutorial) {
+
+            // removeAllFiles();
+            deleteAll();
+            hashesFromDisk = [];
+            hashesFromIDE = [];
+
+            // The list of tutorials
+            var tutorialPath = "tutorials/html/tutorial";
+            var tutorialExtension = ".md.html";
+            var link = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11"];
+            document.getElementById('tutorialFrame').src = tutorialPath + link[selectedTutorial] + tutorialExtension;
+
+            var trajectoryPath = "tutorials/trajectories/telemetry-log-tt";
+            trajectoryPath += link[selectedTutorial] + ".json";
+            readJSONFile(trajectoryPath);
+
+            // init the selected tutorial, load files in IDE
+            activeTutorial = selectedTutorial;
+            switch (selectedTutorial) {
+                case 0: appendTestTutorial0(); break;
+                case 1: appendTestTutorial1(); break;
+                case 2: appendTestTutorial2(); break;
+                case 3: appendTestTutorial3(); break;
+                case 4: appendTestTutorial4(); break;
+                case 5: appendTestTutorial5(); break;
+                case 6: appendTestTutorial6(); break;
+                case 7: appendTestTutorial7(); break;
+                case 8: appendTestTutorial8(); break;
+                case 9: appendTestTutorial9(); break;
+                case 10: appendTestTutorial10(); break;
+                case 11: appendTestTutorial11(); break;
+                default: console.error("Error: tutorial does not exist!");
+            }
+            document.getElementById("indexSimulator").contentWindow.loadTutorial(activeTutorial);
+        }
+
+        function readTrajectoryData(){
+            setTimeout(function(){
+                document.getElementById("trajectoryComparator").contentWindow.readDataFromFile(jsonSimulationData);
+            },1000);
+        }
+
+        function compare(){
+            var result = document.getElementById("trajectoryComparator").contentWindow.compareTrajectories();
+            console.log("Pass : ", result);
+        }
+
+        function showTutorial() {
+
+            if (document.getElementById("rightSide2").style.display == 'none') {
+                document.getElementById("rightSide1").style.display = 'none';
+                document.getElementById("rightSide2").style.display = 'block';
+            } else {
+                document.getElementById("rightSide1").style.display = 'block';
+                document.getElementById("rightSide2").style.display = 'none';
+            }
+        }
+
+        function disableCompileBtn() {
+            document.getElementById("start").disabled = true;
+        }
+
+        function enableCompileBtn() {
+            document.getElementById("start").disabled = false;
+        }
+
+        function loadMainController() {
+
+            return new Promise((resolve, reject) => {
+                var doc = document.getElementById("indexSimulator").contentWindow.document;
+                var script_tag = doc.createElement('script');
+                script_tag.id = "mainController";
+                script_tag.text = rawFileData[0];
+                doc.body.appendChild(script_tag);
+
+                setTimeout(() => {
+                    resolve();
+                }, 2000)
+            });
+
+        }
+
+        function overrideReadBinaryWasm() {
+
+            var doc1 = document.getElementById("indexSimulator").contentWindow.document;
+            var script_tag1 = doc1.createElement('script');
+            script_tag1.id = "mainControllerWasm";
+            script_tag1.text = "var Module = {readBinary : function readBinary(filename) {return new Uint8Array(rawWebAssembly);}}";
+            doc1.body.appendChild(script_tag1);
+        }
+
+        function loadWasmData() {
+
+            document.getElementById("indexSimulator").contentWindow.rawWebAssembly = rawFileData[1];
+
+            setTimeout(function () {
+                overrideReadBinaryWasm();
+            }, 0);
+
+            setTimeout(function () {
+                loadMainController().then(
+                    document.getElementById("indexSimulator").contentWindow.initSimulator,
+                    () => { console.error("error during loading a main controller tag!") });
+            }, 100);
+        }
+
+        // TODO: rename and better organize
+        function checkWasm() {
+
+            if (checkWasmBinaryData(rawFileData[1])) loadWasmData();
+            else enableCompileBtn();
+        }
+
+        function readFileFromDisk(file) {
+            var oReq = new XMLHttpRequest();
+            var text;
+            oReq.open("GET", file, false);
+            oReq.onreadystatechange = function () {
+                if (oReq.readyState === 4) {
+                    if (oReq.status === 200 || oReq.status == 0) {
+                        text = oReq.responseText;
+                    }
+                }
+            }
+            oReq.onerror = function () {
+                console.log("error disk reading!");
+            }
+            oReq.send(null);
+            return text;
+        }
+
+        // needed only for pre-compiled tutorials, to don't send data to server
+        var activeTutorial = 0;
+
+        function appendTestTutorial0() {
+                addFileToIDE("controller00/MainController.emam");
+                addFileToIDE("controller00/ExampleController.emam");
+        }
+
+        function appendTestTutorial1() {
+                addFileToIDE("controller01/MainController.emam");
+                addFileToIDE("controller01/VelocityController.emam");
+        }
+
+        function appendTestTutorial2() {
+                addFileToIDE("controller02/MainController.emam");
+                addFileToIDE("controller02/VelocityController.emam");
+        }
+
+        function appendTestTutorial3() {
+                addFileToIDE("controller03/MainController.emam");
+                addFileToIDE("controller03/ParkingController.emam");
+                addFileToIDE("controller03/SearchParkingPlaceController.emam");
+                addFileToIDE("controller03/VelocityController.emam");
+        }
+
+        function appendTestTutorial4() {
+                addFileToIDE("controller04/MainController.emam");
+                addFileToIDE("controller04/ConeRunner.emam");
+                addFileToIDE("controller04/VelocityController.emam");
+        }
+
+        function appendTestTutorial5() {
+                addFileToIDE("controller05/MainController.emam");
+                addFileToIDE("controller05/PassObjectsController.emam");
+                addFileToIDE("controller05/VelocityController.emam");
+                addFileToIDE("controller05/ActiveController.emam");
+                addFileToIDE("controller05/SearchParkingPlaceController.emam");
+                addFileToIDE("controller05/ParkingController.emam");
+                addFileToIDE("controller05/SteeringProxyController.emam");
+        }
+
+        function appendTestTutorial6() {
+                addFileToIDE("controller06/MainController.emam");
+                addFileToIDE("controller06/VelocityController.emam");
+                addFileToIDE("controller06/DistanceController.emam");
+                addFileToIDE("controller06/StatusController.emam");
+        }
+
+        function appendTestTutorial7() {
+                addFileToIDE("controller07/MainController.emam");
+                addFileToIDE("controller07/VelocityController.emam");
+                addFileToIDE("controller07/DistanceController.emam");
+                addFileToIDE("controller07/ActiveController.emam");
+                addFileToIDE("controller07/OvertakeController.emam");
+                addFileToIDE("controller07/PassObjectController.emam");
+        }
+
+        function appendTestTutorial8() {
+                addFileToIDE("controller08/MainController.emam");
+                addFileToIDE("controller08/VelocityController.emam");
+                addFileToIDE("controller08/MeasureGapController.emam");
+                addFileToIDE("controller08/ParkingController.emam");
+                addFileToIDE("controller08/SearchParkingPlaceController.emam");
+        }
+
+        function appendTestTutorial9() {
+                addFileToIDE("controller09/MainController.emam");
+                addFileToIDE("controller09/VelocityController.emam");
+                addFileToIDE("controller09/StatusController.emam");
+                addFileToIDE("controller09/SteeringController.emam");
+        }
+
+        function appendTestTutorial10() {
+                addFileToIDE("controller10/MainController.emam");
+                addFileToIDE("controller10/VelocityController.emam");
+                addFileToIDE("controller10/StatusController.emam");
+                addFileToIDE("controller10/SteeringController.emam");
+                addFileToIDE("controller10/ObstacleController.emam");
+        }
+
+        function appendTestTutorial11() {
+                addFileToIDE("controller11/atomic/And.emam");
+                addFileToIDE("controller11/atomic/ConstantQ.emam");
+                addFileToIDE("controller11/atomic/SmallerQ.emam");
+                addFileToIDE("controller11/atomic/SwitchQ.emam");
+                addFileToIDE("controller11/atomic/SwitchB.emam");
+                addFileToIDE("controller11/atomic/DelayQ.emam");
+                addFileToIDE("controller11/atomic/Not.emam");
+                addFileToIDE("controller11/atomic/Or.emam");
+                addFileToIDE("controller11/atomic/OrMulti.emam");
+                addFileToIDE("controller11/atomic/Minus.emam");
+                addFileToIDE("controller11/atomic/EventCatcherB.emam");
+                
+                addFileToIDE("controller11/MainController.emam");
+                addFileToIDE("controller11/SteeringSwitchController.emam");
+                addFileToIDE("controller11/VelocitySwitchController.emam");
+
+                addFileToIDE("controller11/active/ActiveController.emam");
+                addFileToIDE("controller11/active/AlignCar.emam");
+                addFileToIDE("controller11/active/FollowCar.emam");
+                addFileToIDE("controller11/active/ObstacleWait.emam");
+                addFileToIDE("controller11/active/OvertakeCar.emam");
+                addFileToIDE("controller11/active/PassObject.emam");
+                addFileToIDE("controller11/active/SearchParkingPlace.emam");
+
+                addFileToIDE("controller11/alignCar/AlignCar.emam");
+                addFileToIDE("controller11/alignCar/VelocityAlignController.emam");
+                addFileToIDE("controller11/alignCar/SteeringAlignController.emam");
+
+                addFileToIDE("controller11/runTrack/RunTrackVelocityController.emam");
+                addFileToIDE("controller11/runTrack/RunTrack.emam");
+                addFileToIDE("controller11/runTrack/RunTrackController.emam");
+
+                addFileToIDE("controller11/follow/Follow.emam");
+                addFileToIDE("controller11/follow/FollowController.emam");
+                addFileToIDE("controller11/follow/FollowVelocityController.emam");
+
+                addFileToIDE("controller11/overtake/Overtake.emam");
+                addFileToIDE("controller11/overtake/OvertakeController.emam");
+                addFileToIDE("controller11/overtake/OvertakeVelocityController.emam");
+                addFileToIDE("controller11/overtake/PassCarController.emam");
+
+                addFileToIDE("controller11/obstacle/Obstacle.emam");
+                addFileToIDE("controller11/obstacle/ObstacleController.emam");
+                addFileToIDE("controller11/obstacle/ObstacleVelocityController.emam");
+
+                addFileToIDE("controller11/passCones/PassCones.emam");
+                addFileToIDE("controller11/passCones/PassObjectsController.emam");
+                addFileToIDE("controller11/passCones/VelocityPassController.emam");
+
+                addFileToIDE("controller11/parking/Parking.emam");
+                addFileToIDE("controller11/parking/SearchParkingPlaceController.emam");
+                addFileToIDE("controller11/parking/ParkingController.emam");
+                addFileToIDE("controller11/parking/VelocityController.emam");
+        }
+
+        // Files from tutorial folder
+        var hashesFromDisk = [];
+        var hashesFromIDE = [];
+
+        function isContentWasChanged() {
+            var check = false;
+            for (var i = 0; i < fileNames.length; i++) {
+                if (hashesFromIDE[fileNames[i]] != hashesFromDisk[fileNames[i]]) {
+                    check = true;
+                    console.log(fileNames[i], " was changed!");
+                }
+            }
+            return check;
+        }
+
+        // related to the issue with HTTPS certificate
+        var firstTimeRunAlert = false;
+
+        function showAlertHTTPS() {
+
+            if (!firstTimeRunAlert) {
+                alert("There is an security issue with the connection to the server RWTH-Aachen. It does not have HTTPS certificate yet. To be able to send the data to the server, please allow executing the insecure content. \n In the Chrome browser, the small shield is appeared in the upper right conner, just click on in and then click on - Load unsafe scripts. Then, try please send again. \n We are really sorry for inconvenience. Thank you for your understanding.");
+                firstTimeRunAlert = true;
+            }
+        }
+
+        // Read files from ide and pack
+        var filesData = Array();
+        var fileNames = Array();
+
+        function readAllFilesIDE() {
+
+            disableCompileBtn();
+            document.getElementById("indexSimulator").contentWindow.notReadyToGo();
+
+            filesData = [];
+            fileNames = [];
+            var dirRoot = '/controllers';
+
+            function recursiveReadDir(path) {
+                    ide.filesystem.doGetChildren(path).then(res => {
+                        if (res != undefined) {
+                            res.forEach(file => {
+                                if (file.isDirectory) {
+                                    recursiveReadDir(file.uri);
+                                }
+                                else {
+                                    if ((file.uri).includes(".emam") || (file.uri).includes(".stream")) {
+                                        readFileFromIDE(file.uri);
+                                    }
+                                }
+                            });
+                        }
+                    });
+            }
+
+            ide.filesystem.doGetChildren(dirRoot).then(res => {
+                res.forEach(function (item) {
+                    if (item.isDirectory) {
+                        recursiveReadDir(item.uri);
+                    }
+                });
+            });
+        }
+
+        function readAllFiles() {
+
+            readAllFilesIDE();
+
+            setTimeout(function () {
+                if (isContentWasChanged()) {
+                    showAlertHTTPS();
+                    zipContainer = new JSZip();
+                    packData().then(sendData, function () {
+                        console.log("packing problem happened!");
+                    });
+                } else {
+                    console.log("The content of the files haven't been changed!");
+                    // we can just read data from folder
+                    filesFromDisk = [];
+
+                    var tutorialNumber = "";
+                    if(activeTutorial < 10) 
+                        tutorialNumber = "0"+ activeTutorial;
+                    else 
+                        tutorialNumber = activeTutorial;
+                    
+                    var tutorialPath = "tutorials/compiledControllers/controller" +  tutorialNumber + "/";
+
+                    console.log("activeTutorial ", activeTutorial);
+                    readFileFromDiskBlob(tutorialPath + "mainController.wasm");
+                    filesFromDisk[1] = readFileFromDisk(tutorialPath + "mainController.js");
+
+                    setTimeout(function () {
+
+                        if (checkWasmBinaryData(filesFromDisk[0])) {
+                            document.getElementById("indexSimulator").contentWindow.rawWebAssembly = filesFromDisk[0];
+
+                            setTimeout(function () {
+                                overrideReadBinaryWasm();
+                            }, 100);
+
+                            setTimeout(function () {
+                                loadMainController2().then(
+                                    document.getElementById("indexSimulator").contentWindow.initSimulator,
+                                    () => { console.error("error during loading a main controller tag!") });
+                            }, 100);
+                        } else {
+                            console.log(".wasm file error!");
+                            enableCompileBtn();
+                        }
+                    }, 100);
+                }
+            }, 500);
+        }
+
+        // Controller from disc
+        function loadMainController2() {
+
+            return new Promise((resolve, reject) => {
+                var doc = document.getElementById("indexSimulator").contentWindow.document;
+                var script_tag = doc.createElement('script');
+                script_tag.id = "mainController";
+                script_tag.text = filesFromDisk[1];
+                doc.body.appendChild(script_tag);
+                setTimeout(() => {
+                    resolve();
+                }, 2000)
+            });
+        }
+
+        // Read file to replace compiled ones
+        var filesFromDisk = new Array();
+
+        function readFileFromDiskBlob(filePath) {
+            var oReq = new XMLHttpRequest();
+            oReq.open("GET", filePath, true);
+            oReq.responseType = "arraybuffer";
+            oReq.onload = function () {
+                var arrayBuffer = oReq.response; // Note: not oReq.responseText
+                if (arrayBuffer) {
+                    var byteArray = new Uint8Array(arrayBuffer);
+                    if (byteArray.byteLength) {
+                        filesFromDisk[0] = byteArray;
+                    } else
+                        console.error("Problem with reading .wasm file!");
+                }
+            }
+            oReq.send(null);
+        }
+
+        var zipContainer;
+        var packCounter = 0;
+
+        function packData() {
+            return new Promise(r => {
+                const packFiles = async () => {
+                    await Promise.all(fileNames.map(async function (item, index) {
+                        await zipContainer.file(item.slice(13), filesData[index]);
+                        console.log(item.slice(13), " was packed!");
+                        packCounter++;
+                    }));
+                }
+                packFiles();
+                r();
+            });
+        }
+
+        function sendData() {
+            if (packCounter < 2) {
+                console.log("Error during archiving process! Please try again.");
+                document.getElementById("indexSimulator").contentWindow.document
+                    .getElementById("notready").innerHTML = "Please, send again! Error during packing!";
+                packCounter = 0;
+                return;
+            }
+            packCounter = 0;
+            var t0 = performance.now();
+            zipContainer.generateAsync({ type: "blob" }).then(function (content) {
+
+                var blob1 = new Blob([content], { type: 'application/octet-binary' });
+                var xhr = new XMLHttpRequest();
+                //xhr.open("POST", 'http://137.226.168.11:80/receiver/', true);
+                xhr.open("POST", 'http://137.226.168.153:3005/receiver/', true);
+                // xhr.open("POST", 'http://0.0.0.0:7070/receiver/', true);
+                xhr.send(blob1);
+                console.log("files were sent to the server, waiting for responce...");
+                // TODO: why the server does not set response type?
+                xhr.responseType = "blob";
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status == 200) {
+                            var t1 = performance.now();
+                            // Write to the console a compilation time
+                            console.log("Compilation time: " + ((t1 - t0) / 1000) + " seconds.");
+                            saveFileFromResponse(xhr.response);
+                        }
+                        if (xhr.status == 500) {
+
+                            console.log(xhr.status);
+                            console.log(xhr.statusText);
+                            clearInterval(messageInterval);
+                            document.getElementById("indexSimulator").contentWindow.document.getElementById("notready").innerHTML = "Model error!";
+                            enableCompileBtn();
+                        }
+                    }
+                }
+            });
+            runCountDownTimer();
+        }
+
+        var rawFileData = new Array();
+
+        function saveFileFromResponse(receivedDataFromServer) {
+
+            // delete files from previous compilation
+            while (rawFileData.length) {
+                console.log("clean previous data from server!");
+                rawFileData.pop();
+            }
+
+            var new_zip = new JSZip();
+
+            new_zip.loadAsync(receivedDataFromServer).then(function (zip) {
+                Object.keys(zip.files).forEach(function (filename) {
+                    if (filename.includes("wasm")) {
+                        zip.files[filename].async('uint8array').then(function (fileData) {
+                            console.log(filename);
+                            //appendFile(".home/" + filename, fileData);
+                            rawFileData.push(fileData);
+                        });
+                    }
+                    else {
+                        zip.files[filename].async('string').then(function (fileData) {
+                            console.log(filename);
+                            //appendFile(".home/" + filename, fileData);
+                            rawFileData.push(fileData);
+                        });
+                    }
+                });
+            });
+
+            // wait for async unpack
+            setTimeout(function () {
+                checkWasm();
+            }, 500);
+        }
+
+        function checkWasmBinaryData(data) {
+
+            var valid = false;
+
+            if (data != undefined) {
+                valid = WebAssembly.validate(data);
+                console.log("The given bytes are "
+                    + (valid ? "" : "not ") + "a valid wasm module");
+            }
+            return valid;
+        }
+
+        function showLogs(flag) {
+            document.getElementById("indexSimulator").contentWindow.showLogsData = flag;
+            return "set " + flag;
+        }
+
+        function getSimulationLog() {
+            var simulationLog = document.getElementById("indexSimulator").contentWindow.logObject;
+            document.getElementById("trajectoryComparator").contentWindow.fillSimulationData(simulationLog);
+        }
+
+        function reloadTrajectoryPage() {
+            console.log("reload!");
+            document.getElementById('trajectoryComparator').contentWindow.location.reload();
+            readTrajectoryData();
+        }
+
+    </script>
+</body>
+
+</html>

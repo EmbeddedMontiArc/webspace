@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>WebGL Car Visualization</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<style>
+		body {
+			font-family: Monospace;
+			background-color: #000000;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		#info {
+			color: #fff;
+			position: absolute;
+			top: 8px;
+			width: 100%;
+			text-align: center;
+			z-index: 100;
+			display: block;
+		}
+
+		a {
+			color: red
+		}
+
+		span {
+			color: greenyellow
+		}
+
+		.column {
+			float: left;
+			padding: 10px;
+		}
+
+		/* Clear floats after the columns */
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="row">
+		<!-- <button id="blue-material">Blue</button>
+			<button id="silver-material">Pure Chrome</button>
+			<button id="black-material">Black</button>
+			<button id="red-material">Red</button> -->
+		<div class="column">
+			<div class="row" align="left">
+				<button onclick="resetSimulation()">reset</button>
+			</div>
+			<div class="row" align="left">
+				<button id="create">exprt</button>
+				<a download="telemety-log.json" id="downloadlink" style="display: none">Download telemety-log</a>
+			</div>
+		</div>
+		<div class="column">
+			<div class="row" align="left">
+				<button id="move">Start</button>
+			</div>
+			<div class="row" align="left">
+				<button id="stop">Stop</button>
+			</div>
+		</div>
+		<div class="column" style="color: greenyellow">
+			<div class="row" align="left">
+				<input type="range" min="0" max="100" value="0" class="slider" id="myRange"> Noise :
+				<span id="noise">0</span>
+			</div>
+			<div class="row" align="left">
+				<input type="range" min="0" max="100" value="0" class="slider" id="myRangeTime"> Time :
+				<span id="time">0</span> sec
+			</div>
+		</div>
+		<div class="column">
+			<div class="row" align="left" style="color: red">
+				Simulation Time :
+				<span id="stime" style="color: red">0 sec</span>
+			</div>
+			<div class="row" id="notready" align="left" style="font-size:20px; color: red">
+				Not Ready!
+			</div>
+			<div class="row" id="ready" align="left" style="font-size:20px; color: green; display: none">
+				Ready!
+			</div>
+		</div>
+	</div>
+
+	<!--<button onClick="showGameOverScreen()" style="position: absolute; top:50%;" id="restart_trigger">Trigger</button>-->
+	<div style="display: none; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #000000; opacity: 1;"
+	 id="close_layer">
+		<div style="margin-top: 20%;" id="restart_layout_content">
+			<p style="font-family: Helvetica; font-size: 250%; font-weight: bold; color: red;">Game Over - you left the world!</p>
+			<!--style="font-size: 200%; display: block; position: absolute; top:50%;"-->
+			<button id="close-server">Close Server</button>
+		</div>
+	</div>
+
+	<script src="build/three.js"></script>
+	<script src="js/OrbitControls.js"></script>
+	<script src="js/loaders/AssimpJSONLoader.js"></script>
+	<script src="js/Detector.js"></script>
+	<!-- <script src="js/libs/stats.min.js"></script> -->
+	<script src="zone2coord.js"></script>
+
+	<script src="simulator-ts/libs/require.js"></script>
+	<script type="text/javascript" src="out/bundle.js"></script>
+
+	<script type="text/javascript">
+		requirejs(['Simulator'], function (Simulator) {
+			console.log('loading the simulator core...');
+			window.simulator = Simulator;
+		});
+	</script>
+
+	<script>
+		// Noise slider
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("noise");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function () {
+			output.innerHTML = this.value;
+		}
+
+		// Execution time slider
+		var sliderTime = document.getElementById("myRangeTime");
+		var outputTime = document.getElementById("time");
+		outputTime.innerHTML = sliderTime.value;
+
+		sliderTime.oninput = function () {
+
+			simulationTimeLimit = logSlider(this.value);
+			outputTime.innerHTML = simulationTimeLimit;
+		}
+
+		function readyToGo() {
+			document.getElementById("notready").style.display = 'none';
+			document.getElementById("ready").style.display = 'block';
+			parent.enableCompileBtn();
+		}
+
+		function notReadyToGo() {
+			document.getElementById("ready").style.display = 'none';
+			document.getElementById("notready").style.display = 'block';
+		}
+
+	</script>
+
+	<script>
+		if (!Detector.webgl) {
+			Detector.addGetWebGLMessage();
+		}
+
+		var container, stats;
+		var camera, scene, renderer, objects;
+		var clock = new THREE.Clock();
+		var controls;
+		var directionalLight, pointLight;
+
+		// init scene
+		init();
+
+		var onProgress = function (xhr) {
+			if (xhr.lengthComputable) {
+				var percentComplete = xhr.loaded / xhr.total * 100;
+				console.log(Math.round(percentComplete, 2) + '% downloaded');
+			}
+		};
+
+		var onError = function (xhr) {
+		};
+
+
+		// Add the cone on the track
+		var coneLoader = new THREE.ObjectLoader();
+		var objectsOnTrack = [];
+		var modelObject = 'models/cone.json';
+
+		var coneN;
+
+		function addObjectsOnTrackVisual(modelJSON, x, y, z) {
+			coneLoader.load(modelJSON, function (object) {
+				objectsOnTrack.push(object);
+				scene.add(object);
+				object.position.x = x;
+				object.position.y = y;
+				object.position.z = z;
+				coneN = object;
+			}, onProgress, onError);
+		}
+
+		// now we can read objects from configuration and add them
+		function showCones() {
+			addObjectsOnTrackVisual(modelObject, 4, 0.3, -97);
+			addObjectsOnTrackVisual(modelObject, -2, 0.3, -97);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, -75);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, -50);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, -25);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, 0);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, 25);
+		}
+
+		function showCones2() {
+			addObjectsOnTrackVisual(modelObject, -1, 0.3, -85);
+			addObjectsOnTrackVisual(modelObject, 5, 0.3, -60);
+			addObjectsOnTrackVisual(modelObject, 1, 0.3, -35);
+			addObjectsOnTrackVisual(modelObject, -6, 0.3, -10);
+			addObjectsOnTrackVisual(modelObject, -3, 0.3, 10);
+		}
+
+		function showCones3() {
+			addObjectsOnTrackVisual(modelObject, -1, 0.3, -100);
+		}
+
+		function showCarTutorial6() {
+			setPosition(currentCar2, 1, 0.3, -80);
+		}
+
+		function deleteCones() {
+			for (var i = 0; i < objectsOnTrack.length; i++) {
+				scene.remove(objectsOnTrack[i]);
+			}
+			objectsOnTrack = [];
+			console.log("All objects were deleted!");
+		}
+
+		function deleteConesMove() {
+			for (var i = 0; i < objectsOnTrack.length; i++) {
+				if (objectsOnTrack[i].position.z == -122 && (objectsOnTrack[i].position.x == 97.25 || objectsOnTrack[i].position.x == 104.75))
+					scene.remove(objectsOnTrack[i]);
+			}
+			console.log("Cones were deleted!");
+		}
+		// Global Car Variable
+		var currentCar = new THREE.Object3D();
+		var currentCar2 = new THREE.Object3D();
+		var currentCar3 = new THREE.Object3D();
+		var currentCar4 = new THREE.Object3D();
+		var body = new THREE.Object3D();
+		var backPlate2 = new THREE.Object3D();
+		var backPlate = new THREE.Object3D();
+		var wipers = new THREE.Object3D();
+		var leftDoor = new THREE.Object3D();
+		var rightDoor = new THREE.Object3D();
+		var leftMirror = new THREE.Object3D();
+		var rightMirror = new THREE.Object3D();
+		var backlights = new THREE.Object3D();
+		var frontlights = new THREE.Object3D();
+		var rightFrontIndicator = new THREE.Object3D();
+		var leftFrontIndicator = new THREE.Object3D();
+		var rightBackIndicator = new THREE.Object3D();
+		var leftBackIndicator = new THREE.Object3D();
+		var rightBrakeLight = new THREE.Object3D();
+		var leftBrakeLight = new THREE.Object3D();
+		var wheelFrontRight = new THREE.Object3D();
+		var wheelFrontLeft = new THREE.Object3D();
+		var wheelBackRight = new THREE.Object3D();
+		var wheelBackLeft = new THREE.Object3D();
+		var tireFrontRight = new THREE.Object3D();
+		var tireFrontLeft = new THREE.Object3D();
+		var tireBackRight = new THREE.Object3D();
+		var tireBackLeft = new THREE.Object3D();
+
+		// Load the Car Object here
+		var carLoader = new THREE.AssimpJSONLoader();
+		var carModel = 'models/assimp/AudiAvus.json';
+		// Main car is loading here
+		addCarOnTrack(carModel, 0, 0, 0.2, 0);
+		// Second car is loading here
+		addCarOnTrack(carModel, 1, -30, 0.2, 32);
+		// Third car is loading here
+		addCarOnTrack(carModel, 2, -30, 0.2, 44);
+		// Fourth car is loading here
+		addCarOnTrack(carModel, 3, -30, 0.2, 20);
+
+		function showCars() {
+			setPosition(currentCar2, 7.5, 0.2, 22);
+			setPosition(currentCar3, 7.5, 0.2, 44);
+		}
+
+		function showCars2() {
+			setPosition(currentCar2, 7.5, 0.2, 32);
+			setPosition(currentCar3, 7.5, 0.2, 54);
+		}
+
+		function hideCars() {
+			setPosition(currentCar2, -30, 0.2, 32);
+			setPosition(currentCar3, -30, 0.2, 44);
+			setPosition(currentCar4, -30, 0.2, 20);
+		}
+
+		function addCarOnTrack(carModel, objectCar, x, y, z) {
+			carLoader.load(carModel, function (object) {
+
+				if (objectCar == 0) currentCar = object;
+				if (objectCar == 1) currentCar2 = object;
+				if (objectCar == 2) currentCar3 = object;
+				if (objectCar == 3) currentCar4 = object;
+
+				object.position.x = x;
+				object.position.y = y;
+				object.position.z = z;
+				object.updateMatrixWorld();
+				var vector = new THREE.Vector3();
+				vector.setFromMatrixPosition(leftFrontIndicator.matrixWorld);
+				// Children Car IDs
+				body = object.getObjectByName("3DSMesh_6", true);
+				steel = object.getObjectByName("3DSMesh_31", true);
+				logo = object.getObjectByName("3DSMesh_34", true);
+				pipes = object.getObjectByName("3DSMesh_26", true);
+				bumper = object.getObjectByName("3DSMesh_25", true);
+				engine = object.getObjectByName("3DSMesh_35", true);
+				dashboard = object.getObjectByName("3DSMesh_42", true);
+				dashboardDisplay = object.getObjectByName("3DSMesh_41", true);
+				steeringWheel = object.getObjectByName("3DSMesh_43");
+				wipers = object.getObjectByName("3DSMesh_52", true);
+				leftDoor = object.getObjectByName("3DSMesh_10", true);
+				rightDoor = object.getObjectByName("3DSMesh_12", true);
+				rightMirror = object.getObjectByName("3DSMesh_51", true);
+				leftMirror = object.getObjectByName("3DSMesh_27", true);
+				backlights = object.getObjectByName("3DSMesh_28", true);
+				frontlights = object.getObjectByName("3DSMesh_40", true);
+				rightFrontIndicator = object.getObjectByName("3DSMesh_48", true);
+				leftFrontIndicator = object.getObjectByName("3DSMesh_2", true);
+				rightBackIndicator = object.getObjectByName("3DSMesh_0", true);
+				leftBackIndicator = object.getObjectByName("3DSMesh_50", true);
+				rightBrakeLight = object.getObjectByName("3DSMesh_1", true);
+				leftBrakeLight = object.getObjectByName("3DSMesh_49", true);
+				carGlass = object.getObjectByName("3DSMesh_33", true);
+				leftWindow = object.getObjectByName("3DSMesh_9", true);
+				rightWindow = object.getObjectByName("3DSMesh_11", true);
+				wheelFrontRight = object.getObjectByName("3DSMesh_19", true);
+				wheelFrontLeft = object.getObjectByName("3DSMesh_21", true);
+				wheelBackRight = object.getObjectByName("3DSMesh_17", true);
+				wheelBackLeft = object.getObjectByName("3DSMesh_23", true);
+				tireFrontRight = object.getObjectByName("3DSMesh_20", true);
+				tireFrontLeft = object.getObjectByName("3DSMesh_22", true);
+				tireBackRight = object.getObjectByName("3DSMesh_18", true);
+				tireBackLeft = object.getObjectByName("3DSMesh_24", true);
+				backPlate2 = object.getObjectByName("3DSMesh_45", true);
+				backPlate = object.getObjectByName("3DSMesh_46", true);
+				seatRight = object.getObjectByName("3DSMesh_13", true);
+				seatLeft = object.getObjectByName("3DSMesh_15", true);
+				carpet = object.getObjectByName("3DSMesh_30", true);
+				// currentCar.add(rightDoor);
+				/* 
+				// Initial Color of Car Housing -> Shiny Blue
+				// Set metallic parts to a steel material -> PuredarkChrome
+				// Set textil objects to fabric color -> Rough Red
+				*/
+				var housing = [body, rightDoor, leftDoor, backPlate2, backPlate];
+				for (var i = 0; i < housing.length; i++) {
+					if (objectCar == 0)
+						setColor(materialRed, housing[i]);
+					else
+						setColor(materialBlack, housing[i]);
+				}
+				var darkChromeObjects = [dashboardDisplay, rightMirror, leftMirror, engine, pipes, logo, steel, wheelBackLeft, wheelBackRight, wheelFrontLeft, wheelFrontRight]
+				for (var i = 0; i < darkChromeObjects.length; i++) {
+					setColor(pureChrome, darkChromeObjects[i]);
+				}
+				var blackObjects = [steeringWheel, wipers, dashboard, bumper, tireBackLeft, tireBackRight, tireFrontLeft, tireFrontRight];
+				for (var i = 0; i < blackObjects.length; i++) {
+					setColor(blackRough, blackObjects[i]);
+				}
+				var redObjects = [carpet, seatLeft, seatRight];
+				for (var i = 0; i < redObjects.length; i++) {
+					setColor(redRough, redObjects[i]);
+				}
+				// Set glass material
+				var blueGlassMaterial = [carGlass, rightWindow, leftWindow];
+				for (var i = 0; i < blueGlassMaterial.length; i++) {
+					setColor(blueGlass, blueGlassMaterial[i]);
+				}
+				setColor(redGlass, backlights);
+				setColor(yellowGlass, frontlights);
+			}, onProgress, onError);
+		}
+
+		function showGameOverScreen() {
+			document.getElementById('close_layer').style.display = 'inline';
+		}
+
+		var track = new THREE.Object3D();
+		// Load the race track
+		var trackLoader = new THREE.AssimpJSONLoader();
+		trackLoader.load('models/assimp/interior/track.json', function (object) {//interior/track.json
+			track = object;
+			scene.add(object);
+			object.position.x = 40;
+
+			object.scale.multiplyScalar(1.2);
+			object.rotation.z = Math.PI / 2;
+			setColor(pureChrome, object);
+		}, onProgress, onError);
+
+
+		// Load some buildings
+		var buildingLoader = new THREE.AssimpJSONLoader();
+		buildingLoader.load('models/assimp/interior/build.json', function (object) {
+			scene.add(object);
+			// Adapt the position of the building to the Environment
+			object.position.x = -35 - 20;
+			object.position.z += 35;
+			object.scale.multiplyScalar(0.3);
+
+			// Set the material of the building
+			windows = object.getObjectByName("Cube", true);
+			setColor(pureChrome, windows);
+
+			roof = object.getObjectByName("Cube_2", true);
+			garage = object.getObjectByName("Cube_1", true);
+			grid1 = object.getObjectByName("Cube_", true);
+			grid2 = object.getObjectByName("Cylindre_0", true);
+			grid3 = object.getObjectByName("Cube_2_0_1", true);
+			grid4 = object.getObjectByName("Cube_1_0_1", true);
+			pillar = object.getObjectByName("Cylindre_5", true);
+
+			var building = [pillar, roof, garage, grid1, grid2, grid3, grid4,];
+			for (var i = 0; i < building.length; i++) {
+				setColor(greyRough, building[i]);
+			}
+
+			// Duplicate the building and set it to the neighborhood
+			var obj2 = object.clone();
+			scene.add(obj2);
+			obj2.position.z -= 60;
+
+			// var obj3 = obj2.clone();
+			// scene.add(obj3);
+			// obj3.position.z -=60;
+
+		}, onProgress, onError);
+
+		// CubeMap
+		var path = "textures/cube/Bridge2/";//textures/cube/SwedishRoyalCastle/
+		var format = '.jpg';
+		var urls = [
+			path + 'px' + format, path + 'nx' + format,
+			path + 'py' + format, path + 'ny' + format,
+			path + 'pz' + format, path + 'nz' + format
+		];
+		var reflectionCube = new THREE.CubeTextureLoader().load(urls);
+		reflectionCube.format = THREE.RGBFormat;
+		scene.background = reflectionCube;
+
+		animate();
+
+		function init() {
+			container = document.createElement('div');
+			document.body.appendChild(container);
+
+			// Camera
+			camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 2000);
+			camera.position.set(20, 20, -150);
+
+			// Scene
+			scene = new THREE.Scene();
+
+			// LIGHTS
+			var ambient = new THREE.AmbientLight(0x050505);
+			scene.add(ambient);
+
+			directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+			directionalLight.position.set(2, 1.2, 10).normalize();
+			scene.add(directionalLight);
+
+			directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+			directionalLight.position.set(-2, 1.2, -10).normalize();
+			scene.add(directionalLight);
+
+			/*
+			pointLight = new THREE.PointLight( 0xffaa00, 2 );
+			pointLight.position.set( 2000, 1200, 10000 );
+			scene.add( pointLight );
+			*/
+
+			// Renderer
+			renderer = new THREE.WebGLRenderer();
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			container.appendChild(renderer.domElement);
+
+			// Stats FPS
+			// stats = new Stats();
+			// container.appendChild( stats.dom );
+
+			// Events
+			window.addEventListener('resize', onWindowResize, false);
+
+			camera.lookAt(scene.position);
+
+			/* OrbitControls
+			// How far you can orbit vertically, upper and lower limits.
+			// Range is 0 to Math.PI radians.
+			*/
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.minPolarAngle = 0;
+			controls.maxPolarAngle = Math.PI / 2;
+
+			controls.target.set(0, 2, 0);
+			controls.update();
+
+			/* Set the ground
+			// First Ground: Grass
+			// Second Ground: Asphalt
+			*/
+			var floorTexture = new THREE.ImageUtils.loadTexture('images/wall.jpg');
+			floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
+			floorTexture.repeat.set(100, 100);
+			var floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
+			var floorGeometry = new THREE.PlaneGeometry(220, 375, 10, 10);
+			var floor = new THREE.Mesh(floorGeometry, floorMaterial);
+			floor.position.y = 0.2;
+			floor.position.x += 40;
+			floor.rotation.x = Math.PI / 2;
+			floor.castShadow = true;
+			floor.receiveShadow = true;
+			scene.add(floor);
+
+			var floor2Texture = new THREE.ImageUtils.loadTexture('images/gras.jpg');//sand-512//checkerboard.jpg
+			floor2Texture.wrapS = floor2Texture.wrapT = THREE.RepeatWrapping;
+			floor2Texture.repeat.set(100, 100);
+			var floor2Material = new THREE.MeshBasicMaterial({ map: floor2Texture, side: THREE.DoubleSide });
+			var floor2Geometry = new THREE.PlaneGeometry(300, 400, 100, 100);
+			var floor2 = new THREE.Mesh(floor2Geometry, floor2Material);
+			floor.position.y -= 0.02;
+			floor.position.x -= 30;
+			floor2.rotation.x = Math.PI / 2;
+			floor2.castShadow = true;
+			floor2.receiveShadow = true;
+			scene.add(floor2);
+		}
+
+		function onWindowResize(event) {
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+		}
+
+		// MATERIAL FUNCTIONS
+
+		// Help function to set the material/color
+		function setColor(color, object) {
+			object.traverse(function (child) {
+				if (child instanceof THREE.Mesh) {
+					child.material = color;
+				}
+			});
+		}
+
+		// Materials
+		var materialBlue = new THREE.MeshLambertMaterial({ color: 0x001133, envMap: reflectionCube, combine: THREE.MultiplyOperation });
+		var materialBlack = new THREE.MeshLambertMaterial({ color: 0xffff00, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.15 });
+		var materialRed = new THREE.MeshLambertMaterial({ color: 0xff4c4c, envMap: reflectionCube, combine: THREE.MixOperation, reflectivity: 0.01 });
+
+		var darkChrome = new THREE.MeshLambertMaterial({ color: 0x444444, envMap: reflectionCube });//darkdarkChrome
+		var pureChrome = new THREE.MeshLambertMaterial({ color: 0xffffff, envMap: reflectionCube });
+
+		var lightGlass = new THREE.MeshBasicMaterial({ color: 0x223344, envMap: reflectionCube, opacity: 0.25, transparent: true, combine: THREE.MixOperation, reflectivity: 0.25 });
+		var blueGlass = new THREE.MeshLambertMaterial({ color: 0x668899, envMap: reflectionCube, opacity: 0.75, transparent: true });
+		var yellowGlass = new THREE.MeshLambertMaterial({ color: 0xffffaa, opacity: 0.75, transparent: true });
+		var redGlass = new THREE.MeshLambertMaterial({ color: 0xff0000, opacity: 0.75, transparent: true });
+
+		var blackRough = new THREE.MeshLambertMaterial({ color: 0x050505 });//tire
+		var greyRough = new THREE.MeshLambertMaterial({ color: 0x1D1D1D });
+		var redRough = new THREE.MeshLambertMaterial({ color: 0x330500 });//seats
+
+		// function setBlue(){
+		// 	var housing = [body, rightDoor, leftDoor, backPlate2, backPlate];
+		// 	for(var i = 0; i<housing.length; i++){
+		// 		setColor(materialBlue, housing[i]);
+		// 	}
+		// }
+		// var blueButton = document.getElementById('blue-material');
+		// blueButton.addEventListener('click', function(){
+		// 	setBlue();
+		// });
+
+		// function setSilver(){
+		// 	var housing = [body, rightDoor, leftDoor, backPlate2, backPlate];
+		// 	for(var i = 0; i<housing.length; i++){
+		// 		setColor(pureChrome, housing[i]);
+		// 	}
+		// }
+		// var silverButton = document.getElementById('silver-material');
+		// silverButton.addEventListener('click', function(){
+		// 	setSilver();
+		// });
+
+		// function setBlack(){
+		// 	var housing = [body, rightDoor, leftDoor, backPlate2, backPlate];
+		// 	for(var i = 0; i<housing.length; i++){
+		// 		setColor(materialBlack, housing[i]);
+		// 	}
+		// }
+		// var blackButton = document.getElementById('black-material');
+		// blackButton.addEventListener('click', function(){
+		// 	setBlack();
+		// });
+
+		// function setRed(){
+		// 	var housing = [body, rightDoor, leftDoor, backPlate2, backPlate];
+		// 	for(var i = 0; i<housing.length; i++){
+		// 		setColor(materialRed, housing[i]);
+		// 	}
+		// }
+		// var redButton = document.getElementById('red-material');
+		// redButton.addEventListener('click', function(){
+		// 	setRed();
+		// });
+
+		var moveButton = document.getElementById('move');
+		moveButton.addEventListener('click', function () {
+			move();
+		});
+
+		var closeButton = document.getElementById('close-server');
+		closeButton.addEventListener('click', function () {
+			webSocket.onclose();
+		});
+
+		/* Helping functions of driving
+		// 
+		//
+		*/
+		var angle = 0; // Current direction of the car pi/2=90°
+
+		//update Global Position
+		function setPosition(object, x1, y1, z1) {
+			object.position.x = x1;
+			object.position.y = y1;
+			object.position.z = z1;
+			//moveForward();
+
+			//setTimeout(moveBackward, 800);
+		}
+
+		//var carDegree = 0.0;
+
+		// rotate car with a smooth flow
+		/*
+		function rotateCar(object, angleDeg){
+			//degree to radians
+			if(Math.abs(angleDeg - carDegree) > 0.0000001) {
+				var angleRad = angleDeg*(Math.PI/180);
+				var offsetRad = angleRad + object.rotation.z;
+				var offsetRadP = offsetRad / 100.0;
+				var index = 0;
+				
+				var onUpdate = function() {
+					object.rotation.z -= offsetRadP;
+					index++;
+					
+					if(index < 100) {
+						window.setTimeout(onUpdate, 0);
+					}
+				};
+				
+				window.setTimeout(onUpdate, 0);
+				carDegree = angleDeg;
+			}
+		}*/
+
+
+		function rotateCar(object, angleDeg) {
+			var angleRad = angleDeg * (Math.PI / 180);
+
+			object.rotation.z = -angleRad;
+			angle = -angleDeg;
+		}
+
+		function moveForward() {
+			if (angle === 0) {
+				currentCar.position.x += 1 / 20 * Math.sin(-angle);
+				currentCar.position.z += 1 / 20 * Math.cos(-angle);
+			}
+			else if (angle > 0) {
+				currentCar.position.z -= 1 / 20 * Math.sin(-angle);
+				currentCar.position.x -= 1 / 20 * Math.cos(-angle);
+			}
+			else {
+				currentCar.position.x -= 1 / 20 * Math.sin(-angle);
+				currentCar.position.z -= 1 / 20 * Math.cos(-angle);
+
+			}
+			requestAnimationFrame(moveForward);
+		}
+
+		function moveBackward() {
+			if (angle === 0) {
+				currentCar.position.x -= 1 / 20 * Math.sin(-angle);
+				currentCar.position.z -= 1 / 20 * Math.cos(-angle);
+			}
+			else if (angle > 0) {
+				currentCar.position.z += 1 / 20 * Math.sin(-angle);
+				currentCar.position.x += 1 / 20 * Math.cos(-angle);
+			}
+			else {
+				currentCar.position.x += 1 / 20 * Math.sin(-angle);
+				currentCar.position.z += 1 / 20 * Math.cos(-angle);
+			}
+			requestAnimationFrame(moveBackward);
+
+		}
+
+		// DOOR FUNCTIONS
+		var rightDoorStatus = false;// Right Door is closed
+		var leftDoorStatus = false;// Left Door is closed
+
+		function openRightDoor() {
+
+			var wholeRightDoor = [rightDoor, rightMirror, rightWindow];
+			if (rightDoorStatus == false) {
+				for (var i = 0; i < wholeRightDoor.length; i++) {
+					wholeRightDoor[i].rotateZ(0.5);
+					wholeRightDoor[i].position.x -= 1.6;
+					wholeRightDoor[i].position.y += 0.5;
+				}
+				rightDoorStatus = true;// now it's open
+			}
+		}
+
+		function closeRightDoor() {
+			var wholeRightDoor = [rightDoor, rightMirror, rightWindow];
+			if (rightDoorStatus == true) {
+				for (var i = 0; i < wholeRightDoor.length; i++) {
+					wholeRightDoor[i].rotateZ(-0.5);
+					wholeRightDoor[i].position.x += 1.6;
+					wholeRightDoor[i].position.y -= 0.5;
+				}
+				rightDoorStatus = false;
+			}
+		}
+
+		function openLeftDoor() {
+			var wholeLeftDoor = [leftDoor, leftMirror, leftWindow];
+			if (leftDoorStatus == false) {
+				for (var i = 0; i < wholeLeftDoor.length; i++) {
+					wholeLeftDoor[i].rotateZ(-0.5);
+					wholeLeftDoor[i].position.x += 1.6;
+					wholeLeftDoor[i].position.y += 0.5;
+				}
+				leftDoorStatus = true;// now it's open
+			}
+		}
+
+		function closeLeftDoor() {
+			var wholeLeftDoor = [leftDoor, leftMirror, leftWindow];
+			if (leftDoorStatus == true) {
+				for (var i = 0; i < wholeLeftDoor.length; i++) {
+					wholeLeftDoor[i].rotateZ(0.5);
+					wholeLeftDoor[i].position.x -= 1.6;
+					wholeLeftDoor[i].position.y -= 0.5;
+				}
+				leftDoorStatus = false;
+			}
+		}
+
+		/*
+		// Light functions
+		// Frontlights, backlights, blinking, hazard lights
+		*/
+
+		// Front and Back Lights
+		var red1, red2, red3, red4, red5, red6, red7;
+		var yellow1, yellow2, yellow3, yellow4, yellow5, yellow6, yellow7;
+
+		red1 = new THREE.MeshLambertMaterial({ color: 0xff7f7f, opacity: 0.75, transparent: true });
+		red2 = new THREE.MeshLambertMaterial({ color: 0xff4c4c, opacity: 0.75, transparent: true });
+		red3 = new THREE.MeshLambertMaterial({ color: 0xff1919, opacity: 0.75, transparent: true });
+		red4 = new THREE.MeshLambertMaterial({ color: 0xff0000, opacity: 0.75, transparent: true });
+		red5 = new THREE.MeshLambertMaterial({ color: 0xe50000, opacity: 0.75, transparent: true });
+		red6 = new THREE.MeshLambertMaterial({ color: 0xb20000, opacity: 0.75, transparent: true });
+		red7 = new THREE.MeshLambertMaterial({ color: 0x990000, opacity: 0.75, transparent: true });
+
+		yellow1 = new THREE.MeshLambertMaterial({ color: 0xffce00, opacity: 0.75, transparent: true });
+		yellow2 = new THREE.MeshLambertMaterial({ color: 0xffdb00, opacity: 0.75, transparent: true });
+		yellow3 = new THREE.MeshLambertMaterial({ color: 0xffffcc, opacity: 0.75, transparent: true });
+		yellow4 = new THREE.MeshLambertMaterial({ color: 0xffff99, opacity: 0.75, transparent: true });
+		yellow5 = new THREE.MeshLambertMaterial({ color: 0xffff66, opacity: 0.75, transparent: true });
+		yellow6 = new THREE.MeshLambertMaterial({ color: 0xffff32, opacity: 0.75, transparent: true });
+		yellow7 = new THREE.MeshLambertMaterial({ color: 0xffff00, opacity: 0.75, transparent: true });
+
+		var timerid = 0;
+		var defaultMat = undefined;
+
+		var blinkRightStatus = false;
+		var blinkLeftStatus = false;
+
+		function blinkRight() {
+			var rightIndicator = [rightBackIndicator, rightFrontIndicator];
+			var lightsOn = false;
+
+			if (blinkLeftStatus === false && blinkRightStatus === false) {
+				timerid = window.setInterval(function () {
+					if (lightsOn === false) {
+						for (var i = 0; i < rightIndicator.length; i++) {
+							rightIndicator[i].traverse(function (child) {
+								if (child instanceof THREE.Mesh) {
+									defaultMat = child.material;
+									child.material = yellow1;
+								}
+							});
+						}
+						lightsOn = true;
+					}
+					else {
+						for (var i = 0; i < rightIndicator.length; i++) {
+							rightIndicator[i].traverse(function (child) {
+								if (child instanceof THREE.Mesh) {
+									child.material = defaultMat;
+								}
+							});
+						}
+						lightsOn = false;
+					}
+				}, 500);
+				blinkRightStatus = true;
+			}
+		}
+
+		function turnFlashlightsOn(frontOrBack, direction) {
+			if (frontOrBack === 'front' && direction === 'right') {
+				rightFrontIndicator.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						defaultMat = child.material;
+						child.material = yellow1;
+					}
+				});
+			}
+			else if (frontOrBack === 'back' && direction === 'right') {
+				rightBackIndicator.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						defaultMat = child.material;
+						child.material = yellow1;
+					}
+				});
+			}
+			else if (frontOrBack === 'front' && direction === 'left') {
+				leftFrontIndicator.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						defaultMat = child.material;
+						child.material = yellow1;
+					}
+				});
+			}
+			else if (frontOrBack === 'back' && direction === 'left') {
+				leftBackIndicator.traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						defaultMat = child.material;
+						child.material = yellow1;
+					}
+				});
+			}
+			else {
+				console.log("FrontOrBack or direction is not defined");
+			}
+		}
+
+		function turnFlashlightsOff(frontOrBack, direction) {
+			if (frontOrBack === 'front' && direction === 'right') {
+				setColor(defaultMat, rightFrontIndicator);
+			}
+			else if (frontOrBack === 'back' && direction === 'right') {
+				setColor(defaultMat, rightBackIndicator);
+			}
+			else if (frontOrBack === 'front' && direction === 'left') {
+				setColor(defaultMat, leftFrontIndicator);
+			}
+			else if (frontOrBack === 'back' && direction === 'left') {
+				setColor(defaultMat, leftFrontIndicator);
+			}
+			else {
+				console.log("FrontOrBack or direction is not defined");
+			}
+		}
+
+		var defaultMatBrakeLight = undefined;
+
+		function turnBrakeLightOn() {
+			var brakeLights = [rightBrakeLight, leftBrakeLight];
+			for (var i = 0; i < brakeLights.length; i++) {
+				brakeLights[i].traverse(function (child) {
+					if (child instanceof THREE.Mesh) {
+						defaultMatBrakeLight = child.material;
+						child.material = red2;
+					}
+				});
+			}
+		}
+
+		function turnBrakeLightOff() {
+			setColor(defaultMatBrakeLight, rightBrakeLight);
+			setColor(defaultMatBrakeLight, leftBrakeLight);
+		}
+
+
+		// just stop the blinking if it blinks!TODO	
+		function stopBlinkRight() {
+			if (defaultMat !== undefined) {
+				var rightIndicator = [rightBackIndicator, rightFrontIndicator];
+				for (var i = 0; i < rightIndicator.length; i++) {
+					rightIndicator[i].traverse(function (child) {
+						if (child instanceof THREE.Mesh) {
+							child.material = defaultMat;
+						}
+					});
+				}
+				window.clearInterval(timerid);
+				blinkRightStatus = false;
+			}
+		}
+
+		function blinkLeft() {
+			var leftIndicator = [leftBackIndicator, leftFrontIndicator];
+			var lightsOn = false;
+
+			if (blinkLeftStatus === false && blinkRightStatus === false) {
+				timerid = window.setInterval(function () {
+					if (lightsOn === false) {
+						for (var i = 0; i < leftIndicator.length; i++) {
+							leftIndicator[i].traverse(function (child) {
+								if (child instanceof THREE.Mesh) {
+									defaultMat = child.material;
+									child.material = yellow1;
+								}
+							});
+						}
+						lightsOn = true;
+					}
+					else {
+						for (var i = 0; i < leftIndicator.length; i++) {
+							leftIndicator[i].traverse(function (child) {
+								if (child instanceof THREE.Mesh) {
+									child.material = defaultMat;
+								}
+							});
+						}
+						lightsOn = false;
+					}
+				}, 500);
+				blinkLeftStatus = true;
+			}
+		}
+
+		function stopBlinkLeft() {
+			if (defaultMat !== undefined) {
+				var leftIndicator = [leftBackIndicator, leftFrontIndicator];
+				for (var i = 0; i < leftIndicator.length; i++) {
+					leftIndicator[i].traverse(function (child) {
+						if (child instanceof THREE.Mesh) {
+							child.material = defaultMat;
+						}
+					});
+				}
+				window.clearInterval(timerid);
+				blinkLeftStatus = false;
+			}
+		}
+
+		function turnBacklightsOn() {//color
+			setColor(red2, backlights);
+		}
+
+		function turnBacklightsOff() {//color
+			backlights.traverse(function (child) {
+				if (child instanceof THREE.Mesh) {
+					child.material = redGlass;//color
+				}
+			});
+		}
+
+
+		function turnFrontlightsOn() {//color
+			setColor(yellow7, frontlights);
+		}
+
+		function turnFrontlightsOff() {
+			setColor(yellowGlass, frontlights);
+		}
+
+		// var t = 0;
+		function animate() {
+			requestAnimationFrame(animate);
+			render();
+			//stats.update();
+		}
+
+		//
+		function render() {
+			scene.add(currentCar);
+			scene.add(currentCar2);
+			scene.add(currentCar3);
+			scene.add(currentCar4);
+			renderer.render(scene, camera);
+			//stats.update();
+		}
+
+		// Create an export log
+		var logObject = {
+			telemetry: []
+		};
+
+		(function () {
+			var textFile = null,
+				makeTextFile = function (text) {
+					var data = new Blob([text], { type: 'text/plain' });
+					// If we are replacing a previously generated file we need to
+					// manually revoke the object URL to avoid memory leaks.
+					if (textFile !== null) {
+						window.URL.revokeObjectURL(textFile);
+					}
+					textFile = window.URL.createObjectURL(data);
+					return textFile;
+				};
+			var create = document.getElementById('create');
+
+			create.addEventListener('click', function () {
+				var link = document.getElementById('downloadlink');
+				link.href = makeTextFile(JSON.stringify(logObject));
+				link.style.display = 'block';
+				link.style.color = "green";
+			}, false);
+		})();
+
+		// Read the file with configuration
+		function readJSONFile(file) {
+			var rawFile = new XMLHttpRequest();
+			rawFile.open("GET", file, false);
+			rawFile.onreadystatechange = function () {
+				if (rawFile.readyState === 4) {
+					if (rawFile.status === 200 || rawFile.status == 0) {
+						var allText = rawFile.responseText;
+						jsonSimulationConf = JSON.parse(allText);
+					}
+				}
+			}
+			rawFile.send(null);
+		}
+
+		// Run logic using Simulator class
+		var presentationObjects = -1;
+		var jsonSimulationConf;
+		var rawWebAssembly;
+		var delayBetweenExecution = 16;
+		var simulationStatus = false;
+		var simulationTimeLimit = 3600;
+		var showLogsData = false;
+		var tutorialConfiguration;
+		var carInitialPosition = [];
+		var carCounter = 0;
+
+		// Data from .json
+		var trackObjects;
+		var trackCarPosition;
+
+		// extra moving object positioning
+		var indexMove;
+
+		// Fill the initial data from the configuration file
+		function readTutorialConfig() {
+
+			readJSONFile(tutorialConfiguration);
+			// Clean a data is there was some
+			trackObjects = [];
+			trackCarPosition = [];
+
+			// Read all objects from configuration
+			if (jsonSimulationConf != undefined) {
+
+				Object.keys(jsonSimulationConf)
+					.forEach(
+						function (name) {
+							if (name == "car") {
+
+								var carJSON = jsonSimulationConf[name];
+								var initPosition = carJSON.start;
+								// Read a start position for the car, whether it's an grid position or coordinates directly
+								if (initPosition.match(/[a-z]/i)) {
+									trackCarPosition = [zone2Coord.get(initPosition)[0], zone2Coord.get(initPosition)[1]];
+								} else {
+									var separatorPosition = initPosition.indexOf(":");
+									var x = initPosition.substr(0, (separatorPosition));
+									var y = initPosition.substr((separatorPosition + 1), (initPosition.length - separatorPosition));
+									trackCarPosition = [x, y];
+								}
+							}
+							// Add objects to the track
+							if (name.includes("trackObject")) {
+								var objectJSON = jsonSimulationConf[name];
+								var objectPosition = objectJSON.position;
+
+								if (objectPosition.match(/[a-z]/i)) {
+									if (objectJSON.width != undefined && objectJSON.height != undefined)
+										trackObjects.push([
+											zone2Coord.get(objectPosition)[1],
+											zone2Coord.get(objectPosition)[0],
+											objectJSON.width,
+											objectJSON.height,
+											objectJSON.type
+										]);
+								} else {
+									var separatorPosition = objectPosition.indexOf(":");
+									var x = objectPosition.substr(0, (separatorPosition));
+									var y = objectPosition.substr((separatorPosition + 1), (objectPosition.length - separatorPosition));
+									if (objectJSON.width != undefined && objectJSON.height != undefined)
+										trackObjects.push([
+											x,
+											y,
+											objectJSON.width,
+											objectJSON.height,
+											objectJSON.type
+										]);
+								}
+							}
+						});
+			}
+		}
+
+		function loadTutorial(tutorial) {
+
+			document.getElementById("notready").innerHTML = "Not Ready!";
+			notReadyToGo();
+
+			// TODO: if there was other tutorials loaded
+			if (presentationObjects != -1) {
+				// TODO: set some init value for objects
+				deleteCones();
+				hideCars();
+				carCounter = 0;
+			}
+			// set variable to read tutorial's configuration
+			if (tutorial < 10)
+				tutorialConfiguration = "tutorials/initialData/tutorial0" + tutorial + ".json";
+			else
+				tutorialConfiguration = "tutorials/initialData/tutorial" + tutorial + ".json";
+
+			console.log(tutorialConfiguration);
+
+			readTutorialConfig();
+			// influences on the scene for tutorials
+			presentationObjects = tutorial;
+			// directly set the position of the car visually
+			if (trackCarPosition != undefined) {
+				setPosition(currentCar, +trackCarPosition[1], 0.2, +trackCarPosition[0]);
+				rotateCar(currentCar, 0);
+			} else console.error("func loadTutorial: trackCarPosition == undefined");
+
+			// Load models on the track visually
+			if (trackObjects != undefined) {
+				console.log("Number of objects in current tutorial json config : ", trackObjects.length);
+				for (var i in trackObjects) {
+					if ((trackObjects[i])[4] == "car") {
+						if (carCounter == 0) {
+							setPosition(currentCar2, +(trackObjects[i])[0], 0.2, +(trackObjects[i])[1]);
+						}
+						if (carCounter == 1) {
+							setPosition(currentCar3, +(trackObjects[i])[0], 0.2, +(trackObjects[i])[1]);
+						}
+						if (carCounter == 2) {
+							setPosition(currentCar4, +(trackObjects[i])[0], 0.2, +(trackObjects[i])[1]);
+							rotateCar(currentCar4, 180);
+						}
+						carCounter++;
+					}
+
+					if ((trackObjects[i])[4] == "cone") {
+						addObjectsOnTrackVisual(modelObject, +(trackObjects[i])[0], 0.3, +(trackObjects[i])[1]);
+					}
+				}
+			}
+
+			if (presentationObjects == 6)
+				indexMove = -80;
+			if (presentationObjects == 7)
+				indexMove = -100;
+			if (presentationObjects == 11)
+				indexMove = 30;
+
+			resetTrajectoryOnly();
+		}
+
+		function initSimulator() {
+
+			var simulator = new window.simulator.Simulator();
+			window.simulatorInstance = simulator;
+
+			// Init the model, which is the controller of the car
+			Module.init();
+
+			// Set initial car position for simulator
+			var initPosition = simulator.initPosition;
+			var simulatorInitPosition = initPosition.bind(simulator);
+
+			// add objects for current task
+			var addObject = simulator.addObjectOnTrack;
+			var addObjectOnTrack = addObject.bind(simulator);
+
+			// add objects depends on the task
+			if (presentationObjects != -1) {
+				console.log("Number of objects in current tutorial json config : ", trackObjects.length);
+				carInitialPosition = trackCarPosition;
+				for (var i in trackObjects) {
+					// if object does not have width/hide -> don't add into math model
+					if ((trackObjects[i])[2] != 0 && (trackObjects[i])[3] != 0) {
+						// Math model
+						addObjectOnTrack([+(trackObjects[i])[0], +(trackObjects[i])[1]], (trackObjects[i])[2], (trackObjects[i])[3]);
+						console.log("Added object : ", trackObjects[i]);
+					}
+				}
+			}
+			// Set math model init position
+			simulatorInitPosition(carInitialPosition[0], carInitialPosition[1]);
+			// Set visualization position
+			setPosition(currentCar, carInitialPosition[1], 0.2, carInitialPosition[0]);
+			rotateCar(currentCar, 0);
+
+			readyToGo();
+		}
+
+		function move() {
+
+			var simulator = window.simulatorInstance;
+
+			//bind the function
+			var run = simulator.run;
+			var simulatorRun = run.bind(simulator);
+
+			// change object position - now related only to following and overtaking
+			var moveObject = simulator.changeObjectPosition;
+			var changeObjectPosition = moveObject.bind(simulator);
+
+			if (presentationObjects == 6) {
+				changeObjectPosition(0, [1, indexMove], 4, 4);
+				indexMove += 0.4;
+				setPosition(currentCar2, 1, 0.3, indexMove);
+			}
+
+			if (presentationObjects == 7) {
+				changeObjectPosition(0, [-1, indexMove], 4, 4);
+				indexMove += 0.3;
+				setPosition(currentCar2, -1, 0.3, indexMove);
+			}
+
+			if (presentationObjects == 10) {
+				if (simulator.output.ti.value >= 100 && simulator.output.ti.value <= 100.4) {
+
+					changeObjectPosition(0, [95, -8], 2, 2);
+					changeObjectPosition(1, [108, -8], 2, 2);
+
+					deleteCones();
+
+					addObjectsOnTrackVisual(modelObject, 95, 0.3, -8);
+					addObjectsOnTrackVisual(modelObject, 108, 0.3, -8);
+				}
+			}
+
+			if (presentationObjects == 11) {
+
+				if ((simulator.output.xi.value < 60) && (simulator.output.xi.value > -60) && (simulator.output.yi.value > 90)) {
+					changeObjectPosition(7, [101, indexMove], 4, 4);
+					setPosition(currentCar4, 101, 0.3, indexMove);
+					indexMove -= 0.4;
+				}
+
+				if (simulator.output.ti.value >= 140 && simulator.output.ti.value <= 140.4) {
+
+					changeObjectPosition(8, [95, -122], 2, 2);
+					changeObjectPosition(9, [108, -122], 2, 2);
+					deleteConesMove();
+					addObjectsOnTrackVisual(modelObject, 95, 0.3, -122);
+					addObjectsOnTrackVisual(modelObject, 108, 0.3, -122);
+				}
+			}
+
+			var getDistances = simulator.getDistances;
+			var simulatorGetDistances = getDistances.bind(simulator);
+
+			// Checking of execution time
+			var startTime = Math.floor(Date.now());
+
+			// Read the distances from Simulator, where the track was defined
+			var distances = simulatorGetDistances();
+
+			// TODO: define interface for standard wasm-model
+			Module.setFrontLeftSensor(distances[0] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setFrontRightSensor(distances[1] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setFrontLeftSideSensor(distances[2] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setBackLeftSideSensor(distances[3] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setFrontRightSideSensor(distances[4] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setBackRightSideSensor(distances[5] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setBackLeftSensor(distances[6] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+			Module.setBackRightSensor(distances[7] * (Math.floor(Math.random() * slider.value) + 95) / 100);
+
+			Module.setXPosition(simulator.output.xi.value);
+			Module.setYPosition(simulator.output.yi.value);
+
+			Module.setTime(simulator.output.ti.value);
+			Module.setVelocity(simulator.output.velocity.value);
+
+			// Execute model and calculate controller output
+			Module.execute();
+
+			if (!simulationStatus && !Module.getStatus()) {
+
+				simulatorRun(Module.getStatus(), Module.getSteering(), Module.getAcceleration());
+			}
+			else {
+				simulationStatus = false;
+				return;
+			}
+
+			if (showLogsData) {
+
+				// Just diagnostic information
+				console.log("Distance from FL : ", distances[0]);
+				console.log("Distance from FR : ", distances[1]);
+				console.log("Distance from FLS : ", distances[2]);
+				console.log("Distance from BLS : ", distances[3]);
+				console.log("Distance from FRS : ", distances[4]);
+				console.log("Distance from BRS : ", distances[5]);
+				console.log("Distance from BL : ", distances[6]);
+				console.log("Distance from BR : ", distances[7]);
+
+				console.log("Status : ", simulator.output.triggerStatus);
+				console.log("Time : ", simulator.output.ti.value);
+				console.log("Position [X,Y]: [", simulator.output.xi.value, ",", simulator.output.yi.value, "]");
+				console.log("Rotation deg: ", simulator.output.degree.value * 180 / Math.PI);
+				console.log("Velocity: ", simulator.output.velocity.value, "\n\n");
+
+				console.log("Get distances + set Module + execute + log : ", Math.floor(Date.now()) - startTime);
+			}
+
+			// execute in the parent window the function which pass data to trajectoryComparatorMain
+			parent.getSimulationLog();
+
+			showTime(simulator.output.ti);
+
+			logObject.telemetry.push({
+				"Status": simulator.output.triggerStatus,
+				"Time": simulator.output.ti.value,
+				"Position": [simulator.output.xi.value, simulator.output.yi.value],
+				"Rotation": simulator.output.degree.value * 180 / Math.PI,
+				"Velocity": simulator.output.velocity.value,
+				"Sensors": distances
+			});
+
+			setTimeout(
+				move1(
+					simulator.output.yi.value,
+					simulator.output.xi.value,
+					simulator.output.degree.value * 180 / Math.PI)
+				, 16);
+
+			// Calculate status is zones is used
+			if (jsonSimulationConf.car.end != undefined) {
+
+				var zone = jsonSimulationConf.car.end;
+				var endX = zone2Coord.get(zone)[0];
+				var endY = zone2Coord.get(zone)[1];
+
+				// There are taking in to account deviations from the central point of the end zone
+				if (simulator.output.xi.value >= (endX - 6) && simulator.output.xi.value <= (endX + 6)
+					&& simulator.output.yi.value >= (endY - 6) && simulator.output.yi.value <= (endY + 6)) {
+					simulationStatus = true;
+				}
+			}
+
+			// simulationStatus flag controls the ending of the simulation
+			if (simulator.output.ti.value >= simulationTimeLimit) {
+
+				simulationStatus = true;
+			}
+		}
+
+		function move1(x, y, degree) {
+
+			// for(var progress=0; progress<=1; progress+=0.3)
+			// {
+			// 	x_new = x_previous + (x - x_previous) * progress;
+			// 	y_new = y_previous + (y - y_previous) * progress;
+
+			// 	console.log("X :", x_new), "\n";
+			// 	console.log("Y :", y_new), "\n";
+
+			// 	setTimeout( function()
+			// 		{
+			// 			setPosition(currentCar, x, 0.2, y);
+			// 		}
+			// 		, 200);
+			// }
+
+			// Update the point for the next round
+			// x_previous = x;
+			// y_previous = y;
+
+			setPosition(currentCar, x, 0.2, y);
+			rotateCar(currentCar, degree);
+			setTimeout(move, delayBetweenExecution);
+		}
+
+		var stopButton = document.getElementById('stop');
+		stopButton.addEventListener('click', function () {
+			simulationStatus = true;
+		});
+
+		function showTime(value) {
+			document.getElementById("stime").innerHTML = Math.round(parseFloat(value)) + " sec";
+		}
+
+		function logSlider(position) {
+			// position will be between 0 and 100
+			var minp = 0;
+			var maxp = 100;
+			// The result should be between
+			var minv = Math.log(1);
+			var maxv = Math.log(3601);
+			// calculate adjustment factor
+			var scale = (maxv - minv) / (maxp - minp);
+			return Math.round(Math.exp(minv + scale * (position - minp))) - 1;
+		}
+
+		function resetSimulation() {
+
+			if (presentationObjects == 6) {
+
+				indexMove = -80;
+				setPosition(currentCar2, 1, 0.3, -80);
+			}
+			if (presentationObjects == 7) {
+
+				indexMove = -100;
+				setPosition(currentCar2, 1, 0.3, -100);
+			}
+			if (presentationObjects == 11) {
+
+				indexMove = 30;
+				setPosition(currentCar4, 101, 0.3, 30);
+			}
+
+			if (objectsOnTrack.length != 0) deleteCones();
+			loadTutorial(presentationObjects);
+
+			var simulator = window.simulatorInstance;
+
+			//bind the function
+			var resetSimulation = simulator.resetSimulation;
+			var resetSimulator = resetSimulation.bind(simulator);
+
+			resetSimulator();
+
+			showTime(0);
+			initSimulator();
+
+			document.getElementById("myRange").value = 0;
+			document.getElementById("noise").innerHTML = 0;
+
+			document.getElementById("myRangeTime").value = 0;
+			document.getElementById("time").innerHTML = 0;
+
+			var simulationTimeLimit = 3600; // reset time to max
+		}
+
+		function resetTrajectoryOnly() {
+
+			// clean the logObject
+			while (logObject.telemetry.length) {
+				logObject.telemetry.pop();
+			}
+
+			// reload page to clean all drawings
+			parent.reloadTrajectoryPage();
+		}
+
+	</script>
+</body>
+
+</html>

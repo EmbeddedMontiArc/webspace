@@ -1,0 +1,20 @@
+package controller05;
+
+component ActiveController {
+	port                                    
+		in Q xPosition,
+		out B activePassObject,
+        out B activeSearchParkingPlace;
+
+	implementation Math{                    
+
+    	if (xPosition > 15)
+            activePassObject = 0;
+            activeSearchParkingPlace = 1;
+        else
+            activePassObject = 1;
+            activeSearchParkingPlace = 0;
+        end
+
+	}
+}

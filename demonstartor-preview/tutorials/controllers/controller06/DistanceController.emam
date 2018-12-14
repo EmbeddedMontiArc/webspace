@@ -1,0 +1,30 @@
+package controller06;
+
+component DistanceController<Q distance = 10m> {
+	port                                    
+		in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        out Q follow,
+		out Q run; 
+
+	implementation Math{
+		
+		static Q previousFL = 0;
+		static Q previousFR = 0;
+
+    	if ((frontLeftSensor < distance) || (frontRightSensor < distance))
+    	    run = 0;
+    	else
+    		run = 1;
+        end
+        
+        if ((run < 1) && ((previousFL < frontLeftSensor) || (previousFR < frontRightSensor)))
+        	follow = 1;
+        else
+        	follow = 0;
+        end
+        
+        previousFL = frontLeftSensor;
+        previousFR = frontRightSensor;
+	}
+}

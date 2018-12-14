@@ -1,0 +1,31 @@
+package controller11;
+
+component PassCarController {
+	port                                    
+		in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in B active,
+		out B done; 
+
+	implementation Math{
+	    
+	    static B passed0 = false;
+	    static B passed1 = false;
+	    done = false;
+	    
+	    if active
+	    
+	        if ((frontRightSideSensor - backRightSideSensor) < -3m)
+                passed0 = true;
+            end
+        
+            if (((backRightSideSensor - frontRightSideSensor) < -3m) && passed0 )
+                passed1 = true;
+            end
+            
+            if (passed0 && passed1 && ((frontRightSideSensor - backRightSideSensor) < 2m))
+	        	done = true;
+	        end
+	    end
+	}
+}

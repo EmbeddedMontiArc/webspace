@@ -1,0 +1,63 @@
+package controller11.parking;
+
+component ParkingController {
+    port
+        in Q backLeftSensor,
+        in Q backRightSensor,
+        in Q frontLeftSensor,
+        in Q frontRightSensor,
+        in Q frontLeftSideSensor,
+        in Q backLeftSideSensor,
+        in B reverseMove,
+        out Q steering,
+        out B moveForward,
+        out B status;
+
+    implementation Math{
+    
+    // fix the state of moving direction
+    static Q forwardState = 0;
+    steering = 0;
+    status = 0;
+        
+    if(reverseMove)
+            
+        if reverseMove
+         steering = 1;
+        end
+        
+        if (reverseMove && (backLeftSensor < 2))
+         steering = -1;
+        end
+        
+        // Car has to be parallel to the road edge
+        // Go forward when the back closer then 3m
+        if (reverseMove && ((backRightSensor == backLeftSensor) || ((backRightSensor < 3) && (backLeftSensor < 3))))
+            forwardState = 1;
+        end
+        
+        // Stop when the car closer then 3m to front car
+        if (((frontRightSensor < 3) || (frontLeftSensor < 3)) && forwardState)
+            status = 1;
+        else
+            status = 0;
+        end
+        
+        // if car moving forward, does not change the car angle
+        if forwardState
+         steering = 0;
+        end
+        
+        // align the car
+        if (forwardState && (frontLeftSideSensor > backLeftSideSensor))
+         steering = -0.5;
+        end
+        
+        if (forwardState && (frontLeftSideSensor < backLeftSideSensor))
+         steering = 0.5;
+        end
+    end
+    
+    moveForward = forwardState;
+    }
+}

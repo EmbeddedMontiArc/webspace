@@ -1,0 +1,33 @@
+package controller11.runTrack;
+
+import controller11.atomic.*;
+
+component RunTrackVelocityController {
+	port
+		in Q velocity,
+		out Q acceleration;
+
+		instance ConstantQ(0) const_0;
+		instance ConstantQ(0.5) const_05;
+		instance ConstantQ(5) const_5;
+		instance SmallerQ smaller1;
+		instance SwitchQ sw1;
+
+		connect const_5.out1 -> smaller1.in1;
+		connect velocity -> smaller1.in2;
+		connect const_0.out1 -> sw1.in1;
+		connect const_05.out1 -> sw1.in2;
+		connect smaller1.out1 -> sw1.cond;
+		connect sw1.out1 -> acceleration;
+
+	/*
+	implementation Math{
+
+    	if (velocity > 5 m/s)
+    	    acceleration = 0 m/s^2;
+    	else
+    	    acceleration = 0.5 m/s^2;
+        end
+	}
+	*/
+}

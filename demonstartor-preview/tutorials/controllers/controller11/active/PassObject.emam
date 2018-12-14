@@ -1,0 +1,19 @@
+package controller11.active;
+
+import controller11.atomic.*;
+
+component PassObject {
+	port                                    
+		in Q xPosition,
+        in Q yPosition,
+		out B activePassObject;
+
+    implementation Math{
+
+        if ((xPosition < 15m) && (xPosition > -130m) && (yPosition > -8m) && (yPosition < 8m))
+            activePassObject = 1;
+        else
+            activePassObject = 0;
+        end
+	}
+}

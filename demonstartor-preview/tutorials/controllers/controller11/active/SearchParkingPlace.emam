@@ -1,0 +1,19 @@
+package controller11.active;
+
+import controller11.atomic.*;
+
+component SearchParkingPlace {
+	port                                    
+		in Q xPosition,
+        in Q yPosition,
+        out B activeSearchParkingPlace;
+
+    implementation Math{
+
+        if ((xPosition >= 15m) && (xPosition < 50m) && (yPosition > -8m) && (yPosition < 8m))
+            activeSearchParkingPlace = 1;
+        else
+            activeSearchParkingPlace = 0;
+        end
+	}
+}

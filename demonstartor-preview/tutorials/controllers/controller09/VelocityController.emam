@@ -1,0 +1,16 @@
+package controller09;
+
+component VelocityController {
+	port
+		in Q(0m/s : 10m/s) velocity,
+		out Q(-2m/s^2:2m/s^2) acceleration;
+
+	implementation Math{
+
+    	if (velocity > 5 m/s)
+    	    acceleration = 0 m/s^2;
+    	else
+    	    acceleration = 0.5 m/s^2;
+        end
+	}
+}

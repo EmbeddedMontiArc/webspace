@@ -1,0 +1,85 @@
+package controller11.runTrack;
+
+import controller11.atomic.*;
+
+component RunTrackController {
+    port
+        in Q frontLeft,
+        in Q frontRight,
+        in Q frontLeftSide,
+        in Q frontRightSide,
+        in Q backLeftSide,
+        in Q backRightSide,
+        out Q steering;
+    
+        instance ConstantQ(0) const_0;
+        instance ConstantQ(0.1) const_01;
+        instance ConstantQ(-3) const_m3;
+        instance ConstantQ(3) const_3;
+        instance Minus minus1;
+        instance Minus minus2;
+        instance Minus minus3;
+        instance Minus minus4;
+        instance Minus minus5;
+        instance Minus minus6;
+        instance SmallerQ smaller1;
+        instance SmallerQ smaller2;
+        instance SmallerQ smaller3;
+        instance SmallerQ smaller4;
+        instance SmallerQ smaller5;
+        instance SmallerQ smaller6;
+        instance And and1;
+        instance And and2;
+        instance And and3;
+        instance And and4;
+        instance SwitchQ sw1;
+        instance SwitchQ sw_last;
+
+        connect frontLeft -> minus1.in1, minus4.in2;
+        connect frontRight -> minus1.in2, minus4.in1;
+        connect const_01.out1 -> smaller1.in1, smaller2.in1, smaller3.in1, smaller4.in1, smaller5.in1, smaller6.in1;
+        connect minus1.out1 -> smaller1.in2;
+        connect smaller1.out1 -> and2.in1;
+        connect frontLeftSide -> minus2.in1, minus5.in2;
+        connect backLeftSide -> minus2.in2, minus5.in1;
+        connect minus2.out1 -> smaller2.in2;
+        connect smaller2.out1 -> and1.in1;
+        connect backRightSide -> minus3.in1, minus6.in2;
+        connect frontRightSide -> minus3.in2, minus6.in1;
+        connect minus3.out1 -> smaller3.in2;
+        connect smaller3.out1 -> and1.in2;
+        connect and1.out1 -> and2.in2;
+        connect const_m3.out1 -> sw1.in1;
+        connect const_0.out1 -> sw1.in2;
+        connect and2.out1 -> sw1.cond;
+        connect minus4.out1 -> smaller4.in2;
+        connect smaller4.out1 -> and4.in1;
+        connect minus5.out1 -> smaller5.in2;
+        connect smaller5.out1 -> and3.in1;
+        connect minus6.out1 -> smaller6.in2;
+        connect smaller6.out1 -> and3.in2;
+        connect and3.out1 -> and4.in2;
+        connect const_3.out1 -> sw_last.in1;
+        connect sw1.out1 -> sw_last.in2;
+        connect and4.out1 -> sw_last.cond;
+        connect sw_last.out1 -> steering;
+    
+    /*
+    implementation Math{
+
+        Q(0m:1m) threshold = 0.1m;
+
+        B comp1 = (((frontLeft-frontRight) > threshold) && ((frontLeftSide-backLeftSide) > threshold)) && ((backRightSide-frontRightSide) > threshold);
+        B comp2 = (((frontRight-frontLeft) > threshold) && ((backLeftSide-frontLeftSide) > threshold)) && ((frontRightSide-backRightSide) > threshold);
+        
+        steering = 0;
+        
+        if (comp2)
+            steering = 3;
+        end
+        if (comp1)
+            steering = -3;
+        end
+    }
+    */
+}

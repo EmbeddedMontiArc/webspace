@@ -1,0 +1,47 @@
+\chapter*{Appendices}
+\addappheadtotoc
+\begin{lstlisting} [caption={Example of a valid test for Context Conditions.},label={lst:valid-test},captionpos=b]
+package test.coco.valid.units;
+
+component MyComponentMix {
+    ports
+        out Q(0kg: 100kg) out1;
+        
+    implementation Math {
+
+      Q (0kg: 100kg) var1 = 10kg;
+      if var1 <= 10kg
+        out1 = 10kg;
+      end
+
+      if 10kg < var1
+        out1 = 10kg;
+      end
+      
+      Q (0kg: 100kg) var2;
+      var2 = 10kg;
+      
+      if var1 > var2
+        out1 = 10kg;
+      end
+      
+      if 10m == 10m
+        out1 = 10kg;
+      end
+      Q var3 = 1000m;
+    }
+}
+\end{lstlisting}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/web-interface-task}
+    \caption{The main page with the task tab on the right hand side.}
+    \label{fig:web-interface-task}
+\end{figure}
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/web-interface}
+    \caption{The main page with the simulator and trajectory builder tab.}
+    \label{fig:web-interface}
+\end{figure}
+\cleardoublepage

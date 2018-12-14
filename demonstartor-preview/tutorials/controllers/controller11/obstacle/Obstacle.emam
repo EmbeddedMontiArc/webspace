@@ -1,0 +1,21 @@
+package controller11.obstacle;
+
+import ObstacleController;
+import ObstacleVelocityController;
+
+component Obstacle {
+    port
+        in Q frontLeftSensor,
+        in Q frontRightSensor,
+        in Q velocity,
+		out Q acceleration;
+
+    instance ObstacleController obc;
+    connect frontLeftSensor -> obc.frontLeftSensor;
+    connect frontRightSensor -> obc.frontRightSensor;
+    
+    instance ObstacleVelocityController obvc;
+    connect velocity -> obvc.velocity;
+    connect obc.brake -> obvc.brake;
+    connect obvc.acceleration -> acceleration;
+}

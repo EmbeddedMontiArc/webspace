@@ -1,0 +1,19 @@
+package controller02;
+
+component VelocityController {
+	port
+		in Q(0m:200m) frontLeftSensor,
+		in Q(0m:200m) frontRightSensor,
+		out Q(-2m/s^2:2m/s^2) acceleration,
+		out B status;
+
+	implementation Math{
+		
+		if ((frontLeftSensor > 10 m) && (frontRightSensor > 10 m))
+    	    acceleration = 1 m/s^2;
+            status = 0;
+    	else
+    		status = 1;
+        end
+	}
+}

@@ -1,0 +1,46 @@
+package controller11.follow;
+
+import controller11.atomic.*;
+
+component FollowVelocityController {
+	port                                    
+		in Q velocity,
+		in B run,
+		in B follow,
+		out Q acceleration; 
+
+		instance And and1;
+		instance SmallerQ smaller;
+		instance SwitchQ switch1;
+		instance SwitchQ switch2;
+		instance ConstantQ(2) const0; // MaxSpeed
+		instance ConstantQ(0.1) const1;
+		instance ConstantQ(-0.1) const2;
+		instance ConstantQ(0) const3;
+
+		connect velocity -> smaller.in1;
+		connect const0.out1 -> smaller.in2;
+		connect run -> and1.in1;
+		connect smaller.out1 -> and1.in2;
+		connect const1.out1 -> switch1.in1;
+		connect const2.out1 -> switch1.in2;
+		connect and1.out1 -> switch1.cond;
+		connect const3.out1 -> switch2.in1;
+		connect switch1.out1 -> switch2.in2;
+		connect follow -> switch2.cond;
+		connect switch2.out1 -> acceleration;
+		
+	/*
+	implementation Math{                    
+
+    	if (run && (velocity < velMAX))
+			acceleration = 0.1 m/s^2;
+    	else
+			acceleration = -0.1 m/s^2;
+        end
+        if follow
+        	acceleration = 0 m/s^2;
+        end
+	}
+	*/
+}

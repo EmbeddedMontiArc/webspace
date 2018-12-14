@@ -1,0 +1,32 @@
+package controller11.passCones;
+
+import PassObjectsController;
+import VelocityPassController;
+
+component PassCones {
+	port
+	    in Q frontLeftSensor,
+        in Q frontRightSensor,
+		in Q frontLeftSideSensor,
+        in Q frontRightSideSensor,
+        in Q backLeftSideSensor,
+        in Q backRightSideSensor,
+		in Q velocity,
+		in B active,
+		out Q acceleration,
+        out Q steering;
+
+    instance PassObjectsController poc;
+    connect frontLeftSensor -> poc.frontLeftSensor;
+    connect frontRightSensor -> poc.frontRightSensor;
+    connect frontLeftSideSensor -> poc.frontLeftSideSensor;
+    connect frontRightSideSensor -> poc.frontRightSideSensor;
+    connect backLeftSideSensor -> poc.backLeftSideSensor;
+    connect backRightSideSensor -> poc.backRightSideSensor;
+    connect active -> poc.active;
+    connect poc.steering -> steering;
+
+    instance VelocityPassController vpc;
+    connect velocity -> vpc.velocity;
+    connect vpc.acceleration -> acceleration;
+}

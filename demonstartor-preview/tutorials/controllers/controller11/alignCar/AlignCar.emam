@@ -1,0 +1,24 @@
+package controller11.alignCar;
+
+import VelocityAlignController;
+import SteeringAlignController;
+
+component AlignCar {
+    port
+        in Q frontLeftSide,
+        in Q frontRightSide,
+        in Q backLeftSide,
+        in Q backRightSide,
+        out Q acceleration,
+        out Q steering;
+
+    instance SteeringAlignController sac;
+    connect frontLeftSide -> sac.frontLeftSide;
+    connect frontRightSide -> sac.frontRightSide;
+    connect backLeftSide -> sac.backLeftSide;
+    connect backRightSide -> sac.backRightSide;
+    connect sac.steering -> steering;
+
+    instance VelocityAlignController vac;
+    connect vac.acceleration -> acceleration;
+}

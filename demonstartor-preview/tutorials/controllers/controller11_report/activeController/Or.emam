@@ -1,0 +1,7 @@
+package controller11.activeController;
+
+component Or<N1 n> {
+    ports 
+        in B val[n],
+        out B res;
+}

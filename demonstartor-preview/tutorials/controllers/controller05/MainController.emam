@@ -1,0 +1,70 @@
+package controller05;
+
+import VelocityController;
+import PassObjectsController;
+import ActiveController;
+import SearchParkingPlaceController;
+import ParkingController;
+import SteeringProxyController;
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q time,
+        in Q(0km/h:250km/h) velocity,
+
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,
+        out B status;
+
+
+    instance VelocityController velocityController;
+    connect velocity->velocityController.velocity;
+    connect velocityController.acceleration->acceleration;
+
+    instance SearchParkingPlaceController searchParkingPlaceController;
+    connect frontLeftSideSensor -> searchParkingPlaceController.frontLeftSideSensor;
+    connect backLeftSideSensor -> searchParkingPlaceController.backLeftSideSensor;
+    connect searchParkingPlaceController.foundPlace -> velocityController.reverseMove;
+    connect searchParkingPlaceController.foundPlace -> parkingController.reverseMove;
+
+    instance ActiveController activeController;
+    connect xPosition -> activeController.xPosition;
+    connect activeController.activeSearchParkingPlace -> searchParkingPlaceController.active;
+    connect activeController.activePassObject -> passObjectsController.active;
+    connect activeController.activePassObject -> steeringProxyController.mode;
+
+    instance ParkingController parkingController;
+    connect frontLeftSensor -> parkingController.frontLeftSensor;
+    connect frontRightSensor -> parkingController.frontRightSensor;
+    connect frontLeftSideSensor -> parkingController.frontLeftSideSensor;
+    connect backLeftSideSensor -> parkingController.backLeftSideSensor;
+    connect backLeftSensor -> parkingController.backLeftSensor;
+    connect backRightSensor -> parkingController.backRightSensor;
+    connect parkingController.status -> status;
+    connect parkingController.moveForward -> velocityController.moveForward;
+    connect parkingController.steeringAngle -> steeringProxyController.steeringParking;
+    
+    instance PassObjectsController passObjectsController;
+    connect frontLeftSensor -> passObjectsController.frontLeftSensor;
+    connect frontRightSensor -> passObjectsController.frontRightSensor;
+    connect frontLeftSideSensor -> passObjectsController.frontLeftSideSensor;
+    connect frontRightSideSensor -> passObjectsController.frontRightSideSensor;
+    connect backLeftSideSensor ->passObjectsController.backLeftSideSensor;
+    connect backRightSideSensor -> passObjectsController.backRightSideSensor;
+    connect passObjectsController.steering -> steeringProxyController.steeringPassObjects;
+    
+    instance SteeringProxyController steeringProxyController;
+    connect steeringProxyController.steering -> steering;
+}

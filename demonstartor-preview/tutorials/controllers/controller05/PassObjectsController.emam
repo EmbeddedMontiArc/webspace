@@ -1,0 +1,37 @@
+package controller05;
+
+component PassObjectsController {
+	port
+	    in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+		in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+		in B active,
+        out Q steering;
+
+	implementation Math{
+
+	if(active)
+    	if((frontLeftSensor < 10) && (backRightSideSensor > 5))
+    	    steering = 1;
+    	else
+    	    if((frontRightSensor < 10) && (backLeftSideSensor > 5))
+    	        steering = -1;
+    	    else
+    	        steering = 0; 
+    	        
+    	        if (frontLeftSideSensor > backLeftSideSensor)
+    	        	steering = -0.3;
+    	        end
+    	        if (frontLeftSideSensor < backLeftSideSensor)
+    	        	steering = 0.3;
+    	        end
+    	    end
+    	end
+	else
+    	steering = 0;
+	end
+	}
+}

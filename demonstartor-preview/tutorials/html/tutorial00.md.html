@@ -1,0 +1,231 @@
+<!doctyle html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body {
+      counter-reset: section1 section2 section3 section4;
+      background-color: white;
+    }
+
+    body, p, div, th, td {
+      font-family: verdana, helvetica, arial, sans-serif;
+      font-size: 10pt;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .author {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .revision {
+      text-align: center;
+      font-style: italic;
+    }
+
+    h2::before {
+      counter-reset: section2 section3 section4;
+      counter-increment: section1;
+      content: counter(section1) " ";
+    }
+
+    h3::before {
+      counter-reset: section3 section4;
+      counter-increment: section2;
+      content: counter(section1) "." counter(section2) " ";
+    }
+
+    h4::before {
+      counter-reset: section4;
+      counter-increment: section3;
+      content: counter(section1) "." counter(section2) "." counter(section3) " ";
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px 0px;
+      margin: 0 auto;
+      page-break-inside: avoid;
+    }
+
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+
+    th, td {
+      padding: 0.2mm 2mm;
+    }
+
+    th:not(:last-child),
+    td:not(:last-child) {
+      border-right: 1px black solid;
+    }
+
+    thead > tr {
+      border-bottom: 1px black solid;
+    }
+
+    tbody > tr:not(:last-of-type) {
+      border-bottom: 1px black solid;
+    }
+
+    @media print {
+      @page {
+        padding: 2cm 4cm;
+      }
+
+      .beginning-of-doc {
+        padding-top: 4cm;
+      }
+
+      hr {
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+
+
+      h2 {
+        margin-top: 1.5cm;
+        padding-left: 1cm;
+        border-bottom: 2px solid black;
+        page-break-after: avoid;
+      }
+
+      h3 {
+        margin-top: 1cm;
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+
+      h4 {
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="beginning-of-doc"></div>
+    <h1 id="beginnerstutorial">Beginner's Tutorial</h1>
+
+<h5 id="acceleratetothegivenspeed">Accelerate to the given speed.</h5>
+
+<p>Implement the model that continuously accelerates to 10 m/s and then stops.</p>
+
+<h5 id="basicexplonation">Basic explonation:</h5>
+
+<p>The car has 8 sensors to measure distances to obstacles. They are located respectively: </p>
+
+<p><img src="../img/car-with-sensors.jpg" alt="alt text" /></p>
+
+<p>To solve this task it's needed to use only acceleration of the car. Changing the acceleration you may control the behavior of the car. To be able to reach 10 m/s speed, you have to accelerate the car continuously until it reaches the desired speed. Let's start with a MainController which defines the interface to the simulator. We should create a new file which has the same name like component has with .emam extension.</p>
+
+<pre><code>package controller;                         // The name of the folder where all .emam files are located.
+
+component MainController{
+    ports                                   
+        in Q(-200m:200m) frontLeftSensor,       //front left sensor with range from 0 meters to 200 meters
+        in Q(-200m:200m) frontRightSensor,      //front right sensor
+        in Q(-200m:200m) frontLeftSideSensor,   //side left front sensor
+        in Q(-200m:200m) frontRightSideSensor,  //side left back sensor
+        in Q(-200m:200m) backLeftSideSensor,    //side right front sensor
+        in Q(-200m:200m) backRightSideSensor,   //side right back sensor
+        in Q(-200m:200m) backLeftSensor,        //back left sensor
+        in Q(-200m:200m) backRightSensor,       //back right sensor
+
+        in Q(0s:oos) time,                      //simulation time from 0s to infinity
+        in Q(0m/s:25m/s) velocity,              //car velocity
+        in Q(-200m:200m) xPosition,             //car position X
+        in Q(-200m:200m) yPosition,             //car position Y
+
+        out Q(-2m/s^2:2m/s^2) acceleration,     //car acceleration 
+        out Q(-180°:180°) steering,             //car steering
+        out B status;                           //whether the simulation is still running
+</code></pre>
+
+<p>After examination of the example, we should notice:</p>
+
+<ul>
+<li>Component has ports incoming and outgoing</li>
+
+<li>For each port must be specified a type (Q is Double or B is Boolean) with a valid range.</li>
+
+<li>After each port name has to be a comma and the last one must have a semicolon.</li>
+
+<li>The possible units are:
+
+
+<ul>
+<li>Distance: meters(m), kilometers(km)</li>
+
+<li>Time: seconds(s), minutes(m), hours(h)</li>
+
+<li>Velocity: km/h, m/s</li>
+
+<li>Acceleration: m/s^2</li>
+
+<li>Rotation: degrees(°)</li></ul>
+</li>
+</ul>
+
+<p>It was the default interface for the Simulator. It has to be define for all possible controllers. Then you may create your own components which will be connected to the mainController. Let's create a simple component and connect it to the main one. To do that, we have to create new file with following content:</p>
+
+<pre><code>package controller;
+
+component ExampleController {
+    port
+        in Q(0m/s:25m/s) velocity,          //incoming port velocity with given range
+        out Q(-2m/s^2:2m/s^2) acceleration, //outgoing port which controls the acceleration of the car
+        out B status;                       //outgoing port which stops the simulation process
+
+    implementation Math{
+
+        if (velocity &lt;= 10 m/s)
+            acceleration = 0.5 m/s^2;       //until the car reaches 10 m/s accelerate with 0.5 m/s^2
+            status = false;
+        else
+            status = true;                  //When reach the velocity 10 m/s -&gt; stop the simulation
+        end
+    }
+}
+</code></pre>
+
+<p>There is one incoming port and two outgoing. Firstly we should reach the speed 10 m/s then stop the simulation. The logic of the controller is implemented inside the Math{}. Inside the Math{} scope you can see <strong>if-else-end</strong> constructions and the example how to use it.
+When we have created the ExampleController we should import it into the MainController and then instantiate it:</p>
+
+<pre><code>package controller;
+
+import ExampleController; // here has being imported the actual controller
+
+component MainController{ 
+...
+
+
+instance ExampleController exampleController;
+</code></pre>
+
+<p>Now is time to connect the controller to the MainController.</p>
+
+<pre><code>    connect velocity-&gt;exampleController.velocity;
+    connect exampleController.acceleration-&gt;acceleration;
+    connect exampleController.status-&gt;status;
+}
+</code></pre>
+
+<p>Here we have connected the incoming port - velocity(mainController) to our instantiated controller and its corresponding incoming port velocity. Then we connect the outgoing port of velocityController.acceleration to the outgoing port of our MainController. And finally the status port of the ExampleController to status of the MainController.</p>
+
+<p>Finally the connections scheme should look like that:</p>
+
+<p><img src="../img/car-with-controller.png" alt="alt text" /></p>
+
+<p>Eventually we should send these files to the server to process it and then execute in the simulator.</p>
+
+<p>For better understanding the syntax of the EmbeddedMontiArc and get some ideas how to define modules of a controller it's a good idea to read the documentation <a href="https://github.com/EmbeddedMontiArc/Documentation#embeddedmontiarc-yannick" target="_blank">here</a>.</p>
+  </body>
+</html>

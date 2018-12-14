@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "allowJs": true
+    },
+    "include": [
+        "./simulator-ts/rwth.visualisation/**/*"
+    ]
+}

@@ -1,0 +1,14 @@
+package controller09;
+
+stream SteeringControllerTest for SteeringController {
+    fl: 70m tick 30m tick 32m;
+    fr: 70m tick 32m tick 30m;
+    slf: 5m tick 4m tick 5m;
+    slb: 5m tick 5m tick 4m;
+    srf: 5m tick 5m tick 4m;
+    srb: 5m tick 4m tick 5m;
+    br: 50m tick 90m tick 90m;
+    bl: 50m tick 90m tick 90m;
+
+    steering: 0 tick -5 tick 5;
+}

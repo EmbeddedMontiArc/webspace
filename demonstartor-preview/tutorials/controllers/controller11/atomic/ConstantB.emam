@@ -1,0 +1,10 @@
+package controller11.atomic;
+
+component ConstantB(B value) {
+	port 
+		out B out1;
+
+    implementation Math{
+        out1=value;
+    }
+}

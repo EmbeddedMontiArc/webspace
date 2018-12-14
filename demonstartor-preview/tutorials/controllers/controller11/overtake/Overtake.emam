@@ -1,0 +1,41 @@
+package controller11.overtake;
+
+import PassCarController;
+import OvertakeController;
+import OvertakeVelocityController;
+
+component Overtake {
+	port                                    
+		in Q frontLeftSensor,
+        in Q frontRightSensor,
+        in Q frontRightSideSensor,
+        in Q frontLeftSideSensor,
+        in Q backLeftSideSensor,
+        in Q backRightSideSensor,
+        in Q velocity,
+        in B active,
+        out B activatePassChecker,
+		out Q acceleration,
+		out Q steering;
+
+    instance OvertakeController oc;
+    connect frontLeftSensor -> oc.frontLeftSensor;
+    connect frontRightSensor -> oc.frontRightSensor;
+    connect frontRightSideSensor -> oc.frontRightSideSensor;
+    connect frontLeftSideSensor -> oc.frontLeftSideSensor;
+    connect backLeftSideSensor -> oc.backLeftSideSensor;
+    connect backRightSideSensor -> oc.backRightSideSensor;
+    connect active -> oc.active;
+    connect oc.steering -> steering;
+
+    instance PassCarController pcc;
+    connect frontRightSideSensor -> pcc.frontRightSideSensor;
+    connect backRightSideSensor -> pcc.backRightSideSensor;
+    connect oc.activatePassChecker -> pcc.active;
+    connect oc.activatePassChecker -> activatePassChecker;
+    connect pcc.passed ->oc.passed;
+
+    instance OvertakeVelocityController ovc;
+    connect velocity -> ovc.velocity;
+    connect ovc.acceleration -> acceleration;
+}

@@ -1,0 +1,22 @@
+package controller11.follow;
+
+import FollowController;
+import FollowVelocityController;
+
+component Follow {
+	port                                    
+		in Q frontLeftSensor,
+        in Q frontRightSensor,
+        in Q velocity,
+		out Q acceleration;
+
+    instance FollowController fc;
+    connect frontLeftSensor -> fc.frontLeftSensor;
+    connect frontRightSensor -> fc.frontRightSensor;
+
+    instance FollowVelocityController fvc;
+    connect velocity -> fvc.velocity;
+    connect fc.run -> fvc.run;
+    connect fc.follow -> fvc.follow;
+    connect fvc.acceleration -> acceleration;
+}

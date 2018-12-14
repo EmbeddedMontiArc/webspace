@@ -1,0 +1,32 @@
+package controller07;
+
+component PassObjectController {
+	port                                    
+		in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in B active,
+		out B done; 
+
+	implementation Math{
+	    
+	    static B passed0 = 0;
+	    static B passed1 = 0;
+	    done = 0;
+	    
+	    if active
+	    
+	        if ((frontRightSideSensor - backRightSideSensor) < -3)
+                passed0 = 1;
+            end
+        
+            if (((backRightSideSensor - frontRightSideSensor) < -3) && passed0 )
+                passed1 = 1;
+            end
+            
+            if (passed0 && passed1 && ((frontRightSideSensor - backRightSideSensor) < 2))
+	        	done = 1;
+	        end
+	    end
+
+	}
+}

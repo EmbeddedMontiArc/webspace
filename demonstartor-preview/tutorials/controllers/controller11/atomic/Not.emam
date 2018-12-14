@@ -1,0 +1,15 @@
+package controller11.atomic;
+
+component Not {
+	port
+		in B in1,
+		out B out1;
+
+	implementation Math{
+	    if in1
+	        out1 = 0;
+	    else
+	        out1 = 1;
+	    end
+	}
+}

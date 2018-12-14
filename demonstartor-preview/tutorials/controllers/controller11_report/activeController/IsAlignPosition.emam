@@ -1,0 +1,11 @@
+component IsAlignPosition {
+
+  ports in Q(0m:200m) xPosition,
+        in Q(0m:200m) yPosition,
+        out B res;
+
+  implementation Math {
+
+    res = ((xPosition >= 45m) && (xPosition < 60m) && (yPosition > 90m) && (yPosition < 110m));
+  }
+}

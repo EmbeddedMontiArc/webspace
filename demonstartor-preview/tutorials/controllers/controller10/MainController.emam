@@ -1,0 +1,51 @@
+package controller10;
+
+import SteeringController;
+import VelocityController;
+import StatusController;
+import ObstacleController;
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q time,
+        in Q(0m/s:25m/s) velocity,
+
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,
+        out B status;
+
+    instance SteeringController steeringController;
+    connect frontLeftSensor->steeringController.frontLeft;
+    connect frontRightSensor->steeringController.frontRight;
+    connect frontLeftSideSensor->steeringController.frontLeftSide;
+    connect backLeftSideSensor->steeringController.backLeftSide;
+    connect frontRightSideSensor->steeringController.frontRightSide;
+    connect backRightSideSensor->steeringController.backRightSide;
+    connect steeringController.steering->steering;
+    
+    instance VelocityController<5m/s> velocityController;
+    connect velocity->velocityController.velocity;
+    connect velocityController.acceleration->acceleration;
+    
+    instance StatusController trigger;
+    connect xPosition->trigger.inx;
+    connect yPosition->trigger.iny;
+    connect trigger.status->status;
+    
+    instance ObstacleController<30m> obstacleController;
+    connect frontLeftSensor->obstacleController.frontLeftSensor;
+    connect frontRightSensor->obstacleController.frontRightSensor;
+    connect obstacleController.brake -> velocityController.brake;
+}

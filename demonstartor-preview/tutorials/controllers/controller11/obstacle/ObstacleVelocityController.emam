@@ -1,0 +1,50 @@
+package controller11.obstacle;
+
+import controller11.atomic.*;
+
+component ObstacleVelocityController {
+	port
+		in Q velocity,
+		in B brake,
+		out Q acceleration;
+
+	instance SmallerQ smaller1;
+	instance And and1;
+	instance ConstantQ(-0.5) acc_n;
+	instance SwitchQ sw1;
+
+	instance ConstantQ(5) maxVel;	
+	instance SmallerQ smaller2;
+	instance ConstantQ(0.5) acc_p;
+	instance ConstantQ(0) acc_z;
+	instance SwitchQ sw2;
+	
+	connect acc_z.out1 -> smaller1.in1, sw2.in1;
+	connect velocity -> smaller1.in2, smaller2.in2;
+	connect smaller1.out1 -> and1.in1;
+	connect brake -> and1.in2;
+	connect acc_n.out1 -> sw1.in1;
+	connect and1.out1 -> sw1.cond;
+
+	connect maxVel.out1 -> smaller2.in1;
+	connect acc_z.out1 -> sw2.in1;
+	connect smaller2.out1 -> sw2.cond;
+	connect acc_p.out1 -> sw2.in2;
+	connect sw2.out1 -> sw1.in2;
+	connect sw1.out1 -> acceleration;
+
+	/*
+	implementation Math{
+        
+        if (brake && (velocity > 0))
+        	acceleration = -0.5 m/s^2;
+        else
+        	if (velocity > maxVel)
+    	    	acceleration = 0 m/s^2;
+    		else
+    	    	acceleration = 0.5 m/s^2;
+        	end
+        end
+	}
+	*/
+}

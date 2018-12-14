@@ -1,0 +1,52 @@
+package controller11.activeController;
+
+component ActiveController {
+
+    ports                                   
+        in Q(0m:200m) xPosition,
+        in Q(0m:200m) yPosition,
+        out B activePassObject,
+        out B activeSearchParkingPlace,
+        out B activeTrack,
+        out B followCar,
+        out B overtakeCar,
+        out B obstacleWait,
+        out B activeAlign;
+
+    instance IsPassConesPosition isPassConesPos;
+    instance IsSearchParkingPosition isSearchParkingPos;
+    instance IsAlignPosition isAlignPos;
+    instance IsFollowingPosition isFollowingPos;
+    instance IsOvertakePosition isOvertakePos;
+    instance isObstaclePosition isObstaclePos;
+
+    connect this.* ->   isPassConesPos.*, 
+                        isSearchParkingPos.*,
+                        isAlignPos.*,
+                        isFollowingPos.*,
+                        isOvertakePos.*,
+                        isObstaclePos.*;
+    
+    instance Or<6> or6;
+    connect [   isPassConesPos, 
+                isSearchParkingPos, 
+                isAlignPos, 
+                isFollowingPos, 
+                isOvertakePos, 
+                isObstaclePos].res -> or6.val[:];
+    connect or6.res -> activeTrack;
+
+    instance OneIfTrueZeroIfFalse oneZero[6];
+    connect [   isPassConesPos, 
+                isSearchParkingPos, 
+                isAlignPos, 
+                isFollowingPos, 
+                isOvertakePos, 
+                isObstaclePos].res -> oneZero[:].cond;
+    connect oneZero[:].res -> [ activePassObject, 
+                                activeSearchParkingPlace, 
+                                activeAlign,
+                                followCar,
+                                overtakeCar,
+                                obstacleWait];
+}

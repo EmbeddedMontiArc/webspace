@@ -1,0 +1,80 @@
+package controller11.alignCar;
+
+import controller11.atomic.*;
+
+component SteeringAlignController {
+    port
+        in Q frontLeftSide,
+        in Q frontRightSide,
+        in Q backLeftSide,
+        in Q backRightSide,
+        out Q steering;
+    
+    instance ConstantQ(0.5) thresholdM;
+    instance ConstantQ(0.1) thresholdS;
+    instance ConstantQ(0) steering_z;
+    
+    instance Minus minus_m;
+    instance SmallerQ smaller_m1;
+    instance SmallerQ smaller_m2;
+    instance ConstantQ(3) steering_mp;
+    instance ConstantQ(-3) steering_mn;
+    instance SwitchQ sw_m1;
+    instance SwitchQ sw_m2;
+    
+    instance Minus minus_s;
+    instance SmallerQ smaller_s1;
+    instance SmallerQ smaller_s2;
+    instance ConstantQ(1) steering_sp;
+    instance ConstantQ(-1) steering_sn;
+    instance SwitchQ sw_s1;
+    instance SwitchQ sw_s2;
+
+    instance SwitchQ sw_last;
+
+    connect frontLeftSide -> minus_m.in1, minus_s.in2;
+    connect backLeftSide -> minus_m.in2, minus_s.in1;
+    connect thresholdM.out1 -> smaller_m1.in1, smaller_s1.in1;
+    connect thresholdS.out1 -> smaller_m2.in1, smaller_s2.in1;
+    connect minus_m.out1 -> smaller_m1.in2, smaller_m2.in2;
+    connect smaller_m1.out1 -> sw_m1.cond;
+    connect steering_mn.out1 -> sw_m1.in1;
+    connect smaller_m2.out1 -> sw_m2.cond, sw_last.cond;
+    connect steering_sn.out1 -> sw_m2.in1;
+    connect steering_z.out1 -> sw_m2.in2;
+    connect sw_m2.out1 -> sw_m1.in2;
+    connect sw_m1.out1 -> sw_last.in1;
+
+    connect minus_s.out1 -> smaller_s1.in2, smaller_s2.in2;
+    connect smaller_s1.out1 -> sw_s1.cond;
+    connect steering_mp.out1 -> sw_s1.in1;
+    connect smaller_s2.out1 -> sw_s2.cond;
+    connect steering_sp.out1 -> sw_s2.in1;
+    connect steering_z.out1 -> sw_s2.in2;
+    connect sw_s2.out1 -> sw_s1.in2;
+    connect sw_s1.out1 -> sw_last.in2;
+    connect sw_last.out1 -> steering;
+    
+    /*
+    implementation Math{
+
+        Q thresholdM = 0.5;
+        Q thresholdS = 0.1;
+
+        steering = 0;
+        
+        if ((frontLeftSide - backLeftSide) > thresholdS)
+            steering = -1;
+        end
+        if ((backLeftSide - frontLeftSide) > thresholdS)
+            steering = 1;
+        end
+        if ((frontLeftSide - backLeftSide) > thresholdM)
+            steering = -3;
+        end
+        if ((backLeftSide - frontLeftSide) > thresholdM)
+            steering = 3;
+        end 
+    }
+    */   
+}

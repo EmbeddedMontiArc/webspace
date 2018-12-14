@@ -1,0 +1,40 @@
+package controller11;
+
+component SearchParkingPlaceController {
+    port
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in B active,
+        out B foundPlace;
+
+    implementation Math{
+        
+        static B first = false;
+        static B second = false;
+        static B third = false;
+        static B found = false;
+
+        // maybe generalize the checking component
+
+    if(active)
+
+        if ((frontLeftSideSensor - backLeftSideSensor) < -3m)
+            first = true;
+        end
+        
+        if (((backLeftSideSensor - frontLeftSideSensor) < -3m) && first )
+            second = true;
+        end
+        
+        if (((frontLeftSideSensor - backLeftSideSensor) < -3m) && second)
+            third = true;
+        end
+        
+        if (((backLeftSideSensor - frontLeftSideSensor) < -3m) && third)
+            found = true;
+        end
+    end
+    
+    foundPlace = found;
+    }
+}

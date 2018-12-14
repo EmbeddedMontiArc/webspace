@@ -1,0 +1,49 @@
+package controller11;
+
+component VelocitySwitchController {
+	port                                    
+		in Q(-2m/s^2:2m/s^2) accelerationRunTrack,
+        in Q(-2m/s^2:2m/s^2) accelerationLast,
+        in Q(-2m/s^2:2m/s^2) accFollow,
+        in Q(-2m/s^2:2m/s^2) accOvertake,
+        in Q(-2m/s^2:2m/s^2) accObstacle,
+        in B activeRunTrack,
+        in B activePassObject,
+        in B activeParking,
+        in B activeAlign,
+        in B activeFollow,
+        in B activeOvertake,
+        in B activeObstacle,
+		out Q(-2m/s^2:2m/s^2) acceleration; 
+
+	implementation Math{
+
+        //Create some general switch component?
+
+        acceleration = 0m/s^2;
+
+        if activeRunTrack
+            acceleration = accelerationRunTrack;
+        end
+
+        if (activePassObject || activeParking)
+            acceleration = accelerationLast;
+        end
+        
+        if activeAlign
+            acceleration = -0.7m/s^2;
+        end
+
+        if activeFollow
+            acceleration = accFollow;
+        end
+
+        if activeOvertake
+            acceleration = accOvertake;
+        end
+
+        if activeObstacle
+            acceleration = accObstacle;
+        end
+	}
+} 

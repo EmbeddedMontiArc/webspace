@@ -1,0 +1,178 @@
+<!doctyle html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body {
+      counter-reset: section1 section2 section3 section4;
+      background-color: white;
+    }
+
+    body, p, div, th, td {
+      font-family: verdana, helvetica, arial, sans-serif;
+      font-size: 10pt;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .author {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .revision {
+      text-align: center;
+      font-style: italic;
+    }
+
+    h2::before {
+      counter-reset: section2 section3 section4;
+      counter-increment: section1;
+      content: counter(section1) " ";
+    }
+
+    h3::before {
+      counter-reset: section3 section4;
+      counter-increment: section2;
+      content: counter(section1) "." counter(section2) " ";
+    }
+
+    h4::before {
+      counter-reset: section4;
+      counter-increment: section3;
+      content: counter(section1) "." counter(section2) "." counter(section3) " ";
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0px 0px;
+      margin: 0 auto;
+      page-break-inside: avoid;
+    }
+
+    tr {
+      page-break-inside: avoid;
+      page-break-after: auto;
+    }
+
+    th, td {
+      padding: 0.2mm 2mm;
+    }
+
+    th:not(:last-child),
+    td:not(:last-child) {
+      border-right: 1px black solid;
+    }
+
+    thead > tr {
+      border-bottom: 1px black solid;
+    }
+
+    tbody > tr:not(:last-of-type) {
+      border-bottom: 1px black solid;
+    }
+
+    @media print {
+      @page {
+        padding: 2cm 4cm;
+      }
+
+      .beginning-of-doc {
+        padding-top: 4cm;
+      }
+
+      hr {
+        height: 2px;
+        background-color: black;
+        border: none;
+      }
+
+
+      h2 {
+        margin-top: 1.5cm;
+        padding-left: 1cm;
+        border-bottom: 2px solid black;
+        page-break-after: avoid;
+      }
+
+      h3 {
+        margin-top: 1cm;
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+
+      h4 {
+        padding-left: 1cm;
+        page-break-after: avoid;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="beginning-of-doc"></div>
+    <h1 id="solution01">Solution(01)</h1>
+
+<h2 id="acceleratethegiventimeandstopsimulation">Accelerate the given time and stop simulation.</h2>
+
+<p>To solve that tutorial you have to use the MainController like you did in the tutorial00. The only difference here that we should pass simulation time instead of velocity of the car.</p>
+
+<pre><code>package controller01;
+
+import VelocityController;
+
+component MainController{
+    ports                                   
+        in Q(-200m:200m) frontLeftSensor,       //front left sensor with range from 0 meters to 200 meters
+        in Q(-200m:200m) frontRightSensor,      //front right sensor
+        in Q(-200m:200m) frontLeftSideSensor,   //side left front sensor
+        in Q(-200m:200m) frontRightSideSensor,  //side left back sensor
+        in Q(-200m:200m) backLeftSideSensor,    //side right front sensor
+        in Q(-200m:200m) backRightSideSensor,   //side right back sensor
+        in Q(-200m:200m) backLeftSensor,        //back left sensor
+        in Q(-200m:200m) backRightSensor,       //back right sensor
+
+        in Q(0s:oos) time,                      //simulation time from 0s to infinity
+        in Q(0m/s:25m/s) velocity,              //car velocity
+        in Q(-200m:200m) xPosition,             //car position X
+        in Q(-200m:200m) yPosition,             //car position Y
+
+        out Q(-2m/s^2:2m/s^2) acceleration,     //car acceleration 
+        out Q(-180°:180°) steering,             //car steering
+        out B status;                           //whether the simulation is still running
+
+    instance VelocityController velocityController;
+
+    connect time-&gt;velocityController.time;
+    connect velocityController.acceleration-&gt;acceleration;
+    connect velocityController.status-&gt;status;
+}
+</code></pre>
+
+<p>We import the VelocityController, instantiate it and then connect to the MainController.
+Now we have to write the VelocityController. It has to have only one incoming port and two outgoing ones.</p>
+
+<pre><code>package controller01;
+
+component VelocityController {
+    port
+        in Q(0s:oos) time,
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out B status;
+
+    implementation Math{
+
+        if (time &lt;= 10 s)
+            acceleration = 0.5 m/s^2;
+            status = false;
+        else
+            status = true;
+        end
+    }
+}
+</code></pre>
+
+<p>The logic inside the controller means that until the car reach 10s execution time, it has to accelerate 1 m/s^2. After that the component should set status to TRUE, which means stop the simulation.</p>
+  </body>
+</html>

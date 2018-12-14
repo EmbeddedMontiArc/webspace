@@ -1,0 +1,13 @@
+package controller11.activeController;
+
+component IsPassConesPosition {
+
+  ports in Q(0m:200m) xPosition,
+        in Q(0m:200m) yPosition,
+        out B res;
+
+  implementation Math {
+
+    res = ((xPosition < 15m) && (xPosition > -130m) && (yPosition > -8m) && (yPosition < 8m));
+  }
+}

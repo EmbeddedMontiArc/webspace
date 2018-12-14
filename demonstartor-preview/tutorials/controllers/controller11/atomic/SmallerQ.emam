@@ -1,0 +1,12 @@
+package controller11.atomic;
+
+component SmallerQ {
+	port
+		in Q in1,
+		in Q in2,
+		out B out1;
+
+	implementation Math{
+	    out1 = in1 < in2;
+	}
+}

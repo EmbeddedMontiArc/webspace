@@ -1,0 +1,61 @@
+package controller07;
+
+import VelocityController;
+import DistanceController;
+import OvertakeController;
+import ActiveController;
+import PassObjectController;
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q time,
+        in Q(0km/h:250km/h) velocity, 
+
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration, 
+        out Q(-180:180) steering,
+        out B status;
+
+    instance VelocityController<2 m/s> velocityController;
+    connect velocity->velocityController.velocity;
+    connect velocityController.acceleration->acceleration;
+
+    instance DistanceController<15 m> distanceController;
+    connect frontLeftSensor -> distanceController.frontLeftSensor;
+    connect frontRightSensor -> distanceController.frontRightSensor;
+    connect distanceController.run -> velocityController.run;
+    connect distanceController.follow -> velocityController.follow;
+
+    instance ActiveController activeController;
+    connect xPosition -> activeController.xPosition;
+    connect activeController.status -> status;
+
+    instance OvertakeController overtakeController;
+    
+    connect frontLeftSensor -> overtakeController.frontLeftSensor;
+    connect frontRightSensor -> overtakeController.frontRightSensor;
+    connect frontLeftSideSensor -> overtakeController.frontLeftSideSensor;
+    connect frontRightSideSensor -> overtakeController.frontRightSideSensor;
+    connect backLeftSideSensor -> overtakeController.backLeftSideSensor;
+    connect backRightSideSensor -> overtakeController.backRightSideSensor;
+    
+    connect overtakeController.steering -> steering;
+    connect activeController.active -> overtakeController.active;
+    
+    instance PassObjectController passObjectController;
+    connect frontRightSideSensor -> passObjectController.frontRightSideSensor;
+    connect backRightSideSensor -> passObjectController.backRightSideSensor;
+    connect overtakeController.activatePassChecker -> passObjectController.active;
+    connect passObjectController.done -> overtakeController.passed;
+}

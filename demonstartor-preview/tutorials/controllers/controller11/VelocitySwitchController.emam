@@ -1,0 +1,85 @@
+package controller11;
+
+import controller11.atomic.*;
+
+component VelocitySwitchController {
+	port                                    
+		in Q accRunTrack,
+        in Q accParking,
+        in Q accFollow,
+        in Q accOvertake,
+        in Q accObstacle,
+        in Q accPassCones,
+        in Q accAlignCar,
+
+        in B activeRunTrack,
+        in B activePassObject,
+        in B activeParking,
+        in B activeAlign,
+        in B activeFollow,
+        in B activeOvertake,
+        in B activeObstacle,
+		out Q acceleration;
+        
+/*
+        instance SwitchQ sw1, sw2, sw3, sw4, sw5, sw6, sw7;
+        instance ConstantQ(0) const_0;
+
+        connect activeRunTrack -> sw1.cond;
+        connect accRunTrack -> sw1.in1;
+        connect sw1.out1 -> acceleration;
+
+        connect activeParking -> sw2.cond;
+        connect accParking -> sw2.in1;
+        connect sw2.out1 -> sw1.in2;
+
+        connect activePassObject -> sw3.cond;
+        connect accPassCones -> sw3.in1;
+        connect sw3.out1 -> sw2.in2;
+
+        connect activeAlign -> sw4.cond;
+        connect accAlignCar -> sw4.in1;
+        connect sw4.out1 -> sw3.in2;
+
+        connect activeFollow -> sw5.cond;
+        connect accFollow -> sw5.in1;
+        connect sw5.out1 -> sw4.in2;
+
+        connect activeOvertake -> sw6.cond;
+        connect accOvertake -> sw6.in1;
+        connect sw6.out1 -> sw5.in2;
+
+        connect activeObstacle -> sw7.cond;
+        connect accObstacle -> sw7.in1;
+        connect const_0.out1 -> sw7.in2;
+        connect sw7.out1 -> sw6.in2;
+*/
+
+	implementation Math{
+
+        // default value
+        acceleration = 0;
+
+        if activeRunTrack
+            acceleration = accRunTrack;
+        end
+        if activeParking
+            acceleration = accParking;
+        end
+        if activePassObject
+            acceleration = accPassCones;
+        end
+        if activeAlign
+            acceleration = accAlignCar;
+        end
+        if activeFollow
+            acceleration = accFollow;
+        end
+        if activeOvertake
+            acceleration = accOvertake;
+        end
+        if activeObstacle
+            acceleration = accObstacle;
+        end
+	}
+} 

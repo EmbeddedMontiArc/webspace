@@ -1,0 +1,23 @@
+package controller11;
+
+component FollowVelocityController<Q velMAX = 2m/s> {
+	port                                    
+		in Q(0km/h : 250km/h) velocity,
+		in B run,
+		in B follow,
+		out Q(-2m/s^2:2m/s^2) acceleration; 
+
+	implementation Math{                    
+
+		// In general nothing to do ?
+    	if (run && (velocity < velMAX))
+			acceleration = 0.1 m/s^2;
+    	else
+			acceleration = -0.1 m/s^2;
+        end
+        
+        if follow
+        	acceleration = 0 m/s^2;
+        end
+	}
+}

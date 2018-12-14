@@ -1,0 +1,42 @@
+package controller11.parking;
+
+import VelocityController;
+import ParkingController;
+import SearchParkingPlaceController;
+
+component Parking {
+    port
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(0km/h:250km/h) velocity,
+        in B active,
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,
+        out B status;
+
+    instance ParkingController pc;
+    connect backLeftSensor -> pc.backLeftSensor;
+    connect backRightSensor -> pc.backRightSensor;
+    connect frontLeftSensor -> pc.frontLeftSensor;
+    connect frontRightSensor -> pc.frontRightSensor;
+    connect frontLeftSideSensor -> pc.frontLeftSideSensor;
+    connect backLeftSideSensor -> pc.backLeftSideSensor;
+    connect pc.steering -> steering;
+    connect pc.status -> status;
+
+    instance SearchParkingPlaceController sppc;
+    connect frontLeftSideSensor -> sppc.frontLeftSideSensor;
+    connect backLeftSideSensor -> sppc.backLeftSideSensor;
+    connect active -> sppc.active;
+    connect sppc.foundPlace -> pc.reverseMove;
+
+    instance VelocityController vcp;
+    connect velocity -> vcp.velocity;
+    connect sppc.foundPlace -> vcp.reverseMove;
+    connect pc.moveForward -> vcp.moveForward;
+    connect vcp.acceleration -> acceleration;
+}

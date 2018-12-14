@@ -1,0 +1,18 @@
+package controller11.activeController;
+
+component Switch<T> {
+
+    ports 
+        in T ifTrue,
+        in B cond,
+        in T ifFalse,
+        out T res;
+
+  implementation Math {
+
+      if (cond)
+         res = ifTrue;
+      else
+         res = ifFalse;
+  }
+}

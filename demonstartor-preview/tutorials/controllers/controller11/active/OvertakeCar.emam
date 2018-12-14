@@ -1,0 +1,20 @@
+package controller11.active;
+
+import controller11.atomic.*;
+
+component OvertakeCar {
+	port                                    
+		in Q xPosition,
+        in Q yPosition,
+        out B overtakeCar;
+
+    implementation Math{
+
+        if ((xPosition < 20m) && (xPosition > -100m) && (yPosition > 90m) && (yPosition < 110m))
+           overtakeCar = 1;
+        else
+            overtakeCar = 0;
+        end
+	}
+
+}

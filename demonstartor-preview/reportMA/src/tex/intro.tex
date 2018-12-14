@@ -1,0 +1,977 @@
+\setlength{\parindent}{3ex}
+\setlength{\parskip}{0ex}
+
+\chapter{Introduction and Motivation}
+Self-driving vehicles are very important part of our future life. To design and develop that kind of cyber-physical systems, component and connector (C\&C) models are widely used. The models are applied in automotive, aerospace or even image processing domains. Using C\&C modeling, it is easier to represent different feature layers and their logical interactions. The most important feature of C\&C modeling is an opportunity to decompose complex models into sub-components and develop and manage these, less complex components, by domain experts.\newline
+To inspire students to be involved in the future technology, a web-playground has been developed, which facilitates controllers creation for a simulator and almost instantly observe the result in the 3D environment. The visualization motivates students and makes the studying process more attractive due to gamification. This kind of education become more popular recent years due to good learning outcome \cite{Game}.\newline
+To teach students how to develop C\&C models, must be used a C\&C modeling language which has all features and tools to satisfy our requirements. EmbeddedMontiArc \cite{HR17} language was chosen for this purpose, to achieve the best results in short terms.\newline
+This thesis is focused on building the ultimate teaching playground with real tutorial examples. Chapter \ref{sec:related} analyzes existing tutorials and playgrounds. After the analysis, the important requirements for the future product will be derived. Chapter \ref{sec:preliminaries} describes the technologies and products, which are used in the thesis. After that, in the chapter \ref{sec:toolchain}, the architecture and implementation are presented. Next chapter, which is number \ref{sec:usage}, describes how to use the implemented system. Chapter \ref{sec:tutorials} presents a group of tutorials with solutions. In the end, the possible improvements are presented, in the future work chapter and then the conclusion follows.
+\cleardoublepage
+
+\chapter{Related work} \label{sec:related}
+This section analyzes different tutorials with the aim of extracting the most convenient and important features. The results are used to increase the productivity and efficiency of the teaching process. Different tutorials and playgrounds have been taken into consideration from various domains: programming languages, numerical computing environment and so on. The main goal is to find the most useful features and integrate them.
+Section \ref{sec:simulink} introduces tutorials for the very powerful tool, which is used in different areas for building systems with any complexity level - Simulink. Section \ref{sec:rust} presents tutorials for the Rust programming language. In the section \ref{sec:z3}, is shown the theorem prover Z3 Solver from Microsoft. Section \ref{sec:octave} considers the Octave online, web-playground for numerical computations. The next one is the section \ref{sec:wolfram}, where is Wolfram Alpha is reviewed, which can solve various of mathematical tasks. In the section \ref{sec:typescript}, is presented a playground for the Typescript language, which is widespread due to type checking, in contrast to its predecessor JavaScript. Section \ref{sec:swift}, analyzes the Swift Playground, which has the most advanced 3D visualization but limited platform support. After reviewing the different tutorials and playgrounds, the requirements for the future tool will be derived and subsequently used in the development process. Using this approach, it is possible to combine advantages from the reviewed applications in one the most advanced tool.
+
+\section{Simulink} \label{sec:simulink}
+Mathworks Simulink \cite{Mathworks} is a block diagram environment for various domain simulation and Model-Based Design \cite{liebel2018model}. It also involves C\&C models into the modeling process. Simulink is a graphical modeling environment. Figure \ref{fig:simulink} shows an example of a fuel calculation subsystem. There are depicted the incoming and outgoing ports of the schema, like \texttt{est\_airflow} or \texttt{fuel\_rate} and the connections between the components. The schema is very useful for a visual perception. You can easily see connections between elements and understand the logic behind that. When there is just a textual representation of elements and connections, it is much harder to imagine the whole schema, e.g., find some issue with an accidentally connected port or disconnected one.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{src/pic/simulink}
+    \caption{Simulink schema example.}
+    \label{fig:simulink}
+\end{figure}
+Simulink has plenty of tutorials in many different areas with detailed description and videos on solving it, which describe it step-by-step. It is very helpful to present step-by-step solutions with detailed description for understanding of important details. Based on this understanding of essentials is build the future knowledge and depends future success. But there is some weakness in an education process. The issue is that they do not have methods for validation the correctness of the user's solution. They do not encourage users to try it out by themselves, just copy a sample solution, that can not guaranty the solution understanding.
+
+\section{Rust} \label{sec:rust}
+Rust \cite{Rust, klabnik2018rust} is a very popular programming language, the prevalence of which is growing every day. Firefox is written on Rust language. It has a consistent tutorial which describes language constructs with gradually increasing complexity. It has the informative and structured index, where users can easily jump from one topic to another almost instantly and then just go back to the place where he was reading before. They use highlighted areas to show some code examples, that facilitate understanding of presented materials. It is possible to copy some parts of the code and even directly execute it in a browser (see figure \ref{fig:rust}).
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{src/pic/rust}
+    \caption{Rust tutorial example.}
+    \label{fig:rust}
+\end{figure} \newline
+To execute the given code, you just should click on the play button in the right upper corner and in several seconds a result will be displayed. This is very important and useful feature, because students can directly see what the code does. At the given example, it is pretty straightforward, but if you have some computations, not even complex ones, it is already not so easy to imagine the output. Nevertheless, even in this short example, there are some issues related to the compilation process. Namely, a different compilation and execution process for diverse platforms (Windows, Linux, macOS). It means, that we have to install the compiler to use it during the teaching process. It would be very convenient to have all these features directly in the web-browser, without an installation.
+
+\section{Microsoft Z3 Prover} \label{sec:z3}
+Z3 is a state-of-the art theorem prover from Microsoft \cite{Z3Prover}. It provides similar experience compare to Rust tutorial, but with some improvements, which simplify the studying process. There is a possibility, not only to execute the given code from the current example directly in a browser, but edit the code, and still see results almost instantly, due to in-browser execution. It facilitates seeing the direct binding between written commands and real results, that improve understanding of given material.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/z3}
+    \caption{Z3 tutorial example.}
+    \label{fig:z3}
+\end{figure} \newline
+Figure \ref{fig:z3} shows the code, which is given inside the tutorial on the left hand side. On the right hand side, there is the code which has been executed and the result appeared below. Then, it is possible to adjust the code to check some hypothesis and instantly see results. By doing this, students can check their understanding of an explained material. Another advantage in this tutorial is a in-browser execution. Students do not have to install anything and can directly work in browsers. It means, the operating system does not have any influence on the execution and compilation process. Any operating system can be used, it is necessary only to have a web-browser. If this tutorial is used directly on a lecture, then students just enter the URL in a browser and can instantly try to execute some examples. Microsoft also allows to share code via URL links. This is convenient if a student has a question, he only should send the URL to the supervisor.
+
+\section{Octave Online} \label{sec:octave}
+Octave Online \cite{Octave, nagar2018interactive} is a web-playground for a high-level language Octave, which is primarily intended for numerical computations. Octave is an open-source alternative to the commercial MathWorks Matlab \cite{Matlab}. It has a simple and intuitive interface despite a complexity of an internal implementation. It provides directly in a browser fast execution with errors handling. Octave Online supports even complex calculations, it is not needed to install any software on the PC. Everything works out of the box in a browser.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{src/pic/octave}
+    \caption{Octave web-playground example.}
+    \label{fig:octave}
+\end{figure}
+This web-playground is oriented on students, who are using the tool directly on a lecture. They do computations in a browser and run previously created scrips, as a sequence of commands. To visualize given data, there is a possibility to build plots for better understanding of mathematical abstractions. Despite of a browser execution, it has solid computation performance.
+
+\section{Wolfram Alpha} \label{sec:wolfram}
+Wolfram Alpha \cite{Wolfram} is a very powerful tool, which works by using expert-level knowledge and algorithms to automatically answer questions, do analysis and generate reports. It has matrix operations and calculations as the EmbeddedMontiArc language has, to describe atomic components. Wolfram Alpha can do even more as solving linear equations, it allows to specify the behavior of controllers, and after, by solving the equations, they synthesize the controller. Furthermore, it has one very interesting and useful feature, which provides an interactive visualization of a given data. The idea behind it is that students can perceive, how one or another parameter influences on the final result. It promises a better understanding of the dependencies between the components or elements of the observed system.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{src/pic/wolfram}
+    \caption{Wolfram Alpha example.}
+    \label{fig:wolfram}
+\end{figure}
+It offers tutorials, which have step-by-step solutions with detailed explanation of each step and additional hints for students (see figure \ref{fig:wolfram}). Futhermore, it has a high quality visualization, which encourage students to do some experiments and see the changes on the displayed figure almost in real time.
+
+\section{TypeScript Playground} \label{sec:typescript}
+TypeScript \cite{TypeScript, jansen2018learning} is a typed superset of JavaScript language. It has a clean and simple playground which shows the difference and benefits of TypeScript over JavaScript language. It has preloaded examples which actually show this difference and a user can see distinction in the direct comparison (see figure \ref{fig:typescript}). The given direct comparison gives a better understanding and facilitates further analysis of the features.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/typescript}
+    \caption{Typescript playground example.}
+    \label{fig:typescript}
+\end{figure} \newline
+Figure \ref{fig:typescript} emphasizes the difference in classes architecture. It helps to find architecture advantages of using the new language (means Typescript). Moreover, you can run the given example and see the result directly in a browser, but in a different tab, which is not really convenient. If you have some complex code, it is really helpful to see the source code and the result simultaneously, to be able to match them.
+
+\section{Swift Playground} \label{sec:swift}
+Swift Playground \cite{Swift, kaczmarek2018becoming} has been made for teaching the Swift language in a game form. The playground was developed with a focus on high school students. For this category of users it is very important to attract their attention. Students can create small programs that instantly show the results of the code that you have written. From the right side of the screen is shown a 3D world where an action is happen (see figure \ref{fig:swift}). The tutorials are pretty simple but the concept is very interesting. Tutorials have automatic verification of an implemented correctness in the 3D environment. To produce many diverse game oriented tutorials, it would be convenient to have simple 3D models importing, that can use different models from various 3D editors.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{src/pic/swift}
+    \caption{Swift playground example.}
+    \label{fig:swift}
+\end{figure}
+Apple gives into trends and have used the gamification in the tutorials, to attract learners to their product. The biggest limitation is that the tutorials are only available on iPads.
+
+\section{Derived Requirements}
+Thoroughly analyzed the projects described above, the following list of requirements has been derived: \newline 
+\begin{itemize}
+    \item (R1) 3D visualization for demonstration purposes.
+    \item (R2) Simple, clean, and intuitive interface.
+    \item (R3) Work on any operating system and without installation.
+    \item (R4) Fast compilation.
+    \item (R5) Import and use existing 3D models for the simulation.
+    \item (R6) Displaying the object's trajectory.
+    \item (R7) Integrated testing support.
+    \item (R8) Automatic verification of obtained results.
+\end{itemize}
+The table \ref{comparison} summarizes the comparison between the all considered tutorials. \newline
+\begin{table}[h!] \caption{summarized comparison between tutorials (+ support, P partially support)} \label{comparison}
+    \begin{tabular}{|l|l|l|l|l|l|l|l|l|} 
+    \hline
+    &  Z3 Solver & Octave & Wolfram & TypeScript & Swift & Rust & Simulink & EMAM PG \\ \hline
+    R1 & - & + & + & - & + & - & + & + \\ \hline
+    R2 & + & + & + & + & + & + & + & + \\ \hline
+    R3 & + & + & + & + & - & + & - & + \\ \hline
+    R4 & + & + & + & + & + & + & + & - \\ \hline
+    R5 & - & - & - & - & - & - & + & + \\ \hline
+    R6 & - & - & P & - & P & - & P & + \\ \hline
+    R7 & - & - & - & - & - & - & + & + \\ \hline
+    R8 & - & - & - & - & + & - & + & + \\ \hline
+    \end{tabular}
+\end{table}
+Take a closer look at the differences between the tutorials regarding to the derived requirements above. \newline
+\textbf{(R1) 3D visualization for demonstration purposes:} Four of considered tutorials have a 3D visualization. Octave online has an ability to generate plots and graphics for given data. Wolfram Alpha has a very powerful tool which can generate 3D models and user can even interact with them and see the changes in real time. Whereas, Swift Playground possesses the most advanced 3D world, which is a part of a tutorial and results presentation. Simulink has an opportunity to build beautiful 3D models, which are involved in the simulation process, but the difference is that a user has to build everything himself. It means, it is not as a part of a tutorial, but an additional feature.\newline
+\textbf{(R2) Simple, clean, and intuitive interface:} This is the only requirement, which all tutorials are satisfied. It is very important to have an understandable and clear interface, which does not distract from an educational process. Moreover, the interface should be intuitive, so that students can use it directly at the lecture without detailed explanation of its features.\newline
+\textbf{(R3) Work on any operating system and without installation:} Almost all investigated tutorial satisfy this requirement, except the Swift tutorial and Simulink. The Swift tutorial has only iOS implementation and only is used at the iPad. Simulink does not work on the Web, only MatLab, which has partial web-implementation. Due to this inconvenience, these two tools can be used without preliminary preparation.\newline
+\textbf{(R4) Fast compilation:} All presented tutorials have sufficiently fast compilation process. The EmbeddedMontiArc generator has quite complex compiler with amount of features. Due to this reason and the using as a back end not the best hardware, the compilation process takes time. Later the architecture will be described in details.\newline
+\textbf{(R5) Import and use existing 3D models for the simulation:} Only Simulink has feasibility to import 3D models. It helps to create tutorials quickly and efficiently, by using the previously created models and configurations. An example of reusing a 3D object can be a cone that is used in many exercises. This feature simplifies the process of creating new tutorials and decreases the time which has to be invested into the building process. Even better to have possibility to load the models, which can have different format, like Babylon \cite{Babylon} or Blender \cite{Blender}. \newline
+\textbf{(R6) Displaying the object's trajectory:} Wolfram Alpha, Swift PG and Simulink, are partially support this feature in case, that you can see the entire process of movement of an object from the very beginning to the end. But it would be better to improve the concept and add the separate window which permanently displays a traversed route of an object, for the better visual perception and visual comparison of results. In our case the object is a car and a trajectory completely describes the passed segment of a track. \newline
+\textbf{(R7) Integrated testing support:} Only Simulink has integrated testing options. Due to the specificity of the tutorials, tests play an important role. Writing streaming tests for components, students can be sure that it reacts properly on incoming data. Tests make the components more reliable and robust. Because of the using the C\&C language, it is great to be sure that each component of a composed model behaves correctly.\newline
+\textbf{(R8) Automatic verification of obtained results:} Only one among the examined tutorials, the Swift tutorial, has a gaming base verification of a solution correctness. It causes additional interest in the studying process, and can be the motivation to keep solving the tasks, by analogy with computer games. Whereas Simulink gives you possibility to do it, but it is more like extra feature which can be implemented.\newline
+Taking into account all these derived requirements we are going to start working on the architecture, which is capable to support the required features.\newline
+\cleardoublepage
+
+\chapter{Preliminaries} \label{sec:preliminaries}
+This chapter introduces technologies that have been used in this thesis. Section \ref{sec:ema} gives an overview of the modelling C\&C language - EmbeddedMontiArc. Section \ref{sec:tools} presents the full stack of EmbeddedMontiArc tools that have been used in the toolchain. More detailed description of the tools will be given in the following subsections. Subsection \ref{sec:onlineide} gives an overview of the Online IDE, which is used for writing EmbeddedMontiArc code in a web browser. Subsection \ref{sec:emam2wasm} describes EmbeddedMontiArc's WebAssembly generator, which translate code from EmbeddedMontiArc to C++ and then to WebAssembly. WebAssembly is a binary format running directly in a web browser. Subsection \ref{sec:svggen} explains the features of the schema' picture generator.
+
+\section{EmbeddedMontiArc Language} \label{sec:ema}
+EmbeddedMontiArc language family consists of the main language EmbeddedMontiArc \cite{KRRW17,EMArt18, report1, report2}, plus extra languages providing basic features to EmbeddedMontiArc, e.g., structure, test, and design languages. It was designed to model architectures of embedded and cyber-physical systems. Other popular modeling architectures of cyber-physical systems are: Simulink \cite{bishop1996modern, dabney2004mastering}, Modelica \cite{modelica2005modelica, fritzson2011modelica}, SysML \cite{omg2007systems, hause2006sysml} and many others. To show main advantages of the language, it is easier to start directly with an example.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/embdmontiarc1}
+    \caption{EmbeddedMontiArc model of ParkAssistant (copied from \cite{KRRW17})} 
+    \label{fig:embdmontiarc}
+\end{figure}
+Figure \ref{fig:embdmontiarc} shows the \texttt{ParkAssistant} component. This is not the entire component but a main part, which shows the most important features. It has incoming and outgoing ports. All ports must have a type, name and range. The type defines a kind of a signal (e.g., \texttt{Q},\texttt{N},\texttt{Z},\texttt{B}). The range is very important, it helps to control the signal in boundaries, which are defined in advance. Moreover, the range defines not only the boundaries values, but the units (e.g., km/h, m/s and so on). Another option, which is available for ports it is a port size array. There is a possibility to define an array of ports, it can increase the readability of a connection schema and simplify a ports connection. When the component is created and ports have been defined, it is possible to instantiate another components inside the component. Lines 8,9 and 10 illustrate several available features. The first one is to define the generic parameter for a component, to be able to create a more general component, which can be used for different types of incoming signal. The next one is to create an array of components, if it is required several similar components for some reason, like the filter component, which does some signal refining. The last one, it is just a normal component instantiation, without any extra parameters. When all required components have been instantiated, it is time to connect the components together. EmbeddedMontiArc offers several convenient options to do that. Firstly, you can just connect the specific port of one component to another specific port of another component (line 11). Then it is possible to connect an array of ports to another one, to reduce the number of connections between components. Another possibility, to connect one port of some component to a specific port of other components, like one-to-many connection. There were described the most important features which influence on the building process of components. More detailed explanation of the language features can be found in the following book \cite{HR17}.
+
+\section{EmbeddedMontiArc Tools} \label{sec:tools}
+This section describes a full stack of components, which have been used in the toolchain. These components have been developed by other students and in this thesis they are combined in the one chain. The first one is Online IDE, which is used in the front end, and another two are EmbeddedMontiArc's WebAssembly generator and Visualisation generator, which are used in the back end.
+
+\subsection{Online IDE} \label{sec:onlineide}
+Online IDE \cite{OnlineIDEBA17} is based on the Cloud9 IDE \cite{gadhikar2013browser, malan2017web}, that is an online integrated development environment. It supports various languages and was adapted to support the EmbeddedMontiArc. It has many features which simplify the development process (see figure \ref{fig:onlineIDE}). The IDE supports an autocompletion for the given languages and syntax highlighting. It increases speed of the development process and convenience during the code writing. From the left hand side of the figure \ref{fig:onlineIDE} the directory tree is located. It simplifies the navigation inside the project. In this area, new files and folders can be created. Files, which have beed opened, organized in tabs, which can be also used for navigation. From the right hand side, there is shown the list of all ports of the currently selected component. Next to it, the list of the sub-components, which contains the selected component. It shows types of components and their names. If there are many other components inside the component, it is easier to see the entire list of components in one screen. Below the sub-components, a group of connectors is shown, which are used to connect currently selected component with others components instantiated inside it. Moreover, the autocompletion is offered to connect to ports of a component, which actually has this component. It means, that the autocompletion tracks all instantiated components with ports. Needless to say, that the IDE supports a text search and search through the ports, sub-components and connectors.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/onlineIDE}
+    \caption{EMA Online IDE.}
+    \label{fig:onlineIDE}
+\end{figure} \newline
+To store project's files, the virtual file system \cite{VFS} is used. It provides the filesystem API, which is used by developers to manipulate the project's files. It makes available all basic methods for working with files and folders (e.g., \texttt{mkdir}, \texttt{readFile}, \texttt{copy} and so on).
+
+\subsection{WebAssembly Generator} \label{sec:emam2wasm}
+This tool generates a WebAssembly binary file \cite{WebAssembly} and JavaScript file from the EmbeddedMontiArc project. The tool is based on the EmbeddedMontiArc's C++ generator \cite{CPPGenBA17,CPPComp}, which firstly produces the C++ equivalent of a EmbeddedMontiArc model, afterwards a generated C++ model is used to generate a WebAssembly model. For this purpose the Emscripten compiler \cite{Emscripten, zakai2011emscripten} is used. The produced files later are used in a browser to execute compiled EmbeddedMontiArc model for a 3D visualization process. \newline
+The tool is consisted of the .jar file, which has packed with all dependencies and script files. One of these script files, does the setup procedure and another one executes the main .jar file, with all important parameters. One of the important parameters, which is given in the script file, is a path to Armadillo \cite{Armadillo, sanderson2010armadillo, sanderson2016armadillo} library. It is a C++ library for linear algebra \& scientific computing and it is used for matrix computations.
+
+\subsection{Visualisation Generator} \label{sec:svggen}
+The main purpose of the Visualisation generator \cite{VisMA18}, to create single or multiple layers schema of the given controller. A generated schema helps to visualize a textual model of a EmbeddedMontiArc controller. The visualization helps to find some errors related to incorrect connections between some components. The Visualisation generator able to generate multiple layer models, that increases a readability of schemas, because firstly you see more general schema of the model, then you just need to click on some component and an internal schema of the component is appeared.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/controller03}
+    \caption{EmbeddedMontiArc Parking controller.}
+    \label{fig:parkingCtrl}
+\end{figure}
+Figure \ref{fig:parkingCtrl} depicts the parking controller, which has three internal sub-components. Each of these components can have another components inside. The generator calculates the layout in the way to optimize positions of components and decrease the length of the connectors between them. One of the features, is a possibility to simplify the schema by hiding the ports' names and grouping the connections between components.
+
+\chapter{Toolchain} \label{sec:toolchain}
+This chapter describes the entire toolchain, which is used in the thesis, from creating a C\&C model to results demonstration in the 3D simulator. The toolchain provides the functionality to satisfy the earlier derived requirements. The following sections provide the detailed explanation of an architecture and an internal implementation of components from which the toolchain consists.
+
+\section{Architecture}
+Software architecture refers to the high level structures of a software system, the discipline of creating such structures, and system \cite{SWArch}. The selection of a suitable architecture is very important at the initial design stage. At the very begging, the idea was to create a serverless application hosted on the GitHub pages \cite{GHPages}. And there was a solution for that, at least it looked like the solution. There is a Clang In Browser \cite{CIB} project ot compile the generated C++ code to WebAssembly and run it directly in a browser. But then some issue, related to the solution, has been revealed. Clang In Browser does not support dynamic linking yet. Therefore, it is not possible to link against the large Armadillo mathematics library, which is used by EmbeddedMontiArc and static compilation would extend the linking process to several minutes. For this reason, the web playground is uses a stateless server to compile the EmbeddedMontiArc code to WebAssembly. User triggers sending of the C\&C files to the server by JavaScript, the server translates it to WebAssembly and then the client receives compiled WebAssembly controller. The controller is used in the 3D simulator. The huge advantage is that the server is not involved in the simulation process. It means that it is much easier to handle multiple users and it does not run into critical performance issues, due to multiple requests. The simulation in the browser runs fluently, due to local execution for each user and, in our opinion, it has a massive impact on the user experience. Also, the maintenance of a stateless server is much simpler as the maintenance of stateful one. The disadvantage is that users have to wait for the compilation on the server side and it can take longer due to multiple requests. Nevertheless, the user can observe a fluent driving of the car during the simulation process.\newline 
+EmbeddedMontiArc has variety of developed tools as self-containing services based on .jar files. Due to the derived requirement R3, it has to be developed a web-based application. Therefore on the server-side, some services, from EmbeddedMontiArcStudio, can be selected and integrated. But still, one server-side component is missing. The server must handle multiple users at the same time, and the server must do the messaging from the back-end to the front-end. Students should get a response from the server, to receive compiled controller or just fix errors which can appear during the compilation process.\newline
+The EmbeddedMontiArcStudio has it own 3D simulator \cite{DDE+17, Sim1BA17, Sim2BA17, Sim3MA17, Sim4MA17}, which has a lot of powerful features \cite{Sim5MA18,Sim6MA18,Sim7MA18,Sim8MA18}. However, it has some weaknesses, which do not allow to use it in this case. It cannot handle multiple users, requires a powerful computer and has to be installed. It contradicts the requirements. There was another attempt \cite{3dVisBA17} to create a server-base simulator, but it was not successful, due to inability to run simulation fluently. The issue was related to using a stateful server. Then the decision was made, to develop a new simulator, which satisfies our requirements. For implementation, TypeScript was picked, which is the better version of JavaScript, because it is typed. The simulator which is working on the front-end gives much smoother and fluent experience for a user. Therefore, a fully autonomous front-end is used for the simulator and a back-end during the preparation phase of the controller for the simulator. For the controller implementation of the simulator, has been decided to use WebAssembly. WebAssembly is a new type of code, that runs in modern web browsers. It is a low-level assembly-like language with a compact binary format that runs with near-native performance and provides languages such as C/C++, so that they can run on the web. It is very well suited to this task due to the fact, that it is used EmbeddedMontiArc generator which converts the code to C++. Especially for this purpose, the EmbeddedMontiArc to WebAssembly converter was developed. The architecture more clearly and fully is shown in the figure \ref{fig:architecture}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/architecture}
+    \caption{The toolchain architecture.}
+    \label{fig:architecture}
+\end{figure} \newline
+To clarify the goal of each component which is shown in the figure, it will be considered the seven most important components that are linked together:
+\begin{enumerate}
+    \item IDE for EmbeddedMontiArc language, it helps to write components easier, reveals the errors and shows incoming and outgoing ports of the components.
+    \item Web server, it receives the requests for compiling the EmbeddedMontiArc models and sends back a compiled controller, packs and extracts models, controls the compilation process, providing an error handling for users. The server provides the handling of multiple users simultaneously.
+    \item EmbeddedMontiArc's WebAssembly generator, it gets a model from the web server and compiles it, generating the WebAssembly file, which is the "brain" of the 3D simulation.
+    \item Testing toolchain, which provides stream testing for incoming models. The toolchain is consist of EmbeddedMontiArc's C++ generator, which generates tests. Then the tests are compiled and executed. The output of the stream testing phase could be used to be shown to the user or be the condition for generating the .wasm file.
+    \item Visualisation generator, it generates a schema of the components and connections for better readability. Users can easier find errors using a schema of components.
+    \item Simulator, it receives a compiled model from the server and instantiates it directly in the browser. Then, the controller is used to process data from sensors, which are located on the car.
+    \item Trajectory builder and comparator. It builds in real time a trajectory of the car's movements and does a comparison between a sample trajectory and generated one. The comparator allows having some deviation from the sample trajectory.
+\end{enumerate}
+In this composition of components, some of these were reused from the previous successful development. The missing components will be implemented, in the way to accomplish the goal in the most efficient and optimal way.
+
+\section{Front End}
+The front end part of the toolchain consists of the Online IDE, 3D simulator and trajectory builder. The Online IDE has been already implemented and successful used in production. In the following subsections will be described the main page, which manages a communication with the server, loading of tutorials and files' operations. Then the 3D simulator will be presented. It demonstrates the car's behaviour, which is controlled by the compiled controller. 
+
+\subsection{Main Page}
+The main page (see Figure \ref{fig:web-interface-task} and Figure \ref{fig:web-interface} in Appendix) consists of four \texttt{iframe} tags, which have inside independent web-pages: online IDE, trajectory comparator, 3D web-simulator and description of tutorials. Moreover, it ensures the communication between these pages and the Back-End. The functionality which is provided by the main page:
+\begin{itemize}
+    \item Select and load tutorials. One of the given tutorials can be selected. After that the specified description of the tutorial will be loaded from the server. Due to lack of space on the screen, there is the simulator with the trajectory builder or the tutorial description can be shown, not all together.
+    \item Read the data from the Online IDE. It means, read files, which were created by the user inside the IDE. All files, that were created, are stored in the Virtual File System. If you need to read the data from these files, the special API \cite{FilesystemAPI} has to be used. In this case, an arbitrary number of files and folders can be created. Due to this reason the recursive algorithm has to be implemented for a model reading. Futhermore, JavaScript is an asynchronous programming language and the promises \cite{JSPromise} have to be used, to implement the sequential execution of operations.
+    \item Pack files, which have been read, to decrease the size of the blob and amount of transferred files. To pack files directly in the browser, the special library is used. The file reading functionality, which was described above produces an array of the files, which is used by the JSZip library \cite{JSZip} to create a blob.
+    \item Send and receive the data to/from the server. When a model has been read and packed, it should be sent to the server for further processing. For this purposes \texttt{XMLHttpRequest} \cite{XMLHttpRequest} is used. It uses \texttt{POST} request to send the blob, which was created by the JSZip library, to the server. The response is sent asynchronously. It means, we can continue to interact with the page during the processing the data by the server. When the data was processed on the server and sent back to the browser, the request object has changed the state to the readyState and it starts to receive the binary data and stores it.
+    \item Unpack the incoming data. The browser receives a binary large object, which is actually just a binary data. Then it has to be saved as a ZIP archive in a memory. After that, the archive is being extracted. The archive consists of two files. One of them is a WebAssembly file, which has \texttt{uint8array} encoding. Another one is a JavaScript file, which has string data inside. It is important to differentiate the encoding of these files, due to data consistency inside. During the unpacking process the correctness of received data is checked.
+    \item Transfer the compiled model data to the simulator. After the extraction of the received from the server data, the WebAssembly binary data is validated, by build in WebAssembly validation function. Only after successful validation, the data is being transferred to the 3D web-simulator, where the WebAssembly controller will be instantiated for further usage.
+    \item Load a completed text model of the controller into the IDE. There is possible to load the model, which was implemented as a solution for a tutorial. To load the data to the IDE, the Filesystem API is used, besides, extra functions are required. One of them is cleaning the online IDE environment. It means, delete all files, which were loaded or created earlier. And there is the same issue like we had before with reading. There is no an implemented recursive function, which can do it. And it has to be implemented.
+    \item Do not send loaded solution controller to the server if there is no changes in the code. After loading the solution controller, the content of the files can be changed in the IDE. But if the files were not changed, we do not want to spend time waiting the compilation process. Due to this reason, there is pre-compiled controllers, which can be loaded directly to the simulator, to increase usability and convenience of using the product.
+\end{itemize}
+All described functions have an error handling. If users have some problem with a EmbeddedMontiArc model, an error message from the server will be received. It is related to all functions, which is implemented. It could be an error during packing/extracting process, file reading or WebAssembly file validation.
+
+\subsection{Tutorial's Internal Structure}
+Each tutorial has a textual description, solution and configuration file. The tutorial description has a detailed explanation of the task, which includes some advices and recommendations. The solution gives the step-by-step instructions how to solve the task, and describes why we use particular methods. Listing \ref{lst:configuration} presents an example of the configuration file for tutorials.
+\bigskip
+\begin{lstlisting} [caption={Configuration file example.},label={lst:configuration},captionpos=b, mathescape]
+{
+    "car" : 
+    {
+        "start" : "0:0",
+        "end" : "z43"
+    },
+    "trackObject0" :
+    {
+        "position" : "100:10",
+        "width" : "4",
+        "height" : "5",
+        "type" : "car"
+    },
+    "trackObject1" :
+    {
+        "position" : "z24b",
+        "width" : "1",
+        "height" : "1",
+        "type" : "cone"
+    }
+}
+\end{lstlisting}
+\bigskip
+The configuration is given in JavaScript Object Notation format. The first object \texttt{car} is the main car, which controlled by a controller. It is possible to define \texttt{start} and \texttt{end} positions. When the car reaches the \texttt{end} point, the simulation is stopped. If the simulation should run until a controller terminates the execution, \texttt{end} point must not be given. The position of objects can be given as coordinates (x,y) or labels, which are written in the track. The next objects are defined like \texttt{trackObjectX}, \texttt{X} means a number of an object, and have the list of parameters:
+\begin{itemize}
+    \item Position of the object, which can be given in the same way like \texttt{start} point of the car.
+    \item Width and height define the size of the object, values given in meters.
+    \item Type defines which kind of 3D Objects will be shown in the 3D environment.
+\end{itemize}
+Usage of configuration files is simplify the creation process for new tutorials and managing of objects on the track. To create a new tutorial, we shouldn't change anything in the simulator, just specify new configuration for the tutorial.
+
+\subsection{3D Web Simulator}
+The simulator uses Three.js \cite{ThreeJS}, that is a lightweight cross-browser JavaScript library/API used to create and display animated 3D computer graphics on a Web-browser. This library uses WebGL \cite{WebGL} to increase performance and smoothness of 3D graphics and reduce the intensity of CPU usage, by using the hardware acceleration of the GPU.\newline
+Let us consider the basics of three.js library. To be able to display anything using the library, we need three the most important things: a scene, camera and renderer, so that we can render the scene with camera. Then we can add objects to the scene. The most important objects for our tutorials are: track, car and other objects, depends on the task(e.g., cones, cars).\newline
+The simulator environment consists of the visual and mathematical model. The visual means a graphical representation, that can be seen in a browser. The mathematical one, it is a model, base on which the graphical representation is built. Then, there is another important part of the chain - a controller. The controller is built in advance, before the simulation has been started. In the figure \ref{fig:simulator-scheme}, an interaction between the components is depicted.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{src/pic/simulator-scheme}
+    \caption{The simulator components' interaction.}
+    \label{fig:simulator-scheme}
+\end{figure} \newline
+It is very important, that we separate the implementation of the simulator from the visualisation and controller. It benefits by being able to replace one of the components. We can have a different visualisation e.g., using another graphical library, or change the simulator core. It can be written using another language or implement more advanced mathematical model. 
+
+\subsubsection{Simulator Graphical Part}
+The graphical part of the simulator is in charge of displaying the simulation process in the 3D environment. The most important part is a main loop. The loop defines how often the \texttt{move} function in the scene is called. It changes the position of the car in the track. Moreover, inside the loop, the simulator core interacts with the controller. On every cycle, the following sequence of actions is taking place:
+\begin{enumerate}
+    \item Read environment data. It contains information, from the car's sensors, velocity, position and execution time.
+    \item Transfer the data from the environment to the controller, which calculates the next move.
+    \item Use the calculated data in the controller to change the car's position in the mathematical environment of the simulator's core.
+    \item Use the processed data from the simulator's core to change the car's position in the 3D environment.
+\end{enumerate}
+The sequence of the actions given above is a loop, which is repeated during the execution in the 3D simulator. There are lots of different functions inside the graphical part of the simulator, which do some service tasks. There is shortly described the most important ones:
+\begin{itemize}
+    \item Initializing the simulator's core and controllers.
+    \item Resetting the simulation environment after execution, if it is needed to execute the simulation again. All variables, like execution time or sensor's noise have to be set to initial value.
+    \item Reading tutorials' configurations. During loading one of the tutorials, the configuration file is used for instantiation of the track environment. It means, adding the objects to the track and setting up the initial position of the car.
+\end{itemize}
+The graphical part of the simulator is tightly coupled with the core part. It maps all actions which occurs in the mathematical model to the 3D virtual model, which we can observe during the simulation. 
+
+\subsubsection{Simulator Core}
+The next paragraphs consider the the simulator's core in more details. The simulator has mathematical model of the track. It means, there is an array of walls, which constantly defined. The track has two different types of the walls: linear and curved. A linear one is defined by two points and a curved one has more parameters: start, middle, end points and radius. When the distances to the track's walls have been calculating, in fact, the following occurs:
+\begin{itemize}
+    \item An intersection of a ray and line is calculated. The initial point of the ray is a sensor position and direction. The line is a wall of the track.
+    \item If the intersection was found, then we calculate the distance between the sensor and intersection line. If it was not found, we assume that intersection point exist but with the value \texttt{Number.MAX\_VALUE}.
+\end{itemize}
+After the calculation of the distances to the track's walls, this data transferred to the controller, which uses it to consider the subsequent behavior of the car. Then the controller passes the result again to the simulator's core, which uses this data for further processing. The simulator's core has the function - calculate, which uses the data from the controller and executes the next simulation step in the mathematical model. This function controls the main simulation parameters:
+\begin{itemize}
+    \item Time:
+        \begin{equation}
+            time = time + samplingTime
+        \end{equation} \newline
+        where time is simulation time and samplingTime is an increment on each step. 
+    \item Velocity:
+    \begin{equation}
+        velocity = velocity + acceleration \cdot samplingTime
+    \end{equation} \newline
+        where velocity and acceleration are related to the car.
+    \item Rotation:
+    \begin{equation}
+        rotation = rotation + steering
+    \end{equation} \newline
+        where rotation and steering angle are related to the car.
+    \item Position:
+    \begin{equation}
+        x = x_0 + velocity \cdot samplingTime \cdot cos(rotation)
+    \end{equation}
+    \begin{equation}
+        y = y_0 + velocity \cdot samplingTime \cdot sin(rotation)
+    \end{equation} \newline
+    the $x_0$ and $y_0$ are defined the previous position of the car.
+\end{itemize}
+After the execution of this function, the outgoing data is ready to be used by the graphical part of the simulator and during the next execution step. To better understand how the core simulator works, consider a figure \ref{fig:class-diagram}. It depicts classes' dependencies and interaction between them. \newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/class-diagram}
+    \caption{The simulator's core class diagram.}
+    \label{fig:class-diagram}
+\end{figure} \newline
+The main simulator class has a class \texttt{Track}, which has \texttt{Walls} and they can be linear or curved. Moreover, the simulator class has a class \texttt{Car}, which has eight embedded sensors. The sensors are using the auxiliary class \texttt{CoordHelper}, which helps to calculate the distances. The \texttt{Orientation} and \texttt{Rotation} classes are used by the \texttt{Car} class, to calculate the positions of the sensors when the car changes the angle on the flat. The \texttt{Simulator} class uses the structures \texttt{Sinput} and \texttt{Soutput} to fill the input and output data respectively, every execution loop. The simulator works in cooperation with the controller, but for the testing purposes, the MOCK \cite{doglio2018testing} controller - \texttt{ControllerMOCK} has been developed. It helps to test the simulator functionality and body of the MOCK controller can be written in TypeScript.
+
+\subsection{Trajectory Builder}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/trajectory}
+    \caption{Trajectory builder.}
+    \label{fig:trajectory}
+\end{figure}
+Trajectory builder gives a better understanding and a simplicity of analysis the passed way. It is hard to track the whole path of the car and see the controller's errors in real time during the execution. The trajectory helps to solve this problem. In the figure \ref{fig:trajectory} is shown the track with the trajectories. The white one is the sample trajectory while the red one is being drawn in real time, simultaneously with the passing the part of the track by the car. To be able to draw the trajectory a log file is used. It contains all important information about the car in each simulation moment. Information from the log file can be used to analyse the behaviour of the car and reveal problems with the model. 
+\bigskip
+\begin{lstlisting} [caption={Simulation log data.},label={lst:log},captionpos=b, mathescape]
+logObject.telemetry.push({
+  "Status": simulator.output.triggerStatus,
+  "Time": simulator.output.ti.value,
+  "Position": [simulator.output.xi.value, simulator.output.yi.value],
+  "Rotation": simulator.output.degree.value * 180 / Math.PI,
+  "Velocity": simulator.output.velocity.value,
+  "Sensors": distances
+});
+\end{lstlisting}
+\bigskip
+The listing \ref{lst:log} shows the information which is stored in the log. \texttt{Time} shows the simulation time. \texttt{Position}, \texttt{Rotation} and \texttt{Velocity} related to the car. \texttt{Sensors} is an array of sensors with measurements in the current simulation moment. To build the trajectory, only positioning data is used. The length of the trajectory is calculated by summing up the lengths of all segments between position points. The length between points is calculated using the distance formula \cite{Distance}:
+\begin{equation}
+    distBetweenPoints\quad+= \sqrt{(x_1-x_0)^2 + (y_1-y_0)^2}
+\end{equation}
+After the summing up all the segments, the \textit{distBetweenPoints} has the entire distance of the track, which is used later to compare the trajectories. To draw the trajectory, all points from the log file are mapped to the picture of the track.\newline
+Futhermore, we can analyse the movement trajectory, using the the acceleration vectors in each point. It reveals issues related to twisting motion of the car. It can be caused by incorrect computation of a car's angle. Figure \ref{fig:trajectory-acc} shows an example of this kind trajectory.\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/trajectory-acceleration}
+    \caption{Trace analyser.}
+    \label{fig:trajectory-acc}
+\end{figure}\newline
+A vector's angle is calculated using the following formula \cite{Atan2}:
+\begin{equation}
+    angle\quad=\quad atan2(y_1 - y_0, x_1 -x_0) 
+\end{equation}
+Where the $(x_0, y_0)$ related to the point, which is a start point for the acceleration vector and $(x_1, y_1)$ the next point. Then the length of the vector is calculated using the standard distance formula, which is shown before. Figure \ref{fig:trajectory-acc} illustrates an example of the incorrect controller behaviour and ability to see this. The constantly changing the steering angle during passing the sectors 21-31 on the track. This analysis method is not computationally expensive but very efficient for visual analysis purposes.\newline
+Finally we have to analyse a trajectory after passing the required part of the track to decide whether the task is solved correctly or not. The formulas shown in \ref{eq:eq1} to \ref{eq:eq4} are used.
+\begin{equation} \label{eq:eq1}
+    D_1 = \sqrt{(C1_x - S1_x)^2 + (C1_y - S1_y)^2}
+\end{equation}
+\begin{equation} \label{eq:eq2}
+    D_2 = \sqrt{(C2_x - S2_x)^2 + (C2_y - S2_y)^2}
+\end{equation}
+\begin{equation} \label{eq:eq3}
+    sectorArea = \sqrt{((C2_x - C1_x)^2 + (C2_y - C1_y)^2) * 0.5 * (D_1 + D_2)}
+\end{equation}
+\begin{equation} \label{eq:eq4}
+    deviation = \frac{\sum_{n=1}^{sectors} sectorArea_n}{drivenDistance}
+\end{equation}
+
+Where \texttt{C1}, \texttt{C2} are point which belong to current trajectory. \texttt{S1} and \texttt{S2} belong to sample trajectory. Using the given formulas, the square between four points is calculated. Depends on the deviation from the sample trajectory, the task is counted as solved or failed. Figure \ref{fig:trajectory-comparator} shows the graphical representation of the calculation. \newpage
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/trajectory-comparison}
+    \caption{Trajectories comparator.}
+    \label{fig:trajectory-comparator}
+\end{figure}
+The area, which is marked between the current trajectory and the sample one is a deviation. This square is influence on the tutorial's result, whether it will be passed of failed.
+
+\section{Back End}
+The back end part of the toolchain is consist of a web server, EmbeddedMontiArc's WebAssembly generator, testing toolchain and visualisation generator. All described component, except the web server, have been implemented and successful used in previous projects. The main goal to connect them all together and implement the web server, which controls the execution of all services and communicates with the front end. Moreover, in EmbeddedMontiArc language there is a lack of some context conditions checking, which have to be implemented, to obtain better error handling during compilation process.
+
+\subsection{Web Server}
+Overwhelming majority of tools related to EmbeddedMontiArc have been written using Java language and use the .jar containers. Using JAR container, the applications can be executed on different operating systems, it means they are cross-platform. This is a big advantage, since applications can be run on the server, which does not use Windows, instead some Linux-based system. The web server is based on Eclipse Jetty \cite{Jetty}. Eclipse Jetty provides a web server and Java Servlet container \cite{hunter2001java, coward2003java}. In our case, we create a server, which bind to the specific port. The servlets' container holds servlets inside, which react on incoming requests from the front end (c.f. figure \ref{fig:servlet}). \newline
+What is important in our case, that when the request is coming, for each request, a new thread is being created. It means, that we can maintain multiple users, and do not have to create manually a multiple user management system. Let us consider the steps, which occur on the back end part of the toolchain:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{src/pic/servlet-container-life-cycle}
+    \caption{Servlet container.}
+    \label{fig:servlet}
+\end{figure}
+\begin{itemize}
+    \item The servler receives the request from the front end. The request contains an archive, which has to be unpacked and a model has to be copied for the further processing. For this purpose, a class has been created, which in charge of unpacking ZIP archives and can handle any structure of directories/folders. To decrease a number of input/output operations, the incoming archive is being stored in RAM.
+    \item Then, after the unpacking, the incoming model is being saved to the folder, where models for EmbeddedMontiArc's WebAssembly compiler are located. The compilation process is initiated by executing the particular batch file with parameter, which is a name of the model, that has to be compiled. The batch file initiates the execution of the \texttt{emam2wasm.jar} package. Which has a bunch of parameters e.g., which libraries have to be included, the path to the compiled result and other service parameters, that described in the documentation for EmbeddedMontiArc's WebAssembly compiler \cite{EMAM2Wasm}. The compilation process runs as a separate system process and the web server receives an output form the process. It means, entire console output is processed by the server and if there is an error, it will be sent to the front end, to notify the user about the error during the compilation process.
+    \item If there is no errors and the model has been successful compiled, it has to be packed to decrease the generated traffic. One of these generated files is a JavaScript file, which actually contains textual data inside and has high compression rate. Another class, which is in charge of the packing process, archives the data and return the \texttt{zipStream}.
+    \item The given \texttt{zipStream} is being written to the response body. The response is marked like a successful performed and is being sent to the front end.
+    \item After sending the response, all temporary data on the server will be deleted, to be sure that one day the server will not run out the disc space, due to the large number of compiled models.
+\end{itemize}
+The web server, like other EmbeddedMontiArc tools is a JAR package and can be installed on different operating systems. Currently, the back end part of the toolchain runs on Windows base OS, but in the future the back end could easily migrate to linux-base environment, due to using cross platform java implementation.
+
+\subsection{Context Conditions}
+The EmbeddedMontiArc language is based on a context-free grammar \cite{bundy1984context}. It means, the language does not support the context-sensitive restrictions by default. Context conditions implement such context-sensitive restrictions. In our case, it would be very helpful to check the correctness of written models. Better error handling by the compiler, speedup a process of finding errors during the development. New context conditions were implemented to simplify the development process for a user. It was decided to implement the following context conditions:
+\begin{enumerate}
+    \item \textbf{Range port check assignment :} the assigned value for a port, has to be given in the specified range.
+    \item \textbf{Range value check assignment :} the value assigned to a variable, has to be given in the specified range.
+    \item \textbf{Range value check declaration :} if an assignment of a value done during a declaration (e.g., type range = value), the value has to be given in the specified range.
+    \item \textbf{Units comparison equal, greater, smaller, smallerEqual, greaterEqual, notEqual :} when values are compared using the given operations, the units of co compared variables/ports must be equal.
+    \item \textbf{Units must be equal assignment :} if a value with units has been assigned to some variable/port, the units have to be equal.  
+\end{enumerate}
+To be able to implement given above context condition, the knowledges of the architecture of the language are required. The detailed description of the language architecture and grammar is given in the following book \cite{HR17}. Namely in chapters 6, 9 and 10. Let us consider the most important statements for the implementation, which are defined in the book. In the chapter 9 is written that, the context conditions have to be checked after the creation of the symbol table from an abstract syntax. Then we should check, whether the abstract syntax has been already created or not. The symbol table provides helpful information to implement context conditions in the efficient way. In our case, during the comparison check, it is important to find a left and right hand side of an expression. Then consider this parts separately, and only when the desired data as a value or units have been found, compare them. Searching the data like range of units, it must be checked whether the rage or units have been defined or not, to does not end up with an runtime error during the comparison process. Another important statement, that constants and variables have difference in type, which is obvious from the names. But still, it is important to check all possible combinations during the comparison(e.g., var == const, var == var, const == var, const == const). To increase the code reusability and decrease amount of written code, for the units comparison, was decided to use additional level of abstraction. The helper class, which does all comparison operations, and receives the type of the node(e.g., \texttt{ASTMathCompareNotEqualExpression}) like a parameter. \newline
+To be able to use the created context conditions, they all have to be added to the \texttt{EmbeddedMontiArcMathCoCoChecker}. Only after registering the context conditions, they will be taken into account during the checking process. But before using them, the context conditions must be tested. As was advised in the book, tests for valid and invalid models should be created. It makes sure, that valid models do not violate the context condition, whereas invalid models do violate them. Due to these reasons, for each context condition was created two tests and the global test, which involves all context conditions at the same time. Listing \ref{lst:coc-test} presents the invalid global test, which checks different conditions. The valid global test is given in Appendix, Listing \ref{lst:valid-test}.
+\bigskip
+\begin{lstlisting} [caption={Example of an invalid test.},label={lst:coc-test},captionpos=b]
+package test.coco.invalid.units;
+
+component MyComponentMix {
+    ports
+        out Q(0kg: 100kg) out1;
+
+    implementation Math {
+
+        Q(0kg: 10kg) var1 = 100kg;
+        if (var1 <= 10m)              
+            out1 = 10kg;
+        end
+        if (10m < var1)
+            out1 = 10kg;
+        end
+        Q(0m: 100m) var2 = 10m;
+        if (var1 > var2)
+            out1 = 10kg;
+        end
+        if (10kg == 10m)
+            out1 = 10kg;
+        end
+        Q(0kg: 10kg) var3;
+        var3 = 100m;
+    }
+}
+\end{lstlisting}
+\bigskip
+Consider the example of an invalid test. Line 9 has a range error, the value 100 exceeds the values of given range. Lines 10, 14, 19 and 23 have units errors. Each of these statements use different types of comparison. And finally the line 28 has errors related to different units and values simultaneously. The test involves checking not only variables but ports and constants. To be sure that correct comparison have not caused any errors, the similar valid global test is executed. After implementing and integrating the context conditions, the chain of projects has to be recompiled, to be able to use implemented innovations.
+
+\chapter{Usage} \label{sec:usage}
+Students use the web-playground to understand how to work with C\&C modeling languages, like EmbeddedMontiArc. The main idea of the playground to increase interest in the learning process using a gamification of the tutorials. There are several simple steps in the learning process. The first tutorial is a task, which already has a solution but the idea behind that to show the main constructions and principles of the language and the playground. Next tutorials have tasks with increasing complexity and have some hints, which motivate students to use particular constructions. The visualization of the process gives the feeling of the language and understanding of the binding between writing the code and real actions which are caused by the written code. The process of writing tests shows the benefits of test-driven development and understanding an importance of independent testing of components. Usage of the web-playground is very simple. Students do not have to install any applications on computers and it is possible to use it from any platform, whether it is Mac, Windows or Linux. Only one important condition has to be satisfied - to have a "fresh" version of a web browser, which supports the WebAssembly. IDE, tutorial, visualization are located in one window and has a very intuitive interface. Figure \ref{fig:web-interface} presents the web interface.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{src/pic/web-interface}
+    \caption{Web interface view.}
+    \label{fig:web-interface}
+\end{figure} \newpage
+Then let us consider the standard sequence of steps, which have to be made, to develop a model and see the result. Suppose we have already running operating system and know the URL \cite{OnlineExample} of the playground. Then the following steps should be performed:
+\begin{enumerate}
+    \item Open the web-playground in a browser, enter the given URL.
+    \item Select the tutorial from the list, which is shown near the label Step 1.
+    \item Read the tutorial description, using the button - Step 2 : Show tutorial/simulator.
+    \item Write code with tests, using the Online IDE from the left hand side.
+    \item Send a model controller to the server, using the Step 3 button, to execute tests and compile the controller.
+    \item When the simulator displays the ready state, it means that you can run a visualization execution. If the solution contains errors, a student receives an error message with a description.
+    \item It is possible to restart the simulation process, add some noise to the sensors to emulate more realistic measurements, or specify the period of the simulation process. The noise helps students to feel, the influence of the imperfect environment (through a boiling weather or rain) or just a hardware component which has only a certain accuracy. Students learn the difference between plain software engineering (which mostly has no uncertainties) and software systems engineering (which works by interaction with the environment). Also, a controller for embedded systems must be robust, it is another finding that students can learn. A car must continue driving even when it has some inaccuracies in measurements or not critical errors.
+    \item After the execution, the current trajectory is compared with the sample solution and the student is notified whether he passed the test or not.
+\end{enumerate}
+The studying process is built on a concept from simple to complex. Doing the tutorials one by one, students get closer to the main goal, which is a creation of a controller for a self-driving car. The final tutorial summarizes all knowledges which were obtained during the education and uses it for implementing the controller with highest complexity.
+
+\chapter{Tutorials} \label{sec:tutorials}
+Chapter presents a group of tutorials, which can be solved inside the created environment. The goal of the tutorials to teach students the basics of the EmbeddedMontiArc language and give a general idea how to build the autopilot's models. The tutorials are given with respect of an increasing the complexity level. Examples are explained step-by-step, to give the best studying experience. The tutorials' descriptions are presented in the same way, like they were written for students. Beginner's tutorial shows the basics of the language and simulator. Then, Stream tutorial describes the way of writing test for controllers. The next two tutorials, Parallel parking and Maneuverability test, show the real examples of basic tutorials. The last one, the most complex tutorial, illustrates only the task due to the size of the solution. This chapter shows only a part of the created tutorials, because of the amount of space, which is required for all tutorials.
+
+\section{Beginner's Tutorial}
+\textbf{Task:} Accelerate to the given speed.\newline
+Implement the model that continuously accelerates to 10 m/s and then stops the simulation.\newline \newline
+\textbf{Explanation of the simulator basics :}\newline
+The main object, which are controlled by the controller, is a car. The car has 8 sensors to measure distances to obstacles. The figure \ref{fig:sensors} show the sensors location. \newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\linewidth]{src/pic/car-with-sensors}
+    \caption{Car with sensors.}
+    \label{fig:sensors}
+\end{figure} \newline
+To solve this task, it is needed to control only an acceleration of the car. Changing the acceleration, you may control the behavior of the car. To be able to reach 10 m/s speed, the car must accelerate continuously until it reaches the desired speed. Let us start with a \texttt{MainController}, which defines an interface to the simulator. A new file should be created, which has the same name like component has, with .emam extension.
+\bigskip
+\begin{lstlisting} [caption={MainController interface.},captionpos=b, mathescape]
+    package controller;
+
+    component MainController{
+        ports                                   
+            in (-200m:200m) frontLeftSensor,
+            in (-200m:200m) frontRightSensor,
+            in (-200m:200m) frontLeftSideSensor,
+            in (-200m:200m) frontRightSideSensor,
+            in (-200m:200m) backLeftSideSensor,
+            in (-200m:200m) backRightSideSensor,
+            in (-200m:200m) backLeftSensor,
+            in (-200m:200m) backRightSensor,
+
+            in (0s:oo s) time,
+            in (0m/s:25m/s) velocity,
+            in (-200m:200m) xPosition,
+            in (-200m:200m) yPosition,
+    
+            out (-2m/s^2:2m/s^2) acceleration,
+            out (-180${^\circ}$:180${^\circ}$) steering,
+            out  status;
+    ...
+    }
+\end{lstlisting}
+\bigskip
+The first eight incoming ports (cf. ll. 5-12) receive the data from the sensors which are shown in the figure \ref{fig:sensors}. The next port is a simulation \texttt{time}, which starts from zero second to infinity. The texttt{velocity} incoming port shows a current velocity of the car. The next two ports give a position of the car on a track. After the incoming ports, the outgoing are following. Outgoing ports control a behaviour of the car using the data which is coming to the incoming ports. The \texttt{acceleration} port controls the velocity, it is like you have two pedals in a car. If you push a brake pedal, you have a negative acceleration. But if you push an accelerator pedal, the car accelerates and velocity has been increased. Then following the \texttt{steering} port, which controls the rotation of the car. And finally the \texttt{status} port, which signals the end of a simulation process. The reason to finish the simulation can be a successful completion of an assignment or violating by the car the track or a map borders. \newline
+After the examination of the example, we should notice:
+\begin{itemize}
+\item Component has incoming and outgoing ports.
+\item For each port must be specified a type (like \texttt{Q}, \texttt{B}) with a valid range.
+\item After each port's name has to be a comma and the last one must have a semicolon.
+\item The most common units are:
+    \begin{itemize}
+        \item Distance: meters (\texttt{m}), kilometers (\texttt{km}), miles(\texttt{ml}) and so on.
+        \item Time: seconds(\texttt{s}), minutes(\texttt{m}), hours(\texttt{h}).
+        \item Velocity: \texttt{km/h}, \texttt{m/s}, \texttt{mi/h} and so on.
+        \item Acceleration: $m/s^2$
+        \item Rotation: degrees(\texttt{°})
+    \end{itemize}
+\end{itemize}
+It was the default interface for the simulator. It has to be define for all feature controllers. Then you should create your own components which will be connected to the \texttt{MainController}. Let us create a simple component and connect it to the main one. To do that, we have to create a new file .emam with the following content:
+\bigskip
+\begin{lstlisting} [caption={ExampleController.},captionpos=b]
+    package controller;
+
+    component ExampleController {
+	    ports
+		    in  (0m/s:25m/s) velocity,
+		    out (-2m/s^2:2m/s^2) acceleration,
+		    out B status;
+
+	    implementation Math {
+		
+		    if (velocity <= 10 m/s)
+    	        acceleration = 1m/s^2;
+    	    else
+    	    	status = true;
+            end
+	    }
+    }
+\end{lstlisting}
+\bigskip
+In the \texttt{ExampleController} component, there are one incoming port and two outgoing ones. Firstly, we should reach the speed 10 m/s, then stop the simulation. The logic of the controller is implemented inside the \texttt{Math} scope. Inside the scope, \texttt{if-else-end} construction is given and an example how to use it. Moreover, in the \texttt{Math} scope can be used various constructions, which you will see later in the next tutorials. The logic of this controller is straightforward: if the velocity of the car is less then 10 m/s, then speed up the car with the acceleration 1 m/s. When the given velocity is reached, stop the simulation process by setting up the status port to \texttt{true}. \newline
+After the creation of the \texttt{ExampleController}, we should import it inside the main one and then instantiate it, to have possibility to use it, like a part of the \texttt{MainController}:
+\bigskip
+\begin{lstlisting} [caption={MainController import.},label={lst:main-import},captionpos=b]
+    package controller;
+
+    import ExampleController;
+
+    component MainController { 
+    ...
+    instance ExampleController exampleController;
+    ...
+    }
+\end{lstlisting}
+\bigskip
+Listing \ref{lst:main-import} shows the importing of the \texttt{ExampleController} (cf. l. 3). Later, after specifying the ports of the \texttt{MainController}, we have instantiated the controller with the type \texttt{ExampleController} and the name exampleController. Now we should connect this controller to the main controller using specified ports.
+\bigskip
+\begin{lstlisting} [caption={MainController connection.},label={lst:main-connect},captionpos=b]
+    ...
+    connect velocity->exampleController.velocity;
+    connect exampleController.acceleration->acceleration;
+    connect exampleController.status->status;
+}
+\end{lstlisting}
+\bigskip
+We have connected the incoming port, \texttt{velocity} of the \texttt{MainController}, to our instantiated controller and it's corresponding incoming port \texttt{velocity}. Then, we have connected the outgoing port of \texttt{velocityController.acceleration} to the outgoing port of our \texttt{MainController}. Lastly, the \texttt{status} port of the \texttt{ExampleController} to \texttt{status} of the \texttt{MainController}.\newline
+Finally the connections' scheme should look like depicted in figure \ref{fig:controller}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\linewidth]{src/pic/car-with-controller}
+    \caption{Car with controller.}
+    \label{fig:controller}
+\end{figure} \newline
+Eventually, these files have to be sent to the server to process them and later execute in the simulator. During the execution, we can observe how the car behaves using our first created controller.
+
+\section{Stream Testing Tutorial}
+EmbeddedMontiArc generator has a built-in support of stream tests. The stream tests allow to define a sequence of input values for C\&C input ports and the expected output sequences for output ports. It helps to carry out
+unit and integration testing of C\&C models \cite{KRB96}. That gives the big advantage in the development process, test driven development \cite{TDD, beck2003test} can be applied, to create models for the simulator. It means, that we should start from an implementation of tests firstly, even before we created the controller. After that, a controller,which satisfy the tests, has to be implemented. This is the main principle of test driven development. Let us start with simple example:
+\bigskip
+\begin{lstlisting} [caption={Stream test example.},label={lst:stream-test},captionpos=b]
+package simulatorModel;
+
+    stream VelocityControllerTest for VelocityController {
+        velocity: 0m/s tick 10m/s tick 11m/s;
+        time: 0s tick 10s tick 11s;
+
+        acceleration: 1m/s^2 tick 1m/s^2 tick 0m/s^2;
+}
+\end{lstlisting}
+\bigskip
+Now, we are going to analyse the listing \ref{lst:stream-test}. From the very beginning, we have to declare the package name. If we have a chain of folders, then they have to be separated by points e.g., folder1.folder2.folderWithTests. Then, the reserved word \texttt{stream} is written, which is followed by the name of the test. It has to coincide with the file name, where the test is written. After the reserved word \texttt{for} must be written the actual controller's name, which is tested. Inside the test scope, incoming and outgoing ports of the controller should be given. The controller has three ports: two incoming \texttt{velocity} and \texttt{time} and one outgoing - \texttt{acceleration}. The reserved word \texttt{tick} divides discrete data on chunks. Then, the first value for \texttt{velocity} is 0 m/s and 0 seconds for \texttt{time}. After, we should have the respective value on the \texttt{acceleration} port. It has to be 1 $m/s^2$ in this case.\newline
+When the test for the VelocityController has been created, it is time to implement the controller. To satisfy the test, the controller could be like is shown in the listing \ref{lst:stream-velocity}.
+\bigskip
+\begin{lstlisting} [caption={Velocity controller for stream testing.},label={lst:stream-velocity},captionpos=b]
+package simulatorModel;
+
+component VelocityController {
+    port
+        in  (0m/s : 25m/s) velocity,
+        in  (0s:oo s) time,
+        out (-2m/s^2:2m/s^2) acceleration;
+
+    implementation Math{
+
+        if (velocity > 10 m/s)
+            acceleration = 0 m/s^2;
+        else
+            acceleration = 1 m/s^2;
+        end
+    }
+}    
+\end{lstlisting}
+\bigskip
+Currently, if we pass 0 m/s into \texttt{velocity} port, then there is 1 $m/s^2$ for the outgoing \texttt{acceleration} port. If it is true, the controller passed the test.
+
+\section{Parallel Parking Tutorial}
+\textbf{Task:} To carry out a parallel parking between two cars. \newline
+Implement a model that manages a parking between two cars. The model has to have several modules which are responsible for different actions. One of the examples could be:
+\begin{enumerate}
+    \item Module which controls the speed of the car, depends on the current action(e.g. parking, searching a parking place).
+    \item Module which looking for a gap between cars for the parking.
+    \item Module which controls a steering of the car during the parking process.
+\end{enumerate}
+Each module should be as simple as possible. \newline
+To solve this task you should use at least 6 sensors, which measure the distance to objects which are located in front, left-side and back of the car. The speed has to be between 0.5 m/s and 1.0 m/s. The figure \ref{fig:parking} shows the main idea how the parking has to be done:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\linewidth]{src/pic/parking_process1}
+    \caption{Parking process.}
+    \label{fig:parking}
+\end{figure} \newline
+The parking process can be divided into four steps:
+\begin{enumerate}
+    \item Go straight until a place have been found.
+    \item When the place is found, go back and rotate the car.
+    \item When the car has reached appropriate point, rotate car in other direction to fit into given gap between the cars.
+    \item When the car is close to the car behind, stop and go forward until it reaches certain distance to the front car.
+\end{enumerate}
+Important to understand that the wed-simulator is a simplified version of the more powerful simulator \cite{GKR17}. When the car is turning, it does not change an angle of the front wheels but the angle of the car entirely. It has to be taken into account during controllers' development process.\newpage
+\textbf{Solution} \newline \newline
+To solve the task, the \texttt{MainController} has to be used, like we did in the previous tutorials. But let us start from an implementation of a controller which searches a place for the car, between two other cars, to carry out the parallel parking. The idea is to pass the first car and find the "end" of the second car to start parking process form a right point, like it is shown in the figure \ref{fig:parking}, step A. Consider one of possible implementations of the controller, listing \ref{lst:search-parking} illustrates it.
+\bigskip
+\begin{lstlisting} [caption={Searching parking place controller.},label={lst:search-parking},captionpos=b]
+package controller03;
+
+component SearchParkingPlaceController {
+    port
+        in (-200m:200m) frontLeftSide,
+        in (-200m:200m) backLeftSide,
+        out B foundPlace;
+
+    implementation Math{
+        
+        static B passed0 = false;
+        static B passed1 = false;
+        static B passed2 = false;
+        static B passed3 = false;
+
+        if ((backLeftSide - frontLeftSide) > 3m)
+            passed0 = true;
+        end
+        if (((frontLeftSide - backLeftSide) > 3m) && passed0)
+            passed1 = true;
+        end
+        if (((backLeftSide - frontLeftSide) > 3m) && passed1)
+            passed2 = true;
+        end
+        if (((frontLeftSide - backLeftSide) > 3m) && passed2)
+            passed3 = true;
+        end
+        
+        foundPlace = passed3;
+    }
+}    
+\end{lstlisting}
+\bigskip
+The \texttt{SearchParkingPlaceController} has two incoming and one outgoing port. The incoming ones are receive the data from the \texttt{frontLeftSide} and \texttt{backLeftSide} sensors. The out going port \texttt{foundPlace} indicates that the place for parking has been found. The side sensors are used to measure the distances to the cars and the side of the road. Inside the \texttt{Math} scope, the group of \texttt{static} variables defined. Using \texttt{static} variables the states can be saved. Static variables are initialized only once. It means, \texttt{false} value (cf. ll. 11-14) initializes the variables \texttt{passedX} only once. The following executions, \texttt{false} does not influence on the variables. Using these static variable, the states, from the analysing the environment from the left hand side of the car, will be saved. In our case we are measuring the difference between the \texttt{frontLeftSide} and \texttt{backLeftSide} sensors. If the value on the \texttt{backLeftSide} sensor greater then the value on the \texttt{frontLeftSide}, then the front part of the car passed the back of the parked car by, and the state will be saved. Then the same technique is applied, measuring the differences in sensors' values to find the parking lot and reach the state A, on the figure \ref{fig:parking}. Then, from this position the parking process can be started. But this controller only searching for a parking lot and we should control the car driving. We should implement a \texttt{VelocityController}, which controls the speed of the car, during the searching of parking place and carrying out the parking of the car. Listing \ref{lst:velocity-parking} demonstrates the controller. 
+\bigskip
+\begin{lstlisting} [caption={Velocity controller.},label={lst:velocity-parking},captionpos=b,mathescape]
+    package controller03;
+
+    component VelocityController {
+        port                                    
+            in  (0 m/s: 25 m/s) velocity,
+            in  B reverseMove,
+            in  B moveForward,
+            out (-2m/s^2: 2m/s^2) acceleration; 
+    
+        implementation Math{                    
+    
+            if (velocity > 1 m/s)
+                acceleration = 0 m/s^2;
+            else
+                acceleration = 1 m/s^2;
+            end
+            if reverseMove
+                acceleration = -0.5 m/s^2;
+            end
+            if (velocity < -0.5 m/s)
+                acceleration = 0 m/s^2;
+            end
+            if (reverseMove && moveForward)
+                acceleration = 0.5 m/s^2;
+            end
+            if (reverseMove && moveForward && (velocity > 0.5 m/s))
+                acceleration = 0 m/s^2;
+            end
+        }
+    }
+\end{lstlisting}
+\bigskip
+The controller has three incoming ports and only one outgoing. The \texttt{velocity} port helps to control the speed of the car. In general, the velocity of the car is controlled by acceleration, it is like an acceleration and brake pedals. Measuring the current velocity we can change the acceleration and doing that control the speed. Other two incoming ports have influence on the direction and speed of the car, during the different stages of the parking process. Consider the \texttt{Math} scope. There is implemented three different phases of the parking. The first one is a limit for the velocity during searching parking place (cf. ll. 12-16). The next one is the velocity limit during the reverse move, when the car moves back during the parking (cf. ll. 17-22). The last one, when the car moves forward during the parking process, to be closer to the front car (cf. ll. 23-28), state E on the figure \ref{fig:parking}. When we can control the velocity of the car, continue with the most important controller, which manages the parking process. The listing \ref{lst:parking-controller} shows it. 
+\bigskip
+\begin{lstlisting} [caption={Parking controller.},label={lst:parking-controller},captionpos=b,mathescape]
+package controller03;
+
+component ParkingController {
+    port
+        in  (-200m:200m) frontLeft,
+        in  (-200m:200m) frontRight,
+        in  (-200m:200m) frontLeftSide,
+        in  (-200m:200m) backLeftSide,
+        in  (-200m:200m) backLeft,
+        in  (-200m:200m) backRight,
+        in  B reverseMove,
+        out (-35${^\circ}$:35${^\circ}$) steering,
+        out B moveForward,
+        out B status;
+
+    implementation Math{
+        
+        static B forwardState = false;
+        
+        if reverseMove
+            steering = 1${^\circ}$;
+        else
+            steering = 0${^\circ}$;
+        end
+        if (reverseMove && (backLeft < 2m))
+            steering = -1${^\circ}$;
+        end
+        if (reverseMove && ((backRight == backLeft) ||
+            ((backRight < 3m) && (backLeft < 3m))))
+                forwardState = true;
+        end
+        if(forwardState &&(frontLeftSide > backLeftSide) &&
+            frontLeftSide != backLeftSide)
+                steering = -0.5${^\circ}$;
+        else
+                steering = 0.5${^\circ}$;
+        end
+        if (((frontRight < 3m) || (frontLeft < 3m)) &&
+            forwardState)
+            status = true;
+        else
+            status = false; 
+        end
+        moveForward = forwardState;
+    }
+}
+\end{lstlisting}
+\bigskip
+The controller receives data from the six sensors, which is used to control the phases of the parking. The implementation inside the \texttt{Math} scope we can divide into three parts. The first one (cf. ll. 20-31), the car is going back and when the distance from the back left sensor to the road border, is less then 2m, it starts  to rotation in the opposite direction, until it is in parallel with the road or too close to the car behind. Then the car stops if the limit of the distance from the back is reached and changes the state of the \texttt{forwardState} to \texttt{true}. After that, the second part (cf. ll. 32-37) of the controller involved into parking process. The car is getting closer to the front car and at the same time aligns the body to the road. The last part (cf. ll. 38-43) is in charge of finishing the simulation in time, when the car is enough close to the front car. The stop of the simulation happens when the \texttt{status} set to \texttt{true}. All these steps are nicely illustrated in the picture \ref{fig:parking}. 
+Finally, we should instantiate all these controllers in the MainController and then connect to the interface.
+\bigskip
+\begin{lstlisting} [caption={MainController.},label={lst:parking-main},captionpos=b,mathescape]
+    package controller03;
+
+    import VelocityController;
+    import SearchParkingPlaceController;
+    import ParkingController;
+    
+    component MainController{
+        ports 
+            in (-200m:200m) frontLeftSensor,
+            in (-200m:200m) frontRightSensor,
+            in (-200m:200m) frontLeftSideSensor,
+            in (-200m:200m) frontRightSideSensor,
+            in (-200m:200m) backLeftSideSensor,
+            in (-200m:200m) backRightSideSensor,
+            in (-200m:200m) backLeftSensor,
+            in (-200m:200m) backRightSensor,
+    
+            in (0s:oo s) time,
+            in (0km/h:250km/h) velocity,
+            in (-200m:200m) xPosition,
+            in (-200m:200m) yPosition,
+    
+            out (-2m/s^2:2m/s^2) acceleration,
+            out (-180${^\circ}$:180${^\circ}$) steering,
+            out B status;
+    
+        instance VelocityController velocityController;
+        connect velocity->velocityController.velocity;
+        connect velocityController.acceleration->acceleration;
+    
+        instance SearchParkingPlaceController searchParkingPlace;
+        connect this.*->searchParkingPlace.*;
+        
+        instance ParkingController parkingController;
+        connect this.*->parkingController.*;
+        connect searchParkingPlace.foundPlace-> [
+            velocityController.reverseMove,
+            parkingController.reverseMove];
+        connect parkingController.*->*;
+        connect parkingController.*->velocityController.*;
+    }
+\end{lstlisting}
+\bigskip
+Listing \ref{lst:parking-main} shows the \texttt{MainController}. To be able to use the created controllers, they have to be instantiated (cf. ll. 3-5). Then the controllers have to be instantiated and connected to the corresponding ports(cf. ll. 27-40). The star symbol(cf. l. 33) means that the ports, which have similar name are connected to each other. It simplifies the connection schema, decreases the size and readability. The square brackets(cf. ll. 36-38) denote an array of ports. In this particular case, it means, \texttt{foundPlace} port is connected to the \texttt{reverseMove} ports of the \texttt{velocityController} and \texttt{parkingController} simultaneously. To simplify the visualisation of the connected controllers, the entire connection scheme was depicted in the figure \ref{fig:parking-scheme}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/parking-scheme}
+    \caption{Parking controller scheme.}
+    \label{fig:parking-scheme}
+\end{figure}
+
+\section{Maneuverability Test Tutorial}
+\textbf{Task:} Implement a model that manages driving between cones, which emulates the maneuverability test. The model should have several modules which are responsible for different actions. One of the examples could be:
+\begin{enumerate}
+    \item Module controls the velocity of the car.
+    \item Module is responsible for a steering angle of the car, depends on current position.
+\end{enumerate}
+Each module should be as simple as possible.
+To solve this tutorial, you may use from 4 to 6 sensors, which measure the distance to objects, which are located in front/side of the car. The velocity has to be from 1 m/s to 2 m/s. The figure \ref{fig:maneuverability} shows the main idea how the driving has to be done:
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/drive_cones}
+    \caption{Maneuverability test.}
+    \label{fig:maneuverability}
+\end{figure} \newpage
+Parking process can be divided in several steps:
+\begin{enumerate}
+    \item Go straight, until a cone is closer then 10m then start to rotate the car to round the cone.
+    \item When a front part of the car is passed the cone, start rotation in opposite direction.
+    \item When the car is rotated enough to pass the next cone, stop rotation and continue the straight movement.
+    \item Repeat the second step until the car passed all cones.
+\end{enumerate}
+\textbf{Hint:} In this task will be helpful to use static variables like a counters, to control a rotation angle of the car. \newline \newline
+\textbf{Solution} \newline \newline
+To solve the given task we should use the \texttt{MainController}, which provides an interface for a communication with the car. Nevertheless, let us start from the \texttt{VelocityController}, which controls the velocity of the car. To drive trough the road with cones, we do not have to change the velocity of the car, just use some constant value. Listing \ref{lst:cones-velocity} shows an example of the \texttt{VelocityController}.
+\bigskip
+\begin{lstlisting} [caption={VelocityController.},label={lst:cones-velocity},captionpos=b,mathescape]
+package controller04;
+
+component VelocityController {
+    ports
+        in  (0km/h: 250km/h) velocity,
+        out (-2m/s^2: 2m/s^2) acceleration; 
+
+    implementation Math {                    
+
+        if (velocity > 1 m/s)
+            acceleration = 0m/s^2;
+        else
+            acceleration = 1m/s^2;
+        end
+    }
+}
+\end{lstlisting}
+\bigskip
+The controller has one incoming and one outgoing port. The incoming one, \texttt{velocity} port, serves to control the velocity of the car by changing the value of the \texttt{acceleration} port. Lines 10-14, set the limit of the car's velocity. If the car has not reached the desired velocity (1 m/s), then the car accelerates. When the velocity is reached, the \texttt{acceleration} is equal zero. This simple controller provides constant speed of the car. Then we should implement the most important controller for this task, that controls a steering of the car to maneuver between cones. Listing \ref{lst:cones-runner} shows a possible solution for this task.\newline
+\bigskip
+\begin{minipage}{\linewidth}
+\begin{lstlisting} [caption={ConeRunner.},label={lst:cones-runner},captionpos=b,mathescape]
+    package controller04;
+
+    component ConeRunner {
+        port
+            in  (-200m:200m) frontLeftSensor,
+            in  (-200m:200m) frontRightSensor,
+            in  (-200m:200m) frontLeftSideSensor,
+            in  (-200m:200m) frontRightSideSensor,
+            in  (-200m:200m) backLeftSideSensor,
+            in  (-200m:200m) backRightSideSensor,
+            in  (-200m:200m) xPosition,
+            out (-180${^\circ}$:180${^\circ}$) steering,
+            out B status;
+    
+        implementation Math {
+
+            static B passRight = false;
+            static B passLeft = false;
+            static (0${^\circ}$:180${^\circ}$) count = 0${^\circ}$;
+            status = false;
+            
+            if ((frontRightSensor < 10m) && !passLeft && !passRight)
+                steering = -1${^\circ}$;
+            else
+                steering = 0${^\circ}$;
+            end          
+            if (frontRightSideSensor < 1m)
+                passRight = true;
+                passLeft = false;
+                count = 0${^\circ}$;
+            end
+            if passRight && (count < 55${^\circ}$)
+                steering = 1${^\circ}$;
+                count +=1${^\circ}$;
+            end
+            if passRight && (frontLeftSideSensor < 1m)
+                passLeft = true;
+                passRight = false;
+                count = 0${^\circ}$;
+            end
+            if passLeft && (count < 55${^\circ}$)
+                steering = -1${^\circ}$;
+                count +=1${^\circ}$;
+            end
+            if (xPosition > 30m)
+                status = true;
+            end
+        }
+    }
+\end{lstlisting}
+\end{minipage}
+The controller has seven incoming ports and two outgoing ones. The first six incoming ports are the measuring sensors. The last one, \texttt{xPosition}, the position of the car in the 3D environment. The outgoing ports control the steering of the car and a simulation status. Let us consider the \texttt{Math} scope. Lines 22-26 are in charge of passing the first cone, because it is located in the center, and the car should behave a bit differently. The car is turning to the left(cf. l. 23), when it is 10 meters left to the first cone. When it reaches the cone, it changes the rotation to opposite direction. Then, lines 27-44 describes the main actions, which helps to the car drive around cones. When the car has passed the cone from the right side, it start a rotation to the right, using the counter (cf. l. 34), which is counting the rotation angle to be able to pass a next cone from the left side. When the car reaches the next cone to pass it from the left side, the counter is set to zero, to start calculation to the opposite direction (cf. l. 39). Then the car is passing cones one by one, passing cones from different sides. After passing the field of cones, the simulation process has being stopped, by using the current position of the car. It happens in the last condition check (cf. ll. 45-47). There may be other ways of solving this tutorial, without using counters. The approximate trajectory of the car is shown in the figure \ref{fig:maneuverability}. When the controllers, which deliver the main functionality have been developed, we should connect them to the car's interface, which is given in the \texttt{MainController}. Listing \ref{lst:cones-main} shows an example of it.
+\bigskip
+\begin{lstlisting} [caption={Main Controller.},label={lst:cones-main},captionpos=b,mathescape]
+    package controller04;
+
+    import VelocityController;
+    import ConeRunner;
+    
+    component MainController{
+        ports 
+            in (-200m:200m) frontLeftSensor,
+            in (-200m:200m) frontRightSensor,
+            in (-200m:200m) frontLeftSideSensor,
+            in (-200m:200m) frontRightSideSensor,
+            in (-200m:200m) backLeftSideSensor,
+            in (-200m:200m) backRightSideSensor,
+            in (-200m:200m) backLeftSensor,
+            in (-200m:200m) backRightSensor,
+    
+            in (0s:oo s) time,
+            in (0km/h:250km/h) velocity,
+            in (-200m:200m) xPosition,
+            in (-200m:200m) yPosition,
+            
+            out (-2m/s^2:2m/s^2) acceleration,
+            out (-180${^\circ}$:180${^\circ}$) steering,
+            out B status;
+    
+        instance VelocityController velocityController;
+        connect velocity->velocityController.velocity;
+        connect velocityController.acceleration->acceleration;
+    
+        instance ConeRunner coneRunner;
+        connect this.* -> coneRunner.*;
+        connect coneRunner.*->this.*; 
+    }
+\end{lstlisting}
+\bigskip
+\texttt{MainController} imports the implemented controllers: \texttt{VelocityController} and \texttt{ConeRunner} (cf. ll. 3-4). After that follows the \texttt{Math} scope, which begins from the interface (cf. ll. 8-24). Later the imported controllers have been instantiated and connected respectively. Usage of the dot-star(.*) notation (cf. ll. 31-32) is one of the convenient and important feature of the EmbeddedMontiArc, we can connect all ports with equal names between components. It is simplifies the text model of the controller. If we need to connect only one port, it is better to specify it directly, to facilitate connection's understanding (cf. ll. 27-28). The entire connection scheme is depicted in the figure \ref{fig:maneuverability-scheme}.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{src/pic/controller04}
+    \caption{Maneuverability controller scheme.}
+    \label{fig:maneuverability-scheme}
+\end{figure} \newline
+From the left hand side of the connection scheme and the right one (see figure \ref{fig:maneuverability-scheme}), the ports of the interface are depicted. Inside the \texttt{MainController} are shown the controllers, which were instantiated in the listing above(see listing \ref{lst:cones-main}).
+
+\section{Complete Track Tutorial}
+\textbf{Task:} Run through the entire track. \newline \newline
+In this tutorial we are going to use previously created controllers to run trough the track with different obstacles and sub-tasks. Figure \ref{fig:tutorial11-track} depicts the entire track, which already have some loaded objects on it. We can divide the track into several zones, where different actions are going to happen:
+\begin{enumerate}
+    \item First one is the curved area which we have to drive trough, using our previously created controller for running the whole track with optimal trajectory.
+    \item Then, on the straight part of the track, a car waiting to start movement, gives the possibility firstly to use the follow controller and then the overtaking one.
+    \item After the overtaking, at the end of the strait part of the track, the obstacle form the cones is waiting for the car. The car should brake before the obstacle and then continue movement after the obstacle will be gone.
+    \item At the curve part of the track we have to use again, the controller which we used in the first part, just drive through the track.
+    \item Next task is to drive across the field of cones.
+    \item The last one is the parallel parking. We should use the controller which measure the gap between the cars.
+    \item When the car was successful parked - stop the simulation.
+\end{enumerate}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{src/pic/track_tutorial11}
+    \caption{Complete track tutorial.}
+    \label{fig:tutorial11-track}
+\end{figure}
+All these controllers were created before in the first ten tutorials. This tutorial combines them all in one controller which can manage all these actions. Previously, we have done some tutorials which used several controllers simultaneously. The main idea, that we have an actions controller, which manages some currently active action and changes the active controller, depends on conditions. This tutorial has to be done in the similar way, but a number of the controllers is much greater. \newline \newline
+\textbf{Solution:} \newline \newline
+The solution won't be given here, due to large size of the text model. The controller combines all previously created controllers in eleven tutorials.

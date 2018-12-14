@@ -1,0 +1,50 @@
+package controller11;
+
+component SteeringSwitchController {
+    port
+        in Q(-35°:35°) steeringParking,
+        in Q(-35°:35°) steeringPassObjects,
+        in Q(-35°:35°) steeringTrack,
+        in Q(-35°:35°) steeringAlign,
+        in Q(-35°:35°) steeringOvertake,
+        in B activeTrack,
+        in B activePassObject,
+        in B activeParking,
+        in B activeAlign,
+        in B activeFollow,
+        in B activeOvertake,
+        in B activeObstacle,
+        out Q(-35°:35°) steering;
+
+    implementation Math{
+        
+        // create some general component?
+        if activeTrack
+            steering = steeringTrack;
+        end
+        
+        if activePassObject
+            steering = steeringPassObjects;
+        end
+        
+        if activeParking
+            steering = steeringParking;
+        end
+
+        if activeAlign
+            steering = steeringAlign;
+        end
+        
+        if activeFollow
+            steering = steeringAlign;
+        end
+
+        if activeOvertake
+            steering = steeringOvertake;
+        end
+
+        if activeObstacle
+            steering = steeringTrack;
+        end
+    }
+}

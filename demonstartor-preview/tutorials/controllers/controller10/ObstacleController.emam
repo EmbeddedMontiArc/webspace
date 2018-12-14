@@ -1,0 +1,24 @@
+package controller10;
+
+component ObstacleController<Q distance = 30>{
+    port
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        out B brake;
+
+    implementation Math{
+        
+        Q threshold = 0.5 m;
+        brake = 0;
+
+        if ((frontRightSensor - frontLeftSensor) > 0)
+            if (((frontRightSensor - frontLeftSensor) < threshold) && (frontLeftSensor < distance))
+                brake = 1;
+            end
+        else
+            if (((frontLeftSensor - frontRightSensor) < threshold) && (frontLeftSensor < distance))
+                brake = 1;
+            end
+        end
+    }
+}

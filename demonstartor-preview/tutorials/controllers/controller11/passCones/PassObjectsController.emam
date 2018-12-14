@@ -1,0 +1,92 @@
+package controller11.passCones;
+
+import controller11.atomic.*;
+
+component PassObjectsController {
+	port
+	    in Q frontLeftSensor,
+        in Q frontRightSensor,
+		in Q frontLeftSideSensor,
+        in Q frontRightSideSensor,
+        in Q backLeftSideSensor,
+        in Q backRightSideSensor,
+		in B active,
+        out Q steering;
+
+		instance ConstantQ(0) const_0;
+		instance ConstantQ(0.3) const_03;
+		instance ConstantQ(-0.3) const_m03;
+		instance ConstantQ(0.5) const_05;
+		instance ConstantQ(-0.5) const_m05;
+		instance ConstantQ(5) const_5;
+		instance ConstantQ(10) const_10;
+		instance SmallerQ smaller1;
+		instance SmallerQ smaller2;
+		instance SmallerQ smaller3;
+		instance SmallerQ smaller4;
+		instance SmallerQ smaller5;
+		instance SmallerQ smaller6;
+		instance And and1;
+		instance And and2;
+		instance SwitchQ sw1;
+		instance SwitchQ sw2;
+		instance SwitchQ sw3;
+		instance SwitchQ sw4;
+		instance SwitchQ sw_last;
+
+		connect active -> sw_last.cond;
+		connect const_0.out1 -> sw_last.in2;
+		connect const_10.out1 -> smaller1.in2;
+		connect frontLeftSensor -> smaller1.in1;
+		connect backRightSideSensor -> smaller2.in2;
+		connect const_5.out1 -> smaller2.in1;
+		connect smaller1.out1 -> and1.in1;
+		connect smaller2.out1 -> and1.in2;
+		connect const_05.out1 -> sw1.in1;
+		connect and1.out1 -> sw1.cond;
+		connect const_10.out1 -> smaller3.in2;
+		connect frontRightSensor -> smaller3.in1;
+		connect backLeftSideSensor -> smaller4.in2, smaller5.in1, smaller6.in2;
+		connect smaller3.out1 -> and2.in1;
+		connect const_5.out1 -> smaller4.in1;
+		connect smaller4.out1 -> and2.in2;
+		connect const_m05.out1 -> sw2.in1;
+		connect and2.out1 -> sw2.cond;
+		connect frontLeftSideSensor -> smaller5.in2, smaller6.in1;
+		connect const_m03.out1 -> sw3.in1;
+		connect smaller5.out1 -> sw3.cond;
+		connect const_03.out1 -> sw4.in1;
+		connect const_0.out1 -> sw4.in2;
+		connect smaller6.out1 -> sw4.cond;
+		connect sw4.out1 -> sw3.in2;
+		connect sw3.out1 -> sw2.in2;
+		connect sw2.out1 -> sw1.in2;
+		connect sw1.out1 -> sw_last.in1;
+		connect sw_last.out1 -> steering;
+
+	/*
+	implementation Math{
+
+	if(active)
+    	if((frontLeftSensor < 10) && (backRightSideSensor > 5))
+    	    steering = 0.5;
+    	else
+    	    if((frontRightSensor < 10) && (backLeftSideSensor > 5))
+    	        steering = -0.5;
+    	    else
+    	        steering = 0; 
+    	        
+    	        if (frontLeftSideSensor > backLeftSideSensor)
+    	        	steering = -0.3;
+    	        end
+    	        if (frontLeftSideSensor < backLeftSideSensor)
+    	        	steering = 0.3;
+    	        end
+    	    end
+    	end
+	else
+    	steering = 0;
+	end
+	}
+	*/
+}

@@ -1,0 +1,60 @@
+package controller07;
+
+component OvertakeController {
+	port                                    
+		in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in B active,
+        in B passed,
+        out B activatePassChecker,
+		out Q steering;
+
+	implementation Math{
+    
+    static B overtake0 = 0;
+    static B overtake1 = 0;
+    steering = 0;
+    activatePassChecker = 0;
+
+    if active
+    
+        if ((frontLeftSideSensor > 5) && (frontRightSensor < 20))
+            steering = -1;
+        end
+        
+        if (frontRightSensor > 20) 
+            overtake0 = 1;
+        end
+        
+        if (overtake0 && (frontLeftSideSensor < backLeftSideSensor))
+            steering = 0.2;
+            overtake1 = 1;
+        end
+        
+        if overtake1
+            activatePassChecker = 1;
+        end
+        
+        if passed
+            if (frontRightSideSensor > 10)
+                steering = 0.5;
+            else
+                if (frontLeftSideSensor < backLeftSideSensor)
+                    steering = 0.5;
+                end
+            
+                if (frontLeftSideSensor > backLeftSideSensor)
+                    steering = -0.5;
+                end
+            end
+            
+        end
+        
+    end
+
+	}
+}

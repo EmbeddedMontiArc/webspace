@@ -1,0 +1,64 @@
+package controller11.overtake;
+
+import controller11.atomic.*;
+
+component PassCarController {
+	port                                    
+		in Q frontRightSideSensor,
+        in Q backRightSideSensor,
+        in B active,
+		out B passed; 
+
+		instance SwitchB sw1;
+		instance ConstantQ(0) const_0;
+		instance ConstantQ(-3) const_1;
+		instance ConstantQ(3) const_2;
+		instance ConstantQ(2) const_3;
+		instance Minus minus1;
+		instance SmallerQ smaller1;
+		instance SmallerQ smaller2;
+		instance SmallerQ smaller3;
+		instance EventCatcherB ec1;
+		instance EventCatcherB ec2;
+		instance And and1;
+		instance And and2;
+
+		connect frontRightSideSensor -> minus1.in1;
+		connect backRightSideSensor -> minus1.in2;
+		connect const_1.out1 -> smaller1.in2;
+		connect minus1.out1 -> smaller1.in1, smaller2.in2, smaller3.in1;
+		connect smaller1.out1 -> ec1.in1;
+		connect const_2.out1 -> smaller2.in1;
+		connect ec1.out1 -> and1.in1;
+		connect smaller2.out1 -> and1.in2;
+		connect and1.out1 -> ec2.in1;
+		connect const_3.out1 -> smaller3.in2;
+		connect ec2.out1 -> and2.in1;
+		connect smaller3.out1 -> and2.in2;
+		connect and2.out1 -> sw1.in1;
+
+		connect const_0.out1 -> sw1.in2;
+		connect active -> sw1.cond;
+		connect sw1.out1 -> passed;
+
+	/*
+	implementation Math{
+	    
+	    static B passed0 = 0;
+	    static B passed1 = 0;
+	    passed = 0;
+	    
+	    if active
+	        if ((frontRightSideSensor - backRightSideSensor) < -3)
+                passed0 = 1;
+            end
+            if (((frontRightSideSensor - backRightSideSensor) > 3) && passed0)
+                passed1 = 1;
+            end
+            if (((frontRightSideSensor - backRightSideSensor) < 2) && passed1)
+	        	passed = 1;
+	        end
+	    end
+	}
+	*/
+}

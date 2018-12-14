@@ -1,0 +1,17 @@
+package controller11.atomic;
+
+component SwitchB {
+	port 
+		in B in1,
+		in B in2,
+	    in B cond,
+		out B out1;
+
+	implementation Math{
+	    if cond
+	        out1 = in1;
+	    else
+	        out1 = in2;
+	    end
+	}
+}

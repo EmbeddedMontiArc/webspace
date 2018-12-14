@@ -1,0 +1,31 @@
+package controller02;
+
+import VelocityController;
+
+component MainController{
+    ports
+        in Q(-200m:200m) frontLeftSensor,     
+        in Q(-200m:200m) frontRightSensor,    
+        in Q(-200m:200m) frontLeftSideSensor, 
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,  
+        in Q(-200m:200m) backRightSideSensor, 
+        in Q(-200m:200m) backLeftSensor,      
+        in Q(-200m:200m) backRightSensor,     
+
+        in Q time,        
+        in Q(0m/s:25m/s) velocity,
+
+        in Q(-200m:200m) xPosition,        
+        in Q(-200m:200m) yPosition,        
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-180:180) steering,        
+        out B status;
+
+    instance VelocityController velocityController;
+
+    connect frontLeftSensor->velocityController.frontLeftSensor;
+    connect frontRightSensor->velocityController.frontRightSensor;
+    connect velocityController.acceleration->acceleration;
+    connect velocityController.status->status;
+}

@@ -1,0 +1,45 @@
+package controller11.passCones;
+
+import controller11.atomic.*;
+
+component VelocityPassController {
+	port                                    
+		in Q velocity,
+		out Q acceleration;
+
+	instance ConstantQ(0) const_0;
+	instance ConstantQ(1) const_1;
+	instance ConstantQ(0.2) const_02;
+	instance ConstantQ(1.5) const_15;
+	instance ConstantQ(-0.5) const_m05;
+	instance SmallerQ smaller1;
+	instance SmallerQ smaller2;
+	instance SwitchQ sw1;
+	instance SwitchQ sw2;
+
+	connect const_1.out1 -> smaller1.in2;
+	connect velocity -> smaller1.in1, smaller2.in2;
+	connect smaller1.out1 -> sw1.cond;
+	connect const_02.out1 -> sw1.in1;
+	connect const_15.out1 -> smaller2.in1;
+	connect smaller2.out1 -> sw2.cond;
+	connect const_m05.out1 -> sw2.in1;
+	connect const_0.out1 -> sw2.in2;
+	connect sw2.out1 -> sw1.in2;
+	connect sw1.out1 -> acceleration;
+
+/*
+	implementation Math{                    
+
+    	if (velocity < 1 m/s)
+			acceleration = 0.2 m/s^2;
+        else
+			if (velocity > 1.5 m/s)
+	    	    acceleration = -0.5 m/s;
+	    	else
+        		acceleration = 0 m/s^2;
+			end
+        end
+	}
+	*/
+}

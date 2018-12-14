@@ -1,0 +1,20 @@
+package controller05;
+
+component SteeringProxyController {
+    port
+        in Q steeringParking,
+        in Q steeringPassObjects,
+        in B mode,
+        out Q steering;
+
+    implementation Math{
+        
+        if mode
+            steering = steeringPassObjects;
+        else
+            steering = steeringParking;
+        end
+        
+    }
+
+}

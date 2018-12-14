@@ -1,0 +1,18 @@
+package controller00;
+
+component ExampleController {
+	port
+		in Q(0m/s:25m/s) velocity,
+		out Q(-2m/s^2:2m/s^2) acceleration,
+		out B status;
+
+	implementation Math{
+		
+		if (velocity <= 10 m/s)
+    	    acceleration = 0.5 m/s^2;
+			status = 0;
+    	else
+    		status = 1;
+        end
+	}
+}

@@ -1,0 +1,62 @@
+package controller11.obstacle;
+
+import controller11.atomic.*;
+
+component ObstacleController {
+    port
+        in Q frontLeftSensor,
+        in Q frontRightSensor,
+        out B brake;
+
+        instance Minus minus1;
+        instance Minus minus2;
+        instance ConstantQ(0) brake_n;
+        instance ConstantQ(1) brake_p;
+        instance ConstantQ(0.5) threshold;
+        instance ConstantQ(30) distance;
+        instance SmallerQ smaller0;
+        instance SmallerQ smaller1;
+        instance SmallerQ smaller2;
+        instance SmallerQ smaller3;
+        instance And and1;
+        instance And and2;
+        instance SwitchB sw1;
+        instance SwitchQ sw_last;
+
+        connect frontLeftSensor -> minus1.in2, minus2.in1, smaller2.in1;
+        connect frontRightSensor -> minus1.in1, minus2.in2;
+        connect threshold.out1 -> smaller1.in2, smaller3.in2;
+        connect brake_n.out1 -> smaller0.in1;
+        connect minus1.out1 -> smaller1.in1, smaller0.in2;
+        connect smaller0.out1 -> sw1.cond;
+        connect smaller1.out1 -> and1.in1;
+        connect distance.out1 -> smaller2.in2;
+        connect smaller2.out1 -> and1.in2, and2.in1;
+        connect and1.out1 -> sw1.in1;
+
+        connect minus2.out1 -> smaller3.in1;
+        connect smaller3.out1 -> and2.in2;
+        connect and2.out1 -> sw1.in2;
+        connect brake_p.out1 -> sw_last.in1;
+        connect sw1.out1 -> sw_last.cond;
+        connect brake_n.out1 -> sw_last.in2;
+        connect sw_last.out1 -> brake;
+
+    /*
+    implementation Math{
+        
+        Q threshold = 0.5 m;
+        brake = 0;
+
+        if ((frontRightSensor - frontLeftSensor) > 0)
+            if (((frontRightSensor - frontLeftSensor) < threshold) && (frontLeftSensor < distance))
+                brake = 1;
+            end
+        else
+            if (((frontLeftSensor - frontRightSensor) < threshold) && (frontLeftSensor < distance))
+                brake = 1;
+            end
+        end
+    }
+    */
+}

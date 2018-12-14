@@ -1,0 +1,28 @@
+package controller08;
+
+component MeasureGapController<Q length = 10m> {
+    port
+        in Q(0km/h:250km/h) velocity,
+        in Q time,
+        in B active,
+        out B passed;
+
+    implementation Math{
+
+        static Q dist = 0;
+        static Q timeLoc = 0;
+        
+        if active
+            dist += (time - timeLoc) * velocity;
+            if (dist >= length)
+                passed = 1;
+            else
+                passed = 0;
+            end
+        else
+            dist = 0;
+        end
+
+        timeLoc = time;
+    }
+}

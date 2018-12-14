@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test evaluator</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <canvas id="canvas" width="1600" height="700"></canvas>
+    <!-- <div id="color" style="width:200px;height:50px;float:left"></div> -->
+    <!-- <button onclick="fillSimulationData()">Read simulation data</button> -->
+    <script src="telemetryLoader.js"></script>
+    <script>
+        var img = new Image();
+        img.src = "test_track_cuted_numbers.jpg";
+
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0);
+            img.style.display = 'none';
+        };
+
+        // var color = document.getElementById('color');
+        // function pick(event) {
+        //     var x = event.layerX;
+        //     var y = event.layerY;
+        //     var pixel = ctx.getImageData(x, y, 1, 1);
+        //     var data = pixel.data;
+        //     var rgba = x+" "+ y;
+        //     color.style.background = rgba;
+        //     color.textContent = rgba;
+        // }
+        // canvas.addEventListener('mousemove', pick);
+        
+        var tempX;
+        var tempY;
+        var tempXEnd;
+        var tempYEnd;
+
+        ctx.lineWidth=3;
+
+        setTimeout(function()
+            {
+                for(var i=0; i<jsonSimulationData1.telemetry.length-1; i++){
+
+                    tempX = 800-jsonSimulationData1.telemetry[i].Position[0]*4.35;
+                    tempY = 200+jsonSimulationData1.telemetry[i].Position[1]*4.35;
+
+                    tempXEnd = 800-jsonSimulationData1.telemetry[i+1].Position[0]*4.35;
+                    tempYEnd = 200+jsonSimulationData1.telemetry[i+1].Position[1]*4.35;
+
+                    ctx.fillStyle = 'white';
+                    ctx.strokeStyle = 'white';
+
+                    ctx.fillRect(tempX,tempY,1,1);
+
+                    ctx.beginPath();
+                    ctx.moveTo(tempX, tempY);
+                    ctx.lineTo(tempXEnd, tempYEnd);
+                    
+                    ctx.stroke();     
+                }
+            }
+        ,1000);
+
+        function fillSimulationData(){
+            var jsonSimulationData = parent.window.simulationLog;
+            console.log(jsonSimulationData);
+            
+            setTimeout(function()
+            {
+                for(var i=0; i<jsonSimulationData.telemetry.length-1; i++){
+
+                    tempX = 800-jsonSimulationData.telemetry[i].Position[0]*4.35;
+                    tempY = 200+jsonSimulationData.telemetry[i].Position[1]*4.35;
+
+                    tempXEnd = 800-jsonSimulationData.telemetry[i+1].Position[0]*4.35;
+                    tempYEnd = 200+jsonSimulationData.telemetry[i+1].Position[1]*4.35;
+
+                    ctx.fillStyle = 'red';
+                    ctx.strokeStyle = 'red';
+
+                    ctx.fillRect(tempX,tempY,1,1);
+
+                    ctx.beginPath();
+                    ctx.moveTo(tempX, tempY);
+                    ctx.lineTo(tempXEnd, tempYEnd);
+                    
+                    ctx.stroke();     
+                }
+                }
+            ,10);
+        }
+
+        setInterval(fillSimulationData, 200);
+
+        // setTimeout(function()
+        //     {
+        //         for(var i=0; i<jsonSimulationData.telemetry.length-1; i++){
+
+        //             tempX = 800-jsonSimulationData.telemetry[i].Position[0]*4.35;
+        //             tempY = 200+jsonSimulationData.telemetry[i].Position[1]*4.35;
+
+        //             tempXEnd = 800-jsonSimulationData.telemetry[i+1].Position[0]*4.35;
+        //             tempYEnd = 200+jsonSimulationData.telemetry[i+1].Position[1]*4.35;
+
+        //             ctx.fillStyle = 'red';
+        //             ctx.strokeStyle = 'red';
+
+        //             ctx.fillRect(tempX,tempY,1,1);
+
+        //             ctx.beginPath();
+        //             ctx.moveTo(tempX, tempY);
+        //             ctx.lineTo(tempXEnd, tempYEnd);
+                    
+        //             ctx.stroke();     
+        //         }
+        //     }
+        // ,50);
+
+
+        // setTimeout(function()
+        //     {
+        //         for(var i=0; i<jsonSimulationData1.telemetry.length; i++){
+
+        //             tempX1 = 800-jsonSimulationData1.telemetry[i].Position[0]*4.35;
+        //             tempY1 = 200+jsonSimulationData1.telemetry[i].Position[1]*4.35;
+
+        //             tempX0 = 800-jsonSimulationData.telemetry[i].Position[0]*4.35;
+        //             tempY0 = 200+jsonSimulationData.telemetry[i].Position[1]*4.35;
+
+        //             ctx.lineWidth=1;
+        //             ctx.strokeStyle = 'yellow';
+
+        //             ctx.beginPath();
+        //             ctx.moveTo(tempX1, tempY1);
+        //             ctx.lineTo(tempX0, tempY0);
+        //             ctx.stroke();
+        //         }
+        //     }
+        // ,50);
+
+        var deviationSum = 0;
+
+        // setTimeout(function(){
+
+        //     var arrayAreas = Array();
+        //     var areasSum = 0;
+
+        //     for(var i = 0; i < jsonSimulationData1.telemetry.length-1; i++){
+
+        //         // TSC controller data, Position[0] = x, Position[1] = y
+        //         var tscX = jsonSimulationData1.telemetry[i].Position[0];
+        //         var tscY = jsonSimulationData1.telemetry[i].Position[1];
+
+        //         var tscXN = jsonSimulationData1.telemetry[i + 1].Position[0];
+        //         var tscYN = jsonSimulationData1.telemetry[i + 1].Position[1];
+
+        //         // EMA controller data, Position[0] = x, Position[1] = y
+        //         var enaX = jsonSimulationData.telemetry[i].Position[0];
+        //         var enaY = jsonSimulationData.telemetry[i].Position[1];
+
+        //         var enaXN = jsonSimulationData.telemetry[i + 1].Position[0];
+        //         var enaYN = jsonSimulationData.telemetry[i + 1].Position[1];
+
+        //         arrayAreas.push(Math.sqrt(Math.pow((tscXN - tscX), 2) + Math.pow((tscYN - tscY), 2)) * 0.5 *
+        //             (
+        //                 Math.sqrt(
+        //                     Math.pow((enaX - tscX), 2) + Math.pow((enaY - tscY), 2)
+        //                 ) +
+        //                 Math.sqrt(
+        //                     Math.pow((enaXN - tscXN), 2) + Math.pow((enaYN - tscYN), 2)
+        //                 )
+        //             ));
+
+        //         areasSum += arrayAreas[i];
+
+        //         //console.log("Area between points[",i,"] : ",arrayAreas[i]);
+        //     }
+
+        //     console.log("Optimal trajectory distance : ", distBetweenPointsSum1); // TSC controller 
+        //     console.log("Deviation : ", areasSum/distBetweenPointsSum1);
+        // }
+        // , 100);
+
+
+    </script>
+</body>
+</html>

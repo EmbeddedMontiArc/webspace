@@ -1,0 +1,14 @@
+package controller11.activeController;
+
+component OneIfTrueZeroIfFalse {
+    ports 
+        in B cond,
+        out Z(0:1) res;
+    
+    instance Switch<Z(0:1)> s;
+
+    connect 0 -> s.ifTrue;
+    connect 1 -> s.ifFalse;
+    connect cond -> s.cond;
+    connect s.res -> res;
+}

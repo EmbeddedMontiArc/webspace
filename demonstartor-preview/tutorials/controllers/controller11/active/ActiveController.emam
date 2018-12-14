@@ -1,0 +1,98 @@
+package controller11.active;
+
+import controller11.atomic.*;
+import AlignCar;
+import FollowCar;
+import ObstacleWait;
+import OvertakeCar;
+import PassObject;
+import SearchParkingPlace;
+
+component ActiveController {
+	port                                    
+		in Q xPosition,
+        in Q yPosition,
+		out B activePassObject,
+        out B activeSearchParkingPlace,
+        out B activeTrack,
+        out B followCar,
+        out B overtakeCar,
+        out B obstacleWait,
+        out B activeAlign;
+/*
+        instance PassObject pass;
+        instance AlignCar align;
+        instance FollowCar follow;
+        instance ObstacleWait obstacle;
+        instance OvertakeCar overtake;
+        instance SearchParkingPlace search;
+        instance OrMulti or_m;
+        instance Not not1;
+
+        connect xPosition -> pass.xPosition;
+        connect yPosition -> pass.yPosition;
+        connect pass.activePassObject -> activePassObject, or_m.in1[1];
+
+        connect xPosition -> search.xPosition;
+        connect yPosition -> search.yPosition;
+        connect search.activeSearchParkingPlace -> activeSearchParkingPlace, or_m.in1[2];
+
+        connect xPosition -> align.xPosition;
+        connect yPosition -> align.yPosition;
+        connect align.activeAlign -> activeAlign, or_m.in1[3];
+
+        connect xPosition -> follow.xPosition;
+        connect yPosition -> follow.yPosition;
+        connect follow.followCar -> followCar, or_m.in1[4];
+
+        connect xPosition -> overtake.xPosition;
+        connect yPosition -> overtake.yPosition;
+        connect overtake.overtakeCar -> overtakeCar, or_m.in1[5];
+
+        connect xPosition -> obstacle.xPosition;
+        connect yPosition -> obstacle.yPosition;
+        connect obstacle.obstacleWait -> obstacleWait, or_m.in1[6];
+
+        connect or_m.out1 -> not1.in1;
+        connect not1.out1 -> activeTrack;
+*/
+
+    implementation Math{
+
+        followCar = 0;
+        activeAlign = 0;
+        overtakeCar = 0;
+        obstacleWait = 0;
+        activePassObject = 0;
+        activeSearchParkingPlace = 0;
+  	
+        // default controller
+        activeTrack = 1;
+
+        if ((xPosition < 15m) && (xPosition > -130m) && (yPosition > -8m) && (yPosition < 8m))
+            activePassObject = 1;
+            activeTrack = 0;
+        end
+        if ((xPosition >= 15m) && (xPosition < 50m) && (yPosition > -8m) && (yPosition < 8m))
+           activeSearchParkingPlace = 1;
+           activeTrack = 0;
+        end
+        if ((xPosition >= 45m) && (xPosition < 60m) && (yPosition > 90m) && (yPosition < 110m))
+           activeAlign = 1;
+           activeTrack = 0;
+        end
+        if ((xPosition < 45m) && (xPosition > 20m) && (yPosition > 90m) && (yPosition < 110m))
+           followCar = 1;
+           activeTrack = 0;
+        end
+        if ((xPosition < 20m) && (xPosition > -100m) && (yPosition > 90m) && (yPosition < 110m))
+           overtakeCar = 1;
+           activeTrack = 0;
+        end
+        if ((xPosition < -90m) && (xPosition > -130m) && (yPosition > 90m) && (yPosition < 110m))
+           obstacleWait = 1;
+           activeTrack = 0;
+        end
+	}
+
+}

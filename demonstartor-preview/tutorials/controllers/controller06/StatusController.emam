@@ -1,0 +1,16 @@
+package controller06;
+
+component StatusController {
+	port                                    
+		in Q xPosition,
+		out B status;
+
+	implementation Math{
+        
+        if (xPosition > 40)
+            status = 1;
+        else
+            status = 0;
+        end
+	}
+}

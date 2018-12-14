@@ -1,0 +1,8 @@
+package controller09;
+
+stream StatusControllerTest for StatusController {
+    inx: 0m tick 200m tick -200m tick 250m;
+    iny: 0m tick 120m tick -50m tick 50m;
+    
+    status: false tick false tick false tick true;
+}

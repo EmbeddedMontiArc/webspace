@@ -1,0 +1,121 @@
+package controller11;
+
+import VelocityController;
+import PassObjectsController;
+import ActiveController;
+import SearchParkingPlaceController;
+import ParkingController;
+import RunTrackController;
+import RunTrackVelocityController;
+import SteeringAlignController;
+import FollowController;
+import FollowVelocityController;
+import PassCarController;
+import OvertakeController;
+import OvertakeVelocityController;
+import ObstacleController;
+import ObstacleVelocityController;
+import VelocitySwitchController;
+import SteeringSwitchController;
+
+// how to define the package of sub-folders?
+
+component MainController{
+    ports 
+        in Q(-200m:200m) frontLeftSensor,
+        in Q(-200m:200m) frontRightSensor,
+        in Q(-200m:200m) frontLeftSideSensor,
+        in Q(-200m:200m) frontRightSideSensor,
+        in Q(-200m:200m) backLeftSideSensor,
+        in Q(-200m:200m) backRightSideSensor,
+        in Q(-200m:200m) backLeftSensor,
+        in Q(-200m:200m) backRightSensor,
+
+        in Q(0s:oos) time,
+        in Q(0km/h:250km/h) velocity,
+
+        in Q(-200m:200m) xPosition,
+        in Q(-200m:200m) yPosition,
+
+        out Q(-2m/s^2:2m/s^2) acceleration,
+        out Q(-35°:35°) steering,
+        out B status;
+
+
+    instance VelocityController velocityController;
+    connect velocity->velocityController.velocity;
+    connect velocityController.acceleration->velocitySwitch.accelerationLast;
+
+    instance SearchParkingPlaceController searchParkingPlaceController;
+    connect this.* -> searchParkingPlaceController.*;
+    connect searchParkingPlaceController.foundPlace -> [velocityController.reverseMove, parkingController.reverseMove];
+
+    
+    instance ActiveController activeController;
+    connect this.* -> activeController.*; // x,y Positions    
+    connect activeController.activeSearchParkingPlace -> [searchParkingPlaceController.active, velocitySwitch.activeParking, steeringSwitch.activeParking];
+    connect activeController.activePassObject -> [passObjectsController.active, velocitySwitch.activePassObject, steeringSwitch.activePassObject];
+    connect activeController.activeTrack -> [velocitySwitch.activeRunTrack, steeringSwitch.activeTrack];
+    connect activeController.activeAlign -> [velocitySwitch.activeAlign, steeringSwitch.activeAlign];
+    connect activeController.followCar -> [velocitySwitch.activeFollow, steeringSwitch.activeFollow];
+    connect activeController.overtakeCar -> [overtake.active, steeringSwitch.activeOvertake];
+    connect activeController.obstacleWait -> [velocitySwitch.activeObstacle, steeringSwitch.activeObstacle];
+
+
+    instance ParkingController parkingController;
+    connect this.* -> parkingController.*;  // connect all sensors
+    connect parkingController.status -> status;
+    connect parkingController.moveForward -> velocityController.moveForward;
+    connect parkingController.steeringAngle -> steeringSwitch.steeringParking;
+    
+    instance PassObjectsController passObjectsController;
+    connect this.* -> passObjectsController.*;  // connect all sensors
+    connect passObjectsController.steering -> steeringSwitch.steeringPassObjects;
+
+    instance RunTrackController runTrackController;
+    connect this.* -> runTrackController.*; // connect all sensors
+    connect runTrackController.steering -> steeringSwitch.steeringTrack;
+
+    instance RunTrackVelocityController runTrackVelocity;
+    connect velocity -> runTrackVelocity.velocity;
+    connect runTrackVelocity.acceleration -> velocitySwitch.accelerationRunTrack;
+
+    instance SteeringAlignController steeringAlign;
+    connect this.* -> steeringAlign.*;
+    connect steeringAlign.steering -> steeringSwitch.steeringAlign;
+
+    instance FollowController<15m> follow;
+    connect this.* -> follow.*;
+    connect follow.* -> followVelocity.*;   // Ports follow, run
+
+    instance FollowVelocityController<2m/s> followVelocity;
+    connect velocity -> followVelocity.velocity;
+    connect followVelocity.acceleration -> velocitySwitch.accFollow;
+
+    instance PassCarController passCar;
+    connect this.* -> passCar.*;
+    connect passCar.done -> overtake.passed;
+
+    instance OvertakeController<50m> overtake;
+    connect this.* -> overtake.*;
+    connect overtake.steering -> steeringSwitch.steeringOvertake;
+    connect overtake.activatePassChecker -> [passCar.active, velocitySwitch.activeOvertake];
+
+    instance OvertakeVelocityController overtakeVelocity;
+    connect velocity -> overtakeVelocity.velocity;
+    connect overtakeVelocity.acceleration -> velocitySwitch.accOvertake;
+
+    instance ObstacleController<30m> obstacle;
+    connect this.* -> obstacle.*;
+    connect obstacle.brake -> obstacleVelocity.brake;
+
+    instance ObstacleVelocityController<5m/s> obstacleVelocity;
+    connect velocity -> obstacleVelocity.velocity;
+    connect obstacleVelocity.acceleration -> velocitySwitch.accObstacle;
+
+    instance SteeringSwitchController steeringSwitch;
+    connect steeringSwitch.steering -> steering;
+
+    instance VelocitySwitchController velocitySwitch;
+    connect velocitySwitch.acceleration -> acceleration; 
+}

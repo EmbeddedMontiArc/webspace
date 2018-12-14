@@ -1,0 +1,14 @@
+package controller11.atomic;
+
+component DelayQ {
+	port 
+		in Q in1,
+		out Q out1;
+	
+	implementation Math {
+	    
+        static Q prev = 0;
+        out1 = prev;
+	    prev = in1;
+	}
+}
