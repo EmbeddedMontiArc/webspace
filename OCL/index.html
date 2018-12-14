@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>OCLFiddle</title>
+        <!-- Stylesheets -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css" rel="stylesheet"/>
+        <link href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.common.min.css" rel="stylesheet" />
+        <link href="https://kendo.cdn.telerik.com/2018.1.221/styles/kendo.default.min.css" rel="stylesheet" />
+        <link href="resources/css/kendo.custom.css" rel="stylesheet"/>
+        <link href="resources/css/index.css" rel="stylesheet"/>
+
+        <!-- Scripts -->
+        <script src="https://cheerpj.embeddedmontiarc.com/loader.js"></script>
+        <!-- <script src="https://cheerpjunstable.leaningtech.com/loader.js"></script> -->
+
+        <script src="https://kendo.cdn.telerik.com/2018.1.221/js/jquery.min.js"></script>
+        <script src="https://kendo.cdn.telerik.com/2018.1.221/js/kendo.ui.core.min.js"></script>
+        <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+        
+        <!-- <script src="https://ide.embeddedmontiarc.com/static/plugins/se.rwth.api.switch/port.js"></script> -->
+        <script src="onlineIDE/static/plugins/se.rwth.api.switch/port.js"></script>
+
+        <script src="resources/js/ui.js"></script>
+        <script src="resources/js/ports.js"></script>
+        <script src="resources/js/cd4aDefault.js"></script>
+        <script src="resources/js/cd4a.js"></script>
+        <script src="resources/js/ocl.js"></script>
+        <script src="resources/js/save.js"></script>
+        <script src="resources/js/write.js"></script>
+        <script src="resources/js/cheerpj.js"></script>
+        <script src="resources/js/credits.js"></script>
+        <script src="resources/js/clear.js"></script>
+        <script src="resources/js/plantUML.js"></script>
+        <script src="resources/js/rawdeflate.js"></script>
+    </head>
+    <body>
+        <!-- Hidden Information -->
+        <div id="meta-container">
+            <textarea id="ocl" rows="8" cols="50" placeholder="OCL code here">
+package example.ocl;
+
+import example.cd.AuctionCD;
+import example.cd.DefaultTypes;
+
+context Auction a inv:
+  a.participants.size > 0
+            </textarea>
+            <textarea id="cd" rows="8" cols="50" placeholder="CD code here">
+package example.cd;
+
+classdiagram AuctionCD {
+    public class Auction;
+    public class Person;
+
+    association participants [*] Auction (auctions) <-> (bidder) Person [*];
+}
+            </textarea>
+            <textarea id="cd-default" rows="8" cols="50" placeholder="DefaultTypes code here">
+package example.cd;
+
+/** DefaultTypes below. 
+  * Changes you make in this file, 
+  * have no impact on the OCLFiddle.
+ **/
+classdiagram DefaultTypes {            
+    public class Class;
+    
+    public class Object;
+    public class Collection {
+    boolean containsAll(Collection c);
+    boolean contains(Collection c);
+    int size();
+    boolean isEmpty();
+    Collection addAll(Collection c);
+    }
+    
+    public class List extends Collection {
+      boolean nonEmpty();
+      List addAll(List c);
+      Set asSet();
+      List add(Object o);
+    }
+    
+    public class Set extends Collection {
+      Set addAll(Set c);
+      List asList();
+      Set add(Object o);
+    }
+    
+    public class Optional {
+    boolean isAbsent();
+    boolean isPresent();
+    }
+    
+    
+    interface Number extends Amount;
+    class Integer implements Number;
+    class Double implements Number;
+    class Float implements Number;
+    class Boolean;
+    class Character;
+    class String {
+    boolean contains(String s);
+    String replaceAll(String s1, String s2);
+    String replace(String s1, String s2);
+    boolean endsWith(String s);
+    }
+    
+    // support for units comes with the jscience library
+    // http://jscience.org/api/javax/measure/quantity/Quantity.html
+    interface Amount;
+    class Acceleration implements Amount;
+    class Angle implements Amount;
+    class AmountOfSubstance implements Amount;
+    class AngularAcceleration implements Amount;
+    class AngularVelocity implements Amount;
+    class Area implements Amount;
+    class CatalyticActivity implements Amount;
+    class DataAmount implements Amount;
+    class DataRate implements Amount;
+    class Dimensionless implements Amount;
+    class Duration implements Amount;
+    class DynamicViscosity implements Amount;
+    class ElectricCapacitance implements Amount;
+    class ElectricCharge implements Amount;
+    class ElectricConductance implements Amount;
+    class ElectricCurrent implements Amount;
+    class ElectricInductance implements Amount;
+    class ElectricPotential implements Amount;
+    class ElectricResistance implements Amount;
+    class Energy implements Amount;
+    class Force implements Amount;
+    class Frequency implements Amount;
+    class Illuminance implements Amount;
+    class KinematicViscosity implements Amount;
+    class Length implements Amount;
+    class LuminousFlux implements Amount;
+    class LuminousIntensity implements Amount;
+    class MagneticFlux implements Amount;
+    class MagneticFluxDensity implements Amount;
+    class Mass implements Amount;
+    class MassFlowRate implements Amount;
+    class Money implements Amount;
+    class Power implements Amount;
+    class Pressure implements Amount;
+    class RadiationDoseAbsorbed implements Amount;
+    class RadiationDoseEffective implements Amount;
+    class RadioactiveActivity implements Amount;
+    class SolidAngle implements Amount;
+    class Temperature implements Amount;
+    class Torque implements Amount;
+    class Velocity implements Amount;
+    class Volume implements Amount;
+    class VolumetricDensity implements Amount;
+    class VolumetricFlowRate implements Amount;
+
+    // http://jscience.org/api/org/jscience/geography/coordinates/Time.html
+    class Time extends Duration;
+}
+            </textarea>
+        </div>
+
+        <div id="rows">
+            <div id="columns-1">
+                <div><iframe id="ide-cd" src="onlineIDE/api/load.html?mountPoint=[EmbeddedMontiArc]/OCL/Demos&hideControls=1,1,1"></iframe></div>
+                <div><iframe id="ide-ocl" src="onlineIDE/api/load.html?mountPoint=[EmbeddedMontiArc]/OCL/Demos&hideControls=2,1,1"></iframe></div>
+            </div>
+            <div id="toolstrip">
+                <div class="uk-width-1-2 uk-position-center-left">
+                    <div class="uk-position-center-left">
+                        <span class="button-smaller"><img title="Reset" id="button-reset-cd" class="button" src="resources/media/images/Reset.svg"/></span>
+                    </div>
+                    <div class="uk-position-center">
+                        <img id="button-reload-cd" title="Reload Class Diagram (CD code will be send to plant-uml server to create image)" class="button" src="resources/media/images/Refresh.png"/>
+                        <img id="button-show-attributes" title="Show Attributes" class="button" src="resources/media/images/Eye.png" value="false"/>
+                        <img id="button-show-assoc-names" title="Show Association Names" class="button" src="resources/media/images/Eye.png" value="false"/>
+                        <img id="button-show-role-names" title="Show Role Names" class="button" src="resources/media/images/Eye.png" value="false"/>
+                        <img id="button-show-cardinality" title="Show Cardinality" class="button" src="resources/media/images/Eye2.png" value="true"/>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 uk-position-center-right">
+                    <div class="uk-position-center-left">
+                        <img title="Execute" id="button-execute" class="button" src="resources/media/images/Execute.svg"/>
+                    </div>
+                    <div class="uk-position-center">
+                        <span class="button"><img title="Save on github gist to share your code via URL" id="button-save" class="button" src="resources/media/images/Disk.svg"/></span>
+                    </div>
+                    <div class="uk-position-center-right">
+                        <span class="button-smaller"><img title="Reset" id="button-reset-ocl" class="button" src="resources/media/images/Reset.svg"/></span>
+                    </div>
+                </div>
+            </div>
+            <div id="columns-2">
+                <!-- CD Visualization -->
+                <div id="div-cd">
+                    <img id="cd-output" class="uk-position-center" alt="click to rerender picture"
+                         src="https://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhEIImkLd0iJIx9pC-3yW9IYug17AYWWfAMaeADhguTc06LSqZDIm5g1m00"/>
+                </div>
+                <div id="div-console">
+                    <img id="button-clear" title="Clear Console" class="button uk-position-medium uk-position-bottom-right" src="resources/media/images/Trashbin.svg"/>
+                    <textarea id="console" rows="8" cols="50" placeholder="Console Tool Output" readonly></textarea>
+                </div>
+            </div>
+            <div>
+                <div id="logos-container" class="uk-width-1-2 uk-position-center-left">
+                    <div class="uk-position-center">
+                        <a href="http://www.monticore.org/" target="_blank"><img class="element" src="resources/media/images/MontiCoreLogo.png"></a>
+                        <a href="https://www.leaningtech.com/cheerpj/" target="_blank"><img class="element" src="https://github.com/leaningtech/cheerpj-meta/raw/master/media/cheerpj_logo_whitebg.png"></a>
+                        <a href="http://plantuml.com/" target="_blank"><img class="element" src="resources/media/images/logoPlantUml.png"></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 uk-position-center-right">
+                    <div class="uk-position-center">
+                        <span id="label-credits" class="element label"><span>DEVELOPMENT TEAM</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Credits -->
+        <div id="credits-overlay">
+            <div id="credits-container">
+                <ul>
+                    <li>
+                        <span class="credits-icon"><img src="https://github.com/ferdinandmehlan.png"/></span>
+                        <span class="credits-text">Ferdinand Mehlan<br/>OCL</span>
+                    </li>
+                    <li>
+                        <span class="credits-icon"><img src="https://github.com/0xJMR.png"/></span>
+                        <span class="credits-text">Jean-Marc Ronck<br/>Online IDE</span>
+                    </li>
+                    <li>
+                        <span class="credits-icon"><img src="https://github.com/vonwenckstern.png"/></span>
+                        <span class="credits-text">Michael von Wenckstern<br/>Coordinator, Fiddle Idea</span>
+                    </li>
+                    <li>
+                        <span class="credits-icon"><img src="https://github.com/rumpe.png"/></span>
+                        <span class="credits-text">Bernhard Rumpe<br/>Owner of the Chair of Software Engineering</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
