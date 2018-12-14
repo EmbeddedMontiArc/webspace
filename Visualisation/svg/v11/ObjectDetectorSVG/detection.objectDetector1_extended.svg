@@ -1,0 +1,140 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: objectDetector1 -->
+<g transform="translate(138 20)">
+
+    <rect
+        id="17546"
+        width="323"
+        height="194"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">ObjectDetector1</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            objectDetector1
+    </text>
+
+</g>
+
+</svg><!-- Component: spectralClusterer -->
+<g transform="translate(168 84)">
+    <rect
+        data-name="detection.objectDetector1.spectralClusterer"
+        id="17548"
+        width="263"
+        height="110"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('detection.objectDetector1.spectralClusterer_extended.html','_parent',false);parent.openFileInEditor('/objectDetector1/spectralClusterer.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">SpectralClusterer</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">spectralClusterer</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="439"
+    y1="174"
+    x2="453"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="146"
+    y1="174"
+    x2="160"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="423" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="420" y="176" transform="rotate(0,420,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+clusters
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="420" y="186" transform="rotate(0,420,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q(-oo:oo)^{n*maximumClusters}
+</text>
+
+<use x="453" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="473" y="176" transform="rotate(0,473,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+clusters
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="473" y="186" transform="rotate(0,473,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q(-oo:oo)^{2500/1 *1/1 }
+</text>
+
+<use x="130" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="126" y="176" transform="rotate(0,126,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+imgFront
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="126" y="186" transform="rotate(0,126,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q(0:255)^{2500/1 *3/1 }
+</text>
+
+<use x="160" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="179" y="176" transform="rotate(0,179,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+imgMatrix
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="179" y="186" transform="rotate(0,179,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+AssignmentType
+</text>
+
+
+</svg>

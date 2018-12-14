@@ -1,0 +1,437 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: controller -->
+<g transform="translate(146 20)">
+
+    <rect
+        id="17642"
+        width="478"
+        height="424"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">Controller</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            controller
+    </text>
+
+</g>
+
+</svg><!-- Component: bumpControl -->
+<g transform="translate(236 194)">
+    <rect
+        data-name="testManuelSchrick.bumperBot.controller.bumpControl"
+        id="17643"
+        width="171"
+        height="230"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">BumpControl</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">bumpControl</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: timer -->
+<g transform="translate(457 194)">
+    <rect
+        data-name="testManuelSchrick.bumperBot.controller.timer"
+        id="17644"
+        width="77"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Timer</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">timer</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="415"
+    y1="364"
+    x2="457"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="418"
+        y="357"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="457"
+    y1="364"
+    x2="457"
+    y2="384"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="457" cy="364" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="457"
+    y1="384"
+    x2="594"
+    y2="384"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="457" cy="384" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="594"
+    y1="384"
+    x2="594"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="594"
+    y1="364"
+    x2="616"
+    y2="364"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="605"
+        y="353"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle cx="594" cy="364" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="415"
+    y1="404"
+    x2="457"
+    y2="404"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="418"
+        y="397"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="457"
+    y1="404"
+    x2="457"
+    y2="384"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="457" cy="404" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="457"
+    y1="384"
+    x2="594"
+    y2="384"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="457" cy="384" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="594"
+    y1="384"
+    x2="594"
+    y2="404"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="594"
+    y1="404"
+    x2="616"
+    y2="404"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="605"
+        y="393"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle cx="594" cy="404" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="154"
+    y1="324"
+    x2="228"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="542"
+    y1="284"
+    x2="564"
+    y2="284"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="564"
+    y1="284"
+    x2="564"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="564"
+    y1="174"
+    x2="206"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="206"
+    y1="174"
+    x2="206"
+    y2="284"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="206"
+    y1="284"
+    x2="228"
+    y2="284"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="415"
+    y1="324"
+    x2="449"
+    y2="324"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="399" y="356" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="396" y="366" transform="rotate(0,396,366)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+rightMotorCmdX
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="396" y="376" transform="rotate(0,396,376)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+MotorCmd
+</text>
+
+<use x="616" y="356" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="636" y="366" transform="rotate(0,636,366)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+rightMotorCmd
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="636" y="376" transform="rotate(0,636,376)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+MotorCmd
+</text>
+
+<use x="399" y="396" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="396" y="406" transform="rotate(0,396,406)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+leftMotorCmdX
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="396" y="416" transform="rotate(0,396,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+MotorCmd
+</text>
+
+<use x="616" y="396" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="636" y="406" transform="rotate(0,636,406)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+leftMotorCmd
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="636" y="416" transform="rotate(0,636,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+MotorCmd
+</text>
+
+<use x="138" y="316" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="134" y="326" transform="rotate(0,134,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+bumpPressed
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="134" y="336" transform="rotate(0,134,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="228" y="316" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="326" transform="rotate(0,247,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+bumpPressedX
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="336" transform="rotate(0,247,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="526" y="276" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="523" y="286" transform="rotate(0,523,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+signal
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="523" y="296" transform="rotate(0,523,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+TimerSignal
+</text>
+
+<use x="228" y="276" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="286" transform="rotate(0,247,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+timerSig
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="296" transform="rotate(0,247,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+TimerSignal
+</text>
+
+<use x="399" y="316" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="396" y="326" transform="rotate(0,396,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+timerCmd
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="396" y="336" transform="rotate(0,396,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+TimerCmd
+</text>
+
+<use x="449" y="316" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="468" y="326" transform="rotate(0,468,326)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+cmd
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="468" y="336" transform="rotate(0,468,336)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+TimerCmd
+</text>
+
+
+</svg>

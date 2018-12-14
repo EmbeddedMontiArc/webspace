@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: umgebung -->
+<g transform="translate(53 20)">
+
+    <rect
+        id="6864"
+        width="173"
+        height="107"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">umgebung</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: vehicle -->
+<g transform="translate(83 52)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.vehicle"
+        id="daimler_v4_vehicle"
+        width="113"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                    onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                    onclick="window.open('daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.vehicle.html','_parent',false);parent.openFileInEditor('/v4/oeffentlicher_Demonstrator_FAS_v04/umgebung/vehicle.ema');"
+    />
+
+    <text
+        id="daimler_v4_vehicle_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">vehicle</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_vehicle_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_v_Vehicle_kmh_line0"
+    stroke-linecap="square"
+    x1="204"
+    y1="87"
+    x2="218"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_v_Vehicle_kmh_line0_arrow" points="208,81 218,87 208,93"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_vehicle_acceleration_pc_line0"
+    stroke-linecap="square"
+    x1="61"
+    y1="87"
+    x2="75"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_vehicle_acceleration_pc_line0_arrow" points="65,81 75,87 65,93"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="daimler_v4_vehicle_v_Vehicle_kmh" x="188" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_vehicle_v_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="185" y="89" transform="rotate(0,185,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_Vehic
+</text>
+
+<text id="daimler_v4_vehicle_v_Vehicle_kmh_text2" text-anchor="end" alignment-baseline="middle" x="185" y="99" transform="rotate(0,185,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+le_kmh
+</text>
+
+<rect id="daimler_v4_umgebung_v_Vehicle_kmh" x="218" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_umgebung_v_Vehicle_kmh_text1" text-anchor="start" alignment-baseline="middle" x="238" y="89" transform="rotate(0,238,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_Vehic
+</text>
+
+<text id="daimler_v4_umgebung_v_Vehicle_kmh_text2" text-anchor="start" alignment-baseline="middle" x="238" y="99" transform="rotate(0,238,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+le_kmh
+</text>
+
+<rect id="daimler_v4_umgebung_acceleration_pc" x="45" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_umgebung_acceleration_pc_text1" text-anchor="end" alignment-baseline="middle" x="41" y="89" transform="rotate(0,41,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+accelera
+</text>
+
+<text id="daimler_v4_umgebung_acceleration_pc_text2" text-anchor="end" alignment-baseline="middle" x="41" y="99" transform="rotate(0,41,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+tion_pc
+</text>
+
+<rect id="daimler_v4_vehicle_acceleration_pc" x="75" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_vehicle_acceleration_pc_text1" text-anchor="start" alignment-baseline="middle" x="94" y="89" transform="rotate(0,94,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+accelera
+</text>
+
+<text id="daimler_v4_vehicle_acceleration_pc_text2" text-anchor="start" alignment-baseline="middle" x="94" y="99" transform="rotate(0,94,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+tion_pc
+</text>
+
+
+</svg>

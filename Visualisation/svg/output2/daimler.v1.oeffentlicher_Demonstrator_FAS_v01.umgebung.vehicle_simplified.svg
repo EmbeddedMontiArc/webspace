@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: vehicle -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="18364"
+        width="920"
+        height="462"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">vehicle</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: discreteTransferFc -->
+<g transform="translate(313 367)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.discreteTransferFcnwithinitialstates"
+        id="daimler_v1_discreteTransferFcnwithinitialstates"
+        width="143"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                    onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                    onclick="window.open('daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.discreteTransferFcnwithinitialstates_simplified.html','_parent',false);parent.openFileInEditor('/v1/oeffentlicher_Demonstrator_FAS_v01/umgebung/vehicle/discreteTransferFcnwithinitialstates.ema');"
+    />
+
+    <text
+        id="daimler_v1_discreteTransferFcnwithinitialstates_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">discreteTransferFc</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_discreteTransferFcnwithinitialstates_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">nwithinitialstates</tspan>
+        </text>
+
+</g><!-- Component: gai -->
+<g transform="translate(46 237)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.gain_3"
+        id="daimler_v1_gain_3"
+        width="42"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_gain_3_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">gai</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_gain_3_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">n_3</tspan>
+        </text>
+
+</g><!-- Component: satura -->
+<g transform="translate(551 367)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.saturation_2"
+        id="daimler_v1_saturation_2"
+        width="79"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_saturation_2_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">satura</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_saturation_2_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">tion_2</tspan>
+        </text>
+
+</g><!-- Component: su -->
+<g transform="translate(486 107)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.sum1"
+        id="daimler_v1_sum1"
+        width="35"
+        height="315"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_sum1_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">su</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_sum1_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">m1</tspan>
+        </text>
+
+</g><!-- Component: switchB -->
+<g transform="translate(203 237)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.switchBlock_20"
+        id="daimler_v1_switchBlock_20"
+        width="80"
+        height="185"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_switchBlock_20_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">switchB</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_switchBlock_20_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">lock_20</tspan>
+        </text>
+
+</g><!-- Component: uniformRa -->
+<g transform="translate(46 162)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.uniformRandomNumber"
+        id="daimler_v1_uniformRandomNumber"
+        width="127"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_uniformRandomNumber_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">uniformRa</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_uniformRandomNumber_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">ndomNumber</tspan>
+        </text>
+
+</g><!-- Component: unitD -->
+<g transform="translate(725 367)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.unitDelay_4"
+        id="daimler_v1_unitDelay_4"
+        width="71"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_unitDelay_4_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">unitD</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_unitDelay_4_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">elay_4</tspan>
+        </text>
+
+</g><!-- Component: wider -->
+<g transform="translate(826 107)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.widerstand"
+        id="daimler_v1_widerstand"
+        width="50"
+        height="315"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_widerstand_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">wider</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_widerstand_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">stand</tspan>
+        </text>
+
+</g><!-- Component: condit -->
+<g transform="translate(46 312)">
+    <rect
+        data-name="daimler.v1.oeffentlicher_Demonstrator_FAS_v01.umgebung.vehicle.condition_28"
+        id="daimler_v1_condition_28"
+        width="73"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v1_condition_28_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">condit</tspan>
+    </text>
+
+    <text
+        id="daimler_v1_condition_28_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11">ion_28</tspan>
+        </text>
+
+</g><line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line0"
+    stroke-linecap="square"
+    x1="630"
+    y1="402"
+    x2="655"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line1"
+    stroke-linecap="square"
+    x1="655"
+    y1="402"
+    x2="655"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line2"
+    stroke-linecap="square"
+    x1="655"
+    y1="402"
+    x2="665"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line3"
+    stroke-linecap="square"
+    x1="665"
+    y1="402"
+    x2="665"
+    y2="442"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line3_circle" cx="665" cy="402" r="4" fill="black" />
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line4"
+    stroke-linecap="square"
+    x1="665"
+    y1="442"
+    x2="911"
+    y2="442"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line4_circle" cx="665" cy="442" r="4" fill="black" />
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line5"
+    stroke-linecap="square"
+    x1="911"
+    y1="442"
+    x2="911"
+    y2="442"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line6"
+    stroke-linecap="square"
+    x1="911"
+    y1="442"
+    x2="936"
+    y2="442"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_v_Vehicle_kmh_line6_arrow" points="926,436 936,442 926,448"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_elseIn_line0"
+    stroke-linecap="square"
+    x1="16"
+    y1="402"
+    x2="203"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_elseIn_line0_arrow" points="193,396 203,402 193,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_gain_3_brakeForce_pedal_pc_line0"
+    stroke-linecap="square"
+    x1="16"
+    y1="272"
+    x2="46"
+    y2="272"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_gain_3_brakeForce_pedal_pc_line0_arrow" points="36,266 46,272 36,278"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_condition_line0"
+    stroke-linecap="square"
+    x1="119"
+    y1="347"
+    x2="203"
+    y2="347"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_condition_line0_arrow" points="193,341 203,347 193,353"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_condition_28_in1_line0"
+    stroke-linecap="square"
+    x1="16"
+    y1="347"
+    x2="46"
+    y2="347"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_condition_28_in1_line0_arrow" points="36,341 46,347 36,353"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in3_line0"
+    stroke-linecap="square"
+    x1="173"
+    y1="197"
+    x2="486"
+    y2="197"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in3_line0_arrow" points="476,191 486,197 476,203"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_widerstand_in1_line0"
+    stroke-linecap="square"
+    x1="796"
+    y1="402"
+    x2="826"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_widerstand_in1_line0_arrow" points="816,396 826,402 816,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line0"
+    stroke-linecap="square"
+    x1="876"
+    y1="142"
+    x2="901"
+    y2="142"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line1"
+    stroke-linecap="square"
+    x1="901"
+    y1="142"
+    x2="901"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line2"
+    stroke-linecap="square"
+    x1="901"
+    y1="87"
+    x2="456"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line3"
+    stroke-linecap="square"
+    x1="456"
+    y1="87"
+    x2="456"
+    y2="142"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line4"
+    stroke-linecap="square"
+    x1="456"
+    y1="142"
+    x2="486"
+    y2="142"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_in2_line4_arrow" points="476,136 486,142 476,148"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_v_Vehicle_kmh_line0"
+    stroke-linecap="square"
+    x1="456"
+    y1="402"
+    x2="486"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_sum1_v_Vehicle_kmh_line0_arrow" points="476,396 486,402 476,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_saturation_2_in1_line0"
+    stroke-linecap="square"
+    x1="521"
+    y1="402"
+    x2="551"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_saturation_2_in1_line0_arrow" points="541,396 551,402 541,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_discreteTransferFcnwithinitialstates_in1_line0"
+    stroke-linecap="square"
+    x1="283"
+    y1="402"
+    x2="313"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_discreteTransferFcnwithinitialstates_in1_line0_arrow" points="303,396 313,402 303,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_ifIn_line0"
+    stroke-linecap="square"
+    x1="88"
+    y1="272"
+    x2="203"
+    y2="272"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_switchBlock_20_ifIn_line0_arrow" points="193,266 203,272 193,278"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line0"
+    stroke-linecap="square"
+    x1="630"
+    y1="402"
+    x2="655"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line1"
+    stroke-linecap="square"
+    x1="655"
+    y1="402"
+    x2="655"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line2"
+    stroke-linecap="square"
+    x1="655"
+    y1="402"
+    x2="700"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line3"
+    stroke-linecap="square"
+    x1="700"
+    y1="402"
+    x2="700"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line4"
+    stroke-linecap="square"
+    x1="700"
+    y1="402"
+    x2="725"
+    y2="402"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v1_oeffentlicher_Demonstrator_FAS_v01_umgebung_vehicle_unitDelay_4_v_Vehicle_kmh_line4_arrow" points="715,396 725,402 715,408"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+
+</svg>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: tempomat_Active -->
+<g transform="translate(85 20)">
+
+    <rect
+        id="daimler.v4.oeffentlicher_Demonstrator_FAS_v04FA32Tracing.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.tempomat.tempomat_Function.cC_Enabled.tempomat_Active"
+        width="200"
+        height="194"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">Tempomat_Active</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            tempomat_Active
+    </text>
+
+</g>
+
+</svg><!-- Component: sum -->
+<g transform="translate(115 84)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04FA32Tracing.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.tempomat.tempomat_Function.cC_Enabled.tempomat_Active.sum_6"
+        id="daimler_v4_sum_6"
+        width="140"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_sum_6_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Sum</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_sum_6_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">sum</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04FA32Tracing_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_tempomat_tempomat_Function_cC_Enabled_tempomat_Active_v_CC_delta_kmh_line0"
+    stroke-linecap="square"
+    x1="263"
+    y1="174"
+    x2="277"
+    y2="174"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04FA32Tracing_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_tempomat_tempomat_Function_cC_Enabled_tempomat_Active_v_CC_delta_kmh_line0_arrow" points="267,168 277,174 267,180"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04FA32Tracing_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_tempomat_tempomat_Function_cC_Enabled_tempomat_Active_sum_6_in1_line0"
+    stroke-linecap="square"
+    x1="93"
+    y1="174"
+    x2="107"
+    y2="174"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04FA32Tracing_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_tempomat_tempomat_Function_cC_Enabled_tempomat_Active_sum_6_in1_line0_arrow" points="97,168 107,174 97,180"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="daimler_v4_sum_6_v_CC_delta_kmh" x="247" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sum_6_v_CC_delta_kmh_text1" text-anchor="end" alignment-baseline="middle" x="244" y="176" transform="rotate(0,244,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_CC_delta_kmh
+</text>
+
+<text id="daimler_v4_sum_6_v_CC_delta_kmh_porttype" text-anchor="end" alignment-baseline="middle" x="244" y="186" transform="rotate(0,244,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_tempomat_Active_v_CC_delta_kmh" x="277" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_tempomat_Active_v_CC_delta_kmh_text1" text-anchor="start" alignment-baseline="middle" x="297" y="176" transform="rotate(0,297,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_CC_delta_kmh
+</text>
+
+<text id="daimler_v4_tempomat_Active_v_CC_delta_kmh_porttype" text-anchor="start" alignment-baseline="middle" x="297" y="186" transform="rotate(0,297,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_tempomat_Active_v_Vehicle_kmh" x="77" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_tempomat_Active_v_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="73" y="176" transform="rotate(0,73,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_Vehicle_kmh
+</text>
+
+<text id="daimler_v4_tempomat_Active_v_Vehicle_kmh_porttype" text-anchor="end" alignment-baseline="middle" x="73" y="186" transform="rotate(0,73,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_sum_6_in1" x="107" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sum_6_in1_text1" text-anchor="start" alignment-baseline="middle" x="126" y="176" transform="rotate(0,126,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_sum_6_in1_porttype" text-anchor="start" alignment-baseline="middle" x="126" y="186" transform="rotate(0,126,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+
+
+</svg>

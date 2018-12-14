@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: velocityControl -->
+<g transform="translate(117 20)">
+
+    <rect
+        id="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl"
+        width="1306"
+        height="674"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">VelocityControl</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            velocityControl
+    </text>
+
+</g>
+
+</svg><!-- Component: minMax1 -->
+<g transform="translate(589 324)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.minMax1"
+        id="daimler_v4_minMax1"
+        width="156"
+        height="220"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_minMax1_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">MinMax1</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_minMax1_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">minMax1</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: Switch -->
+<g transform="translate(864 194)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.switchBlock_35"
+        id="daimler_v4_switchBlock_35"
+        width="143"
+        height="350"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_switchBlock_35_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11"></tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_switchBlock_35_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">Switch</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: mul -->
+<g transform="translate(1074 84)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.mul_3"
+        id="daimler_v4_mul_3"
+        width="133"
+        height="460"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_mul_3_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Mul</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_mul_3_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">mul</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: Switch -->
+<g transform="translate(1237 434)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.switchBlock2_12"
+        id="daimler_v4_switchBlock2_12"
+        width="133"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_switchBlock2_12_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11"></tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_switchBlock2_12_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">Switch</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: condition2 -->
+<g transform="translate(864 564)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.condition2_12"
+        id="daimler_v4_condition2_12"
+        width="180"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_condition2_12_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Condition2</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_condition2_12_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">condition2</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: Switch -->
+<g transform="translate(1074 564)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.switchBlock1_18"
+        id="daimler_v4_switchBlock1_18"
+        width="104"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_switchBlock1_18_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11"></tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_switchBlock1_18_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">Switch</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: minMax2 -->
+<g transform="translate(1237 564)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.minMax2"
+        id="daimler_v4_minMax2"
+        width="156"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_minMax2_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">MinMax2</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_minMax2_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">minMax2</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: relOp -->
+<g transform="translate(147 194)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.relOp_9"
+        id="daimler_v4_relOp_9"
+        width="120"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_relOp_9_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">RelOp</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_relOp_9_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">relOp</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: logOp -->
+<g transform="translate(353 194)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.logOp_2"
+        id="daimler_v4_logOp_2"
+        width="124"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_logOp_2_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">LogOp</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_logOp_2_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">logOp</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: condition1 -->
+<g transform="translate(589 194)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.condition1_22"
+        id="daimler_v4_condition1_22"
+        width="180"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_condition1_22_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Condition1</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_condition1_22_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">condition1</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: saturation -->
+<g transform="translate(147 324)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.saturation_1"
+        id="daimler_v4_saturation_1"
+        width="176"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_saturation_1_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Saturation</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_saturation_1_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">saturation</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: lookUpTable -->
+<g transform="translate(353 324)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.velocityControl.lookUpTable_3"
+        id="daimler_v4_lookUpTable_3"
+        width="206"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_lookUpTable_3_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">LookUpTable</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_lookUpTable_3_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">lookUpTable</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_acceleration_pc_line0"
+    stroke-linecap="square"
+    x1="1378"
+    y1="524"
+    x2="1415"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_acceleration_pc_line0_arrow" points="1405,518 1415,524 1405,530"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_brakeForce_pc_line0"
+    stroke-linecap="square"
+    x1="1401"
+    y1="654"
+    x2="1415"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_brakeForce_pc_line0_arrow" points="1405,648 1415,654 1405,660"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax1_in2_line0"
+    stroke-linecap="square"
+    x1="567"
+    y1="414"
+    x2="581"
+    y2="414"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax1_in2_line0_arrow" points="571,408 581,414 571,420"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_lookUpTable_3_in1_line0"
+    stroke-linecap="square"
+    x1="331"
+    y1="414"
+    x2="345"
+    y2="414"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_lookUpTable_3_in1_line0_arrow" points="335,408 345,414 335,420"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_mul_3_acceleration_pc_line0"
+    stroke-linecap="square"
+    x1="1015"
+    y1="524"
+    x2="1066"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_mul_3_acceleration_pc_line0_arrow" points="1056,518 1066,524 1056,530"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock2_12_elseIn_line0"
+    stroke-linecap="square"
+    x1="1215"
+    y1="524"
+    x2="1229"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock2_12_elseIn_line0_arrow" points="1219,518 1229,524 1219,530"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_mul_3_in1_line0"
+    stroke-linecap="square"
+    x1="125"
+    y1="174"
+    x2="1066"
+    y2="174"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_mul_3_in1_line0_arrow" points="1056,168 1066,174 1056,180"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_condition_line0"
+    stroke-linecap="square"
+    x1="777"
+    y1="284"
+    x2="856"
+    y2="284"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_condition_line0_arrow" points="846,278 856,284 846,290"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line0"
+    stroke-linecap="square"
+    x1="753"
+    y1="524"
+    x2="794"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="756"
+        y="517"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line1"
+    stroke-linecap="square"
+    x1="794"
+    y1="524"
+    x2="794"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line2"
+    stroke-linecap="square"
+    x1="794"
+    y1="524"
+    x2="839"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line3"
+    stroke-linecap="square"
+    x1="839"
+    y1="524"
+    x2="839"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line4"
+    stroke-linecap="square"
+    x1="839"
+    y1="524"
+    x2="856"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="845"
+        y="513"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock_35_elseIn_line4_arrow" points="846,518 856,524 846,530"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line0"
+    stroke-linecap="square"
+    x1="753"
+    y1="524"
+    x2="794"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="756"
+        y="517"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line1"
+    stroke-linecap="square"
+    x1="794"
+    y1="524"
+    x2="794"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line2"
+    stroke-linecap="square"
+    x1="794"
+    y1="524"
+    x2="804"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line3"
+    stroke-linecap="square"
+    x1="804"
+    y1="524"
+    x2="804"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line3_circle" cx="804" cy="524" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line4"
+    stroke-linecap="square"
+    x1="804"
+    y1="654"
+    x2="839"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line4_circle" cx="804" cy="654" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line5"
+    stroke-linecap="square"
+    x1="839"
+    y1="654"
+    x2="839"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line6"
+    stroke-linecap="square"
+    x1="839"
+    y1="654"
+    x2="856"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="845"
+        y="643"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition2_12_in1_line6_arrow" points="846,648 856,654 846,660"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock1_18_condition_line0"
+    stroke-linecap="square"
+    x1="1052"
+    y1="654"
+    x2="1066"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_switchBlock1_18_condition_line0_arrow" points="1056,648 1066,654 1056,660"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition1_22_in1_line0"
+    stroke-linecap="square"
+    x1="485"
+    y1="284"
+    x2="581"
+    y2="284"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_condition1_22_in1_line0_arrow" points="571,278 581,284 571,290"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax1_in1_line0"
+    stroke-linecap="square"
+    x1="125"
+    y1="524"
+    x2="581"
+    y2="524"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax1_in1_line0_arrow" points="571,518 581,524 571,530"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax2_in1_line0"
+    stroke-linecap="square"
+    x1="1186"
+    y1="654"
+    x2="1229"
+    y2="654"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_minMax2_in1_line0_arrow" points="1219,648 1229,654 1219,660"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_logOp_2_in1_line0"
+    stroke-linecap="square"
+    x1="275"
+    y1="284"
+    x2="345"
+    y2="284"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_logOp_2_in1_line0_arrow" points="335,278 345,284 335,290"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_relOp_9_in1_line0"
+    stroke-linecap="square"
+    x1="125"
+    y1="284"
+    x2="139"
+    y2="284"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_relOp_9_in1_line0_arrow" points="129,278 139,284 129,290"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_saturation_1_in1_line0"
+    stroke-linecap="square"
+    x1="125"
+    y1="414"
+    x2="139"
+    y2="414"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_velocityControl_saturation_1_in1_line0_arrow" points="129,408 139,414 129,420"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="daimler_v4_switchBlock2_12_acceleration_pc" x="1362" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock2_12_acceleration_pc_text1" text-anchor="end" alignment-baseline="middle" x="1359" y="526" transform="rotate(0,1359,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_switchBlock2_12_acceleration_pc_porttype" text-anchor="end" alignment-baseline="middle" x="1359" y="536" transform="rotate(0,1359,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_velocityControl_acceleration_pc" x="1415" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_acceleration_pc_text1" text-anchor="start" alignment-baseline="middle" x="1435" y="526" transform="rotate(0,1435,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+acceleration_pc
+</text>
+
+<text id="daimler_v4_velocityControl_acceleration_pc_porttype" text-anchor="start" alignment-baseline="middle" x="1435" y="536" transform="rotate(0,1435,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_minMax2_brakeForce_pc" x="1385" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_minMax2_brakeForce_pc_text1" text-anchor="end" alignment-baseline="middle" x="1382" y="656" transform="rotate(0,1382,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+brakeForce_pc
+</text>
+
+<text id="daimler_v4_minMax2_brakeForce_pc_porttype" text-anchor="end" alignment-baseline="middle" x="1382" y="666" transform="rotate(0,1382,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_velocityControl_brakeForce_pc" x="1415" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_brakeForce_pc_text1" text-anchor="start" alignment-baseline="middle" x="1435" y="656" transform="rotate(0,1435,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+brakeForce_pc
+</text>
+
+<text id="daimler_v4_velocityControl_brakeForce_pc_porttype" text-anchor="start" alignment-baseline="middle" x="1435" y="666" transform="rotate(0,1435,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_lookUpTable_3_out1" x="551" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_lookUpTable_3_out1_text1" text-anchor="end" alignment-baseline="middle" x="548" y="416" transform="rotate(0,548,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_lookUpTable_3_out1_porttype" text-anchor="end" alignment-baseline="middle" x="548" y="426" transform="rotate(0,548,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_minMax1_in2" x="581" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_minMax1_in2_text1" text-anchor="start" alignment-baseline="middle" x="600" y="416" transform="rotate(0,600,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in2
+</text>
+
+<text id="daimler_v4_minMax1_in2_porttype" text-anchor="start" alignment-baseline="middle" x="600" y="426" transform="rotate(0,600,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_saturation_1_out1" x="315" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_saturation_1_out1_text1" text-anchor="end" alignment-baseline="middle" x="312" y="416" transform="rotate(0,312,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_saturation_1_out1_porttype" text-anchor="end" alignment-baseline="middle" x="312" y="426" transform="rotate(0,312,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_lookUpTable_3_in1" x="345" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_lookUpTable_3_in1_text1" text-anchor="start" alignment-baseline="middle" x="364" y="416" transform="rotate(0,364,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_lookUpTable_3_in1_porttype" text-anchor="start" alignment-baseline="middle" x="364" y="426" transform="rotate(0,364,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_switchBlock_35_acceleration_pc" x="999" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock_35_acceleration_pc_text1" text-anchor="end" alignment-baseline="middle" x="996" y="526" transform="rotate(0,996,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_switchBlock_35_acceleration_pc_porttype" text-anchor="end" alignment-baseline="middle" x="996" y="536" transform="rotate(0,996,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_mul_3_acceleration_pc" x="1066" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_mul_3_acceleration_pc_text1" text-anchor="start" alignment-baseline="middle" x="1085" y="526" transform="rotate(0,1085,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+acceleration_pc
+</text>
+
+<text id="daimler_v4_mul_3_acceleration_pc_porttype" text-anchor="start" alignment-baseline="middle" x="1085" y="536" transform="rotate(0,1085,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_mul_3_out1" x="1199" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_mul_3_out1_text1" text-anchor="end" alignment-baseline="middle" x="1196" y="526" transform="rotate(0,1196,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_mul_3_out1_porttype" text-anchor="end" alignment-baseline="middle" x="1196" y="536" transform="rotate(0,1196,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_switchBlock2_12_elseIn" x="1229" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock2_12_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="1248" y="526" transform="rotate(0,1248,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+elseIn
+</text>
+
+<text id="daimler_v4_switchBlock2_12_elseIn_porttype" text-anchor="start" alignment-baseline="middle" x="1248" y="536" transform="rotate(0,1248,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_velocityControl_decelerator_pc" x="109" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_decelerator_pc_text1" text-anchor="end" alignment-baseline="middle" x="105" y="176" transform="rotate(0,105,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+decelerator_pc
+</text>
+
+<text id="daimler_v4_velocityControl_decelerator_pc_porttype" text-anchor="end" alignment-baseline="middle" x="105" y="186" transform="rotate(0,105,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_mul_3_in1" x="1066" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_mul_3_in1_text1" text-anchor="start" alignment-baseline="middle" x="1085" y="176" transform="rotate(0,1085,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_mul_3_in1_porttype" text-anchor="start" alignment-baseline="middle" x="1085" y="186" transform="rotate(0,1085,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_condition1_22_out1" x="761" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition1_22_out1_text1" text-anchor="end" alignment-baseline="middle" x="758" y="286" transform="rotate(0,758,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_condition1_22_out1_porttype" text-anchor="end" alignment-baseline="middle" x="758" y="296" transform="rotate(0,758,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_switchBlock_35_condition" x="856" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock_35_condition_text1" text-anchor="start" alignment-baseline="middle" x="875" y="286" transform="rotate(0,875,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+condition
+</text>
+
+<text id="daimler_v4_switchBlock_35_condition_porttype" text-anchor="start" alignment-baseline="middle" x="875" y="296" transform="rotate(0,875,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_minMax1_out1" x="737" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_minMax1_out1_text1" text-anchor="end" alignment-baseline="middle" x="734" y="526" transform="rotate(0,734,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_minMax1_out1_porttype" text-anchor="end" alignment-baseline="middle" x="734" y="536" transform="rotate(0,734,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_switchBlock_35_elseIn" x="856" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock_35_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="875" y="526" transform="rotate(0,875,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+elseIn
+</text>
+
+<text id="daimler_v4_switchBlock_35_elseIn_porttype" text-anchor="start" alignment-baseline="middle" x="875" y="536" transform="rotate(0,875,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_condition2_12_in1" x="856" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition2_12_in1_text1" text-anchor="start" alignment-baseline="middle" x="875" y="656" transform="rotate(0,875,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_condition2_12_in1_porttype" text-anchor="start" alignment-baseline="middle" x="875" y="666" transform="rotate(0,875,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_condition2_12_out1" x="1036" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition2_12_out1_text1" text-anchor="end" alignment-baseline="middle" x="1033" y="656" transform="rotate(0,1033,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_condition2_12_out1_porttype" text-anchor="end" alignment-baseline="middle" x="1033" y="666" transform="rotate(0,1033,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_switchBlock1_18_condition" x="1066" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock1_18_condition_text1" text-anchor="start" alignment-baseline="middle" x="1085" y="656" transform="rotate(0,1085,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+condition
+</text>
+
+<text id="daimler_v4_switchBlock1_18_condition_porttype" text-anchor="start" alignment-baseline="middle" x="1085" y="666" transform="rotate(0,1085,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_logOp_2_out1" x="469" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_2_out1_text1" text-anchor="end" alignment-baseline="middle" x="466" y="286" transform="rotate(0,466,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_logOp_2_out1_porttype" text-anchor="end" alignment-baseline="middle" x="466" y="296" transform="rotate(0,466,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_condition1_22_in1" x="581" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition1_22_in1_text1" text-anchor="start" alignment-baseline="middle" x="600" y="286" transform="rotate(0,600,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_condition1_22_in1_porttype" text-anchor="start" alignment-baseline="middle" x="600" y="296" transform="rotate(0,600,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_velocityControl_acceleration_pedal_pc" x="109" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_acceleration_pedal_pc_text1" text-anchor="end" alignment-baseline="middle" x="105" y="526" transform="rotate(0,105,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+acceleration_pedal_pc
+</text>
+
+<text id="daimler_v4_velocityControl_acceleration_pedal_pc_porttype" text-anchor="end" alignment-baseline="middle" x="105" y="536" transform="rotate(0,105,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_minMax1_in1" x="581" y="516" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_minMax1_in1_text1" text-anchor="start" alignment-baseline="middle" x="600" y="526" transform="rotate(0,600,526)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_minMax1_in1_porttype" text-anchor="start" alignment-baseline="middle" x="600" y="536" transform="rotate(0,600,536)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_switchBlock1_18_out1" x="1170" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switchBlock1_18_out1_text1" text-anchor="end" alignment-baseline="middle" x="1167" y="656" transform="rotate(0,1167,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_switchBlock1_18_out1_porttype" text-anchor="end" alignment-baseline="middle" x="1167" y="666" transform="rotate(0,1167,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_minMax2_in1" x="1229" y="646" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_minMax2_in1_text1" text-anchor="start" alignment-baseline="middle" x="1248" y="656" transform="rotate(0,1248,656)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_minMax2_in1_porttype" text-anchor="start" alignment-baseline="middle" x="1248" y="666" transform="rotate(0,1248,666)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_relOp_9_out1" x="259" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_9_out1_text1" text-anchor="end" alignment-baseline="middle" x="256" y="286" transform="rotate(0,256,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="daimler_v4_relOp_9_out1_porttype" text-anchor="end" alignment-baseline="middle" x="256" y="296" transform="rotate(0,256,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_logOp_2_in1" x="345" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_2_in1_text1" text-anchor="start" alignment-baseline="middle" x="364" y="286" transform="rotate(0,364,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_logOp_2_in1_porttype" text-anchor="start" alignment-baseline="middle" x="364" y="296" transform="rotate(0,364,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<rect id="daimler_v4_velocityControl_v_Vehicle_kmh" x="109" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_v_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="105" y="286" transform="rotate(0,105,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_Vehicle_kmh
+</text>
+
+<text id="daimler_v4_velocityControl_v_Vehicle_kmh_porttype" text-anchor="end" alignment-baseline="middle" x="105" y="296" transform="rotate(0,105,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_relOp_9_in1" x="139" y="276" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_9_in1_text1" text-anchor="start" alignment-baseline="middle" x="158" y="286" transform="rotate(0,158,286)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_relOp_9_in1_porttype" text-anchor="start" alignment-baseline="middle" x="158" y="296" transform="rotate(0,158,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_velocityControl_v_CC_delta_kmh" x="109" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_velocityControl_v_CC_delta_kmh_text1" text-anchor="end" alignment-baseline="middle" x="105" y="416" transform="rotate(0,105,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v_CC_delta_kmh
+</text>
+
+<text id="daimler_v4_velocityControl_v_CC_delta_kmh_porttype" text-anchor="end" alignment-baseline="middle" x="105" y="426" transform="rotate(0,105,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+<rect id="daimler_v4_saturation_1_in1" x="139" y="406" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_saturation_1_in1_text1" text-anchor="start" alignment-baseline="middle" x="158" y="416" transform="rotate(0,158,416)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="daimler_v4_saturation_1_in1_porttype" text-anchor="start" alignment-baseline="middle" x="158" y="426" transform="rotate(0,158,426)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Double
+</text>
+
+
+
+</svg>

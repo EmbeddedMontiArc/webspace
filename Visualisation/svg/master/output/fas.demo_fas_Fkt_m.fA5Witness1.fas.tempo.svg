@@ -1,0 +1,71 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: tempo -->
+<g transform="translate(30 20)">
+
+    <rect
+        id="288"
+        width="149"
+        height="107"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">tempo</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: t_Function -->
+<g transform="translate(60 52)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.fA5Witness1.fas.tempo.t_Function"
+        id="fas_demo_fas_Fkt_m_t_Function"
+        width="89"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                    onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                    onclick="window.open('fas.demo_fas_Fkt_m.fA5Witness1.fas.tempo.t_Function.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/fA5Witness1/fas/tempo/t_Function.ema');"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_t_Function_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">t_Function</tspan>
+    </text>
+
+    <text
+        id="fas_demo_fas_Fkt_m_t_Function_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs>
+</svg>

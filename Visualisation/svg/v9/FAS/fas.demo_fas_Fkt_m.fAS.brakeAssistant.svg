@@ -1,0 +1,120 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: brakeAssistant -->
+<g transform="translate(216 20)">
+
+    <rect
+        id="1592"
+        width="283"
+        height="107"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">brakeAssistant</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: brake -->
+<g transform="translate(266 52)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.fAS.brakeAssistant.brake"
+        id="1594"
+        width="183"
+        height="55"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('fas.demo_fas_Fkt_m.fAS.brakeAssistant.brake.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/fAS/brakeAssistant/brake.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">brake</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="457"
+    y1="87"
+    x2="491"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="224"
+    y1="87"
+    x2="258"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="441" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="438" y="89" transform="rotate(0,438,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForceB
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="438" y="99" transform="rotate(0,438,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+oosted_pc
+</text>
+
+<use x="491" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="511" y="89" transform="rotate(0,511,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForceB
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="511" y="99" transform="rotate(0,511,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+oosted_pc
+</text>
+
+<use x="208" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="204" y="89" transform="rotate(0,204,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForce
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="204" y="99" transform="rotate(0,204,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+_pedal_pc
+</text>
+
+<use x="258" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="277" y="89" transform="rotate(0,277,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForce
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="277" y="99" transform="rotate(0,277,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+_pedal_pc
+</text>
+
+
+</svg>

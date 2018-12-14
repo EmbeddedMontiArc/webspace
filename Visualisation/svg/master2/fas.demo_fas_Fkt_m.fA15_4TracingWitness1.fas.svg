@@ -1,0 +1,135 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: fas -->
+<g transform="translate(30 20)">
+
+    <rect
+        id="48"
+        width="359"
+        height="107"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">fas</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: emergencyBrake -->
+<g transform="translate(60 52)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.fA15_4TracingWitness1.fas.emergencyBrake"
+        id="fas_demo_fas_Fkt_m_emergencyBrake"
+        width="153"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_emergencyBrake_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">emergencyBrake</tspan>
+    </text>
+
+    <text
+        id="fas_demo_fas_Fkt_m_emergencyBrake_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: velocityControl -->
+<g transform="translate(243 52)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.fA15_4TracingWitness1.fas.velocityControl"
+        id="fas_demo_fas_Fkt_m_velocityControl"
+        width="116"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_velocityControl_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">velocityControl</tspan>
+    </text>
+
+    <text
+        id="fas_demo_fas_Fkt_m_velocityControl_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id="fas_demo_fas_Fkt_m_fA15_4TracingWitness1_fas_velocityControl_BrakeForce_Emergency_pc"
+    stroke-linecap="square"
+    x1="221"
+    y1="87"
+    x2="235"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="fas_demo_fas_Fkt_m_emergencyBrake_BrakeForce_Emergency_pc" x="205" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_emergencyBrake_BrakeForce_Emergency_pc_text1" text-anchor="end" alignment-baseline="middle" x="202" y="89" transform="rotate(0,202,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForce_E
+</text>
+
+<text id="fas_demo_fas_Fkt_m_emergencyBrake_BrakeForce_Emergency_pc_text2" text-anchor="end" alignment-baseline="middle" x="202" y="99" transform="rotate(0,202,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+mergency_pc
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_velocityControl_BrakeForce_Emergency_pc" x="235" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_velocityControl_BrakeForce_Emergency_pc_text1" text-anchor="start" alignment-baseline="middle" x="254" y="89" transform="rotate(0,254,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+BrakeForce_E
+</text>
+
+<text id="fas_demo_fas_Fkt_m_velocityControl_BrakeForce_Emergency_pc_text2" text-anchor="start" alignment-baseline="middle" x="254" y="99" transform="rotate(0,254,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+mergency_pc
+</text>
+
+
+</svg>

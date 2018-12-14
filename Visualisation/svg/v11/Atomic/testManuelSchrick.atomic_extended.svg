@@ -1,0 +1,65 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: atomic -->
+<g transform="translate(120 0)">
+
+    <rect
+        id="17479"
+        width="178"
+        height="222"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">Atomic</tspan>
+            <tspan font-size="11">PowerCmp = 1 W</tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            atomic
+    </text>
+
+</g>
+
+</svg><defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="112" y="102" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="108" y="112" transform="rotate(0,108,112)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="108" y="122" transform="rotate(0,108,122)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="112" y="158" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="108" y="168" transform="rotate(0,108,168)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in2
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="108" y="178" transform="rotate(0,108,178)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="290" y="102" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="310" y="112" transform="rotate(0,310,112)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out2
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="310" y="122" transform="rotate(0,310,122)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+
+</svg>

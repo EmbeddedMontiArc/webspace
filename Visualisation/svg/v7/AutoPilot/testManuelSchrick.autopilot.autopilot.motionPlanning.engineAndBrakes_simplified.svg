@@ -1,0 +1,154 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: engineAndBrakes -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="18060"
+        width="572"
+        height="217"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">engineAndBrakes</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: pidParams -->
+<g transform="translate(166 52)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.pidParams"
+        id="18061"
+        width="31"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">pidParams</tspan>
+    </text>
+
+</g><!-- Component: pidError -->
+<g transform="translate(166 162)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.pidError"
+        id="18062"
+        width="27"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">pidError</tspan>
+    </text>
+
+</g><!-- Component: abs1 -->
+<g transform="translate(347 107)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.abs1"
+        id="18063"
+        width="16"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">abs1</tspan>
+    </text>
+
+</g><!-- Component: pid -->
+<g transform="translate(413 52)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.pid"
+        id="18064"
+        width="12"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">pid</tspan>
+    </text>
+
+</g><!-- Component: engineOrBrakes -->
+<g transform="translate(493 52)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.engineOrBrakes"
+        id="18065"
+        width="45"
+        height="165"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">engineOrBrakes</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs>
+</svg>

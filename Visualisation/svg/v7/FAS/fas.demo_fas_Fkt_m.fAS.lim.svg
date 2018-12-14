@@ -1,0 +1,362 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: lim -->
+<g transform="translate(226 20)">
+
+    <rect
+        id="11671"
+        width="232"
+        height="387"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">lim</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: l_Function -->
+<g transform="translate(276 52)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.fAS.lim.l_Function"
+        id="11673"
+        width="132"
+        height="335"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('fas.demo_fas_Fkt_m.fAS.lim.l_Function.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/fAS/lim/l_Function.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">l_Function</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="416"
+    y1="327"
+    x2="450"
+    y2="327"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="416"
+    y1="287"
+    x2="450"
+    y2="287"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="416"
+    y1="247"
+    x2="450"
+    y2="247"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="327"
+    x2="268"
+    y2="327"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="367"
+    x2="268"
+    y2="367"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="87"
+    x2="268"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="127"
+    x2="268"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="167"
+    x2="268"
+    y2="167"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="207"
+    x2="268"
+    y2="207"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="247"
+    x2="268"
+    y2="247"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="234"
+    y1="287"
+    x2="268"
+    y2="287"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="400" y="319" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="397" y="329" transform="rotate(0,397,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+VMax_kmh
+</text>
+
+<use x="450" y="319" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="470" y="329" transform="rotate(0,470,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+VMax_kmh
+</text>
+
+<use x="400" y="279" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="397" y="289" transform="rotate(0,397,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Limiter_
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="397" y="299" transform="rotate(0,397,299)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+active_b
+</text>
+
+<use x="450" y="279" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="470" y="289" transform="rotate(0,470,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Limiter_
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="470" y="299" transform="rotate(0,470,299)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+active_b
+</text>
+
+<use x="400" y="239" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="397" y="249" transform="rotate(0,397,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+DEMO_FAS_V
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="397" y="259" transform="rotate(0,397,259)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+_CCSetValue
+</text>
+
+<use x="450" y="239" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="470" y="249" transform="rotate(0,470,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+DEMO_FAS_V
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="470" y="259" transform="rotate(0,470,259)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+_CCSetValue
+</text>
+
+<use x="218" y="319" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="329" transform="rotate(0,214,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Limiter_b
+</text>
+
+<use x="268" y="319" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="329" transform="rotate(0,287,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Limiter_b
+</text>
+
+<use x="218" y="359" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="369" transform="rotate(0,214,369)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Accelarati
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="379" transform="rotate(0,214,379)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+on_pedal_pc
+</text>
+
+<use x="268" y="359" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="369" transform="rotate(0,287,369)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Accelarati
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="287" y="379" transform="rotate(0,287,379)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+on_pedal_pc
+</text>
+
+<use x="218" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="89" transform="rotate(0,214,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_Vehi
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="99" transform="rotate(0,214,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+cle_kmh
+</text>
+
+<use x="268" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="89" transform="rotate(0,287,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_Vehi
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="287" y="99" transform="rotate(0,287,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+cle_kmh
+</text>
+
+<use x="218" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="129" transform="rotate(0,214,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+LeverU
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="139" transform="rotate(0,214,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+p_stat
+</text>
+
+<use x="268" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="129" transform="rotate(0,287,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+LeverU
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="287" y="139" transform="rotate(0,287,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+p_stat
+</text>
+
+<use x="218" y="159" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="169" transform="rotate(0,214,169)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+LeverDo
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="179" transform="rotate(0,214,179)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+wn_stat
+</text>
+
+<use x="268" y="159" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="169" transform="rotate(0,287,169)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+LeverDo
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="287" y="179" transform="rotate(0,287,179)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+wn_stat
+</text>
+
+<use x="218" y="199" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="209" transform="rotate(0,214,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_Sig
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="219" transform="rotate(0,214,219)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+n_kmh
+</text>
+
+<use x="268" y="199" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="209" transform="rotate(0,287,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_Sig
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="287" y="219" transform="rotate(0,287,219)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+n_kmh
+</text>
+
+<use x="218" y="239" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="249" transform="rotate(0,214,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Sign_b
+</text>
+
+<use x="268" y="239" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="249" transform="rotate(0,287,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Sign_b
+</text>
+
+<use x="218" y="279" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="214" y="289" transform="rotate(0,214,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+CONSTAN
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="214" y="299" transform="rotate(0,214,299)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+TPORT57
+</text>
+
+<use x="268" y="279" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="287" y="289" transform="rotate(0,287,289)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Enable
+</text>
+
+
+</svg>

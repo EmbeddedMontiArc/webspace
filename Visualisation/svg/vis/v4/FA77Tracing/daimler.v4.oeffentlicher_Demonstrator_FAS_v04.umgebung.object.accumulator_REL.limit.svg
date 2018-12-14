@@ -1,0 +1,1876 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: limit -->
+<g transform="translate(32 20)">
+
+    <rect
+        id="38788"
+        width="845"
+        height="527"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">limit</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: AND -->
+<g transform="translate(742 377)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.logOp_A_5"
+        id="daimler_v4_logOp_A_5"
+        width="65"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_logOp_A_5_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">AND</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_logOp_A_5_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: NOT -->
+<g transform="translate(617 432)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.logOp_N_8"
+        id="daimler_v4_logOp_N_8"
+        width="64"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_logOp_N_8_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">NOT</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_logOp_N_8_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: &lt; -->
+<g transform="translate(127 147)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.relOp_MN"
+        id="daimler_v4_relOp_MN"
+        width="61"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_relOp_MN_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">&lt;</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_relOp_MN_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: &gt; -->
+<g transform="translate(416 282)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.relOp_MX"
+        id="daimler_v4_relOp_MX"
+        width="65"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_relOp_MX_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">&gt;</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_relOp_MX_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: switch_MN -->
+<g transform="translate(416 52)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.switch_MN"
+        id="daimler_v4_switch_MN"
+        width="106"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_switch_MN_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">switch_MN</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_switch_MN_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: switch_MX -->
+<g transform="translate(742 147)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.switch_MX"
+        id="daimler_v4_switch_MX"
+        width="105"
+        height="190"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_switch_MX_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">switch_MX</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_switch_MX_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: condition -->
+<g transform="translate(617 282)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.condition_49"
+        id="daimler_v4_condition_49"
+        width="95"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_condition_49_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">condition</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_condition_49_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><!-- Component: condition1 -->
+<g transform="translate(283 147)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.object.accumulator_REL.limit.condition1_25"
+        id="daimler_v4_condition1_25"
+        width="103"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_condition1_25_text"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">condition1</tspan>
+    </text>
+
+    <text
+        id="daimler_v4_condition1_25_text2"
+            x="10"
+            y="30"
+            alignment-baseline="middle"
+            font-family="Verdana"
+            fill="black">
+                <tspan style="font-weight: bold" font-size="11"></tspan>
+        </text>
+
+</g><line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line0"
+    stroke-linecap="square"
+    x1="489"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="492"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line1"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line2"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="557"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line3"
+    stroke-linecap="square"
+    x1="557"
+    y1="317"
+    x2="557"
+    y2="507"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line3_circle" cx="557" cy="317" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line4"
+    stroke-linecap="square"
+    x1="557"
+    y1="507"
+    x2="847"
+    y2="507"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line4_circle" cx="557" cy="507" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line5"
+    stroke-linecap="square"
+    x1="847"
+    y1="507"
+    x2="847"
+    y2="507"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line6"
+    stroke-linecap="square"
+    x1="847"
+    y1="507"
+    x2="869"
+    y2="507"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="858"
+        y="496"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_max_line6_arrow" points="859,501 869,507 859,513"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_min_line0"
+    stroke-linecap="square"
+    x1="815"
+    y1="467"
+    x2="869"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_b_min_line0_arrow" points="859,461 869,467 859,473"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_y_line0"
+    stroke-linecap="square"
+    x1="855"
+    y1="317"
+    x2="869"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_y_line0_arrow" points="859,311 869,317 859,323"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_condition_line0"
+    stroke-linecap="square"
+    x1="720"
+    y1="317"
+    x2="734"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_condition_line0_arrow" points="724,311 734,317 724,323"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_condition_line0"
+    stroke-linecap="square"
+    x1="394"
+    y1="182"
+    x2="408"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_condition_line0_arrow" points="398,176 408,182 398,188"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line0"
+    stroke-linecap="square"
+    x1="489"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="492"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line1"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line2"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="592"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line3"
+    stroke-linecap="square"
+    x1="592"
+    y1="317"
+    x2="592"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line4"
+    stroke-linecap="square"
+    x1="592"
+    y1="317"
+    x2="609"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="598"
+        y="306"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition_49_in1_line4_arrow" points="599,311 609,317 599,323"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line0"
+    stroke-linecap="square"
+    x1="196"
+    y1="182"
+    x2="213"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="199"
+        y="175"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line1"
+    stroke-linecap="square"
+    x1="213"
+    y1="182"
+    x2="213"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line2"
+    stroke-linecap="square"
+    x1="213"
+    y1="182"
+    x2="258"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line3"
+    stroke-linecap="square"
+    x1="258"
+    y1="182"
+    x2="258"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line4"
+    stroke-linecap="square"
+    x1="258"
+    y1="182"
+    x2="275"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="264"
+        y="171"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_condition1_25_in1_line4_arrow" points="265,176 275,182 265,188"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line0"
+    stroke-linecap="square"
+    x1="489"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="492"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line1"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="547"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line2"
+    stroke-linecap="square"
+    x1="547"
+    y1="317"
+    x2="557"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line3"
+    stroke-linecap="square"
+    x1="557"
+    y1="317"
+    x2="557"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line3_circle" cx="557" cy="317" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line4"
+    stroke-linecap="square"
+    x1="557"
+    y1="467"
+    x2="592"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line4_circle" cx="557" cy="467" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line5"
+    stroke-linecap="square"
+    x1="592"
+    y1="467"
+    x2="592"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line6"
+    stroke-linecap="square"
+    x1="592"
+    y1="467"
+    x2="609"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="598"
+        y="456"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_N_8_in1_line6_arrow" points="599,461 609,467 599,473"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="262"
+    x2="248"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="255"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line1"
+    stroke-linecap="square"
+    x1="248"
+    y1="262"
+    x2="248"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line1_circle" cx="248" cy="262" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line2"
+    stroke-linecap="square"
+    x1="248"
+    y1="289"
+    x2="258"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line3"
+    stroke-linecap="square"
+    x1="258"
+    y1="289"
+    x2="258"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line3_circle" cx="258" cy="289" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line4"
+    stroke-linecap="square"
+    x1="258"
+    y1="262"
+    x2="712"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line4_circle" cx="258" cy="262" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line5"
+    stroke-linecap="square"
+    x1="712"
+    y1="262"
+    x2="712"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line6"
+    stroke-linecap="square"
+    x1="712"
+    y1="262"
+    x2="734"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="723"
+        y="251"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_ifIn_line6_arrow" points="724,256 734,262 724,268"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="262"
+    x2="248"
+    y2="262"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="255"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line1"
+    stroke-linecap="square"
+    x1="248"
+    y1="262"
+    x2="248"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line1_circle" cx="248" cy="262" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line2"
+    stroke-linecap="square"
+    x1="248"
+    y1="289"
+    x2="258"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line3"
+    stroke-linecap="square"
+    x1="258"
+    y1="289"
+    x2="258"
+    y2="337"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line3_circle" cx="258" cy="289" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line4"
+    stroke-linecap="square"
+    x1="258"
+    y1="337"
+    x2="386"
+    y2="337"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line4_circle" cx="258" cy="337" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line5"
+    stroke-linecap="square"
+    x1="386"
+    y1="337"
+    x2="386"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line6"
+    stroke-linecap="square"
+    x1="386"
+    y1="317"
+    x2="408"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="397"
+        y="306"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line6_circle" cx="386" cy="317" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in2_line6_arrow" points="398,311 408,317 398,323"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="87"
+    x2="57"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line1"
+    stroke-linecap="square"
+    x1="57"
+    y1="87"
+    x2="57"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line1_circle" cx="57" cy="87" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line2"
+    stroke-linecap="square"
+    x1="57"
+    y1="127"
+    x2="67"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line3"
+    stroke-linecap="square"
+    x1="67"
+    y1="127"
+    x2="67"
+    y2="202"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line3_circle" cx="67" cy="127" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line4"
+    stroke-linecap="square"
+    x1="67"
+    y1="202"
+    x2="102"
+    y2="202"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line4_circle" cx="67" cy="202" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line5"
+    stroke-linecap="square"
+    x1="102"
+    y1="202"
+    x2="102"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line6"
+    stroke-linecap="square"
+    x1="102"
+    y1="182"
+    x2="119"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="108"
+        y="171"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line6_circle" cx="102" cy="182" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in2_line6_arrow" points="109,176 119,182 109,188"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="87"
+    x2="57"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line1"
+    stroke-linecap="square"
+    x1="57"
+    y1="87"
+    x2="57"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line1_circle" cx="57" cy="87" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line2"
+    stroke-linecap="square"
+    x1="57"
+    y1="127"
+    x2="67"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line3"
+    stroke-linecap="square"
+    x1="67"
+    y1="127"
+    x2="67"
+    y2="107"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line3_circle" cx="67" cy="127" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line4"
+    stroke-linecap="square"
+    x1="67"
+    y1="107"
+    x2="386"
+    y2="107"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line4_circle" cx="67" cy="107" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line5"
+    stroke-linecap="square"
+    x1="386"
+    y1="107"
+    x2="386"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line6"
+    stroke-linecap="square"
+    x1="386"
+    y1="87"
+    x2="408"
+    y2="87"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="397"
+        y="76"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line6_circle" cx="386" cy="87" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_ifIn_line6_arrow" points="398,81 408,87 398,93"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_elseIn_line0"
+    stroke-linecap="square"
+    x1="530"
+    y1="182"
+    x2="734"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MX_elseIn_line0_arrow" points="724,176 734,182 724,188"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in1_line0"
+    stroke-linecap="square"
+    x1="689"
+    y1="467"
+    x2="734"
+    y2="467"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in1_line0_arrow" points="724,461 734,467 724,473"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line0"
+    stroke-linecap="square"
+    x1="196"
+    y1="182"
+    x2="213"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="199"
+        y="175"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line1"
+    stroke-linecap="square"
+    x1="213"
+    y1="182"
+    x2="213"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line2"
+    stroke-linecap="square"
+    x1="213"
+    y1="182"
+    x2="223"
+    y2="182"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line3"
+    stroke-linecap="square"
+    x1="223"
+    y1="182"
+    x2="223"
+    y2="412"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line3_circle" cx="223" cy="182" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line4"
+    stroke-linecap="square"
+    x1="223"
+    y1="412"
+    x2="522"
+    y2="412"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line4_circle" cx="223" cy="412" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line5"
+    stroke-linecap="square"
+    x1="522"
+    y1="412"
+    x2="522"
+    y2="412"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line6"
+    stroke-linecap="square"
+    x1="522"
+    y1="412"
+    x2="734"
+    y2="412"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="723"
+        y="401"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_logOp_A_5_in2_line6_arrow" points="724,406 734,412 724,418"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="317"
+    x2="57"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line1"
+    stroke-linecap="square"
+    x1="57"
+    y1="317"
+    x2="57"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line1_circle" cx="57" cy="317" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line2"
+    stroke-linecap="square"
+    x1="57"
+    y1="127"
+    x2="67"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line3"
+    stroke-linecap="square"
+    x1="67"
+    y1="127"
+    x2="67"
+    y2="107"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line3_circle" cx="67" cy="127" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line4"
+    stroke-linecap="square"
+    x1="67"
+    y1="107"
+    x2="386"
+    y2="107"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line4_circle" cx="67" cy="107" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line5"
+    stroke-linecap="square"
+    x1="386"
+    y1="107"
+    x2="386"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line6"
+    stroke-linecap="square"
+    x1="386"
+    y1="127"
+    x2="408"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="397"
+        y="116"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line6_circle" cx="386" cy="127" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_switch_MN_elseIn_line6_arrow" points="398,121 408,127 398,133"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="317"
+    x2="248"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line1"
+    stroke-linecap="square"
+    x1="248"
+    y1="317"
+    x2="248"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line1_circle" cx="248" cy="317" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line2"
+    stroke-linecap="square"
+    x1="248"
+    y1="289"
+    x2="258"
+    y2="289"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line3"
+    stroke-linecap="square"
+    x1="258"
+    y1="289"
+    x2="258"
+    y2="337"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line3_circle" cx="258" cy="289" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line4"
+    stroke-linecap="square"
+    x1="258"
+    y1="337"
+    x2="386"
+    y2="337"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line4_circle" cx="258" cy="337" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line5"
+    stroke-linecap="square"
+    x1="386"
+    y1="337"
+    x2="386"
+    y2="357"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line6"
+    stroke-linecap="square"
+    x1="386"
+    y1="357"
+    x2="408"
+    y2="357"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="397"
+        y="346"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line6_circle" cx="386" cy="357" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MX_in1_line6_arrow" points="398,351 408,357 398,363"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line0"
+    stroke-linecap="square"
+    x1="40"
+    y1="317"
+    x2="57"
+    y2="317"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="43"
+        y="310"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line1"
+    stroke-linecap="square"
+    x1="57"
+    y1="317"
+    x2="57"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line1_circle" cx="57" cy="317" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line2"
+    stroke-linecap="square"
+    x1="57"
+    y1="127"
+    x2="67"
+    y2="127"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line3"
+    stroke-linecap="square"
+    x1="67"
+    y1="127"
+    x2="67"
+    y2="202"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line3_circle" cx="67" cy="127" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line4"
+    stroke-linecap="square"
+    x1="67"
+    y1="202"
+    x2="102"
+    y2="202"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line4_circle" cx="67" cy="202" r="4" fill="black" />
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line5"
+    stroke-linecap="square"
+    x1="102"
+    y1="202"
+    x2="102"
+    y2="222"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:4;"
+/>
+
+
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line6"
+    stroke-linecap="square"
+    x1="102"
+    y1="222"
+    x2="119"
+    y2="222"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+    <text
+        x="108"
+        y="211"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line6_circle" cx="102" cy="222" r="4" fill="black" />
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_object_accumulator_REL_limit_relOp_MN_in1_line6_arrow" points="109,216 119,222 109,228"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="daimler_v4_relOp_MX_out1" x="473" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MX_out1_text1" text-anchor="end" alignment-baseline="middle" x="470" y="319" transform="rotate(0,470,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_limit_b_max" x="869" y="499" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_b_max_text1" text-anchor="start" alignment-baseline="middle" x="889" y="509" transform="rotate(0,889,509)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+b_m
+</text>
+
+<text id="daimler_v4_limit_b_max_text2" text-anchor="start" alignment-baseline="middle" x="889" y="519" transform="rotate(0,889,519)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ax
+</text>
+
+<rect id="daimler_v4_logOp_A_5_out1" x="799" y="459" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_A_5_out1_text1" text-anchor="end" alignment-baseline="middle" x="796" y="469" transform="rotate(0,796,469)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_limit_b_min" x="869" y="459" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_b_min_text1" text-anchor="start" alignment-baseline="middle" x="889" y="469" transform="rotate(0,889,469)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+b_m
+</text>
+
+<text id="daimler_v4_limit_b_min_text2" text-anchor="start" alignment-baseline="middle" x="889" y="479" transform="rotate(0,889,479)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in
+</text>
+
+<rect id="daimler_v4_switch_MX_out1" x="839" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MX_out1_text1" text-anchor="end" alignment-baseline="middle" x="836" y="319" transform="rotate(0,836,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ou
+</text>
+
+<text id="daimler_v4_switch_MX_out1_text2" text-anchor="end" alignment-baseline="middle" x="836" y="329" transform="rotate(0,836,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t1
+</text>
+
+<rect id="daimler_v4_limit_y" x="869" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_y_text1" text-anchor="start" alignment-baseline="middle" x="889" y="319" transform="rotate(0,889,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+y
+</text>
+
+<rect id="daimler_v4_condition_49_out1" x="704" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition_49_out1_text1" text-anchor="end" alignment-baseline="middle" x="701" y="319" transform="rotate(0,701,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ou
+</text>
+
+<text id="daimler_v4_condition_49_out1_text2" text-anchor="end" alignment-baseline="middle" x="701" y="329" transform="rotate(0,701,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t1
+</text>
+
+<rect id="daimler_v4_switch_MX_condition" x="734" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MX_condition_text1" text-anchor="start" alignment-baseline="middle" x="753" y="319" transform="rotate(0,753,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+cond
+</text>
+
+<text id="daimler_v4_switch_MX_condition_text2" text-anchor="start" alignment-baseline="middle" x="753" y="329" transform="rotate(0,753,329)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ition
+</text>
+
+<rect id="daimler_v4_condition1_25_out1" x="378" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition1_25_out1_text1" text-anchor="end" alignment-baseline="middle" x="375" y="184" transform="rotate(0,375,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ou
+</text>
+
+<text id="daimler_v4_condition1_25_out1_text2" text-anchor="end" alignment-baseline="middle" x="375" y="194" transform="rotate(0,375,194)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t1
+</text>
+
+<rect id="daimler_v4_switch_MN_condition" x="408" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MN_condition_text1" text-anchor="start" alignment-baseline="middle" x="427" y="184" transform="rotate(0,427,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+cond
+</text>
+
+<text id="daimler_v4_switch_MN_condition_text2" text-anchor="start" alignment-baseline="middle" x="427" y="194" transform="rotate(0,427,194)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ition
+</text>
+
+<rect id="daimler_v4_condition_49_in1" x="609" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition_49_in1_text1" text-anchor="start" alignment-baseline="middle" x="628" y="319" transform="rotate(0,628,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<rect id="daimler_v4_relOp_MN_out1" x="180" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MN_out1_text1" text-anchor="end" alignment-baseline="middle" x="177" y="184" transform="rotate(0,177,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_condition1_25_in1" x="275" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_condition1_25_in1_text1" text-anchor="start" alignment-baseline="middle" x="294" y="184" transform="rotate(0,294,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<rect id="daimler_v4_logOp_N_8_in1" x="609" y="459" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_N_8_in1_text1" text-anchor="start" alignment-baseline="middle" x="628" y="469" transform="rotate(0,628,469)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_limit_mX" x="24" y="254" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_mX_text1" text-anchor="end" alignment-baseline="middle" x="20" y="264" transform="rotate(0,20,264)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+mX
+</text>
+
+<rect id="daimler_v4_switch_MX_ifIn" x="734" y="254" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MX_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="753" y="264" transform="rotate(0,753,264)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ifIn
+</text>
+
+<rect id="daimler_v4_relOp_MX_in2" x="408" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MX_in2_text1" text-anchor="start" alignment-baseline="middle" x="427" y="319" transform="rotate(0,427,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in2
+</text>
+
+<rect id="daimler_v4_limit_mN" x="24" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_mN_text1" text-anchor="end" alignment-baseline="middle" x="20" y="89" transform="rotate(0,20,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+mN
+</text>
+
+<rect id="daimler_v4_relOp_MN_in2" x="119" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MN_in2_text1" text-anchor="start" alignment-baseline="middle" x="138" y="184" transform="rotate(0,138,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in2
+</text>
+
+<rect id="daimler_v4_switch_MN_ifIn" x="408" y="79" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MN_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="427" y="89" transform="rotate(0,427,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ifIn
+</text>
+
+<rect id="daimler_v4_switch_MN_out1" x="514" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MN_out1_text1" text-anchor="end" alignment-baseline="middle" x="511" y="184" transform="rotate(0,511,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ou
+</text>
+
+<text id="daimler_v4_switch_MN_out1_text2" text-anchor="end" alignment-baseline="middle" x="511" y="194" transform="rotate(0,511,194)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t1
+</text>
+
+<rect id="daimler_v4_switch_MX_elseIn" x="734" y="174" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MX_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="753" y="184" transform="rotate(0,753,184)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+else
+</text>
+
+<text id="daimler_v4_switch_MX_elseIn_text2" text-anchor="start" alignment-baseline="middle" x="753" y="194" transform="rotate(0,753,194)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+In
+</text>
+
+<rect id="daimler_v4_logOp_N_8_out1" x="673" y="459" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_N_8_out1_text1" text-anchor="end" alignment-baseline="middle" x="670" y="469" transform="rotate(0,670,469)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_logOp_A_5_in1" x="734" y="459" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_A_5_in1_text1" text-anchor="start" alignment-baseline="middle" x="753" y="469" transform="rotate(0,753,469)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_logOp_A_5_in2" x="734" y="404" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_logOp_A_5_in2_text1" text-anchor="start" alignment-baseline="middle" x="753" y="414" transform="rotate(0,753,414)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_limit_u" x="24" y="309" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_limit_u_text1" text-anchor="end" alignment-baseline="middle" x="20" y="319" transform="rotate(0,20,319)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+u
+</text>
+
+<rect id="daimler_v4_switch_MN_elseIn" x="408" y="119" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_switch_MN_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="427" y="129" transform="rotate(0,427,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+else
+</text>
+
+<text id="daimler_v4_switch_MN_elseIn_text2" text-anchor="start" alignment-baseline="middle" x="427" y="139" transform="rotate(0,427,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+In
+</text>
+
+<rect id="daimler_v4_relOp_MX_in1" x="408" y="349" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MX_in1_text1" text-anchor="start" alignment-baseline="middle" x="427" y="359" transform="rotate(0,427,359)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<rect id="daimler_v4_relOp_MN_in1" x="119" y="214" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_relOp_MN_in1_text1" text-anchor="start" alignment-baseline="middle" x="138" y="224" transform="rotate(0,138,224)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+
+</svg>

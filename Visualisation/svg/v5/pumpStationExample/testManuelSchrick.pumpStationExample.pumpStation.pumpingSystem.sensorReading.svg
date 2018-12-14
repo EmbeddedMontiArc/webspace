@@ -1,0 +1,309 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: sensorReading -->
+<g transform="translate(146 20)">
+
+    <rect
+        id="2264"
+        width="360"
+        height="400"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">sensorReading</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: pumpSensorReader -->
+<g transform="translate(196 345)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.sensorReading.pumpSensorReader"
+        id="2269"
+        width="260"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">pumpSensorReader</tspan>
+    </text>
+
+</g><!-- Component: userButtonReader -->
+<g transform="translate(196 195)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.sensorReading.userButtonReader"
+        id="2267"
+        width="260"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">userButtonReader</tspan>
+    </text>
+
+</g><!-- Component: tankSensorReader -->
+<g transform="translate(196 270)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.sensorReading.tankSensorReader"
+        id="2268"
+        width="260"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">tankSensorReader</tspan>
+    </text>
+
+</g><!-- Component: valveSensorReader -->
+<g transform="translate(196 120)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.sensorReading.valveSensorReader"
+        id="2266"
+        width="260"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">valveSensorReader</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="464"
+    y1="380"
+    x2="498"
+    y2="380"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="464"
+    y1="230"
+    x2="498"
+    y2="230"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="464"
+    y1="155"
+    x2="498"
+    y2="155"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="464"
+    y1="305"
+    x2="498"
+    y2="305"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="154"
+    y1="380"
+    x2="188"
+    y2="380"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="154"
+    y1="230"
+    x2="188"
+    y2="230"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="154"
+    y1="305"
+    x2="188"
+    y2="305"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="154"
+    y1="155"
+    x2="188"
+    y2="155"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="448" y="372" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="445" y="382" transform="rotate(0,445,382)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pumpState
+</text>
+
+<use x="498" y="372" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="518" y="382" transform="rotate(0,518,382)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pumpState
+</text>
+
+<use x="448" y="222" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="445" y="232" transform="rotate(0,445,232)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userButton
+</text>
+
+<use x="498" y="222" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="518" y="232" transform="rotate(0,518,232)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userButtonOut
+</text>
+
+<use x="448" y="147" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="445" y="157" transform="rotate(0,445,157)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+valvePosition
+</text>
+
+<use x="498" y="147" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="518" y="157" transform="rotate(0,518,157)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+valvePosition
+</text>
+
+<use x="448" y="297" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="445" y="307" transform="rotate(0,445,307)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+waterLevel1
+</text>
+
+<use x="498" y="297" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="518" y="307" transform="rotate(0,518,307)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+waterLevel1
+</text>
+
+<use x="138" y="372" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="134" y="382" transform="rotate(0,134,382)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pump
+</text>
+
+<use x="188" y="372" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="207" y="382" transform="rotate(0,207,382)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pump
+</text>
+
+<use x="138" y="222" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="134" y="232" transform="rotate(0,134,232)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+button
+</text>
+
+<use x="188" y="222" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="207" y="232" transform="rotate(0,207,232)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+button
+</text>
+
+<use x="138" y="297" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="134" y="307" transform="rotate(0,134,307)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+level1
+</text>
+
+<use x="188" y="297" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="207" y="307" transform="rotate(0,207,307)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+level1
+</text>
+
+<use x="138" y="147" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="134" y="157" transform="rotate(0,134,157)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+valve
+</text>
+
+<use x="188" y="147" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="207" y="157" transform="rotate(0,207,157)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+valve
+</text>
+
+
+</svg>

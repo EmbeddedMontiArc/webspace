@@ -1,0 +1,348 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: controller -->
+<g transform="translate(216 20)">
+
+    <rect
+        id="19556"
+        width="393"
+        height="262"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">controller</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: userOperation -->
+<g transform="translate(266 167)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.controller.userOperation"
+        id="19558"
+        width="117"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">userOperation</tspan>
+    </text>
+
+</g><!-- Component: eMSOperation -->
+<g transform="translate(266 52)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.controller.eMSOperation"
+        id="19557"
+        width="108"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">eMSOperation</tspan>
+    </text>
+
+</g><!-- Component: modeArbiter -->
+<g transform="translate(413 52)">
+    <rect
+        data-name="testManuelSchrick.pumpStationExample.pumpStation.pumpingSystem.controller.modeArbiter"
+        id="19559"
+        width="126"
+        height="210"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">modeArbiter</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="547"
+    y1="202"
+    x2="601"
+    y2="202"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="547"
+    y1="127"
+    x2="601"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="224"
+    y1="202"
+    x2="258"
+    y2="202"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="391"
+    y1="202"
+    x2="405"
+    y2="202"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="391"
+    y1="242"
+    x2="405"
+    y2="242"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="224"
+    y1="127"
+    x2="258"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="382"
+    y1="127"
+    x2="405"
+    y2="127"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="382"
+    y1="87"
+    x2="405"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="531" y="194" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="528" y="204" transform="rotate(0,528,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredP
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="528" y="214" transform="rotate(0,528,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+umpState
+</text>
+
+<use x="601" y="194" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="621" y="204" transform="rotate(0,621,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredP
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="621" y="214" transform="rotate(0,621,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+umpState
+</text>
+
+<use x="531" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="528" y="129" transform="rotate(0,528,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVal
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="528" y="139" transform="rotate(0,528,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+vePosition
+</text>
+
+<use x="601" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="621" y="129" transform="rotate(0,621,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVal
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="621" y="139" transform="rotate(0,621,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+vePosition
+</text>
+
+<use x="208" y="194" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="204" y="204" transform="rotate(0,204,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userBu
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="204" y="214" transform="rotate(0,204,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ttonIn
+</text>
+
+<use x="258" y="194" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="277" y="204" transform="rotate(0,277,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userB
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="277" y="214" transform="rotate(0,277,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+utton
+</text>
+
+<use x="375" y="194" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="372" y="204" transform="rotate(0,372,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredP
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="372" y="214" transform="rotate(0,372,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+umpState
+</text>
+
+<use x="405" y="194" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="424" y="204" transform="rotate(0,424,204)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userPu
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="424" y="214" transform="rotate(0,424,214)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+mpState
+</text>
+
+<use x="375" y="234" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="372" y="244" transform="rotate(0,372,244)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVal
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="372" y="254" transform="rotate(0,372,254)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+vePosition
+</text>
+
+<use x="405" y="234" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="424" y="244" transform="rotate(0,424,244)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+userValv
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="424" y="254" transform="rotate(0,424,254)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+ePosition
+</text>
+
+<use x="208" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="204" y="129" transform="rotate(0,204,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+water
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="204" y="139" transform="rotate(0,204,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Level1
+</text>
+
+<use x="258" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="277" y="129" transform="rotate(0,277,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+water
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="277" y="139" transform="rotate(0,277,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Level1
+</text>
+
+<use x="366" y="119" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="363" y="129" transform="rotate(0,363,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredP
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="363" y="139" transform="rotate(0,363,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+umpState
+</text>
+
+<use x="405" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="424" y="129" transform="rotate(0,424,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+emsPum
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="424" y="139" transform="rotate(0,424,139)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pState
+</text>
+
+<use x="366" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="363" y="89" transform="rotate(0,363,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVal
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="363" y="99" transform="rotate(0,363,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+vePosition
+</text>
+
+<use x="405" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="424" y="89" transform="rotate(0,424,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+emsValve
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="424" y="99" transform="rotate(0,424,99)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Position
+</text>
+
+
+</svg>

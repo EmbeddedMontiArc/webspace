@@ -1,0 +1,628 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: motionPlanning -->
+<g transform="translate(157 20)">
+
+    <rect
+        id="7542"
+        width="1415"
+        height="890"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">MotionPlanning</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            motionPlanning
+    </text>
+
+</g>
+
+</svg><!-- Component: keepDirection -->
+<g transform="translate(197 270)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.keepDirection"
+        id="7545"
+        width="520"
+        height="300"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('testManuelSchrick.autopilot.autopilot.motionPlanning.keepDirection.html','_parent',false);parent.openFileInEditor('/autopilot/autopilot/motionPlanning/keepDirection.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">KeepDirection</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    keepDirection
+    </text>
+</g><!-- Component: sac -->
+<g transform="translate(197 120)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.sac"
+        id="7544"
+        width="520"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">SteeringAngleCorrection</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    sac
+    </text>
+</g><!-- Component: sum1 -->
+<g transform="translate(757 120)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.sum1"
+        id="7547"
+        width="315"
+        height="450"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">Sum</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    sum1
+    </text>
+</g><!-- Component: engineAndBrakes -->
+<g transform="translate(197 610)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes"
+        id="7546"
+        width="520"
+        height="260"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('testManuelSchrick.autopilot.autopilot.motionPlanning.engineAndBrakes.html','_parent',false);parent.openFileInEditor('/autopilot/autopilot/motionPlanning/engineAndBrakes.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">CalculateEngineAndBrakes</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    engineAndBrakes
+    </text>
+</g><!-- Component: boundsSteering -->
+<g transform="translate(1112 460)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.boundsSteering"
+        id="7550"
+        width="420"
+        height="110"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('testManuelSchrick.autopilot.autopilot.motionPlanning.boundsSteering.html','_parent',false);parent.openFileInEditor('/autopilot/autopilot/motionPlanning/boundsSteering.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">EnsureBoundsForSteeringAngle</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    boundsSteering
+    </text>
+</g><!-- Component: boundsBrakes -->
+<g transform="translate(757 760)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.boundsBrakes"
+        id="7549"
+        width="315"
+        height="110"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('testManuelSchrick.autopilot.autopilot.motionPlanning.boundsBrakes.html','_parent',false);parent.openFileInEditor('/autopilot/autopilot/motionPlanning/boundsBrakes.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">EnsureBoundsForBrakes</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    boundsBrakes
+    </text>
+</g><!-- Component: boundsEngine -->
+<g transform="translate(757 610)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.boundsEngine"
+        id="7548"
+        width="315"
+        height="110"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.open('testManuelSchrick.autopilot.autopilot.motionPlanning.boundsEngine.html','_parent',false);parent.openFileInEditor('/autopilot/autopilot/motionPlanning/boundsEngine.ema');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">EnsureBoundsForEngine</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="10"
+        fill="black">
+    boundsEngine
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="1080"
+    y1="700"
+    x2="1564"
+    y2="700"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="1540"
+    y1="550"
+    x2="1564"
+    y2="550"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="1080"
+    y1="850"
+    x2="1564"
+    y2="850"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="550"
+    x2="189"
+    y2="550"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="360"
+    x2="189"
+    y2="360"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="400"
+    x2="189"
+    y2="400"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="440"
+    x2="189"
+    y2="440"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="725"
+    y1="550"
+    x2="749"
+    y2="550"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="210"
+    x2="189"
+    y2="210"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="725"
+    y1="210"
+    x2="749"
+    y2="210"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="700"
+    x2="189"
+    y2="700"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="165"
+    y1="850"
+    x2="189"
+    y2="850"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="725"
+    y1="700"
+    x2="749"
+    y2="700"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="1080"
+    y1="550"
+    x2="1104"
+    y2="550"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="725"
+    y1="850"
+    x2="749"
+    y2="850"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="1064" y="692" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="1061" y="702" transform="rotate(0,1061,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+output
+</text>
+
+<use x="1564" y="692" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="1584" y="702" transform="rotate(0,1584,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+engine
+</text>
+
+<use x="1524" y="542" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="1521" y="552" transform="rotate(0,1521,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+output
+</text>
+
+<use x="1564" y="542" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="1584" y="552" transform="rotate(0,1584,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+steering
+</text>
+
+<use x="1064" y="842" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="1061" y="852" transform="rotate(0,1061,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+output
+</text>
+
+<use x="1564" y="842" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="1584" y="852" transform="rotate(0,1584,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+brakes
+</text>
+
+<use x="149" y="542" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="552" transform="rotate(0,145,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionX
+</text>
+
+<use x="189" y="542" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="552" transform="rotate(0,208,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionX
+</text>
+
+<use x="149" y="352" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="362" transform="rotate(0,145,362)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionY
+</text>
+
+<use x="189" y="352" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="362" transform="rotate(0,208,362)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionY
+</text>
+
+<use x="149" y="392" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="402" transform="rotate(0,145,402)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionX
+</text>
+
+<use x="189" y="392" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="402" transform="rotate(0,208,402)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionX
+</text>
+
+<use x="149" y="432" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="442" transform="rotate(0,145,442)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionY
+</text>
+
+<use x="189" y="432" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="442" transform="rotate(0,208,442)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionY
+</text>
+
+<use x="709" y="542" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="706" y="552" transform="rotate(0,706,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+steeringAngle
+</text>
+
+<use x="749" y="542" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="768" y="552" transform="rotate(0,768,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t1
+</text>
+
+<use x="149" y="202" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="212" transform="rotate(0,145,212)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+signedDistanceToTrajectory
+</text>
+
+<use x="189" y="202" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="212" transform="rotate(0,208,212)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+signedDistanceToTrajectory
+</text>
+
+<use x="709" y="202" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="706" y="212" transform="rotate(0,706,212)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+steeringAngleCorrection
+</text>
+
+<use x="749" y="202" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="768" y="212" transform="rotate(0,768,212)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+t2
+</text>
+
+<use x="149" y="692" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="702" transform="rotate(0,145,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentVelocity
+</text>
+
+<use x="189" y="692" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="702" transform="rotate(0,208,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentVelocity
+</text>
+
+<use x="149" y="842" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="145" y="852" transform="rotate(0,145,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVelocity
+</text>
+
+<use x="189" y="842" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="208" y="852" transform="rotate(0,208,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredVelocity
+</text>
+
+<use x="709" y="692" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="706" y="702" transform="rotate(0,706,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+engine
+</text>
+
+<use x="749" y="692" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="768" y="702" transform="rotate(0,768,702)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+input
+</text>
+
+<use x="1064" y="542" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="1061" y="552" transform="rotate(0,1061,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+result
+</text>
+
+<use x="1104" y="542" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="1123" y="552" transform="rotate(0,1123,552)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+input
+</text>
+
+<use x="709" y="842" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="706" y="852" transform="rotate(0,706,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+brakes
+</text>
+
+<use x="749" y="842" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="768" y="852" transform="rotate(0,768,852)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+input
+</text>
+
+
+</svg>

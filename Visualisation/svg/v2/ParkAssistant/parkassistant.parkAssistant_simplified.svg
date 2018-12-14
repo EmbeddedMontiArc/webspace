@@ -1,0 +1,804 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: parkAssistant -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="489"
+        width="888"
+        height="502"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="13"
+        fill="black">
+            parkAssistant
+    </text>
+
+</g>
+
+</svg><!-- Component: filter1 -->
+<g transform="translate(166 222)">
+    <rect
+        data-name="parkassistant.parkAssistant.filter1"
+        id="490"
+        width="57"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    filter1
+    </text>
+</g><!-- Component: filter2 -->
+<g transform="translate(166 372)">
+    <rect
+        data-name="parkassistant.parkAssistant.filter2"
+        id="492"
+        width="57"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    filter2
+    </text>
+</g><!-- Component: filter3 -->
+<g transform="translate(166 447)">
+    <rect
+        data-name="parkassistant.parkAssistant.filter3"
+        id="493"
+        width="57"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    filter3
+    </text>
+</g><!-- Component: filter4 -->
+<g transform="translate(166 297)">
+    <rect
+        data-name="parkassistant.parkAssistant.filter4"
+        id="491"
+        width="57"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    filter4
+    </text>
+</g><!-- Component: sensorFusion -->
+<g transform="translate(273 222)">
+    <rect
+        data-name="parkassistant.parkAssistant.sensorFusion"
+        id="494"
+        width="117"
+        height="280"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    sensorFusion
+    </text>
+</g><!-- Component: feedback -->
+<g transform="translate(540 222)">
+    <rect
+        data-name="parkassistant.parkAssistant.feedback"
+        id="496"
+        width="144"
+        height="55"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    feedback
+    </text>
+</g><!-- Component: emergencyBrake -->
+<g transform="translate(540 107)">
+    <rect
+        data-name="parkassistant.parkAssistant.emergencyBrake"
+        id="495"
+        width="144"
+        height="95"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    emergencyBrake
+    </text>
+</g><!-- Component: brakeActuator -->
+<g transform="translate(734 52)">
+    <rect
+        data-name="parkassistant.parkAssistant.brakeActuator"
+        id="497"
+        width="120"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+            onmouseout="this.style.stroke = '#000000';
+                        this.style['stroke-width'] = 2;
+                        this.style.cursor='default';"
+
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        style="font-weight: bold"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    brakeActuator
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="854"
+    y1="87"
+    x2="904"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="684"
+    y1="257"
+    x2="904"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="136"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="46" cy="257" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="257"
+    x2="136"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="257"
+    x2="166"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="76"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="257"
+    x2="76"
+    y2="407"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="257" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="407"
+    x2="136"
+    y2="407"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="407" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="407"
+    x2="136"
+    y2="407"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="407"
+    x2="166"
+    y2="407"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="76"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="257"
+    x2="76"
+    y2="482"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="257" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="482"
+    x2="136"
+    y2="482"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="482" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="482"
+    x2="136"
+    y2="482"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="482"
+    x2="166"
+    y2="482"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="46"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="46"
+    y1="257"
+    x2="76"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="257"
+    x2="76"
+    y2="332"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="257" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="332"
+    x2="136"
+    y2="332"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="76" cy="332" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="332"
+    x2="136"
+    y2="332"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="136"
+    y1="332"
+    x2="166"
+    y2="332"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="142"
+    x2="540"
+    y2="142"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="87"
+    x2="734"
+    y2="87"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="223"
+    y1="257"
+    x2="273"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="223"
+    y1="407"
+    x2="273"
+    y2="407"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="223"
+    y1="482"
+    x2="273"
+    y2="482"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="223"
+    y1="332"
+    x2="273"
+    y2="332"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="390"
+    y1="257"
+    x2="420"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="420"
+    y1="257"
+    x2="420"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="420"
+    y1="257"
+    x2="510"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="510"
+    y1="257"
+    x2="510"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="510"
+    y1="257"
+    x2="540"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="390"
+    y1="257"
+    x2="420"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="420"
+    y1="257"
+    x2="420"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="420"
+    y1="257"
+    x2="450"
+    y2="257"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="450"
+    y1="257"
+    x2="450"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="450" cy="257" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="450"
+    y1="182"
+    x2="510"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="450" cy="182" r="4" fill="black" />
+<line
+    stroke-linecap="square"
+    x1="510"
+    y1="182"
+    x2="510"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="510"
+    y1="182"
+    x2="540"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="684"
+    y1="182"
+    x2="734"
+    y2="182"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+
+</svg>

@@ -1,0 +1,228 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: keepDirection -->
+<g transform="translate(186 20)">
+
+    <rect
+        id="15919"
+        width="249"
+        height="314"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">KeepDirection</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            keepDirection
+    </text>
+
+</g>
+
+</svg><!-- Component: sab -->
+<g transform="translate(236 84)">
+    <rect
+        data-name="testManuelSchrick.autopilot.autopilot.motionPlanning.keepDirection.sab"
+        id="15921"
+        width="149"
+        height="230"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">SignedAngleBetween</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">sab</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="393"
+    y1="254"
+    x2="427"
+    y2="254"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="194"
+    y1="254"
+    x2="228"
+    y2="254"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="194"
+    y1="294"
+    x2="228"
+    y2="294"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="194"
+    y1="174"
+    x2="228"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="194"
+    y1="214"
+    x2="228"
+    y2="214"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="377" y="246" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="374" y="256" transform="rotate(0,374,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+angle
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="374" y="266" transform="rotate(0,374,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="427" y="246" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="447" y="256" transform="rotate(0,447,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+steeringAngle
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="447" y="266" transform="rotate(0,447,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="178" y="246" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="174" y="256" transform="rotate(0,174,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionX
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="174" y="266" transform="rotate(0,174,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="228" y="246" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="256" transform="rotate(0,247,256)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v1x
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="266" transform="rotate(0,247,266)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="178" y="286" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="174" y="296" transform="rotate(0,174,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+currentDirectionY
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="174" y="306" transform="rotate(0,174,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="228" y="286" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="296" transform="rotate(0,247,296)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v1y
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="306" transform="rotate(0,247,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="178" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="174" y="176" transform="rotate(0,174,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionX
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="174" y="186" transform="rotate(0,174,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="228" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="176" transform="rotate(0,247,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v2x
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="186" transform="rotate(0,247,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="178" y="206" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="174" y="216" transform="rotate(0,174,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+desiredDirectionY
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="174" y="226" transform="rotate(0,174,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+<use x="228" y="206" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="247" y="216" transform="rotate(0,247,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+v2y
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="247" y="226" transform="rotate(0,247,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Q
+</text>
+
+
+</svg>

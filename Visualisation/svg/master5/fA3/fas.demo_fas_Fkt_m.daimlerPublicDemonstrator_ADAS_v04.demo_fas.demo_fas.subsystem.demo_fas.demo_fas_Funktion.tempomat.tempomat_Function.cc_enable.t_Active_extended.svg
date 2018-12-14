@@ -1,0 +1,175 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: t_Active -->
+<g transform="translate(166 20)">
+
+    <rect
+        id="fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.demo_fas.demo_fas.subsystem.demo_fas.demo_fas_Funktion.tempomat.tempomat_Function.cc_enable.t_Active"
+        width="232"
+        height="234"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">Tempomat_Active</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            t_Active
+    </text>
+
+</g>
+
+</svg><!-- Component: minusPlus1 -->
+<g transform="translate(196 84)">
+    <rect
+        data-name="fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.demo_fas.demo_fas.subsystem.demo_fas.demo_fas_Funktion.tempomat.tempomat_Function.cc_enable.t_Active.minusPlus1"
+        id="fas_demo_fas_Fkt_m_minusPlus1"
+        width="172"
+        height="150"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_minusPlus1_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">MinusPlus</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="fas_demo_fas_Fkt_m_minusPlus1_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">minusPlus1</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+<marker id="(255,0,0)" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(255,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_demo_fas_subsystem_demo_fas_demo_fas_Funktion_tempomat_tempomat_Function_cc_enable_t_Active_V_CC_delta_kmh"
+    stroke-linecap="square"
+    x1="376"
+    y1="174"
+    x2="390"
+    y2="174"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_demo_fas_subsystem_demo_fas_demo_fas_Funktion_tempomat_tempomat_Function_cc_enable_t_Active_minusPlus1_in1"
+    stroke-linecap="square"
+    x1="174"
+    y1="174"
+    x2="188"
+    y2="174"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_demo_fas_subsystem_demo_fas_demo_fas_Funktion_tempomat_tempomat_Function_cc_enable_t_Active_minusPlus1_in2"
+    stroke-linecap="square"
+    x1="174"
+    y1="214"
+    x2="188"
+    y2="214"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="fas_demo_fas_Fkt_m_minusPlus1_out1" x="360" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_minusPlus1_out1_text1" text-anchor="end" alignment-baseline="middle" x="357" y="176" transform="rotate(0,357,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+out1
+</text>
+
+<text id="fas_demo_fas_Fkt_m_minusPlus1_out1_porttype" text-anchor="end" alignment-baseline="middle" x="357" y="186" transform="rotate(0,357,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+RangeType
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_t_Active_V_CC_delta_kmh" x="390" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_t_Active_V_CC_delta_kmh_text1" text-anchor="start" alignment-baseline="middle" x="410" y="176" transform="rotate(0,410,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_CC_delta_kmh
+</text>
+
+<text id="fas_demo_fas_Fkt_m_t_Active_V_CC_delta_kmh_porttype" text-anchor="start" alignment-baseline="middle" x="410" y="186" transform="rotate(0,410,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+(-182039/100 m/s:7/25 m/s:182039/100 m/s)
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_t_Active_V_Vehicle_kmh" x="158" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_t_Active_V_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="154" y="176" transform="rotate(0,154,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+V_Vehicle_kmh
+</text>
+
+<text id="fas_demo_fas_Fkt_m_t_Active_V_Vehicle_kmh_porttype" text-anchor="end" alignment-baseline="middle" x="154" y="186" transform="rotate(0,154,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+(0/1 m/s:7/25 m/s:182039/100 m/s)
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_minusPlus1_in1" x="188" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_minusPlus1_in1_text1" text-anchor="start" alignment-baseline="middle" x="207" y="176" transform="rotate(0,207,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in1
+</text>
+
+<text id="fas_demo_fas_Fkt_m_minusPlus1_in1_porttype" text-anchor="start" alignment-baseline="middle" x="207" y="186" transform="rotate(0,207,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+RangeType
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_t_Active_DEMO_FAS_V_CCSetValue_Read" x="158" y="206" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_t_Active_DEMO_FAS_V_CCSetValue_Read_text1" text-anchor="end" alignment-baseline="middle" x="154" y="216" transform="rotate(0,154,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+DEMO_FAS_V_CCSetValue_Read
+</text>
+
+<text id="fas_demo_fas_Fkt_m_t_Active_DEMO_FAS_V_CCSetValue_Read_porttype" text-anchor="end" alignment-baseline="middle" x="154" y="226" transform="rotate(0,154,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+(0/1 m/s:7/25 m/s:182039/100 m/s)
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_minusPlus1_in2" x="188" y="206" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_minusPlus1_in2_text1" text-anchor="start" alignment-baseline="middle" x="207" y="216" transform="rotate(0,207,216)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+in2
+</text>
+
+<text id="fas_demo_fas_Fkt_m_minusPlus1_in2_porttype" text-anchor="start" alignment-baseline="middle" x="207" y="226" transform="rotate(0,207,226)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+RangeType
+</text>
+
+
+
+</svg>

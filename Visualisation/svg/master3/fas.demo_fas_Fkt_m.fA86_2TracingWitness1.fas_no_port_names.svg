@@ -1,0 +1,62 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: fas -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="729"
+        width="95"
+        height="144"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">fas</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: distWarner -->
+<g transform="translate(46 52)">
+    <rect
+        id="fas_demo_fas_Fkt_m_distWarner"
+        data-name="fas.demo_fas_Fkt_m.fA86_2TracingWitness1.fas.distWarner"
+        width="35"
+        height="92"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                            onclick="window.open('fas.demo_fas_Fkt_m.fA86_2TracingWitness1.fas.distWarner_no_port_names.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/fA86_2TracingWitness1/fas/distWarner.ema');"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_distWarner_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">distWarner</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs>
+</svg>

@@ -1,0 +1,1137 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: daimlerPublicDemonstrator_ADAS_v04 -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="152"
+        width="311"
+        height="689"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">daimlerPublicDemonstrator_ADAS_v04</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: environment -->
+<g transform="translate(76 107)">
+    <rect
+        id="fas_demo_fas_Fkt_m_environment"
+        data-name="fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.environment"
+        width="35"
+        height="582"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                            onclick="window.open('fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.environment_no_port_names.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/daimlerPublicDemonstrator_ADAS_v04/environment.ema');"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_environment_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">environment</tspan>
+    </text>
+
+</g><!-- Component: demo_fas -->
+<g transform="translate(141 107)">
+    <rect
+        id="fas_demo_fas_Fkt_m_demo_fas"
+        data-name="fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.demo_fas"
+        width="35"
+        height="582"
+        style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+                            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+                            onclick="window.open('fas.demo_fas_Fkt_m.daimlerPublicDemonstrator_ADAS_v04.demo_fas_no_port_names.html','_parent',false);parent.openFileInEditor('/demo_fas_Fkt_m/daimlerPublicDemonstrator_ADAS_v04/demo_fas.ema');"
+    />
+
+    <text
+        id="fas_demo_fas_Fkt_m_demo_fas_text"
+        x="15"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black"
+        transform="rotate(90,15,15)">
+            <tspan style="font-weight: bold" font-size="11">demo_fas</tspan>
+    </text>
+
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_ParkingBrake_b"
+    stroke-linecap="square"
+    x1="119"
+    y1="629"
+    x2="133"
+    y2="629"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_BrakeForce_pedal_pc"
+    stroke-linecap="square"
+    x1="119"
+    y1="229"
+    x2="133"
+    y2="229"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_Accelaration_pedal_pc"
+    stroke-linecap="square"
+    x1="119"
+    y1="189"
+    x2="133"
+    y2="189"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_CruiseControl_b"
+    stroke-linecap="square"
+    x1="119"
+    y1="669"
+    x2="133"
+    y2="669"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_Limiter_b"
+    stroke-linecap="square"
+    x1="119"
+    y1="269"
+    x2="133"
+    y2="269"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_LeverUp_stat"
+    stroke-linecap="square"
+    x1="119"
+    y1="309"
+    x2="133"
+    y2="309"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_LeverDown_stat"
+    stroke-linecap="square"
+    x1="119"
+    y1="349"
+    x2="133"
+    y2="349"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_V_Vehicle_kmh"
+    stroke-linecap="square"
+    x1="119"
+    y1="389"
+    x2="133"
+    y2="389"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_V_Sign_kmh"
+    stroke-linecap="square"
+    x1="119"
+    y1="429"
+    x2="133"
+    y2="429"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_Sign_b"
+    stroke-linecap="square"
+    x1="119"
+    y1="469"
+    x2="133"
+    y2="469"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_Distance_stat"
+    stroke-linecap="square"
+    x1="119"
+    y1="509"
+    x2="133"
+    y2="509"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_V_Obj_rel_kmh"
+    stroke-linecap="square"
+    x1="119"
+    y1="549"
+    x2="133"
+    y2="549"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_demo_fas_Distance_Object_m"
+    stroke-linecap="square"
+    x1="119"
+    y1="589"
+    x2="133"
+    y2="589"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CC_active_b"
+    stroke-linecap="square"
+    x1="184"
+    y1="189"
+    x2="201"
+    y2="189"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="182"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CC_active_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="189"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="189" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CC_active_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CC_active_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="229"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CC_active_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="229"
+    x2="68"
+    y2="229"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="218"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    0
+    </text>
+
+    <circle cx="51" cy="229" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Accelaration_pc"
+    stroke-linecap="square"
+    x1="184"
+    y1="229"
+    x2="201"
+    y2="229"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="222"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Accelaration_pc"
+    stroke-linecap="square"
+    x1="201"
+    y1="229"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="229" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Accelaration_pc"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Accelaration_pc"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="269"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Accelaration_pc"
+    stroke-linecap="square"
+    x1="51"
+    y1="269"
+    x2="68"
+    y2="269"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="258"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    1
+    </text>
+
+    <circle cx="51" cy="269" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_BrakeForce_pc"
+    stroke-linecap="square"
+    x1="184"
+    y1="269"
+    x2="201"
+    y2="269"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="262"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    2
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_BrakeForce_pc"
+    stroke-linecap="square"
+    x1="201"
+    y1="269"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="269" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_BrakeForce_pc"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_BrakeForce_pc"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="309"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_BrakeForce_pc"
+    stroke-linecap="square"
+    x1="51"
+    y1="309"
+    x2="68"
+    y2="309"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="298"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    2
+    </text>
+
+    <circle cx="51" cy="309" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CCSetValue_kmh"
+    stroke-linecap="square"
+    x1="184"
+    y1="309"
+    x2="201"
+    y2="309"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="302"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    3
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CCSetValue_kmh"
+    stroke-linecap="square"
+    x1="201"
+    y1="309"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="309" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CCSetValue_kmh"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CCSetValue_kmh"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="349"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_CCSetValue_kmh"
+    stroke-linecap="square"
+    x1="51"
+    y1="349"
+    x2="68"
+    y2="349"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="338"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    3
+    </text>
+
+    <circle cx="51" cy="349" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_LimiterSetValue_kmh"
+    stroke-linecap="square"
+    x1="184"
+    y1="349"
+    x2="201"
+    y2="349"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="342"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    4
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_LimiterSetValue_kmh"
+    stroke-linecap="square"
+    x1="201"
+    y1="349"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="349" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_LimiterSetValue_kmh"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_LimiterSetValue_kmh"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="389"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_LimiterSetValue_kmh"
+    stroke-linecap="square"
+    x1="51"
+    y1="389"
+    x2="68"
+    y2="389"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="378"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    4
+    </text>
+
+    <circle cx="51" cy="389" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Limiter_active_b"
+    stroke-linecap="square"
+    x1="184"
+    y1="389"
+    x2="201"
+    y2="389"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="382"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    5
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Limiter_active_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="389"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="389" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Limiter_active_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Limiter_active_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="429"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Limiter_active_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="429"
+    x2="68"
+    y2="429"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="418"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    5
+    </text>
+
+    <circle cx="51" cy="429" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Opti_warn_b"
+    stroke-linecap="square"
+    x1="184"
+    y1="429"
+    x2="201"
+    y2="429"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="422"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    6
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Opti_warn_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="429"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="429" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Opti_warn_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Opti_warn_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="469"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Opti_warn_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="469"
+    x2="68"
+    y2="469"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="458"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    6
+    </text>
+
+    <circle cx="51" cy="469" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Acusti_warn_b"
+    stroke-linecap="square"
+    x1="184"
+    y1="469"
+    x2="201"
+    y2="469"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+"
+/>
+    <text
+        x="187"
+        y="462"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    7
+    </text>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Acusti_warn_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="469"
+    x2="201"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="469" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Acusti_warn_b"
+    stroke-linecap="square"
+    x1="201"
+    y1="87"
+    x2="51"
+    y2="87"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="201" cy="87" r="4" fill="black" />
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Acusti_warn_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="87"
+    x2="51"
+    y2="509"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:4;
+"
+/>
+
+<line
+    id="fas_demo_fas_Fkt_m_daimlerPublicDemonstrator_ADAS_v04_environment_Acusti_warn_b"
+    stroke-linecap="square"
+    x1="51"
+    y1="509"
+    x2="68"
+    y2="509"
+
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+    <text
+        x="57"
+        y="498"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="black">
+    7
+    </text>
+
+    <circle cx="51" cy="509" r="4" fill="black" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="fas_demo_fas_Fkt_m_environment_ParkingBrake_b" x="103" y="621" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_ParkingBrake_b_text1" text-anchor="end" alignment-baseline="middle" x="100" y="631" transform="rotate(0,100,631)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_ParkingBrake_b" x="133" y="621" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_ParkingBrake_b_text1" text-anchor="start" alignment-baseline="middle" x="152" y="631" transform="rotate(0,152,631)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_BrakeForce_pedal_pc" x="103" y="221" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_BrakeForce_pedal_pc_text1" text-anchor="end" alignment-baseline="middle" x="100" y="231" transform="rotate(0,100,231)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_BrakeForce_pedal_pc" x="133" y="221" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_BrakeForce_pedal_pc_text1" text-anchor="start" alignment-baseline="middle" x="152" y="231" transform="rotate(0,152,231)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Accelaration_pedal_pc" x="103" y="181" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Accelaration_pedal_pc_text1" text-anchor="end" alignment-baseline="middle" x="100" y="191" transform="rotate(0,100,191)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Accelaration_pedal_pc" x="133" y="181" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Accelaration_pedal_pc_text1" text-anchor="start" alignment-baseline="middle" x="152" y="191" transform="rotate(0,152,191)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_CruiseControl_b" x="103" y="661" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_CruiseControl_b_text1" text-anchor="end" alignment-baseline="middle" x="100" y="671" transform="rotate(0,100,671)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_CruiseControl_b" x="133" y="661" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_CruiseControl_b_text1" text-anchor="start" alignment-baseline="middle" x="152" y="671" transform="rotate(0,152,671)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Limiter_b" x="103" y="261" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Limiter_b_text1" text-anchor="end" alignment-baseline="middle" x="100" y="271" transform="rotate(0,100,271)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Limiter_b" x="133" y="261" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Limiter_b_text1" text-anchor="start" alignment-baseline="middle" x="152" y="271" transform="rotate(0,152,271)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_LeverUp_stat" x="103" y="301" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_LeverUp_stat_text1" text-anchor="end" alignment-baseline="middle" x="100" y="311" transform="rotate(0,100,311)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_LeverUp_stat" x="133" y="301" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_LeverUp_stat_text1" text-anchor="start" alignment-baseline="middle" x="152" y="311" transform="rotate(0,152,311)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_LeverDown_stat" x="103" y="341" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_LeverDown_stat_text1" text-anchor="end" alignment-baseline="middle" x="100" y="351" transform="rotate(0,100,351)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_LeverDown_stat" x="133" y="341" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_LeverDown_stat_text1" text-anchor="start" alignment-baseline="middle" x="152" y="351" transform="rotate(0,152,351)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_V_Vehicle_kmh" x="103" y="381" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_V_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="100" y="391" transform="rotate(0,100,391)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_V_Vehicle_kmh" x="133" y="381" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_V_Vehicle_kmh_text1" text-anchor="start" alignment-baseline="middle" x="152" y="391" transform="rotate(0,152,391)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_V_Sign_kmh" x="103" y="421" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_V_Sign_kmh_text1" text-anchor="end" alignment-baseline="middle" x="100" y="431" transform="rotate(0,100,431)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_V_Sign_kmh" x="133" y="421" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_V_Sign_kmh_text1" text-anchor="start" alignment-baseline="middle" x="152" y="431" transform="rotate(0,152,431)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Sign_b" x="103" y="461" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Sign_b_text1" text-anchor="end" alignment-baseline="middle" x="100" y="471" transform="rotate(0,100,471)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Sign_b" x="133" y="461" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Sign_b_text1" text-anchor="start" alignment-baseline="middle" x="152" y="471" transform="rotate(0,152,471)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Distance_stat" x="103" y="501" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Distance_stat_text1" text-anchor="end" alignment-baseline="middle" x="100" y="511" transform="rotate(0,100,511)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Distance_stat" x="133" y="501" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Distance_stat_text1" text-anchor="start" alignment-baseline="middle" x="152" y="511" transform="rotate(0,152,511)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_V_Obj_rel_kmh" x="103" y="541" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_V_Obj_rel_kmh_text1" text-anchor="end" alignment-baseline="middle" x="100" y="551" transform="rotate(0,100,551)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_V_Obj_rel_kmh" x="133" y="541" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_V_Obj_rel_kmh_text1" text-anchor="start" alignment-baseline="middle" x="152" y="551" transform="rotate(0,152,551)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Distance_Object_m" x="103" y="581" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Distance_Object_m_text1" text-anchor="end" alignment-baseline="middle" x="100" y="591" transform="rotate(0,100,591)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Distance_Object_m" x="133" y="581" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Distance_Object_m_text1" text-anchor="start" alignment-baseline="middle" x="152" y="591" transform="rotate(0,152,591)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_CC_active_b" x="168" y="181" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_CC_active_b_text1" text-anchor="end" alignment-baseline="middle" x="165" y="191" transform="rotate(0,165,191)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_CC_active_b" x="68" y="221" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_CC_active_b_text1" text-anchor="start" alignment-baseline="middle" x="87" y="231" transform="rotate(0,87,231)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Accelaration_pc" x="168" y="221" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Accelaration_pc_text1" text-anchor="end" alignment-baseline="middle" x="165" y="231" transform="rotate(0,165,231)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Accelaration_pc" x="68" y="261" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Accelaration_pc_text1" text-anchor="start" alignment-baseline="middle" x="87" y="271" transform="rotate(0,87,271)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_BrakeForce_pc" x="168" y="261" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_BrakeForce_pc_text1" text-anchor="end" alignment-baseline="middle" x="165" y="271" transform="rotate(0,165,271)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_BrakeForce_pc" x="68" y="301" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_BrakeForce_pc_text1" text-anchor="start" alignment-baseline="middle" x="87" y="311" transform="rotate(0,87,311)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_CCSetValue_kmh" x="168" y="301" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_CCSetValue_kmh_text1" text-anchor="end" alignment-baseline="middle" x="165" y="311" transform="rotate(0,165,311)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_CCSetValue_kmh" x="68" y="341" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_CCSetValue_kmh_text1" text-anchor="start" alignment-baseline="middle" x="87" y="351" transform="rotate(0,87,351)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_LimiterSetValue_kmh" x="168" y="341" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_LimiterSetValue_kmh_text1" text-anchor="end" alignment-baseline="middle" x="165" y="351" transform="rotate(0,165,351)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_LimiterSetValue_kmh" x="68" y="381" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_LimiterSetValue_kmh_text1" text-anchor="start" alignment-baseline="middle" x="87" y="391" transform="rotate(0,87,391)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Limiter_active_b" x="168" y="381" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Limiter_active_b_text1" text-anchor="end" alignment-baseline="middle" x="165" y="391" transform="rotate(0,165,391)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Limiter_active_b" x="68" y="421" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Limiter_active_b_text1" text-anchor="start" alignment-baseline="middle" x="87" y="431" transform="rotate(0,87,431)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Opti_warn_b" x="168" y="421" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Opti_warn_b_text1" text-anchor="end" alignment-baseline="middle" x="165" y="431" transform="rotate(0,165,431)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Opti_warn_b" x="68" y="461" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Opti_warn_b_text1" text-anchor="start" alignment-baseline="middle" x="87" y="471" transform="rotate(0,87,471)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_demo_fas_Acusti_warn_b" x="168" y="461" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_demo_fas_Acusti_warn_b_text1" text-anchor="end" alignment-baseline="middle" x="165" y="471" transform="rotate(0,165,471)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="fas_demo_fas_Fkt_m_environment_Acusti_warn_b" x="68" y="501" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="fas_demo_fas_Fkt_m_environment_Acusti_warn_b_text1" text-anchor="start" alignment-baseline="middle" x="87" y="511" transform="rotate(0,87,511)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+
+</svg>

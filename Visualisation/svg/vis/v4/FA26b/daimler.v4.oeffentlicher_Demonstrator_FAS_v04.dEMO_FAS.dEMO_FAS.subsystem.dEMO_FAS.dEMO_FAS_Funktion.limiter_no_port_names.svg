@@ -1,0 +1,923 @@
+  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+   <svg xmlns="http://www.w3.org/2000/svg" version="1.1"> 
+    <!-- Canvas: limiter --> 
+    <g transform="translate(16 20)"> 
+     <rect id="5858" width="1065" height="1007" style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0" /> 
+     <text x="8" y="20" font-family="Verdana" fill="black"> 
+      <tspan style="font-weight: bold" font-size="13">
+       limiter
+      </tspan> 
+     </text> 
+    </g> 
+   </svg>
+   <!-- Component: 1 --> 
+   <g transform="translate(46 107)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.constant_10" id="daimler_v4_constant_10" width="31" height="55" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_constant_10_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      1
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_constant_10_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11"></tspan> 
+    </text> 
+   </g>
+   <!-- Component: limiter_ --> 
+   <g transform="translate(291 317)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.limiter_Function" id="daimler_v4_limiter_Function" width="77" height="405" style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';" onclick="window.open('daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS.dEMO_FAS.subsystem.dEMO_FAS.dEMO_FAS_Funktion.limiter.limiter_Function_no_port_names.html','_parent',false);parent.openFileInEditor('/v4/oeffentlicher_Demonstrator_FAS_v04/dEMO_FAS/dEMO_FAS/subsystem/dEMO_FAS/dEMO_FAS_Funktion/limiter/limiter_Function.ema');" /> 
+    <text id="daimler_v4_limiter_Function_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      limiter_
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_limiter_Function_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Function
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: vERSIO --> 
+   <g transform="translate(46 952)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.vERSION_INFO_24" id="daimler_v4_vERSION_INFO_24" width="71" height="55" style="
+                fill:rgb(242,242,242);
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';" onclick="window.open('daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS.dEMO_FAS.subsystem.dEMO_FAS.dEMO_FAS_Funktion.limiter.vERSION_INFO_no_port_names.html','_parent',false);parent.openFileInEditor('/v4/oeffentlicher_Demonstrator_FAS_v04/dEMO_FAS/dEMO_FAS/subsystem/dEMO_FAS/dEMO_FAS_Funktion/limiter/vERSION_INFO.ema');" /> 
+    <text id="daimler_v4_vERSION_INFO_24_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      vERSIO
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_vERSION_INFO_24_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      N_INFO
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: Switch --> 
+   <g transform="translate(711 52)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.switchBlock_15" id="daimler_v4_switchBlock_15" width="65" height="320" style="
+                fill:white;
+            stroke:red;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'red'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_switchBlock_15_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="red"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Switch
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_switchBlock_15_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="red"> 
+     <tspan style="font-weight: bold" font-size="11"></tspan> 
+    </text> 
+   </g>
+   <!-- Component: cond --> 
+   <g transform="translate(212 107)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.condition_17" id="daimler_v4_condition_17" width="45" height="55" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_condition_17_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      cond
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_condition_17_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      ition
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: Switch --> 
+   <g transform="translate(523 182)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.switchBlock1_8" id="daimler_v4_switchBlock1_8" width="65" height="135" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_switchBlock1_8_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Switch
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_switchBlock1_8_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11"></tspan> 
+    </text> 
+   </g>
+   <!-- Component: condi --> 
+   <g transform="translate(212 182)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.condition1_9" id="daimler_v4_condition1_9" width="49" height="55" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_condition1_9_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      condi
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_condition1_9_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      tion1
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: condi --> 
+   <g transform="translate(212 857)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.condition2_5" id="daimler_v4_condition2_5" width="49" height="55" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_condition2_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      condi
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_condition2_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      tion2
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: Switch --> 
+   <g transform="translate(806 492)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.switchBlock2_5" id="daimler_v4_switchBlock2_5" width="65" height="460" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_switchBlock2_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Switch
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_switchBlock2_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11"></tspan> 
+    </text> 
+   </g>
+   <!-- Component: unit --> 
+   <g transform="translate(966 492)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.unitDelay_5" id="daimler_v4_unitDelay_5" width="55" height="420" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_unitDelay_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      unit
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_unitDelay_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Delay
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: condi --> 
+   <g transform="translate(212 722)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.condition3_5" id="daimler_v4_condition3_5" width="49" height="55" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_condition3_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      condi
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_condition3_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      tion3
+     </tspan> 
+    </text> 
+   </g>
+   <!-- Component: Switch --> 
+   <g transform="translate(398 667)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.switchBlock3_5" id="daimler_v4_switchBlock3_5" width="65" height="150" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_switchBlock3_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      Switch
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_switchBlock3_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11"></tspan> 
+    </text> 
+   </g>
+   <!-- Component: unitD --> 
+   <g transform="translate(618 667)"> 
+    <rect data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.dEMO_FAS_1.dEMO_FAS_2.subsystem.dEMO_FAS_3.dEMO_FAS_Funktion.limiter.unitDelay1_5" id="daimler_v4_unitDelay1_5" width="63" height="150" style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0" onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';" /> 
+    <text id="daimler_v4_unitDelay1_5_text" x="10" y="15" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      unitD
+     </tspan> 
+    </text> 
+    <text id="daimler_v4_unitDelay1_5_text2" x="10" y="30" alignment-baseline="middle" font-family="Verdana" fill="black"> 
+     <tspan style="font-weight: bold" font-size="11">
+      elay1
+     </tspan> 
+    </text> 
+   </g>
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line0" stroke-linecap="square" x1="471" y1="702" x2="488" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="474" y="695" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line1" stroke-linecap="square" x1="488" y1="702" x2="488" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line2" stroke-linecap="square" x1="488" y1="702" x2="498" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line3" stroke-linecap="square" x1="498" y1="702" x2="498" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line3_circle" cx="498" cy="702" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line4" stroke-linecap="square" x1="498" y1="432" x2="1056" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line4_circle" cx="498" cy="432" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line5" stroke-linecap="square" x1="1056" y1="432" x2="1056" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line6" stroke-linecap="square" x1="1056" y1="432" x2="1073" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="1062" y="421" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_active_b_line6_arrow" points="1063,426 1073,432 1063,438" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out1_line0" stroke-linecap="square" x1="784" y1="352" x2="1073" y2="352" style="stroke:rgb(255,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out1_line0_arrow" points="1063,346 1073,352 1063,358" style="fill:none; stroke:rgb(255,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line0" stroke-linecap="square" x1="596" y1="297" x2="618" y2="297" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line1" stroke-linecap="square" x1="618" y1="297" x2="618" y2="297" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line2" stroke-linecap="square" x1="618" y1="297" x2="681" y2="297" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line3" stroke-linecap="square" x1="681" y1="297" x2="681" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line3_circle" cx="681" cy="297" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line4" stroke-linecap="square" x1="681" y1="392" x2="1056" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line4_circle" cx="681" cy="392" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line5" stroke-linecap="square" x1="1056" y1="392" x2="1056" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line6" stroke-linecap="square" x1="1056" y1="392" x2="1073" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_out2_line6_arrow" points="1063,386 1073,392 1063,398" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line0" stroke-linecap="square" x1="879" y1="527" x2="896" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="882" y="520" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line1" stroke-linecap="square" x1="896" y1="527" x2="896" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line2" stroke-linecap="square" x1="896" y1="527" x2="906" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line3" stroke-linecap="square" x1="906" y1="527" x2="906" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line3_circle" cx="906" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line4" stroke-linecap="square" x1="906" y1="472" x2="1056" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line4_circle" cx="906" cy="472" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line5" stroke-linecap="square" x1="1056" y1="472" x2="1056" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line6" stroke-linecap="square" x1="1056" y1="472" x2="1073" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="1062" y="461" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_vMax_kmh_line6_arrow" points="1063,466 1073,472 1063,478" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line0" stroke-linecap="square" x1="24" y1="257" x2="177" y2="257" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="250" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line1" stroke-linecap="square" x1="177" y1="257" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line1_circle" cx="177" cy="257" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="352" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line6" stroke-linecap="square" x1="261" y1="352" x2="283" y2="352" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="341" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line6_circle" cx="261" cy="352" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in1_line6_arrow" points="273,346 283,352 273,358" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line0" stroke-linecap="square" x1="85" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="88" y="135" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line1" stroke-linecap="square" x1="142" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line2" stroke-linecap="square" x1="142" y1="142" x2="187" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line3" stroke-linecap="square" x1="187" y1="142" x2="187" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line4" stroke-linecap="square" x1="187" y1="142" x2="204" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="193" y="131" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition_17_in1_line4_arrow" points="194,136 204,142 194,148" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_ifIn_line0" stroke-linecap="square" x1="376" y1="352" x2="703" y2="352" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_ifIn_line0_arrow" points="693,346 703,352 693,358" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_condition_line0" stroke-linecap="square" x1="265" y1="142" x2="703" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_condition_line0_arrow" points="693,136 703,142 693,148" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_elseIn_line0" stroke-linecap="square" x1="24" y1="87" x2="703" y2="87" style="stroke:rgb(255,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock_15_elseIn_line0_arrow" points="693,81 703,87 693,93" style="fill:none; stroke:rgb(255,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line0" stroke-linecap="square" x1="24" y1="352" x2="177" y2="352" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="345" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     1 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line1" stroke-linecap="square" x1="177" y1="352" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line1_circle" cx="177" cy="352" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line6" stroke-linecap="square" x1="261" y1="392" x2="283" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="381" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     1 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line6_circle" cx="261" cy="392" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_in2_line6_arrow" points="273,386 283,392 273,398" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line0" stroke-linecap="square" x1="85" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="88" y="135" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line1" stroke-linecap="square" x1="142" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line2" stroke-linecap="square" x1="142" y1="142" x2="152" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line3" stroke-linecap="square" x1="152" y1="142" x2="152" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line3_circle" cx="152" cy="142" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line4" stroke-linecap="square" x1="152" y1="217" x2="187" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line4_circle" cx="152" cy="217" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line5" stroke-linecap="square" x1="187" y1="217" x2="187" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line6" stroke-linecap="square" x1="187" y1="217" x2="204" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="193" y="206" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition1_9_in1_line6_arrow" points="194,211 204,217 194,223" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line0" stroke-linecap="square" x1="376" y1="392" x2="398" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line1" stroke-linecap="square" x1="398" y1="392" x2="398" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line2" stroke-linecap="square" x1="398" y1="392" x2="498" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line3" stroke-linecap="square" x1="498" y1="392" x2="498" y2="297" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line4" stroke-linecap="square" x1="498" y1="297" x2="515" y2="297" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_ifIn_line4_arrow" points="505,291 515,297 505,303" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line0" stroke-linecap="square" x1="269" y1="217" x2="291" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line1" stroke-linecap="square" x1="291" y1="217" x2="291" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line2" stroke-linecap="square" x1="291" y1="217" x2="498" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line3" stroke-linecap="square" x1="498" y1="217" x2="498" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line4" stroke-linecap="square" x1="498" y1="217" x2="515" y2="217" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_condition_line4_arrow" points="505,211 515,217 505,223" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line0" stroke-linecap="square" x1="24" y1="352" x2="177" y2="352" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="345" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     1 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line1" stroke-linecap="square" x1="177" y1="352" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line1_circle" cx="177" cy="352" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="257" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line4" stroke-linecap="square" x1="187" y1="257" x2="498" y2="257" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line4_circle" cx="187" cy="257" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line5" stroke-linecap="square" x1="498" y1="257" x2="498" y2="257" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line6" stroke-linecap="square" x1="498" y1="257" x2="515" y2="257" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="504" y="246" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     1 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock1_8_elseIn_line6_arrow" points="505,251 515,257 505,263" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line0" stroke-linecap="square" x1="85" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="88" y="135" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line1" stroke-linecap="square" x1="142" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line2" stroke-linecap="square" x1="142" y1="142" x2="152" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line3" stroke-linecap="square" x1="152" y1="142" x2="152" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line3_circle" cx="152" cy="142" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line4" stroke-linecap="square" x1="152" y1="892" x2="187" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line4_circle" cx="152" cy="892" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line5" stroke-linecap="square" x1="187" y1="892" x2="187" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line6" stroke-linecap="square" x1="187" y1="892" x2="204" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="193" y="881" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition2_5_in1_line6_arrow" points="194,886 204,892 194,898" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_condition_line0" stroke-linecap="square" x1="269" y1="892" x2="798" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_condition_line0_arrow" points="788,886 798,892 788,898" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_ifIn_line0" stroke-linecap="square" x1="376" y1="527" x2="798" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_ifIn_line0_arrow" points="788,521 798,527 788,533" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line0" stroke-linecap="square" x1="879" y1="527" x2="896" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="882" y="520" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line1" stroke-linecap="square" x1="896" y1="527" x2="896" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line2" stroke-linecap="square" x1="896" y1="527" x2="941" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line3" stroke-linecap="square" x1="941" y1="527" x2="941" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line4" stroke-linecap="square" x1="941" y1="527" x2="958" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="947" y="516" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay_5_valueIn_line4_arrow" points="948,521 958,527 948,533" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line0" stroke-linecap="square" x1="1029" y1="892" x2="1046" y2="892" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line1" stroke-linecap="square" x1="1046" y1="892" x2="1046" y2="987" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line2" stroke-linecap="square" x1="1046" y1="987" x2="776" y2="987" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line3" stroke-linecap="square" x1="776" y1="987" x2="776" y2="932" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line4" stroke-linecap="square" x1="776" y1="932" x2="798" y2="932" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock2_5_elseIn_line4_arrow" points="788,926 798,932 788,938" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line0" stroke-linecap="square" x1="85" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="88" y="135" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line1" stroke-linecap="square" x1="142" y1="142" x2="142" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line2" stroke-linecap="square" x1="142" y1="142" x2="152" y2="142" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line3" stroke-linecap="square" x1="152" y1="142" x2="152" y2="757" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line3_circle" cx="152" cy="142" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line4" stroke-linecap="square" x1="152" y1="757" x2="187" y2="757" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line4_circle" cx="152" cy="757" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line5" stroke-linecap="square" x1="187" y1="757" x2="187" y2="757" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line6" stroke-linecap="square" x1="187" y1="757" x2="204" y2="757" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="193" y="746" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_condition3_5_in1_line6_arrow" points="194,751 204,757 194,763" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_condition_line0" stroke-linecap="square" x1="269" y1="757" x2="390" y2="757" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_condition_line0_arrow" points="380,751 390,757 380,763" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_ifIn_line0" stroke-linecap="square" x1="376" y1="702" x2="390" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_ifIn_line0_arrow" points="380,696 390,702 380,708" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line0" stroke-linecap="square" x1="471" y1="702" x2="488" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="474" y="695" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line1" stroke-linecap="square" x1="488" y1="702" x2="488" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line2" stroke-linecap="square" x1="488" y1="702" x2="588" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line3" stroke-linecap="square" x1="588" y1="702" x2="588" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line4" stroke-linecap="square" x1="588" y1="702" x2="610" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="599" y="691" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     0 
+   </text> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_unitDelay1_5_valueIn_line4_arrow" points="600,696 610,702 600,708" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line0" stroke-linecap="square" x1="689" y1="797" x2="711" y2="797" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line1" stroke-linecap="square" x1="711" y1="797" x2="711" y2="837" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line2" stroke-linecap="square" x1="711" y1="837" x2="368" y2="837" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line3" stroke-linecap="square" x1="368" y1="837" x2="368" y2="797" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line4" stroke-linecap="square" x1="368" y1="797" x2="390" y2="797" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_switchBlock3_5_elseIn_line4_arrow" points="380,791 390,797 380,803" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line0" stroke-linecap="square" x1="24" y1="392" x2="177" y2="392" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="385" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     2 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line1" stroke-linecap="square" x1="177" y1="392" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line1_circle" cx="177" cy="392" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line6" stroke-linecap="square" x1="261" y1="432" x2="283" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="421" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     2 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line6_circle" cx="261" cy="432" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_sign_b_line6_arrow" points="273,426 283,432 273,438" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line0" stroke-linecap="square" x1="24" y1="432" x2="177" y2="432" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="425" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     3 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line1" stroke-linecap="square" x1="177" y1="432" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line1_circle" cx="177" cy="432" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line6" stroke-linecap="square" x1="261" y1="472" x2="283" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="461" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     3 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line6_circle" cx="261" cy="472" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Sign_kmh_line6_arrow" points="273,466 283,472 273,478" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line0" stroke-linecap="square" x1="24" y1="472" x2="177" y2="472" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="465" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     4 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line1" stroke-linecap="square" x1="177" y1="472" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line1_circle" cx="177" cy="472" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line6" stroke-linecap="square" x1="261" y1="527" x2="283" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="516" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     4 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line6_circle" cx="261" cy="527" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverDown_stat_line6_arrow" points="273,521 283,527 273,533" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line0" stroke-linecap="square" x1="24" y1="527" x2="177" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="520" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     5 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line1" stroke-linecap="square" x1="177" y1="527" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line1_circle" cx="177" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="567" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line6" stroke-linecap="square" x1="261" y1="567" x2="283" y2="567" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="556" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     5 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line6_circle" cx="261" cy="567" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_leverUp_stat_line6_arrow" points="273,561 283,567 273,573" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line0" stroke-linecap="square" x1="24" y1="607" x2="177" y2="607" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="600" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     6 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line1" stroke-linecap="square" x1="177" y1="607" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line1_circle" cx="177" cy="607" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="607" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line6" stroke-linecap="square" x1="261" y1="607" x2="283" y2="607" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="596" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     6 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line6_circle" cx="261" cy="607" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_v_Vehicle_kmh_line6_arrow" points="273,601 283,607 273,613" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line0" stroke-linecap="square" x1="24" y1="647" x2="177" y2="647" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="640" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     7 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line1" stroke-linecap="square" x1="177" y1="647" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line1_circle" cx="177" cy="647" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="647" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line6" stroke-linecap="square" x1="261" y1="647" x2="283" y2="647" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="636" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     7 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line6_circle" cx="261" cy="647" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_acceleration_pedal_pc_line6_arrow" points="273,641 283,647 273,653" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line0" stroke-linecap="square" x1="24" y1="702" x2="177" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="27" y="695" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     8 
+   </text> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line1" stroke-linecap="square" x1="177" y1="702" x2="177" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line1_circle" cx="177" cy="702" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line2" stroke-linecap="square" x1="177" y1="484" x2="187" y2="484" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line3" stroke-linecap="square" x1="187" y1="484" x2="187" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line3_circle" cx="187" cy="484" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line4" stroke-linecap="square" x1="187" y1="527" x2="261" y2="527" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line4_circle" cx="187" cy="527" r="4" fill="black" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line5" stroke-linecap="square" x1="261" y1="527" x2="261" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:4;" /> 
+   <line id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line6" stroke-linecap="square" x1="261" y1="702" x2="283" y2="702" style="stroke:rgb(0,0,0);
+            stroke-width:2;" /> 
+   <text x="272" y="691" alignment-baseline="middle" font-family="Verdana" font-size="11" fill="black">
+     8 
+   </text> 
+   <circle id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line6_circle" cx="261" cy="702" r="4" fill="black" /> 
+   <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_dEMO_FAS_1_dEMO_FAS_2_subsystem_dEMO_FAS_3_dEMO_FAS_Funktion_limiter_limiter_Function_limiter_b_line6_arrow" points="273,696 283,702 273,708" style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" /> 
+   <defs> 
+    <!-- Small box indicating a port --> 
+    <rect id="port" x="0" y="0" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" /> 
+   </defs>
+   <rect id="daimler_v4_switchBlock3_5_out1" x="455" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock3_5_out1_text1" text-anchor="end" alignment-baseline="middle" x="452" y="704" transform="rotate(0,452,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_limiter_active_b" x="1073" y="424" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_limiter_active_b_text1" text-anchor="start" alignment-baseline="middle" x="1093" y="434" transform="rotate(0,1093,434)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock_15_out1" x="768" y="344" width="16" height="16" style="fill:white;stroke:rgb(255,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock_15_out1_text1" text-anchor="end" alignment-baseline="middle" x="765" y="354" transform="rotate(0,765,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_out1" x="1073" y="344" width="16" height="16" style="fill:white;stroke:rgb(255,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_out1_text1" text-anchor="start" alignment-baseline="middle" x="1093" y="354" transform="rotate(0,1093,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock1_8_out1" x="580" y="289" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock1_8_out1_text1" text-anchor="end" alignment-baseline="middle" x="577" y="299" transform="rotate(0,577,299)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_out2" x="1073" y="384" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_out2_text1" text-anchor="start" alignment-baseline="middle" x="1093" y="394" transform="rotate(0,1093,394)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock2_5_out1" x="863" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock2_5_out1_text1" text-anchor="end" alignment-baseline="middle" x="860" y="529" transform="rotate(0,860,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_vMax_kmh" x="1073" y="464" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_vMax_kmh_text1" text-anchor="start" alignment-baseline="middle" x="1093" y="474" transform="rotate(0,1093,474)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_in1" x="8" y="249" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_in1_text1" text-anchor="end" alignment-baseline="middle" x="4" y="259" transform="rotate(0,4,259)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_in1" x="283" y="344" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_in1_text1" text-anchor="start" alignment-baseline="middle" x="302" y="354" transform="rotate(0,302,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_constant_10_out1" x="69" y="134" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_constant_10_out1_text1" text-anchor="end" alignment-baseline="middle" x="66" y="144" transform="rotate(0,66,144)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition_17_in1" x="204" y="134" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition_17_in1_text1" text-anchor="start" alignment-baseline="middle" x="223" y="144" transform="rotate(0,223,144)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_out1" x="360" y="344" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_out1_text1" text-anchor="end" alignment-baseline="middle" x="357" y="354" transform="rotate(0,357,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock_15_ifIn" x="703" y="344" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock_15_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="722" y="354" transform="rotate(0,722,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition_17_out1" x="249" y="134" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition_17_out1_text1" text-anchor="end" alignment-baseline="middle" x="246" y="144" transform="rotate(0,246,144)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock_15_condition" x="703" y="134" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock_15_condition_text1" text-anchor="start" alignment-baseline="middle" x="722" y="144" transform="rotate(0,722,144)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_in2" x="8" y="79" width="16" height="16" style="fill:white;stroke:rgb(255,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_in2_text1" text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock_15_elseIn" x="703" y="79" width="16" height="16" style="fill:white;stroke:rgb(255,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock_15_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="722" y="89" transform="rotate(0,722,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_in3" x="8" y="344" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_in3_text1" text-anchor="end" alignment-baseline="middle" x="4" y="354" transform="rotate(0,4,354)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_in2" x="283" y="384" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_in2_text1" text-anchor="start" alignment-baseline="middle" x="302" y="394" transform="rotate(0,302,394)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition1_9_in1" x="204" y="209" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition1_9_in1_text1" text-anchor="start" alignment-baseline="middle" x="223" y="219" transform="rotate(0,223,219)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_out2" x="360" y="384" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_out2_text1" text-anchor="end" alignment-baseline="middle" x="357" y="394" transform="rotate(0,357,394)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock1_8_ifIn" x="515" y="289" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock1_8_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="534" y="299" transform="rotate(0,534,299)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition1_9_out1" x="253" y="209" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition1_9_out1_text1" text-anchor="end" alignment-baseline="middle" x="250" y="219" transform="rotate(0,250,219)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock1_8_condition" x="515" y="209" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock1_8_condition_text1" text-anchor="start" alignment-baseline="middle" x="534" y="219" transform="rotate(0,534,219)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock1_8_elseIn" x="515" y="249" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock1_8_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="534" y="259" transform="rotate(0,534,259)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition2_5_in1" x="204" y="884" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition2_5_in1_text1" text-anchor="start" alignment-baseline="middle" x="223" y="894" transform="rotate(0,223,894)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition2_5_out1" x="253" y="884" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition2_5_out1_text1" text-anchor="end" alignment-baseline="middle" x="250" y="894" transform="rotate(0,250,894)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock2_5_condition" x="798" y="884" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock2_5_condition_text1" text-anchor="start" alignment-baseline="middle" x="817" y="894" transform="rotate(0,817,894)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_vMax_kmh" x="360" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_vMax_kmh_text1" text-anchor="end" alignment-baseline="middle" x="357" y="529" transform="rotate(0,357,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock2_5_ifIn" x="798" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock2_5_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="817" y="529" transform="rotate(0,817,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_unitDelay_5_valueIn" x="958" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_unitDelay_5_valueIn_text1" text-anchor="start" alignment-baseline="middle" x="977" y="529" transform="rotate(0,977,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_unitDelay_5_valueOut" x="1013" y="884" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_unitDelay_5_valueOut_text1" text-anchor="end" alignment-baseline="middle" x="1010" y="894" transform="rotate(0,1010,894)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock2_5_elseIn" x="798" y="924" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock2_5_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="817" y="934" transform="rotate(0,817,934)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition3_5_in1" x="204" y="749" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition3_5_in1_text1" text-anchor="start" alignment-baseline="middle" x="223" y="759" transform="rotate(0,223,759)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_condition3_5_out1" x="253" y="749" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_condition3_5_out1_text1" text-anchor="end" alignment-baseline="middle" x="250" y="759" transform="rotate(0,250,759)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock3_5_condition" x="390" y="749" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock3_5_condition_text1" text-anchor="start" alignment-baseline="middle" x="409" y="759" transform="rotate(0,409,759)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_limiter_active_b" x="360" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_limiter_active_b_text1" text-anchor="end" alignment-baseline="middle" x="357" y="704" transform="rotate(0,357,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock3_5_ifIn" x="390" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock3_5_ifIn_text1" text-anchor="start" alignment-baseline="middle" x="409" y="704" transform="rotate(0,409,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_unitDelay1_5_valueIn" x="610" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_unitDelay1_5_valueIn_text1" text-anchor="start" alignment-baseline="middle" x="629" y="704" transform="rotate(0,629,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_unitDelay1_5_valueOut" x="673" y="789" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_unitDelay1_5_valueOut_text1" text-anchor="end" alignment-baseline="middle" x="670" y="799" transform="rotate(0,670,799)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_switchBlock3_5_elseIn" x="390" y="789" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_switchBlock3_5_elseIn_text1" text-anchor="start" alignment-baseline="middle" x="409" y="799" transform="rotate(0,409,799)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_sign_b" x="8" y="384" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_sign_b_text1" text-anchor="end" alignment-baseline="middle" x="4" y="394" transform="rotate(0,4,394)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_sign_b" x="283" y="424" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_sign_b_text1" text-anchor="start" alignment-baseline="middle" x="302" y="434" transform="rotate(0,302,434)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_v_Sign_kmh" x="8" y="424" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_v_Sign_kmh_text1" text-anchor="end" alignment-baseline="middle" x="4" y="434" transform="rotate(0,4,434)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_v_Sign_kmh" x="283" y="464" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_v_Sign_kmh_text1" text-anchor="start" alignment-baseline="middle" x="302" y="474" transform="rotate(0,302,474)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_leverDown_stat" x="8" y="464" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_leverDown_stat_text1" text-anchor="end" alignment-baseline="middle" x="4" y="474" transform="rotate(0,4,474)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_leverDown_stat" x="283" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_leverDown_stat_text1" text-anchor="start" alignment-baseline="middle" x="302" y="529" transform="rotate(0,302,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_leverUp_stat" x="8" y="519" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_leverUp_stat_text1" text-anchor="end" alignment-baseline="middle" x="4" y="529" transform="rotate(0,4,529)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_leverUp_stat" x="283" y="559" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_leverUp_stat_text1" text-anchor="start" alignment-baseline="middle" x="302" y="569" transform="rotate(0,302,569)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_v_Vehicle_kmh" x="8" y="599" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_v_Vehicle_kmh_text1" text-anchor="end" alignment-baseline="middle" x="4" y="609" transform="rotate(0,4,609)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_v_Vehicle_kmh" x="283" y="599" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_v_Vehicle_kmh_text1" text-anchor="start" alignment-baseline="middle" x="302" y="609" transform="rotate(0,302,609)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_acceleration_pedal_pc" x="8" y="639" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_acceleration_pedal_pc_text1" text-anchor="end" alignment-baseline="middle" x="4" y="649" transform="rotate(0,4,649)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_acceleration_pedal_pc" x="283" y="639" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_acceleration_pedal_pc_text1" text-anchor="start" alignment-baseline="middle" x="302" y="649" transform="rotate(0,302,649)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_limiter_b" x="8" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_limiter_b_text1" text-anchor="end" alignment-baseline="middle" x="4" y="704" transform="rotate(0,4,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+   <rect id="daimler_v4_limiter_Function_limiter_b" x="283" y="694" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0" />
+   <text id="daimler_v4_limiter_Function_limiter_b_text1" text-anchor="start" alignment-baseline="middle" x="302" y="704" transform="rotate(0,302,704)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black"> 
+   </text> 
+  </svg> 
+

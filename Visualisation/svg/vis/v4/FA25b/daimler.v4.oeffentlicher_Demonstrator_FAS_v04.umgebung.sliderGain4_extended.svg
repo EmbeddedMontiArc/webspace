@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: sliderGain4 -->
+<g transform="translate(52 20)">
+
+    <rect
+        id="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.sliderGain4"
+        width="234"
+        height="194"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">SliderGain4</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            sliderGain4
+    </text>
+
+</g>
+
+</svg><!-- Component: sliderGain -->
+<g transform="translate(82 84)">
+    <rect
+        data-name="daimler.v4.oeffentlicher_Demonstrator_FAS_v04.umgebung.sliderGain4.sliderGain_6"
+        id="daimler_v4_sliderGain_6"
+        width="174"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+                        onmouseout="this.style.stroke = 'black'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        id="daimler_v4_sliderGain_6_type"
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">SliderGain</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        id="daimler_v4_sliderGain_6_text"
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">sliderGain</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_sliderGain4_y_line0"
+    stroke-linecap="square"
+    x1="264"
+    y1="174"
+    x2="278"
+    y2="174"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_sliderGain4_y_line0_arrow" points="268,168 278,174 268,180"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<line
+    id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_sliderGain4_sliderGain_6_in1_line0"
+    stroke-linecap="square"
+    x1="60"
+    y1="174"
+    x2="74"
+    y2="174"
+
+    style="stroke:rgb(0,0,0);
+            stroke-width:2;"
+/>
+
+
+    <polyline id="daimler_v4_oeffentlicher_Demonstrator_FAS_v04_umgebung_sliderGain4_sliderGain_6_in1_line0_arrow" points="64,168 74,174 64,180"
+    style="fill:none; stroke:rgb(0,0,0);stroke-width:1;" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><rect id="daimler_v4_sliderGain_6_out1" x="248" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sliderGain_6_out1_text1" text-anchor="end" alignment-baseline="middle" x="245" y="176" transform="rotate(0,245,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_sliderGain_6_out1_porttype" text-anchor="end" alignment-baseline="middle" x="245" y="186" transform="rotate(0,245,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_sliderGain4_y" x="278" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sliderGain4_y_text1" text-anchor="start" alignment-baseline="middle" x="298" y="176" transform="rotate(0,298,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_sliderGain4_y_porttype" text-anchor="start" alignment-baseline="middle" x="298" y="186" transform="rotate(0,298,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_sliderGain4_u" x="44" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sliderGain4_u_text1" text-anchor="end" alignment-baseline="middle" x="40" y="176" transform="rotate(0,40,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_sliderGain4_u_porttype" text-anchor="end" alignment-baseline="middle" x="40" y="186" transform="rotate(0,40,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<rect id="daimler_v4_sliderGain_6_in1" x="74" y="166" width="16" height="16" style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/><text id="daimler_v4_sliderGain_6_in1_text1" text-anchor="start" alignment-baseline="middle" x="93" y="176" transform="rotate(0,93,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+<text id="daimler_v4_sliderGain_6_in1_porttype" text-anchor="start" alignment-baseline="middle" x="93" y="186" transform="rotate(0,93,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+
+</text>
+
+
+
+</svg>

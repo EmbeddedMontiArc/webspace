@@ -1,0 +1,173 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: sensors -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="826"
+        width="193"
+        height="324"
+        style="fill:white;stroke:black;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="13">Sensors</tspan>
+            <tspan font-size="11"></tspan>
+    </text>
+
+    <text
+        x="8"
+        y="35"
+        font-family="Verdana"
+        font-size="12"
+        fill="black">
+            sensors
+    </text>
+
+</g>
+
+</svg><!-- Component: bumpSensor -->
+<g transform="translate(46 84)">
+    <rect
+        data-name="testManuelSchrick.bumperBotEmergency.sensors.bumpSensor"
+        id="828"
+        width="101"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">BumpSensor</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">bumpSensor</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><!-- Component: emergencySwitch -->
+<g transform="translate(46 214)">
+    <rect
+        data-name="testManuelSchrick.bumperBotEmergency.sensors.emergencySwitch"
+        id="829"
+        width="133"
+        height="110"
+        style="
+                fill:white;
+            stroke:black;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#000000'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+            <tspan style="font-weight: bold" font-size="11">EmergencySwitch</tspan>
+            <tspan font-size="9"></tspan>
+    </text>
+
+    <text
+        x="10"
+        y="30"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="black">
+    <tspan font-size="10">emergencySwitch</tspan>
+    <tspan font-size="8"></tspan>
+    </text>
+</g><defs>
+    <marker id="0,0,0" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(0,0,0);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="155"
+    y1="174"
+    x2="201"
+    y2="174"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="187"
+    y1="304"
+    x2="201"
+    y2="304"
+    style="stroke:rgb(0, 0,0);
+            stroke-width:2;
+                marker-end: url(#0,0,0)
+            "
+/>
+
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:white;stroke:rgb(0,0,0);stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="139" y="166" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="136" y="176" transform="rotate(0,136,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pressed
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="136" y="186" transform="rotate(0,136,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="201" y="166" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="221" y="176" transform="rotate(0,221,176)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+bumpPressed
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="221" y="186" transform="rotate(0,221,186)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="171" y="296" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="168" y="306" transform="rotate(0,168,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+pressed
+</text>
+
+<text text-anchor="end" alignment-baseline="middle" x="168" y="316" transform="rotate(0,168,316)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+<use x="201" y="296" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="221" y="306" transform="rotate(0,221,306)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+emergencyPressed
+</text>
+
+<text text-anchor="start" alignment-baseline="middle" x="221" y="316" transform="rotate(0,221,316)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="black">
+Boolean
+</text>
+
+
+</svg>
