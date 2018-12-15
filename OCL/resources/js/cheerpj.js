@@ -37,7 +37,7 @@ $(document).ready(function() {
                 var right = cdDef.lastIndexOf("}");
                 var str = cdString.substring(0, lIndex) + "\n" + cdDef.substr(left + 1);
                 //cheerpjRunMain("ocl.cli.OCLCDTool", "/app/OCL/ocl-1.2.2-cli.jar", "-path", "", "-ocl", "demo.demo").then(onThen);
-                cheerpjRunMain("ocl.cli.OCLCDTool", "/app/OCL/ocl-1.2.2-cli.jar", "-ocl", oclString, "-cd", str).then(onThen);
+                cheerpjRunMain("ocl.cli.OCLCDTool", "/app/webspace/OCL/ocl-1.2.2-cli.jar", "-ocl", oclString, "-cd", str).then(onThen);
             }
         }
 
