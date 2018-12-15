@@ -39,7 +39,7 @@ $(document).ready(function() {
             console.error("An error occurred while reading the CD4A file for visualizing!");
         else {
             // translate MC-CD to plantUML-CD and write to file
-            var arguments = ["ocl.cli.OCLCDTool", "/app/OCL/ocl-1.2.2-cli.jar", "-printSrc", cdString, "-printTgt", "plantUML.txt", "", "", "", ""];
+            var arguments = ["ocl.cli.OCLCDTool", "/app/webspace/OCL/ocl-1.2.2-cli.jar", "-printSrc", cdString, "-printTgt", "plantUML.txt", "", "", "", ""];
 
             if(buttonShowAttributes.value == "true")
                 arguments[6] = "-showAttributes";
