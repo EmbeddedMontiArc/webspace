@@ -1,0 +1,18 @@
+cheerpjCL={cl:null};
+var N3net4jcip11annotations13NotThreadSafeG;
+function N3net4jcip11annotations13NotThreadSafe(){N4java4lang6Object.call(this);}
+N3net4jcip11annotations13NotThreadSafe.cl=cheerpjCL;
+function N3net4jcip11annotations13NotThreadSafeX(a){a.f=N3net4jcip11annotations13NotThreadSafeX;if(cheerpjSafeInitGuard('N3net4jcip11annotations13NotThreadSafe')) return;var q=a.q=N3net4jcip11annotations13NotThreadSafe.prototype=Object.create(N4java4lang6Object.prototype);q.constructor=N3net4jcip11annotations13NotThreadSafe;q.ifs=["java/lang/annotation/Annotation"];q.lFaiDW5mq86jc=_n4_0Object8hashCodeEVEI;q.gtarbSiXq_iJgKqim5nd=_n4VZObject6equalsEsLHWEZ;q.cp5yq8c_6jr_=_n4FYObject8toge_WEVEs0p;N3net4jcip11annotations13NotThreadSafeG=1;cheerpjSafeInitFinish('N3net4jcip11annotations13NotThreadSafe');}
+var N4java4lang6ObjectG;
+var N3net4jcip11annotations10ThreadSafeG;
+function N3net4jcip11annotations10ThreadSafe(){N4java4lang6Object.call(this);}
+N3net4jcip11annotations10ThreadSafe.cl=cheerpjCL;
+function N3net4jcip11annotations10ThreadSafeX(a){a.f=N3net4jcip11annotations10ThreadSafeX;if(cheerpjSafeInitGuard('N3net4jcip11annotations10ThreadSafe')) return;var q=a.q=N3net4jcip11annotations10ThreadSafe.prototype=Object.create(N4java4lang6Object.prototype);q.constructor=N3net4jcip11annotations10ThreadSafe;q.ifs=["java/lang/annotation/Annotation"];q.lFaiDW5mq86jc=_n4_0Object8hashCodeEVEI;q.gtarbSiXq_iJgKqim5nd=_n4VZObject6equalsEsLHWEZ;q.cp5yq8c_6jr_=_n4FYObject8toge_WEVEs0p;N3net4jcip11annotations10ThreadSafeG=1;cheerpjSafeInitFinish('N3net4jcip11annotations10ThreadSafe');}
+var N3net4jcip11annotations9GuardedByG;
+function N3net4jcip11annotations9GuardedBy(){N4java4lang6Object.call(this);}
+N3net4jcip11annotations9GuardedBy.cl=cheerpjCL;
+function N3net4jcip11annotations9GuardedByX(a){a.f=N3net4jcip11annotations9GuardedByX;if(cheerpjSafeInitGuard('N3net4jcip11annotations9GuardedBy')) return;var q=a.q=N3net4jcip11annotations9GuardedBy.prototype=Object.create(N4java4lang6Object.prototype);q.constructor=N3net4jcip11annotations9GuardedBy;q.ifs=["java/lang/annotation/Annotation"];q.lFaiDW5mq86jc=_n4_0Object8hashCodeEVEI;q.gtarbSiXq_iJgKqim5nd=_n4VZObject6equalsEsLHWEZ;q.cp5yq8c_6jr_=_n4FYObject8toge_WEVEs0p;N3net4jcip11annotations9GuardedByG=1;cheerpjSafeInitFinish('N3net4jcip11annotations9GuardedBy');}
+var N3net4jcip11annotations9ImmutableG;
+function N3net4jcip11annotations9Immutable(){N4java4lang6Object.call(this);}
+N3net4jcip11annotations9Immutable.cl=cheerpjCL;
+function N3net4jcip11annotations9ImmutableX(a){a.f=N3net4jcip11annotations9ImmutableX;if(cheerpjSafeInitGuard('N3net4jcip11annotations9Immutable')) return;var q=a.q=N3net4jcip11annotations9Immutable.prototype=Object.create(N4java4lang6Object.prototype);q.constructor=N3net4jcip11annotations9Immutable;q.ifs=["java/lang/annotation/Annotation"];q.lFaiDW5mq86jc=_n4_0Object8hashCodeEVEI;q.gtarbSiXq_iJgKqim5nd=_n4VZObject6equalsEsLHWEZ;q.cp5yq8c_6jr_=_n4FYObject8toge_WEVEs0p;N3net4jcip11annotations9ImmutableG=1;cheerpjSafeInitFinish('N3net4jcip11annotations9Immutable');}

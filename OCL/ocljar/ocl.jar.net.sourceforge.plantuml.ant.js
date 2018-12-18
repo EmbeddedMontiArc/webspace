@@ -1,0 +1,9 @@
+cheerpjCL={cl:null};
+var N3net11sourceforge8plantuml3ant14PlantUmlTask$1G;
+function N3net11sourceforge8plantuml3ant14PlantUmlTask$1(){N4java4lang6Object.call(this);this.val$f0=null;this.val$sourceFileReader1=null;this.this$02=null;}
+N3net11sourceforge8plantuml3ant14PlantUmlTask$1.cl=cheerpjCL;
+function N3net11sourceforge8plantuml3ant14PlantUmlTask$1X(a){a.f=N3net11sourceforge8plantuml3ant14PlantUmlTask$1X;if(cheerpjSafeInitGuard('N3net11sourceforge8plantuml3ant14PlantUmlTask$1')) return;var q=a.q=N3net11sourceforge8plantuml3ant14PlantUmlTask$1.prototype=Object.create(N4java4lang6Object.prototype);q.constructor=N3net11sourceforge8plantuml3ant14PlantUmlTask$1;q.ifs=["java/util/concurrent/Callable"];q.v11=_c4pbSkqZgmv1forge8plantuml3ant14Pe1q0UmlTask$14callEVEl0pX7BooeSm;q.dm2WlVEm0VXObject=q.v12=_c4pbSkqZgmv1forge8plantuml3ant14Pe1q0UmlTask$14callEVEm0VXObject;N3net11sourceforge8plantuml3ant14PlantUmlTask$1G=1;cheerpjSafeInitFinish('N3net11sourceforge8plantuml3ant14PlantUmlTask$1');}
+var N4java4lang7BooleanG;
+var N4java4lang6ObjectG;
+var N3net11sourceforge8plantuml3ant12PlantUmlTaskG;
+function _c4pbSkqZgmv1forge8plantuml3ant14Pe1aZUmlTask$1C2EGftW2mfJb9JSnId$hYcXwSbzWSfifrMG8kbWarK3l(l,k,j,h,p){l.this$02=k;l.val$f0=j;l.val$sourceFileReader1=h;_n4pZObjectC2EVEV(l,p);return;}function _c4pbSkqZgmv1forge8plantuml3ant14Pe1q0UmlTask$14callEVEl0pX7BooeSm(j,p){var g=null,e=null,d=null,c=0;var a={p:p,pc:0,f:_c4pbSkqZgmv1forge8plantuml3ant14Pe1q0UmlTask$14callEVEl0pX7BooeSm,g:null,e:null,d:null,c:0};g=a.g=j.this$02;e=a.e=j.val$f0;d=a.d=j.val$sourceFileReader1;a.pc=-282;;if((N3net11sourceforge8plantuml3ant12PlantUmlTaskG|0)==0){cjG(a);};a.pc=-360;c=a.c=_c4pbSkqZgmv1forge8plantuml3ant12Pe1WZUmlTask6doFileEg0pX2io4e5WwcbzWSfifr1G8kbWarK3m(g,e,d,a)|0;a.pc=-473;;if((N4java4lang7BooleanG|0)==0){cjG(a);};return _m4pX7BooeS8Y7valueOfEZEt1b(c,p);}function _c4pbSkqZgmv1forge8plantuml3ant14Pe1q0UmlTask$14callEVEm0VXObject(d,p){return d.v11(d,p);}
