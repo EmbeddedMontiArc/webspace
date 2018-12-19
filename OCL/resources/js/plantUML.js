@@ -1,5 +1,11 @@
-$(document).ready(function() {
-    var PATH = "/example/cd/AuctionCD.cd";
+async function execute() {
+    var PATH = "/OCLFiddle/example/cd/AuctionCD.cd";
+
+    const ide = await IDE;
+    const filesystem = ide.filesystem;
+    const fileURI = ide.fileURI;
+
+    const URI = fileURI.create(PATH);
 
     var cdOutput = document.getElementById("cd-output");
     var buttonReleadCd = document.getElementById("button-reload-cd");
@@ -34,29 +40,24 @@ $(document).ready(function() {
         return false;
     }
 
-    function onCD4AReadFile4Print(error, cdString) {
-        if(error)
-            console.error("An error occurred while reading the CD4A file for visualizing!");
-        else {
-            // translate MC-CD to plantUML-CD and write to file
-            var arguments = ["ocl.cli.OCLCDTool", "/app/webspace/OCL/ocljar/ocl.jar", "-printSrc", cdString, "-printTgt", "plantUML.txt", "", "", "", ""];
+    async function onReload(event) {
+        const contents = await filesystem.resolveContent(URI);
+        const content = contents.content;
 
-            if(buttonShowAttributes.value == "true")
-                arguments[6] = "-showAttributes";
-            if(buttonShowAssocNames.value == "true")
-                arguments[7] = "-showAssociationNames";
-            if(buttonShowRoleNames.value == "true")
-                arguments[8] = "-showRoleNames";
-            if(buttonShowCardinality.value != "true")
-                arguments[9] = "-showNoCardinality";
+        // translate MC-CD to plantUML-CD and write to file
+        var arguments = ["ocl.cli.OCLCDTool", "/app/webspace/OCL/ocljar/ocl.jar", "-printSrc", content, "-printTgt", "plantUML.txt", "", "", "", ""];
 
-            cheerpjRunMain(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5],
-                    arguments[6], arguments[7], arguments[8], arguments[9]).then(getPng);
-        }
-    }
+        if(buttonShowAttributes.value == "true")
+            arguments[6] = "-showAttributes";
+        if(buttonShowAssocNames.value == "true")
+            arguments[7] = "-showAssociationNames";
+        if(buttonShowRoleNames.value == "true")
+            arguments[8] = "-showRoleNames";
+        if(buttonShowCardinality.value != "true")
+            arguments[9] = "-showNoCardinality";
 
-    function onReload(event) {
-        CD4APort.readFile(PATH, onCD4AReadFile4Print);
+        cheerpjRunMain(arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5],
+            arguments[6], arguments[7], arguments[8], arguments[9]).then(getPng);
     }
 
     function onSwitchOption(event) {
@@ -158,4 +159,6 @@ $(document).ready(function() {
     		}, 100);
       	}
     }
-});
+}
+
+execute().catch(error => console.error(error));

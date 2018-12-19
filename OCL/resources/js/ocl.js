@@ -1,61 +1,36 @@
-$(document).ready(function() {
-    var $textarea = $("#ocl");
-    var PATH = "/example/ocl/Demo.ocl";
+async function execute() {
+    const ide = await IDE;
+    const filesystem = ide.filesystem;
+    const fileURI = ide.fileURI;
+    const editorManager = ide.editorManager;
 
-    function handleText(oclText) {
-        $textarea.val(oclText);
-        OCLPort.writeFile(PATH, oclText, onWriteFile);
+    const url = new URL(window.location.href);
+    const oclText = url.searchParams.get("ocl");
+
+    const $textarea = $("#ocl");
+    const PATH = "/OCLFiddle/example/ocl/Demo.ocl";
+    const URI = fileURI.create(PATH);
+
+    if(oclText) {
+        $textarea.text(oclText);
+        await filesystem.setContent(URI, oclText);
+    } else {
+        const exists = await filesystem.exists(URI);
+        const value = $textarea.val();
+
+        if(exists) {
+            await editorManager.open(URI, { widgetOptions: { area: "main", mode: "split-right" }});
+        } else {
+            await filesystem.createFile(URI, { content: value });
+            await editorManager.open(URI, { widgetOptions: { area: "main", mode: "split-right" }});
+        }
     }
 
-    function handleGist(gistId) {
-        var sUrl = 'https://api.github.com/gists/' + gistId;
+    $("#button-reset-ocl").on("click", async () => {
+        const value = $textarea.val();
 
-        $.get(sUrl, onGetGist);
-    }
+        return filesystem.setContent({ uri: URI }, value);
+    });
+}
 
-
-    function onOpenFile(error) {
-        if(error) console.log("An error occurred while opening the CD4A file!");
-        else OCLPort.reloadTab();
-    }
-
-    function onWriteFile(error) {
-        if(error) console.log("An error occurred while writing to the CD4A file!");
-        else OCLPort.openFile(PATH, onOpenFile);
-    }
-
-    function onExistsFile(exists) {
-        var value = $textarea.val();
-
-        if(exists) OCLPort.openFile(PATH, onOpenFile);
-        else OCLPort.writeFile(PATH, value, onWriteFile);
-    }
-
-    function onClick() {
-        var value = $textarea.val();
-
-        OCLPort.writeFile(PATH, value, onWriteFile);
-    }
-
-    function onGetGist(data) {
-        var oclText = data.files["ocl.txt"];
-
-        $textarea.val(oclText.content);
-        OCLPort.writeFile(PATH, oclText.content, onWriteFile);
-    }
-
-    function onConnected() {
-        var url = new URL(window.location.href);
-        var oclText = url.searchParams.get("ocl");
-        var gistId = url.searchParams.get("gist");
-
-        if(oclText) handleText(oclText);
-        else if(gistId) handleGist(gistId);
-        else OCLPort.existsFile(PATH, onExistsFile);
-
-        $("#button-reset-ocl").on("click", onClick);
-    }
-
-
-    OCLPort.on("connected", onConnected);
-});
+execute().catch(error => console.error(error));

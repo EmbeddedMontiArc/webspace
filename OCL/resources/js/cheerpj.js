@@ -1,61 +1,47 @@
-$(document).ready(function() {
-    var CD_PATH = "/example/cd/AuctionCD.cd";
-    var OCL_PATH = "/example/ocl/Demo.ocl";
+async function execute() {
+    const CD_PATH = "/OCLFiddle/example/cd/AuctionCD.cd";
+    const OCL_PATH = "/OCLFiddle/example/ocl/Demo.ocl";
+    const CD_DEFAULT_PATH = "/OCLFiddle/example/cd/DefaultTypes.cd";
+
+    const ide = await IDE;
+    const filesystem = ide.filesystem;
+    const fileURI = ide.fileURI;
+
+    const CD_URI = fileURI.create(CD_PATH);
+    const OCL_URI = fileURI.create(OCL_PATH);
+    const CD_DEFAULT_URI = fileURI.create(CD_DEFAULT_PATH);
 
     var $buttonExecute = $("#button-execute");
 
-  function rawStringToBuffer( str ) {
-    var idx, len = str.length, arr = new Array( len );
-    for ( idx = 0 ; idx < len ; ++idx ) {
-        arr[ idx ] = str.charCodeAt(idx) & 0xFF;
-    }
-    // You may create an ArrayBuffer from a standard array (of values) as follows:
-    return new Uint8Array( arr ).buffer;
-   }
+    function transferToCheerpJ(path, content) {
+        const cheerpJPath = path.replace("/OCLFiddle/", '');
 
-    function onThen() {
-        $buttonExecute.removeClass("disabled");
-        $("#console").scrollTop(10000000000);
+        return cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", cheerpJPath, content);
     }
 
-    function onOCLReadFile(error, oclString) {
-        function onCD4AReadFile(error, cdString) {
-            if(error) console.error("An error occurred while reading the CD4A file!");
-            else {
-                var cdDef = document.getElementById("cd-default").value;
-				cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
-				               "example/cd/DefaultTypes.cd", cdDef).then(
-				  function(res) {
-					  cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
-				               "example/cd/AuctionCD.cd", cdString).then(
-						  function(res) {
-							  cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
-				                 "example/ocl/Demo.ocl", oclString).then(
-								 function(res) {
-									 
-								   cheerpjRunMain("ocl.cli.OCLCDTool", 
-								      "/app/webspace/OCL/ocljar/ocl.jar", "-path", "", "-ocl", "example.ocl.Demo", "-preloadCD").then(onThen);
-								 }
-							  );
-						  }
-					   );
-				  }
-				);
-            }
-        }
-
-        if(error) console.error("An error occurred while reading the OCL file!");
-        else CD4APort.readFile(CD_PATH, onCD4AReadFile);
-    }
-
-    function onClick(event) {
+    async function onClick() {
         if(!$buttonExecute.hasClass("disabled")) {
             $buttonExecute.addClass("disabled");
-            OCLPort.readFile(OCL_PATH, onOCLReadFile);
+
+            const oclContents = await filesystem.resolveContent(OCL_URI);
+            const cdContents = await filesystem.resolveContent(CD_URI);
+            const cdDefaultContents = await filesystem.resolveContent(CD_DEFAULT_URI);
+
+            await transferToCheerpJ(OCL_PATH, oclContents.content);
+            await transferToCheerpJ(CD_PATH, cdContents.content);
+            await transferToCheerpJ(CD_DEFAULT_PATH, cdDefaultContents.content);
+
+            await cheerpjRunMain("ocl.cli.OCLCDTool",
+                "/app/webspace/OCL/ocljar/ocl.jar", "-path", "", "-ocl", "example.ocl.Demo", "-preloadCD");
+
+            $buttonExecute.removeClass("disabled");
+            $("#console").scrollTop(10000000000);
         }
     }
 
     // init cheerpj
-    cheerpjInit();
+    await cheerpjInit();
     $buttonExecute.on("click", onClick);
-});
+}
+
+execute().catch(error => console.error(error));

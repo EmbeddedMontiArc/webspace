@@ -66,6 +66,24 @@ body {
 }
 
 /*
+ * SPINNER
+ */
+#loader-container {
+    width:100%;
+    height:100%;
+    z-index:25555;
+}
+
+#loader {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:100px;
+    height:100px;
+    transform:translate3d(-50%, -50%, 0);
+}
+
+/*
  * FIRST ROW CONTAINER
  */
 iframe {

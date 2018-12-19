@@ -1,40 +1,28 @@
-$(document).ready(function() {
-    var $textarea = $("#cd-default");
-    var PATH = "/example/cd/DefaultTypes.cd";
+async function execute() {
+    const ide = await IDE;
+    const filesystem = ide.filesystem;
+    const fileURI = ide.fileURI;
+    const editorManager = ide.editorManager;
 
+    const $textarea = $("#cd-default");
+    const PATH = "/OCLFiddle/example/cd/DefaultTypes.cd";
+    const URI = fileURI.create(PATH);
 
-    function onOpenFile(error) {
-        if(error) console.log("An error occurred while opening the CD4ADefault file!");
+    const exists = await filesystem.exists(URI);
+    const value = $textarea.val();
+
+    if(exists) {
+        await editorManager.open(URI, { mode: "open", widgetOptions: { area: "main", mode: "tab-before" }});
+    } else {
+        await filesystem.createFile(URI, { content: value });
+        await editorManager.open(URI, { mode: "open", widgetOptions: { area: "main", mode: "tab-before" }});
     }
 
-    function onWriteFile(error) {
-        if(error) console.log("An error occurred while writing to the CD4ADefault file!");
-        else CD4APort.openFile(PATH, onOpenFile);
-    }
+    $("#button-reset-cd").on("click", async () => {
+        const value = $textarea.val();
 
-    function onExistsFile(exists) {
-        var value = $textarea.val();
+        return filesystem.setContent({ uri: URI }, value);
+    });
+}
 
-        if(exists) CD4APort.openFile(PATH, onOpenFile);
-        else CD4APort.writeFile(PATH, value, onWriteFile);
-    }
-
-    function onResetFile(error) {
-        if(error) console.log("An error occurred while writing to the CD4ADefault file!");
-        else CD4APort.reloadTab();
-    }
-
-    function onClick() {
-        var value = $textarea.val();
-
-        CD4APort.writeFile(PATH, value, onResetFile);
-    }
-
-    function onConnected() {
-        CD4APort.existsFile(PATH, onExistsFile);
-        $("#button-reset-cd").on("click", onClick);
-    }
-
-
-    CD4APort.on("connected", onConnected);
-});
+execute().catch(error => console.error(error));
