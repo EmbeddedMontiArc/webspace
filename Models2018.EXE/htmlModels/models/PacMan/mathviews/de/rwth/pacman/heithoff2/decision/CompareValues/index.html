@@ -128,6 +128,10 @@
                 background-color:#FFA500;
                 color:#000;
             }
+
+            tr.marked img {
+                filter:invert(100%);
+            }
         -->
         </style>
         <noscript>
@@ -247,7 +251,7 @@
                         </tr>
                         <tr>
                             <td class="line-number">22</td>
-                            <td><pre>    <span class="keyword">else</span></pre></td>
+                            <td><pre>    <span class="keyword">elseif</span> topPossible && topSafe && ((topValue >= bottomValue) || (bottomPossible == 0) || (bottomSafe == 0))</pre></td>
                         </tr>
                         <tr>
                             <td class="line-number">23</td>
@@ -255,46 +259,62 @@
                         </tr>
                         <tr>
                             <td class="line-number">24</td>
-                            <td><pre>    <span class="keyword">end</span></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">25</td>
-                            <td><pre><span class="keyword">elseif</span> ((newDirection == 2) && (leftPossible == 0)) || ((newDirection == 3) && (rightPossible == 0))</pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">26</td>
-                            <td><pre>    <span class="keyword">if</span> topPossible && topSafe && ((topValue >= bottomValue) || (bottomPossible == 0) || (bottomSafe == 0))</pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">27</td>
-                            <td><pre>        newDirection = 0;</pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">28</td>
-                            <td><pre>    <span class="keyword">elseif</span> bottomPossible && bottomSafe</pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">29</td>
-                            <td><pre>        newDirection = 1;</pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">30</td>
                             <td><pre>    <span class="keyword">else</span></pre></td>
                         </tr>
                         <tr>
-                            <td class="line-number">31</td>
-                            <td><pre>        newDirection = 3;</pre></td>
+                            <td class="line-number">25</td>
+                            <td><pre>        newDirection = 1;</pre></td>
                         </tr>
                         <tr>
-                            <td class="line-number">32</td>
+                            <td class="line-number">26</td>
                             <td><pre>    <span class="keyword">end</span></pre></td>
                         </tr>
                         <tr>
+                            <td class="line-number">27</td>
+                            <td><pre><span class="keyword">elseif</span> ((newDirection == 2) && (leftPossible == 0)) || ((newDirection == 3) && (rightPossible == 0))</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">28</td>
+                            <td><pre>    <span class="keyword">if</span> topPossible && topSafe && ((topValue >= bottomValue) || (bottomPossible == 0) || (bottomSafe == 0))</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">29</td>
+                            <td><pre>        newDirection = 0;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">30</td>
+                            <td><pre>    <span class="keyword">elseif</span> bottomPossible && bottomSafe</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">31</td>
+                            <td><pre>        newDirection = 1;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">32</td>
+                            <td><pre>    <span class="keyword">elseif</span> leftPossible && leftSafe && ((leftValue >= rightValue) || (rightPossible == 0) || (rightSafe == 0))</pre></td>
+                        </tr>
+                        <tr>
                             <td class="line-number">33</td>
-                            <td><pre><span class="keyword">end</span></pre></td>
+                            <td><pre>        newDirection = 2;</pre></td>
                         </tr>
                         <tr>
                             <td class="line-number">34</td>
+                            <td><pre>    <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">35</td>
+                            <td><pre>        newDirection = 3;</pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">36</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">37</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">38</td>
                             <td><pre>newPacManDirection = newDirection;</pre></td>
                         </tr>
                     </table>
@@ -387,7 +407,7 @@
                         </tr>
                         <tr>
                             <td class="line-number">22</td>
-                            <td><pre>    <span class="keyword">else</span></pre></td>
+                            <td><pre>    <span class="keyword">elseif</span> <img src="-710218267.svg"></img></pre></td>
                         </tr>
                         <tr>
                             <td class="line-number">23</td>
@@ -395,46 +415,62 @@
                         </tr>
                         <tr>
                             <td class="line-number">24</td>
-                            <td><pre>    <span class="keyword">end</span></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">25</td>
-                            <td><pre><span class="keyword">elseif</span> <img src="1675734609.svg"></img></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">26</td>
-                            <td><pre>    <span class="keyword">if</span> <img src="-710218267.svg"></img></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">27</td>
-                            <td><pre>        <img src="531283368.svg"></img></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">28</td>
-                            <td><pre>    <span class="keyword">elseif</span> <img src="-161052383.svg"></img></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">29</td>
-                            <td><pre>        <img src="531284329.svg"></img></pre></td>
-                        </tr>
-                        <tr>
-                            <td class="line-number">30</td>
                             <td><pre>    <span class="keyword">else</span></pre></td>
                         </tr>
                         <tr>
-                            <td class="line-number">31</td>
-                            <td><pre>        <img src="531286251.svg"></img></pre></td>
+                            <td class="line-number">25</td>
+                            <td><pre>        <img src="531284329.svg"></img></pre></td>
                         </tr>
                         <tr>
-                            <td class="line-number">32</td>
+                            <td class="line-number">26</td>
                             <td><pre>    <span class="keyword">end</span></pre></td>
                         </tr>
                         <tr>
+                            <td class="line-number">27</td>
+                            <td><pre><span class="keyword">elseif</span> <img src="1675734609.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">28</td>
+                            <td><pre>    <span class="keyword">if</span> <img src="-710218267.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">29</td>
+                            <td><pre>        <img src="531283368.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">30</td>
+                            <td><pre>    <span class="keyword">elseif</span> <img src="-161052383.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">31</td>
+                            <td><pre>        <img src="531284329.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">32</td>
+                            <td><pre>    <span class="keyword">elseif</span> <img src="510136548.svg"></img></pre></td>
+                        </tr>
+                        <tr>
                             <td class="line-number">33</td>
-                            <td><pre><span class="keyword">end</span></pre></td>
+                            <td><pre>        <img src="531285290.svg"></img></pre></td>
                         </tr>
                         <tr>
                             <td class="line-number">34</td>
+                            <td><pre>    <span class="keyword">else</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">35</td>
+                            <td><pre>        <img src="531286251.svg"></img></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">36</td>
+                            <td><pre>    <span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">37</td>
+                            <td><pre><span class="keyword">end</span></pre></td>
+                        </tr>
+                        <tr>
+                            <td class="line-number">38</td>
                             <td><pre><img src="479613708.svg"></img></pre></td>
                         </tr>
                     </table>

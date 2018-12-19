@@ -1,0 +1,5128 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+<!-- Canvas: bfssingle1 -->
+<g transform="translate(16 20)">
+
+    <rect
+        id="21374"
+        width="812"
+        height="1512"
+        style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
+
+    <text
+        x="8"
+        y="20"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="13">bfssingle1</tspan>
+    </text>
+
+</g>
+
+</svg><!-- Component: control -->
+<g transform="translate(731 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.safePaths.searchTop.bfssingle1.control"
+        id="21380"
+        width="67"
+        height="1460"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.single.ControlFlow', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">control</tspan>
+    </text>
+
+</g><!-- Component: reenterMap -->
+<g transform="translate(111 1297)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.safePaths.searchTop.bfssingle1.reenterMap"
+        id="21376"
+        width="94"
+        height="175"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.single.ReenterMap', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">reenterMap</tspan>
+    </text>
+
+</g><!-- Component: searchFinished -->
+<g transform="translate(300 52)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.safePaths.searchTop.bfssingle1.searchFinished"
+        id="21377"
+        width="116"
+        height="270"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.single.SearchFinished', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">searchFinished</tspan>
+    </text>
+
+</g><!-- Component: safePosition -->
+<g transform="translate(300 522)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.safePaths.searchTop.bfssingle1.safePosition"
+        id="21378"
+        width="99"
+        height="775"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.single.SafePosition', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">safePosition</tspan>
+    </text>
+
+</g><!-- Component: calcNewPosition -->
+<g transform="translate(511 267)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.safePaths.searchTop.bfssingle1.calcNewPosition"
+        id="21379"
+        width="125"
+        height="310"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.BFS.single.CalcNewPosition', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">calcNewPosition</tspan>
+    </text>
+
+</g><defs>
+    <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
+            <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
+                    stroke-width:1" />
+    </marker>
+</defs><line
+    stroke-linecap="square"
+    x1="806"
+    y1="1332"
+    x2="820"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="806"
+    y1="637"
+    x2="820"
+    y2="637"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="806"
+    y1="597"
+    x2="820"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="806"
+    y1="557"
+    x2="820"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="806"
+    y1="382"
+    x2="820"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1332"
+    x2="41"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1325"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1332"
+    x2="41"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1392"
+    x2="86"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1392"
+    x2="86"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1332"
+    x2="103"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="92"
+        y="1321"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="86" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1372"
+    x2="41"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1365"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1372"
+    x2="41"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1392"
+    x2="86"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1392"
+    x2="86"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1372"
+    x2="103"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="92"
+        y="1361"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="86" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1412"
+    x2="41"
+    y2="1412"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1405"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1412"
+    x2="41"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1412" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1392"
+    x2="86"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1392"
+    x2="86"
+    y2="1412"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1412"
+    x2="103"
+    y2="1412"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="92"
+        y="1401"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="86" cy="1412" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1452"
+    x2="41"
+    y2="1452"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1445"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1452"
+    x2="41"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1452" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1392"
+    x2="86"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1392"
+    x2="86"
+    y2="1452"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="1452"
+    x2="103"
+    y2="1452"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="92"
+        y="1441"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+    <circle cx="86" cy="1452" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1332"
+    x2="230"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1325"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1332"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="247"
+    x2="275"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="247" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="247"
+    x2="275"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="207"
+    x2="292"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="196"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="275" cy="207" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1332"
+    x2="230"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1325"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1332"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="577"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="577"
+    x2="275"
+    y2="577"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="577" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="577"
+    x2="275"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="557"
+    x2="292"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="546"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="275" cy="557" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1332"
+    x2="230"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1325"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1332"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="442"
+    x2="486"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="442" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="442"
+    x2="486"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="382"
+    x2="503"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="371"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="486" cy="382" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1332"
+    x2="230"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1325"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1332"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="1352"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1352"
+    x2="706"
+    y2="1352"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1352" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="1352"
+    x2="706"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="1332"
+    x2="723"
+    y2="1332"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="1321"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="706" cy="1332" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1372"
+    x2="230"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1365"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1372"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="247"
+    x2="275"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="247" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="247"
+    x2="275"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="302"
+    x2="292"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="291"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="275" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1372"
+    x2="230"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1365"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1372"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="577"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="577"
+    x2="275"
+    y2="577"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="577" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="577"
+    x2="275"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="597"
+    x2="292"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="586"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="275" cy="597" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1372"
+    x2="230"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1365"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1372"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="442"
+    x2="486"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="442" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="442"
+    x2="486"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="422"
+    x2="503"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="411"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="486" cy="422" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1372"
+    x2="230"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1365"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1372"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="1352"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1352"
+    x2="706"
+    y2="1352"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1352" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="1352"
+    x2="706"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="1372"
+    x2="723"
+    y2="1372"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="1361"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="706" cy="1372" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="76"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="87"
+    x2="76"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="76" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="180"
+    x2="86"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="180"
+    x2="86"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="180" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="127"
+    x2="275"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="127" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="127"
+    x2="275"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="87"
+    x2="292"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="76"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="275" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="87"
+    x2="76"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="87"
+    x2="76"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="76" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="180"
+    x2="86"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="180"
+    x2="86"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="180" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="342"
+    x2="205"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="86" cy="342" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="342"
+    x2="205"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="342"
+    x2="503"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="331"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="207"
+    x2="76"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="200"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="207"
+    x2="76"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="76" cy="207" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="180"
+    x2="86"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="180"
+    x2="86"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="180" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="127"
+    x2="275"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="127" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="127"
+    x2="275"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="127"
+    x2="292"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="116"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="275" cy="127" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="247"
+    x2="76"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="240"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="247"
+    x2="76"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="76" cy="247" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="76"
+    y1="180"
+    x2="86"
+    y2="180"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="180"
+    x2="86"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="180" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="86"
+    y1="127"
+    x2="275"
+    y2="127"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="86" cy="127" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="127"
+    x2="275"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="275"
+    y1="167"
+    x2="292"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="156"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="275" cy="167" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="302"
+    x2="41"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="295"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="302"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="637"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="637"
+    x2="292"
+    y2="637"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="626"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="205" cy="637" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="342"
+    x2="41"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="335"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="342"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="342" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="677"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="677"
+    x2="292"
+    y2="677"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="666"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="205" cy="677" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="382"
+    x2="41"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="375"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="382"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="382" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="717"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="717"
+    x2="292"
+    y2="717"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="706"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="205" cy="717" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="557"
+    x2="41"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="550"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="557"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="557" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="757"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="757"
+    x2="292"
+    y2="757"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="746"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+    <circle cx="205" cy="757" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="597"
+    x2="41"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="590"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    4
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="597"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="597" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="797"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="797"
+    x2="292"
+    y2="797"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="786"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    4
+    </text>
+
+    <circle cx="205" cy="797" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="637"
+    x2="41"
+    y2="637"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="630"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    5
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="637"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="637" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="837"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="837"
+    x2="292"
+    y2="837"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="826"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    5
+    </text>
+
+    <circle cx="205" cy="837" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="877"
+    x2="41"
+    y2="877"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="870"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    6
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="877"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="877" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="877"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="877"
+    x2="292"
+    y2="877"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="866"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    6
+    </text>
+
+    <circle cx="205" cy="877" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="917"
+    x2="41"
+    y2="917"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="910"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    7
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="917"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="917" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="917"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="917"
+    x2="292"
+    y2="917"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="906"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    7
+    </text>
+
+    <circle cx="205" cy="917" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="957"
+    x2="41"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="950"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    8
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="957"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="292"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="946"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    8
+    </text>
+
+    <circle cx="205" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="997"
+    x2="41"
+    y2="997"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="990"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    9
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="997"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="997" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="997"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="997"
+    x2="292"
+    y2="997"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="986"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    9
+    </text>
+
+    <circle cx="205" cy="997" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1037"
+    x2="41"
+    y2="1037"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1030"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    10
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1037"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1037" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1037"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1037"
+    x2="292"
+    y2="1037"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1026"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    10
+    </text>
+
+    <circle cx="205" cy="1037" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1077"
+    x2="41"
+    y2="1077"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1070"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    11
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1077"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1077" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1077"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1077"
+    x2="292"
+    y2="1077"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1066"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    11
+    </text>
+
+    <circle cx="205" cy="1077" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1117"
+    x2="41"
+    y2="1117"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1110"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    12
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1117"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1117" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1117"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1117"
+    x2="292"
+    y2="1117"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1106"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    12
+    </text>
+
+    <circle cx="205" cy="1117" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1157"
+    x2="41"
+    y2="1157"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1150"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    13
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1157"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1157" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1157"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1157"
+    x2="292"
+    y2="1157"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1146"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    13
+    </text>
+
+    <circle cx="205" cy="1157" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1197"
+    x2="41"
+    y2="1197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1190"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    14
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1197"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1197"
+    x2="292"
+    y2="1197"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1186"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    14
+    </text>
+
+    <circle cx="205" cy="1197" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1237"
+    x2="41"
+    y2="1237"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1230"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    15
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1237"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1237" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1237"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1237"
+    x2="292"
+    y2="1237"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1226"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    15
+    </text>
+
+    <circle cx="205" cy="1237" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1492"
+    x2="41"
+    y2="1492"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="27"
+        y="1485"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    16
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="1492"
+    x2="41"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="41" cy="1492" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="41"
+    y1="865"
+    x2="51"
+    y2="865"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="865"
+    x2="51"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="865" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="51"
+    y1="957"
+    x2="205"
+    y2="957"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="51" cy="957" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="957"
+    x2="205"
+    y2="1277"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="205"
+    y1="1277"
+    x2="292"
+    y2="1277"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="281"
+        y="1266"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    16
+    </text>
+
+    <circle cx="205" cy="1277" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="24"
+    y1="1492"
+    x2="723"
+    y2="1492"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1412"
+    x2="230"
+    y2="1412"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1405"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1412"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1412" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="442"
+    x2="486"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="442" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="442"
+    x2="486"
+    y2="462"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="462"
+    x2="503"
+    y2="462"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="451"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="486" cy="462" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="213"
+    y1="1452"
+    x2="230"
+    y2="1452"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="216"
+        y="1445"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1452"
+    x2="230"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="230" cy="1452" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="230"
+    y1="1392"
+    x2="240"
+    y2="1392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="1392"
+    x2="240"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="1392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="240"
+    y1="442"
+    x2="486"
+    y2="442"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="240" cy="442" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="442"
+    x2="486"
+    y2="502"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="502"
+    x2="503"
+    y2="502"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="491"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+    <circle cx="486" cy="502" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="424"
+    y1="87"
+    x2="441"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="427"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="87"
+    x2="441"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="441" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="193"
+    x2="451"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="193"
+    x2="451"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="193" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="302"
+    x2="486"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="451" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="302"
+    x2="486"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="302"
+    x2="503"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="291"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="407"
+    y1="597"
+    x2="441"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="410"
+        y="590"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="597"
+    x2="441"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="597"
+    x2="451"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="597"
+    x2="451"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="597" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="557"
+    x2="486"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="451" cy="557" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="557"
+    x2="486"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="486"
+    y1="557"
+    x2="503"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="492"
+        y="546"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="424"
+    y1="87"
+    x2="441"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="427"
+        y="80"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="87"
+    x2="441"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="441" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="193"
+    x2="451"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="193"
+    x2="451"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="193" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="167"
+    x2="706"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="167" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="167"
+    x2="706"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="87"
+    x2="723"
+    y2="87"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="76"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="706" cy="87" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="424"
+    y1="207"
+    x2="441"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="427"
+        y="200"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="207"
+    x2="441"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="441" cy="207" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="193"
+    x2="451"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="193"
+    x2="451"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="193" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="167"
+    x2="706"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="167" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="167"
+    x2="706"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="207"
+    x2="723"
+    y2="207"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="196"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="706" cy="207" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="424"
+    y1="302"
+    x2="441"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="427"
+        y="295"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="302"
+    x2="441"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="441" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="193"
+    x2="451"
+    y2="193"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="193"
+    x2="451"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="193" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="451"
+    y1="167"
+    x2="706"
+    y2="167"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="451" cy="167" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="167"
+    x2="706"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="247"
+    x2="723"
+    y2="247"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="236"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="706" cy="247" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="407"
+    y1="597"
+    x2="441"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="410"
+        y="590"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="597"
+    x2="441"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="441"
+    y1="597"
+    x2="706"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="597"
+    x2="706"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="597"
+    x2="723"
+    y2="597"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="586"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="644"
+    y1="302"
+    x2="661"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="647"
+        y="295"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="302"
+    x2="661"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="661" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="392"
+    x2="671"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="392"
+    x2="671"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="422"
+    x2="706"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="422" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="422"
+    x2="706"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="302"
+    x2="723"
+    y2="302"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="291"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    0
+    </text>
+
+    <circle cx="706" cy="302" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="644"
+    y1="342"
+    x2="661"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="647"
+        y="335"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="342"
+    x2="661"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="661" cy="342" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="392"
+    x2="671"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="392"
+    x2="671"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="422"
+    x2="706"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="422" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="422"
+    x2="706"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="342"
+    x2="723"
+    y2="342"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="331"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    1
+    </text>
+
+    <circle cx="706" cy="342" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="644"
+    y1="382"
+    x2="661"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="647"
+        y="375"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="382"
+    x2="661"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="661" cy="382" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="392"
+    x2="671"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="392"
+    x2="671"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="422"
+    x2="706"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="422" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="422"
+    x2="706"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="382"
+    x2="723"
+    y2="382"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="371"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    2
+    </text>
+
+    <circle cx="706" cy="382" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="644"
+    y1="557"
+    x2="661"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+    <text
+        x="647"
+        y="550"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="557"
+    x2="661"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="661" cy="557" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="661"
+    y1="392"
+    x2="671"
+    y2="392"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="392"
+    x2="671"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="392" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="671"
+    y1="422"
+    x2="706"
+    y2="422"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+    <circle cx="671" cy="422" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="422"
+    x2="706"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:4;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="706"
+    y1="557"
+    x2="723"
+    y2="557"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+    <text
+        x="712"
+        y="546"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        font-size="11"
+        fill="#cecece">
+    3
+    </text>
+
+    <circle cx="706" cy="557" r="4" fill="#cecece" />
+<defs>
+    <!-- Small box indicating a port -->
+    <rect id="port" x="0" y="0" width="16" height="16"
+          style="fill:#252525;stroke:#cecece;stroke-width:1;fill-opacity:1.0;stroke-opacity:1.0"/>
+</defs><use x="790" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="787" y="1334" transform="rotate(0,787,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="820" y="1324" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="840" y="1334" transform="rotate(0,840,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="790" y="629" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="787" y="639" transform="rotate(0,787,639)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="820" y="629" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="840" y="639" transform="rotate(0,840,639)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="790" y="589" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="787" y="599" transform="rotate(0,787,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="820" y="589" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="840" y="599" transform="rotate(0,840,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="790" y="549" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="787" y="559" transform="rotate(0,787,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="820" y="549" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="840" y="559" transform="rotate(0,840,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="790" y="374" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="787" y="384" transform="rotate(0,787,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="820" y="374" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="840" y="384" transform="rotate(0,840,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1334" transform="rotate(0,4,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="103" y="1324" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="122" y="1334" transform="rotate(0,122,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1364" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1374" transform="rotate(0,4,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="103" y="1364" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="122" y="1374" transform="rotate(0,122,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1404" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1414" transform="rotate(0,4,1414)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="103" y="1404" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="122" y="1414" transform="rotate(0,122,1414)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1444" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1454" transform="rotate(0,4,1454)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="103" y="1444" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="122" y="1454" transform="rotate(0,122,1454)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1334" transform="rotate(0,194,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="199" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="209" transform="rotate(0,311,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1334" transform="rotate(0,194,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="549" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="559" transform="rotate(0,311,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1334" transform="rotate(0,194,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="374" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="384" transform="rotate(0,522,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1324" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1334" transform="rotate(0,194,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="1324" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="1334" transform="rotate(0,742,1334)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1364" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1374" transform="rotate(0,194,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="294" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="304" transform="rotate(0,311,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1364" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1374" transform="rotate(0,194,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="589" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="599" transform="rotate(0,311,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1364" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1374" transform="rotate(0,194,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="414" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="424" transform="rotate(0,522,424)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1364" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1374" transform="rotate(0,194,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="1364" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="1374" transform="rotate(0,742,1374)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="89" transform="rotate(0,311,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="89" transform="rotate(0,4,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="334" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="344" transform="rotate(0,522,344)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="199" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="209" transform="rotate(0,4,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="119" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="129" transform="rotate(0,311,129)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="239" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="249" transform="rotate(0,4,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="159" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="169" transform="rotate(0,311,169)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="294" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="304" transform="rotate(0,4,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="629" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="639" transform="rotate(0,311,639)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="334" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="344" transform="rotate(0,4,344)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="669" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="679" transform="rotate(0,311,679)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="374" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="384" transform="rotate(0,4,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="709" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="719" transform="rotate(0,311,719)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="549" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="559" transform="rotate(0,4,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="749" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="759" transform="rotate(0,311,759)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="589" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="599" transform="rotate(0,4,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="789" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="799" transform="rotate(0,311,799)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="629" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="639" transform="rotate(0,4,639)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="829" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="839" transform="rotate(0,311,839)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="869" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="879" transform="rotate(0,4,879)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="869" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="879" transform="rotate(0,311,879)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="909" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="919" transform="rotate(0,4,919)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="909" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="919" transform="rotate(0,311,919)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="949" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="959" transform="rotate(0,4,959)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="949" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="959" transform="rotate(0,311,959)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="989" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="999" transform="rotate(0,4,999)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="989" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="999" transform="rotate(0,311,999)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1029" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1039" transform="rotate(0,4,1039)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1029" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1039" transform="rotate(0,311,1039)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1069" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1079" transform="rotate(0,4,1079)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1069" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1079" transform="rotate(0,311,1079)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1109" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1119" transform="rotate(0,4,1119)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1109" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1119" transform="rotate(0,311,1119)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1149" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1159" transform="rotate(0,4,1159)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1149" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1159" transform="rotate(0,311,1159)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1189" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1199" transform="rotate(0,4,1199)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1189" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1199" transform="rotate(0,311,1199)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1229" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1239" transform="rotate(0,4,1239)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1229" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1239" transform="rotate(0,311,1239)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1484" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1494" transform="rotate(0,4,1494)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="292" y="1269" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="311" y="1279" transform="rotate(0,311,1279)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="8" y="1484" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="4" y="1494" transform="rotate(0,4,1494)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="1484" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="1494" transform="rotate(0,742,1494)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1404" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1414" transform="rotate(0,194,1414)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="454" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="464" transform="rotate(0,522,464)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="197" y="1444" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="194" y="1454" transform="rotate(0,194,1454)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="494" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="504" transform="rotate(0,522,504)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="408" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="405" y="89" transform="rotate(0,405,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="294" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="304" transform="rotate(0,522,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="391" y="589" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="388" y="599" transform="rotate(0,388,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="503" y="549" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="522" y="559" transform="rotate(0,522,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="408" y="79" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="405" y="89" transform="rotate(0,405,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="79" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="89" transform="rotate(0,742,89)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="408" y="199" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="405" y="209" transform="rotate(0,405,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="199" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="209" transform="rotate(0,742,209)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="408" y="294" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="405" y="304" transform="rotate(0,405,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="239" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="249" transform="rotate(0,742,249)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="391" y="589" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="388" y="599" transform="rotate(0,388,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="589" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="599" transform="rotate(0,742,599)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="628" y="294" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="625" y="304" transform="rotate(0,625,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="294" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="304" transform="rotate(0,742,304)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="628" y="334" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="625" y="344" transform="rotate(0,625,344)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="334" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="344" transform="rotate(0,742,344)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="628" y="374" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="625" y="384" transform="rotate(0,625,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="374" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="384" transform="rotate(0,742,384)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="628" y="549" xlink:href="#port" />
+<text text-anchor="end" alignment-baseline="middle" x="625" y="559" transform="rotate(0,625,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+<use x="723" y="549" xlink:href="#port" />
+<text text-anchor="start" alignment-baseline="middle" x="742" y="559" transform="rotate(0,742,559)" style="font-weight: regular" font-family="Verdana" font-size="9" fill="#cecece">
+
+</text>
+
+
+</svg>

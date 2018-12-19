@@ -21,7 +21,7 @@
 </g>
 
 </svg><!-- Component: c2cd -->
-<g transform="translate(46 107)">
+<g transform="translate(46 147)">
     <rect
         data-name="de.rwth.armin.modeling.autopilot.autopilot.c2cd"
         id="2"
@@ -48,7 +48,7 @@
     </text>
 
 </g><!-- Component: behaviorGeneration -->
-<g transform="translate(192 107)">
+<g transform="translate(192 147)">
     <rect
         data-name="de.rwth.armin.modeling.autopilot.autopilot.behaviorGeneration"
         id="3"
@@ -80,7 +80,7 @@
         data-name="de.rwth.armin.modeling.autopilot.autopilot.motionPlanning"
         id="4"
         width="120"
-        height="190"
+        height="150"
         style="
                 fill:#3c3c3c;
             stroke:#cecece;
@@ -109,9 +109,9 @@
 </defs><line
     stroke-linecap="square"
     x1="487"
-    y1="142"
+    y1="182"
     x2="517"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -121,9 +121,9 @@
 <line
     stroke-linecap="square"
     x1="16"
-    y1="142"
+    y1="182"
     x2="46"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -133,6 +133,63 @@
 <line
     stroke-linecap="square"
     x1="16"
+    y1="222"
+    x2="192"
+    y2="222"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="97"
+    y1="182"
+    x2="122"
+    y2="182"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="122"
+    y1="182"
+    x2="122"
+    y2="182"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="122"
+    y1="182"
+    x2="167"
+    y2="182"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+    <circle cx="122" cy="182" r="4" fill="#cecece" />
+<line
+    stroke-linecap="square"
+    x1="167"
+    y1="182"
+    x2="167"
+    y2="182"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+"
+/>
+
+<line
+    stroke-linecap="square"
+    x1="167"
     y1="182"
     x2="192"
     y2="182"
@@ -144,67 +201,10 @@
 
 <line
     stroke-linecap="square"
-    x1="97"
-    y1="142"
-    x2="122"
-    y2="142"
-    style="stroke:rgb(206, 206,206);
-            stroke-width:2;
-"
-/>
-
-<line
-    stroke-linecap="square"
-    x1="122"
-    y1="142"
-    x2="122"
-    y2="142"
-    style="stroke:rgb(206, 206,206);
-            stroke-width:2;
-"
-/>
-
-<line
-    stroke-linecap="square"
-    x1="122"
-    y1="142"
-    x2="167"
-    y2="142"
-    style="stroke:rgb(206, 206,206);
-            stroke-width:2;
-"
-/>
-
-    <circle cx="122" cy="142" r="4" fill="#cecece" />
-<line
-    stroke-linecap="square"
-    x1="167"
-    y1="142"
-    x2="167"
-    y2="142"
-    style="stroke:rgb(206, 206,206);
-            stroke-width:2;
-"
-/>
-
-<line
-    stroke-linecap="square"
-    x1="167"
-    y1="142"
-    x2="192"
-    y2="142"
-    style="stroke:rgb(206, 206,206);
-            stroke-width:2;
-                marker-end:url(#206,206,206)
-            "
-/>
-
-<line
-    stroke-linecap="square"
     x1="16"
-    y1="222"
+    y1="87"
     x2="367"
-    y2="222"
+    y2="87"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -214,9 +214,9 @@
 <line
     stroke-linecap="square"
     x1="97"
-    y1="142"
+    y1="182"
     x2="122"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -225,9 +225,9 @@
 <line
     stroke-linecap="square"
     x1="122"
-    y1="142"
+    y1="182"
     x2="122"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -236,9 +236,9 @@
 <line
     stroke-linecap="square"
     x1="122"
-    y1="142"
+    y1="182"
     x2="132"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -247,33 +247,33 @@
 <line
     stroke-linecap="square"
     x1="132"
-    y1="142"
+    y1="182"
     x2="132"
-    y2="87"
+    y2="127"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
 />
 
-    <circle cx="132" cy="142" r="4" fill="#cecece" />
+    <circle cx="132" cy="182" r="4" fill="#cecece" />
 <line
     stroke-linecap="square"
     x1="132"
-    y1="87"
+    y1="127"
     x2="337"
-    y2="87"
+    y2="127"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
 />
 
-    <circle cx="132" cy="87" r="4" fill="#cecece" />
+    <circle cx="132" cy="127" r="4" fill="#cecece" />
 <line
     stroke-linecap="square"
     x1="337"
-    y1="87"
+    y1="127"
     x2="337"
-    y2="87"
+    y2="127"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -282,9 +282,9 @@
 <line
     stroke-linecap="square"
     x1="337"
-    y1="87"
+    y1="127"
     x2="367"
-    y2="87"
+    y2="127"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -294,9 +294,9 @@
 <line
     stroke-linecap="square"
     x1="337"
-    y1="142"
+    y1="182"
     x2="367"
-    y2="142"
+    y2="182"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)

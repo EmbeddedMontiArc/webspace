@@ -6,8 +6,8 @@
 
     <rect
         id="299"
-        width="323"
-        height="202"
+        width="437"
+        height="257"
         style="fill:#252525;stroke:#cecece;stroke-width:2;fill-opacity:1.0;stroke-opacity:1.0"/>
 
     <text
@@ -21,12 +21,12 @@
 </g>
 
 </svg><!-- Component: safePaths -->
-<g transform="translate(111 147)">
+<g transform="translate(235 52)">
     <rect
         data-name="de.rwth.pacman.pacManWrapper.controller.safePaths"
         id="302"
         width="84"
-        height="55"
+        height="110"
         style="
                 fill:#3c3c3c;
             stroke:#cecece;
@@ -48,7 +48,7 @@
     </text>
 
 </g><!-- Component: decision -->
-<g transform="translate(235 52)">
+<g transform="translate(349 107)">
     <rect
         data-name="de.rwth.pacman.pacManWrapper.controller.decision"
         id="303"
@@ -75,7 +75,7 @@
     </text>
 
 </g><!-- Component: coneSearch -->
-<g transform="translate(111 52)">
+<g transform="translate(111 202)">
     <rect
         data-name="de.rwth.pacman.pacManWrapper.controller.coneSearch"
         id="301"
@@ -101,6 +101,33 @@
             <tspan style="font-weight: bold" font-size="11">coneSearch</tspan>
     </text>
 
+</g><!-- Component: normalize -->
+<g transform="translate(111 107)">
+    <rect
+        data-name="de.rwth.pacman.pacManWrapper.controller.normalize"
+        id="300"
+        width="84"
+        height="55"
+        style="
+                fill:#252525;
+            stroke:#cecece;
+            stroke-width:2;
+            fill-opacity:1.0;
+            stroke-opacity:1.0"
+        onmouseout="this.style.stroke = '#cecece'; this.style['stroke-width'] = 2; this.style.cursor='default';"
+            onmouseover="this.style.stroke = '#316FC0'; this.style['stroke-width'] = 5; this.style.cursor='pointer';"
+            onclick="window.top.postMessage('de.rwth.pacman.heithoff2.NormalizePosition', '*');"
+    />
+
+    <text
+        x="10"
+        y="15"
+        alignment-baseline="middle"
+        font-family="Verdana"
+        fill="#cecece">
+            <tspan style="font-weight: bold" font-size="11">normalize</tspan>
+    </text>
+
 </g><defs>
     <marker id="206,206,206" markerWidth="13" markerHeight="13" refX="5" refY="5" orient="auto">
             <polyline points="0,2 5,5 0,8" style="fill:none; stroke:rgb(206,206,206);
@@ -108,10 +135,10 @@
     </marker>
 </defs><line
     stroke-linecap="square"
-    x1="309"
-    y1="182"
-    x2="339"
-    y2="182"
+    x1="423"
+    y1="142"
+    x2="453"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -121,9 +148,9 @@
 <line
     stroke-linecap="square"
     x1="16"
-    y1="182"
+    y1="142"
     x2="41"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -132,9 +159,9 @@
 <line
     stroke-linecap="square"
     x1="41"
-    y1="182"
+    y1="142"
     x2="41"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -143,21 +170,21 @@
 <line
     stroke-linecap="square"
     x1="41"
-    y1="182"
+    y1="142"
     x2="86"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
 />
 
-    <circle cx="41" cy="182" r="4" fill="#cecece" />
+    <circle cx="41" cy="142" r="4" fill="#cecece" />
 <line
     stroke-linecap="square"
     x1="86"
-    y1="182"
+    y1="142"
     x2="86"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -166,9 +193,9 @@
 <line
     stroke-linecap="square"
     x1="86"
-    y1="182"
+    y1="142"
     x2="111"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -178,9 +205,9 @@
 <line
     stroke-linecap="square"
     x1="16"
-    y1="182"
+    y1="142"
     x2="41"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -189,9 +216,9 @@
 <line
     stroke-linecap="square"
     x1="41"
-    y1="182"
+    y1="142"
     x2="41"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -200,9 +227,9 @@
 <line
     stroke-linecap="square"
     x1="41"
-    y1="182"
+    y1="142"
     x2="51"
-    y2="182"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -211,33 +238,33 @@
 <line
     stroke-linecap="square"
     x1="51"
-    y1="182"
+    y1="142"
     x2="51"
-    y2="87"
+    y2="237"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
 />
 
-    <circle cx="51" cy="182" r="4" fill="#cecece" />
+    <circle cx="51" cy="142" r="4" fill="#cecece" />
 <line
     stroke-linecap="square"
     x1="51"
-    y1="87"
+    y1="237"
     x2="86"
-    y2="87"
+    y2="237"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
 />
 
-    <circle cx="51" cy="87" r="4" fill="#cecece" />
+    <circle cx="51" cy="237" r="4" fill="#cecece" />
 <line
     stroke-linecap="square"
     x1="86"
-    y1="87"
+    y1="237"
     x2="86"
-    y2="87"
+    y2="237"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
 "
@@ -246,8 +273,20 @@
 <line
     stroke-linecap="square"
     x1="86"
-    y1="87"
+    y1="237"
     x2="111"
+    y2="237"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="16"
+    y1="87"
+    x2="235"
     y2="87"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
@@ -258,9 +297,21 @@
 <line
     stroke-linecap="square"
     x1="195"
-    y1="182"
+    y1="142"
     x2="235"
-    y2="182"
+    y2="142"
+    style="stroke:rgb(206, 206,206);
+            stroke-width:2;
+                marker-end:url(#206,206,206)
+            "
+/>
+
+<line
+    stroke-linecap="square"
+    x1="319"
+    y1="142"
+    x2="349"
+    y2="142"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)
@@ -270,9 +321,9 @@
 <line
     stroke-linecap="square"
     x1="205"
-    y1="87"
-    x2="235"
-    y2="87"
+    y1="237"
+    x2="349"
+    y2="237"
     style="stroke:rgb(206, 206,206);
             stroke-width:2;
                 marker-end:url(#206,206,206)

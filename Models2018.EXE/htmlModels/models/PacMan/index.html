@@ -8,6 +8,7 @@
             margin:0;
             padding:0;
             height:100%;
+            overflow:hidden;
         }
 
         iframe {
@@ -57,6 +58,31 @@
             font-size:20px;
             height:26px;
         }
+
+        #theme-button {
+            position:fixed;
+            right:27px;
+            top:9px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg width='50' height='50' xmlns='http://www.w3.org/2000/svg'%3e%3c!-- Created with SVG-edit - http://svg-edit.googlecode.com/ --%3e%3cg%3e%3ctitle%3eLayer 1%3c/title%3e%3ccircle stroke-width='3' stroke='%23000000' fill='none' r='16' cy='25' cx='25'/%3e%3cpath stroke-width='0' fill='black' d='m25,9a16,16 0 0 0 0,32l0,-32z'/%3e%3c/g%3e%3c/svg%3e");
+            width:30px;
+            height:30px;
+            background-color:#cecece;
+            background-size:contain;
+            opacity:0.2;
+        }
+
+        #theme-button:hover {
+            opacity:1.0;
+            cursor:pointer;
+        }
+
+        .constrasted {
+            filter:invert(100%) contrast(141%);
+        }
+
+        .inverted {
+            filter:invert(100%);
+        }
         -->
     </style>
 </head>
@@ -68,6 +94,7 @@
         <iframe id="mathviews" src=""></iframe>
     </div>
 </div>
+<span id="theme-button" title="Switch Theme"></span>
 </body>
 <script>
     class Hash {
@@ -361,10 +388,11 @@
     }
 
     class Overlay {
-        constructor(closeCross) {
+        constructor(closeCross, themeSwitch) {
             this._element = document.getElementById("overlay");
 
             closeCross.onClick = this._onCloseClick.bind(this);
+            themeSwitch.onClick = this._onThemeSwitchClick.bind(this);
         }
 
         show() {
@@ -378,6 +406,12 @@
         _onCloseClick() {
             this.hide();
         }
+
+        _onThemeSwitchClick() {
+            var classList = this._element.classList;
+
+            classList.toggle("inverted");
+        }
     }
 
     class CloseCross {
@@ -390,18 +424,57 @@
         }
     }
 
+    class Dialog {
+        constructor(themeSwitch) {
+            this._element = document.getElementById("dialog");
+
+            themeSwitch.onClick = this._onThemeSwitchClick.bind(this);
+        }
+
+        init() {}
+
+        _onThemeSwitchClick() {
+            var classList = this._element.classList;
+
+            classList.toggle("inverted");
+        }
+    }
+
     class Port {
         set onMessage(callback) {
             window.addEventListener("message", callback);
         }
     }
+
+    class ThemeButton {
+		constructor() {
+			this._element = document.getElementById("theme-button");
+
+            this.onClick = this._onClick.bind(this);
+		}
+
+		set onClick(callback) {
+			this._element.addEventListener("click", callback);
+		}
+
+		_onClick() {
+			var htmls = document.getElementsByTagName("html");
+			var classList = htmls[0].classList;
+
+			classList.toggle("constrasted");
+		}
+	}
 </script>
 <script>
+    var themeButton = new ThemeButton();
     var port = new Port();
     var closeCross = new CloseCross();
-    var overlay = new Overlay(closeCross);
+    var overlay = new Overlay(closeCross, themeButton);
+    var dialog = new Dialog(themeButton);
     var hash = new Hash(window.location.hash, closeCross, overlay, port);
 
+
     hash.init();
+    dialog.init();
 </script>
 </html>
