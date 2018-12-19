@@ -22,22 +22,25 @@ $(document).ready(function() {
         function onCD4AReadFile(error, cdString) {
             if(error) console.error("An error occurred while reading the CD4A file!");
             else {
-                // var write = function(fileName, type, content, inodeIdX) {
-                /*write("","dir", ["/demo","/example","/DefaultTypes.cd"],1);
-                write("/demo","dir", ["/demo.ocl"],2);
-                write('/demo/demo.ocl', "file", new Uint8Array(rawStringToBuffer(oclString)), 3);
-                write("/example","dir", ["/cd"],2);
-                write("/cd","dir", ["/AuctionCD.cd"],3);
-                write('/example/cd/AuctionCD.cd', "file", new Uint8Array(rawStringToBuffer(cdString)),4);
-                write('/DefaultTypes.cd', "file", new Uint8Array(rawStringToBuffer(
-                document.getElementById("cd-default").value)),2); */
                 var cdDef = document.getElementById("cd-default").value;
-                var lIndex  = cdString.lastIndexOf("}");
-                var left = cdDef.indexOf("{");
-                var right = cdDef.lastIndexOf("}");
-                var str = cdString.substring(0, lIndex) + "\n" + cdDef.substr(left + 1);
-                //cheerpjRunMain("ocl.cli.OCLCDTool", "/app/OCL/ocl-1.2.2-cli.jar", "-path", "", "-ocl", "demo.demo").then(onThen);
-                cheerpjRunMain("ocl.cli.OCLCDTool", "/app/webspace/OCL/ocljar/ocl.jar", "-ocl", oclString, "-cd", str).then(onThen);
+				cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
+				               "example/cd/DefaultTypes.cd", cdDef).then(
+				  function(res) {
+					  cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
+				               "example/cd/AuctionCD.cd", cdString).then(
+						  function(res) {
+							  cheerpjRunMain("WriteFileContent", "/app/webspace/OCL/ocljar/ocl.jar", 
+				                 "example/ocl/Demo.ocl", oclString).then(
+								 function(res) {
+									 
+								   cheerpjRunMain("ocl.cli.OCLCDTool", 
+								      "/app/webspace/OCL/ocljar/ocl.jar", "-path", "", "-ocl", "example.ocl.Demo", "-preloadCD").then(onThen);
+								 }
+							  );
+						  }
+					   );
+				  }
+				);
             }
         }
 
@@ -54,7 +57,5 @@ $(document).ready(function() {
 
     // init cheerpj
     cheerpjInit();
-    // run once to let cj get the static functions
-    //cheerpjRunMain("ocl.cli.OCLCDTool", "/app/OCL/ocl-1.2.2-cli.jar", "-init").then(document.getElementById("console").textContent = '');
     $buttonExecute.on("click", onClick);
 });
